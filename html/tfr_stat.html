@@ -66,7 +66,7 @@ table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px soli
 
 
 
-  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#1">Stat about Time-freqency analysis</a></li><li><a href="#2">--- #01 load interaction effect part</a></li><li><a href="#3">--- #02 Decide what time, freq and sites to examine condition difference</a></li></ul></div><h2>Stat about Time-freqency analysis<a name="1"></a></h2><p>Followed TFR zero the world</p><pre class="codeinput">clear, clc
+  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#1">Stat about Time-freqency analysis</a></li><li><a href="#2">--- #01 load interaction effect part</a></li><li><a href="#3">--- #02 Decide what time, freq and sites to examine condition difference</a></li><li><a href="#5">--- #03 Do the stat (Thanks GOD)</a></li></ul></div><h2>Stat about Time-freqency analysis<a name="1"></a></h2><p>Followed TFR zero the world</p><pre class="codeinput">clear, clc
 restoredefaultpath; <span class="comment">%% set a clean path</span>
 <span class="comment">% addpath('/home/jinbo/.matlab/R2012b'); % for linux only</span>
 project_dir = pwd;
@@ -93,7 +93,7 @@ load <span class="string">MS_ML</span>
 load <span class="string">OS_OL</span>
 <span class="comment">% load ML_OL % same resutls, the diff of those two is same as first two.</span>
 <span class="comment">% load MS_OS</span>
-</pre><h2>--- #02 Decide what time, freq and sites to examine condition difference<a name="3"></a></h2><div><ol><li>Sound, theta 4-8, -500 - -200, frontal-central, save as SP_Theta.mat</li><li>Sound, Beta_EL#1 12-18, -400 - -200, eeg_sites, save as SP_Beta_E1.mat</li><li>Sound, Beta_EL#2 12-18, -200 - 0, eeg_sites, save as SP_Beta_E2.mat</li><li>Probe, Alpha 8-9, 0 - 350, postior-central, VP_Alpha.mat</li><li>Probe, Beta 12-25, 50 - 250, postior-central, VP_Beta.mat</li></ol></div><pre class="codeinput"><span class="comment">%%%%%%%%%%%%%%%%%%%%%%%%%%</span>
+</pre><h2>--- #02 Decide what time, freq and sites to examine condition difference<a name="3"></a></h2><div><ol><li>Sound, theta 4-8, -500 - -200, frontal-central, save as SP_Theta.mat</li><li>Sound, Beta_EL#1 12-18, -400 - -200, eeg_sites, save as SP_Beta_E1.mat</li><li>Sound, Beta_EL#2 12-18, -200 - 0, eeg_sites, save as SP_Beta_E2.mat</li><li>Probe, Alpha 7.5-10.5, 0 - 350, postior-central, VP_Alpha.mat</li><li>Probe, Beta 12-25, 50 - 200, postior-central, VP_Beta.mat</li></ol></div><h2>--- #03 Do the stat (Thanks GOD)<a name="5"></a></h2><pre class="codeinput"><span class="comment">%%%%%%%%%%%%%%%%%%%%%%%%%%</span>
 <span class="comment">%</span>
 <span class="comment">% Sound, theta 4-8, -500 - -200, frontal-central</span>
 <span class="comment">%</span>
@@ -239,7 +239,7 @@ save <span class="string">SP_Beta_E2</span> <span class="string">SP_Beta_E2</spa
 
 <span class="comment">%%%%%%%%%%%%%%%%%%%%%%%%%%</span>
 <span class="comment">%</span>
-<span class="comment">% Probe, Alpha 8-10, 0 - 350, postior-central</span>
+<span class="comment">% Probe, Alpha 7.5-10.5, 0 - 350, postior-central</span>
 <span class="comment">%</span>
 <span class="comment">%%%%%%%%%%%%%%%%%%%%%%%%%%</span>
 cfg = [];
@@ -265,7 +265,7 @@ cfg.numrandomization = 10000;
 cfg.channel          = posterior_central_sites;
 
 cfg.latency          = [0 0.35];
-cfg.frequency        = [8 10];
+cfg.frequency        = [7.5 10.5];
 <span class="comment">%cfg.avgoverfreq = 'no';</span>
 <span class="comment">%cfg.avgovertime = 'no';</span>
 cfg.avgoverchan = <span class="string">'yes'</span>;
@@ -284,7 +284,7 @@ save <span class="string">VP_Alpha</span> <span class="string">VP_Alpha</span> <
 
 <span class="comment">%%%%%%%%%%%%%%%%%%%%%%%%%%</span>
 <span class="comment">%</span>
-<span class="comment">% Probe, Beta 13-25, 50 - 200, postior-central</span>
+<span class="comment">% Probe, Beta 12-25, 50 - 200, postior-central</span>
 <span class="comment">%</span>
 <span class="comment">%%%%%%%%%%%%%%%%%%%%%%%%%%</span>
 cfg = [];
@@ -310,7 +310,7 @@ cfg.numrandomization = 10000;
 cfg.channel          = posterior_central_sites;
 
 cfg.latency          = [0.05 0.20];
-cfg.frequency        = [13 25];
+cfg.frequency        = [12 25];
 <span class="comment">%cfg.avgoverfreq = 'no';</span>
 <span class="comment">%cfg.avgovertime = 'no';</span>
 cfg.avgoverchan = <span class="string">'yes'</span>;
@@ -326,7 +326,7 @@ cfg.ivar = 2;                                   <span class="comment">% "conditi
 
 VP_Beta = ft_freqstatistics(cfg, MS_ML{1:end}, OS_OL{1:end});
 save <span class="string">VP_Beta</span> <span class="string">VP_Beta</span> <span class="string">-v7.3</span>
-</pre><pre class="codeoutput">the call to "ft_selectdata" took 3 seconds and required the additional allocation of an estimated 0 MB
+</pre><pre class="codeoutput">the call to "ft_selectdata" took 3 seconds and required the additional allocation of an estimated 38 MB
 using "ft_statistics_montecarlo" for the statistical testing
 using "ft_statfun_depsamplesT" for the single-sample statistics
 constructing randomized design
@@ -341,7 +341,7 @@ repeated measurement in variable 1 over 22 levels
 number of repeated measurements in each level is 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
 computing a parametric threshold for clustering
 computing statistic
-estimated time per randomization is 0.00 seconds
+estimated time per randomization is 0.02 seconds
 computing statistic 10000 from 10000
 
 Warning: adding /data/jinbo/CNC/toolbox/fieldtrip-20180922/external/spm8 toolbox
@@ -352,7 +352,7 @@ computing clusters in randomization 10000 from 10000
 
 using a cluster-based method for multiple comparison correction
 the returned probabilities and the thresholded mask are corrected for multiple comparisons
-the call to "ft_freqstatistics" took 10 seconds and required the additional allocation of an estimated 0 MB
+the call to "ft_freqstatistics" took 11 seconds and required the additional allocation of an estimated 50 MB
 the call to "ft_selectdata" took 3 seconds and required the additional allocation of an estimated 0 MB
 using "ft_statistics_montecarlo" for the statistical testing
 using "ft_statfun_depsamplesT" for the single-sample statistics
@@ -377,7 +377,7 @@ computing clusters in randomization 10000 from 10000
 
 using a cluster-based method for multiple comparison correction
 the returned probabilities and the thresholded mask are corrected for multiple comparisons
-the call to "ft_freqstatistics" took 9 seconds and required the additional allocation of an estimated 0 MB
+the call to "ft_freqstatistics" took 10 seconds and required the additional allocation of an estimated 4 MB
 the call to "ft_selectdata" took 3 seconds and required the additional allocation of an estimated 0 MB
 using "ft_statistics_montecarlo" for the statistical testing
 using "ft_statfun_depsamplesT" for the single-sample statistics
@@ -402,7 +402,7 @@ computing clusters in randomization 10000 from 10000
 
 using a cluster-based method for multiple comparison correction
 the returned probabilities and the thresholded mask are corrected for multiple comparisons
-the call to "ft_freqstatistics" took 9 seconds and required the additional allocation of an estimated 0 MB
+the call to "ft_freqstatistics" took 10 seconds and required the additional allocation of an estimated 0 MB
 the call to "ft_selectdata" took 3 seconds and required the additional allocation of an estimated 0 MB
 using "ft_statistics_montecarlo" for the statistical testing
 using "ft_statfun_depsamplesT" for the single-sample statistics
@@ -427,7 +427,7 @@ computing clusters in randomization 10000 from 10000
 
 using a cluster-based method for multiple comparison correction
 the returned probabilities and the thresholded mask are corrected for multiple comparisons
-the call to "ft_freqstatistics" took 9 seconds and required the additional allocation of an estimated 0 MB
+the call to "ft_freqstatistics" took 10 seconds and required the additional allocation of an estimated 23 MB
 the call to "ft_selectdata" took 3 seconds and required the additional allocation of an estimated 0 MB
 using "ft_statistics_montecarlo" for the statistical testing
 using "ft_statfun_depsamplesT" for the single-sample statistics
@@ -494,10 +494,10 @@ load OS_OL
 % # Sound, theta 4-8, -500 - -200, frontal-central, save as SP_Theta.mat
 % # Sound, Beta_EL#1 12-18, -400 - -200, eeg_sites, save as SP_Beta_E1.mat
 % # Sound, Beta_EL#2 12-18, -200 - 0, eeg_sites, save as SP_Beta_E2.mat
-% # Probe, Alpha 8-9, 0 - 350, postior-central, VP_Alpha.mat
-% # Probe, Beta 12-25, 50 - 250, postior-central, VP_Beta.mat
+% # Probe, Alpha 7.5-10.5, 0 - 350, postior-central, VP_Alpha.mat
+% # Probe, Beta 12-25, 50 - 200, postior-central, VP_Beta.mat
 %
-
+%% REPLACE_WITH_DASH_DASH- #03 Do the stat (Thanks GOD)
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % Sound, theta 4-8, -500 - -200, frontal-central
@@ -644,7 +644,7 @@ save SP_Beta_E2 SP_Beta_E2 -v7.3
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-% Probe, Alpha 8-10, 0 - 350, postior-central
+% Probe, Alpha 7.5-10.5, 0 - 350, postior-central
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 cfg = [];
@@ -670,7 +670,7 @@ cfg.numrandomization = 10000;
 cfg.channel          = posterior_central_sites;
 
 cfg.latency          = [0 0.35];
-cfg.frequency        = [8 10];
+cfg.frequency        = [7.5 10.5];
 %cfg.avgoverfreq = 'no';
 %cfg.avgovertime = 'no';
 cfg.avgoverchan = 'yes';
@@ -689,7 +689,7 @@ save VP_Alpha VP_Alpha -v7.3
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-% Probe, Beta 13-25, 50 - 200, postior-central
+% Probe, Beta 12-25, 50 - 200, postior-central
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 cfg = [];
@@ -715,7 +715,7 @@ cfg.numrandomization = 10000;
 cfg.channel          = posterior_central_sites;
 
 cfg.latency          = [0.05 0.20];
-cfg.frequency        = [13 25];
+cfg.frequency        = [12 25];
 %cfg.avgoverfreq = 'no';
 %cfg.avgovertime = 'no';
 cfg.avgoverchan = 'yes';

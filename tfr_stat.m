@@ -37,8 +37,8 @@ load OS_OL
 % # Sound, theta 4-8, -500 - -200, frontal-central, save as SP_Theta.mat
 % # Sound, Beta_EL#1 12-18, -400 - -200, eeg_sites, save as SP_Beta_E1.mat
 % # Sound, Beta_EL#2 12-18, -200 - 0, eeg_sites, save as SP_Beta_E2.mat
-% # Probe, Alpha 8-9, 0 - 350, postior-central, VP_Alpha.mat
-% # Probe, Beta 13-25, 50 - 250, postior-central, VP_Beta.mat
+% # Probe, Alpha 7.5-10.5, 0 - 350, postior-central, VP_Alpha.mat
+% # Probe, Beta 12-25, 50 - 250, postior-central, VP_Beta.mat
 %
 %% --- #03 Do the stat (Thanks GOD)
 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -187,7 +187,7 @@ save SP_Beta_E2 SP_Beta_E2 -v7.3
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-% Probe, Alpha 8-10, 0 - 350, postior-central
+% Probe, Alpha 7.5-10.5, 0 - 350, postior-central
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 cfg = [];
@@ -213,7 +213,7 @@ cfg.numrandomization = 10000;
 cfg.channel          = posterior_central_sites;
 
 cfg.latency          = [0 0.35];
-cfg.frequency        = [8 10];
+cfg.frequency        = [7.5 10.5];
 %cfg.avgoverfreq = 'no';
 %cfg.avgovertime = 'no';
 cfg.avgoverchan = 'yes';
@@ -232,7 +232,7 @@ save VP_Alpha VP_Alpha -v7.3
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-% Probe, Beta 13-25, 50 - 200, postior-central
+% Probe, Beta 12-25, 50 - 200, postior-central
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 cfg = [];
@@ -258,7 +258,7 @@ cfg.numrandomization = 10000;
 cfg.channel          = posterior_central_sites;
 
 cfg.latency          = [0.05 0.20];
-cfg.frequency        = [13 25];
+cfg.frequency        = [12 25];
 %cfg.avgoverfreq = 'no';
 %cfg.avgovertime = 'no';
 cfg.avgoverchan = 'yes';

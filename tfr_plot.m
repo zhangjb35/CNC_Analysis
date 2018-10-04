@@ -1,15 +1,7 @@
-%% prep data, toolbox, and functions
+%% prep toolbox, functions and data
 % zero the world
 clear, clc
 restoredefaultpath; %% set a clean path
-
-% load and prep data
-load('./data/effectAVG/MS_MLAVG.mat','-mat');
-load('./data/effectAVG/OS_OLAVG.mat','-mat'); 
-temp = MS_MLAVG;
-temp.powspctrm =  temp.powspctrm - OS_OLAVG.powspctrm;
-diff_map = temp;
-clear temp
 
 % toolbox
 home_dir = '/Volumes/Workspace/Projects/CNC_analysis/code/CNC_Analysis';
@@ -20,6 +12,25 @@ addpath(genpath(fullfile(toolbox_dir, 'eeglab14_1_2b')));
 
 % function
 addpath(genpath(fuction_dir));
+
+% get raw effect data
+effectRaw = kb_ls(fullfile(home_dir, 'data', 'effectRaw','*.mat'));
+for i=1:length(effectRaw)
+    tempData = load(effectRaw{i},'-mat');
+    dataName = cell2mat(fieldnames(tempData));
+    cfg = [];
+    eval([ dataName '_avg = ft_freqgrandaverage(cfg,tempData.' dataName '{1:end})']);
+    save([home_dir '/data/effectAVG/' dataName '_avg'],[dataName '_avg'])
+end
+clear *_avg
+
+% load and prep data
+load('./data/effectAVG/MS_ML_avg.mat','-mat');
+load('./data/effectAVG/OS_OL_avg.mat','-mat'); 
+temp = MS_ML_avg;
+temp.powspctrm =  temp.powspctrm - OS_OL_avg.powspctrm;
+diff_map = temp;
+clear temp
 %%
 %--------------------------------------------------------%
 %
@@ -79,17 +90,43 @@ kb_plot_tfr(roi,diff_map_oi,trange,frange,fig_title,outputfile,maskfile,outputfi
 %
 
 %% load mask
+SP_Theta = './statMask/SP_Theta.mat';
+SP_Beta_E1 = './statMask/SP_Beta_E1.mat';
+SP_Beta_E2 = './statMask/SP_Beta_E2.mat';
 VP_Alpha = './statMask/VP_Alpha.mat';
-load(VP_Alpha,'-mat');
+VP_Beta = './statMask/VP_Beta.mat';
 
-%% Synthetic mask
+load(SP_Theta,'-mat');
+load(SP_Beta_E1,'-mat');
+load(SP_Beta_E2,'-mat');
+load(VP_Alpha,'-mat');
+load(VP_Beta,'-mat');
+
+%% fronto
+clear maskSets
 targetTFR = diff_map;
-maskSets{1} = stat_interaction_alpha;
-maskSets{2} = stat_interaction_alpha;
+maskSets{1} = SP_Theta;
 aioMask = kb_prep_mask(maskSets,targetTFR);
 
-%% Plot at posterior map
-%% diff map across posterior sites
+% fronto-central
+roi = {'Fz', 'F1', 'F2', 'F3', 'F4', 'F5', 'F6', 'FCz', 'FC1', 'FC2', 'FC3', 'FC4', 'FC5', 'FC6', 'Cz', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'};
+diff_map_oi = diff_map;
+trange = [-0.8, 0.8]; % in seconds
+frange = [4, 30]; % in Hz
+fig_title = 'Interaction Effect (Fronto-centrol Sites)';
+outputfile = './figure/Interaction/diff_map_frontal';
+outputfile_after_mask = './figure/statReport/stat_masked_diff_map_frontal';
+maskfile = aioMask;
+kb_plot_tfr(roi,diff_map_oi,trange,frange,fig_title,outputfile,maskfile,outputfile_after_mask);
+
+%% posterior-central
+clear maskSets
+targetTFR = diff_map;
+maskSets{1} = VP_Alpha;
+maskSets{2} = VP_Beta;
+aioMask = kb_prep_mask(maskSets,targetTFR);
+
+% plot at posterior map
 roi = {'CPz', 'CP1', 'CP2', 'CP3', 'CP4', 'CP5', 'CP6', 'Pz', 'P1', 'P2', 'P3', 'P4', 'P5', 'P6', 'P7', 'P8', 'POz', 'PO3', 'PO4', 'PO7', 'PO8', 'Oz', 'O1', 'O2'};
 diff_map_oi = diff_map;
 trange = [-0.8, 0.8]; % in seconds
@@ -99,3 +136,24 @@ outputfile = './figure/Interaction/diff_map_posterior';
 outputfile_after_mask = './figure/statReport/stat_masked_diff_map_posterior';
 maskfile = aioMask;
 kb_plot_tfr(roi,diff_map_oi,trange,frange,fig_title,outputfile,maskfile,outputfile_after_mask);
+
+%% all eeg
+clear maskSets
+targetTFR = diff_map;
+maskSets{1} = SP_Beta_E1;
+maskSets{2} = SP_Beta_E2;
+aioMask = kb_prep_mask(maskSets,targetTFR);
+
+% plot at all eeg
+roi = {'all', '-HEO', '-VEO'};
+diff_map_oi = diff_map;
+trange = [-0.8, 0.8]; % in seconds
+frange = [4, 30]; % in Hz
+fig_title = 'Interaction Effect (All EEG Sites)';
+outputfile = './figure/Interaction/diff_map_alleeg';
+outputfile_after_mask = './figure/statReport/stat_masked_diff_map_alleeg';
+maskfile = aioMask;
+kb_plot_tfr(roi,diff_map_oi,trange,frange,fig_title,outputfile,maskfile,outputfile_after_mask);
+
+%% end tf_plot
+close all % close this file
