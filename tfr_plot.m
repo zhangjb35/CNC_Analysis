@@ -96,6 +96,6 @@ trange = [-0.8, 0.8]; % in seconds
 frange = [4, 30]; % in Hz
 fig_title = 'Interaction Effect (Posterior-centrol Sites)';
 outputfile = './figure/Interaction/diff_map_posterior';
-outputfile_after_mask = './figure/Interaction/stat_masked_diff_map_posterior';
+outputfile_after_mask = './figure/statReport/stat_masked_diff_map_posterior';
 maskfile = aioMask;
 kb_plot_tfr(roi,diff_map_oi,trange,frange,fig_title,outputfile,maskfile,outputfile_after_mask);
