@@ -34,11 +34,11 @@ load OS_OL
 %% --- #02 Decide what time, freq and sites to examine condition difference
 %%
 % 
-% # Sound, theta 4-6, -400 - -200, frontal-central
-% # Sound, Beta_EL#1 4-6, -400 - -200, eeg_sites
-% # Sound, Beta_EL#2 4-6, -400 - -200, eeg_sites
-% # Probe, Alpha 8-9, 0 - 350, postior-central
-% # Probe, Beta 12-25, 50 - 250, postior-central
+% # Sound, theta 4-6, -400 - -200, frontal-central, save as SP_Theta.mat
+% # Sound, Beta_EL#1 4-6, -400 - -200, eeg_sites, save as SP_Beta_E1.mat
+% # Sound, Beta_EL#2 4-6, -400 - -200, eeg_sites, save as SP_Beta_E2.mat
+% # Probe, Alpha 8-9, 0 - 350, postior-central, VP_Alpha.mat
+% # Probe, Beta 12-25, 50 - 250, postior-central, VP_Beta.mat
 %
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -85,8 +85,8 @@ ones(1,size(MS_ML,2)), 2*ones(1,size(OS_OL,2))];  % condition number
 cfg.uvar = 1;                                   % "subject" is unit of observation
 cfg.ivar = 2;                                   % "condition" is the dependent variable
 
-stat_interaction_theta_sound_focus_sound = ft_freqstatistics(cfg, MS_ML{1:end}, OS_OL{1:end});
-save stat_interaction_theta_sound_focus_sound stat_interaction_theta_sound_focus_sound -v7.3
+SP_Theta = ft_freqstatistics(cfg, MS_ML{1:end}, OS_OL{1:end});
+save SP_Theta SP_Theta -v7.3
 % stat_interaction_theta_sound_focus_numer = ft_freqstatistics(cfg, MS_OS{1:end}, ML_OL{1:end});
 % save stat_interaction_theta_sound_focus_numer stat_interaction_theta_sound_focus_numer -v7.3
 
@@ -133,8 +133,8 @@ ones(1,size(MS_ML,2)), 2*ones(1,size(OS_OL,2))];  % condition number
 cfg.uvar = 1;                                   % "subject" is unit of observation
 cfg.ivar = 2;                                   % "condition" is the dependent variable
 
-stat_interaction_sound_beta = ft_freqstatistics(cfg, MS_ML{1:end}, OS_OL{1:end});
-save stat_interaction_sound_beta stat_interaction_sound_beta -v7.3
+SP_Beta_E1 = ft_freqstatistics(cfg, MS_ML{1:end}, OS_OL{1:end});
+save SP_Beta_E1 SP_Beta_E1 -v7.3
 % stat_interaction_simple_num_alpha = ft_freqstatistics(cfg, MS_OS{1:end}, ML_OL{1:end});
 % save stat_interaction_simple_num_alpha stat_interaction_simple_num_alpha -v7.3
 
@@ -181,7 +181,7 @@ cfg.uvar = 1;                                   % "subject" is unit of observati
 cfg.ivar = 2;                                   % "condition" is the dependent variable
 
 stat_interaction_sound_beta = ft_freqstatistics(cfg, MS_ML{1:end}, OS_OL{1:end});
-save stat_interaction_sound_beta stat_interaction_sound_beta -v7.3
+save SP_Beta_E2 SP_Beta_E2 -v7.3
 % stat_interaction_simple_num_alpha = ft_freqstatistics(cfg, MS_OS{1:end}, ML_OL{1:end});
 % save stat_interaction_simple_num_alpha stat_interaction_simple_num_alpha -v7.3
 
@@ -227,8 +227,8 @@ ones(1,size(MS_ML,2)), 2*ones(1,size(OS_OL,2))];  % condition number
 cfg.uvar = 1;                                   % "subject" is unit of observation
 cfg.ivar = 2;                                   % "condition" is the dependent variable
 
-stat_interaction_alpha = ft_freqstatistics(cfg, MS_ML{1:end}, OS_OL{1:end});
-save stat_interaction_alpha stat_interaction_alpha -v7.3
+VP_Alpha = ft_freqstatistics(cfg, MS_ML{1:end}, OS_OL{1:end});
+save VP_Alpha VP_Alpha -v7.3
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -272,205 +272,5 @@ ones(1,size(MS_ML,2)), 2*ones(1,size(OS_OL,2))];  % condition number
 cfg.uvar = 1;                                   % "subject" is unit of observation
 cfg.ivar = 2;                                   % "condition" is the dependent variable
 
-stat_interaction_beta_point = ft_freqstatistics(cfg, MS_ML{1:end}, OS_OL{1:end});
-save stat_interaction_beta_point stat_interaction_beta_point -v7.3
-%%
-% %% probe, theta 4-8, 400 - 800ms, postior-central
-% cfg = [];
-% cfg_neighb.method    = 'distance';
-% cfg_neighb.layout    = 'cnc_eeg.mat';
-% cfg.neighbours       = ft_prepare_neighbours(cfg_neighb, MS_ML{1});
-% cfg.neighbourdist    = 8;
-% cfg.neighbours = [];
-% %setup stat parameter
-% cfg.method           = 'montecarlo';
-% cfg.statistic        = 'depsamplesT';
-% cfg.clusteralpha     = 0.05;
-% cfg.clusterstatistic = 'maxsum';
-% %cfg.minnbchan        = 0;
-% 
-% cfg.tail             = 0;
-% cfg.clustertail      = 0;
-% cfg.alpha            = 0.025;
-% 
-% cfg.numrandomization = 300;
-% 
-% %cfg.channel          = {'Fz', 'F1', 'F2', 'F3', 'F4', 'F5', 'F6', 'FCz', 'FC1', 'FC2', 'FC3', 'FC4', 'FC5', 'FC6', 'Cz', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'};
-% %cfg.channel          = {'CPz', 'CP1', 'CP2', 'CP3', 'CP4', 'CP5', 'CP6', 'Pz', 'P1', 'P2', 'P3', 'P4', 'P5', 'P6', 'P7', 'P8', 'POz', 'PO3', 'PO4', 'PO7', 'PO8', 'Oz', 'O1', 'O2'};
-% cfg.channel = {'all', '-HEO', '-VEO'};
-% cfg.latency          = [0.4 0.8];
-% cfg.frequency        = [4 10];
-% %cfg.avgoverfreq = 'no';
-% %cfg.avgovertime = 'no';
-% %cfg.avgoverchan = 'yes';
-% 
-% cfg.correctm         = 'cluster';
-% 
-% cfg.design = [
-% repmat(1:1:size(MS_ML,2), 1, 2) % subject number
-% ones(1,size(MS_ML,2)), 2*ones(1,size(OS_OL,2))];  % condition number
-% 
-% cfg.uvar = 1;                                   % "subject" is unit of observation
-% cfg.ivar = 2;                                   % "condition" is the dependent variable
-% 
-% stat_interaction_alpha_end = ft_freqstatistics(cfg, MS_OS{1:end}, ML_OL{1:end});
-% save stat_interaction_alpha_end stat_interaction_alpha_end -v7.3
-%%
-% 
-% %% theta post -500--100ms; 4-6Hz
-% cfg = [];
-% cfg_neighb.method    = 'distance';
-% cfg_neighb.layout    = 'cnc_eeg.mat';
-% cfg.neighbours       = ft_prepare_neighbours(cfg_neighb, MS_ML{1});
-% cfg.neighbourdist    = 4;
-% % setup stat parameter
-% cfg.method           = 'montecarlo';
-% cfg.statistic        = 'depsamplesT';
-% cfg.clusteralpha     = 0.05;
-% cfg.clusterstatistic = 'maxsum';
-% cfg.minnbchan        = 2;
-% 
-% cfg.tail             = 0;
-% cfg.clustertail      = 0;
-% cfg.alpha            = 0.05;
-% 
-% cfg.numrandomization = 5000;
-% 
-% %cfg.channel          = {'Fz', 'F1', 'F2', 'F3', 'F4', 'F5', 'F6', 'FCz', 'FC1', 'FC2', 'FC3', 'FC4', 'FC5', 'FC6', 'Cz', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'};
-% cfg.channel = {'all', '-HEO', '-VEO'};
-% cfg.latency          = [-0.5 0];
-% cfg.frequency        = [4 6];
-% cfg.avgoverfreq = 'yes';
-% cfg.avgovertime = 'yes';
-% cfg.correctm         = 'cluster';
-% 
-% cfg.design = [
-% repmat(1:1:size(MS_ML,2), 1, 2) % subject number
-% ones(1,size(MS_ML,2)), 2*ones(1,size(OS_OL,2))];  % condition number
-% 
-% cfg.uvar = 1;                                   % "subject" is unit of observation
-% cfg.ivar = 2;                                   % "condition" is the dependent variable
-% 
-% stat_interaction_simple_mag_theta = ft_freqstatistics(cfg, MS_ML{1:end}, OS_OL{1:end});
-% save stat_interaction_simple_mag_theta stat_interaction_simple_mag_theta -v7.3
-% stat_interaction_simple_num_theta = ft_freqstatistics(cfg, MS_OS{1:end}, ML_OL{1:end});
-% save stat_interaction_simple_num_theta stat_interaction_simple_num_theta -v7.3
-% %%
-% cfg = []
-% cfg.marker = 'on'
-% cfg.layout = 'cnc_eeg.mat'
-% cfg.channel = {'all', '-HEO', '-VEO'}
-% cfg.parameter = 'prob';
-% cfg.maskparameter = 'mask'
-% cfg.maskstyle = 'opacity';
-% figure; ft_multiplotTFR(cfg, stat_interaction_simple_mag_alpha)
-%%
-cfg = []
-cfg.alpha = .05
-cfg.layout = 'cnc_eeg.mat'
-ft_clusterplot(cfg,stat_interaction_simple_mag_theta)
-% main effect of sound numeristy
-%%%%%%%%%%%%%%%%%%%%%
-% prep data
-procAction = 'average_tf';
-cfg = [];
-M = loop_ana(ProbeMultiLoud_refBaseline,procAction,cfg,ProbeMultiSoft_refBaseline); % avg(ML + MS)=M
-O = loop_ana(ProbeOneLoud_refBaseline,procAction,cfg,ProbeOneSoft_refBaseline); % avg(OL + OS)=O
-save M M
-save O O
-%%%%%%%%%%%%%%%%%%%%%
-% prepare_neighbours determines with what sensors the planar gradient is computed
-load M
-load O
-cfg = [];
-cfg_neighb.method    = 'distance';
-cfg_neighb.layout    = 'cnc_eeg.mat';
-cfg.neighbours       = ft_prepare_neighbours(cfg_neighb, M{1});
-cfg.neighbourdist    = 4;
-
-cfg.method           = 'montecarlo';
-cfg.statistic        = 'depsamplesT';
-cfg.clusteralpha     = 0.05;
-cfg.clusterstatistic = 'maxsum';
-cfg.minnbchan        = 2;
-
-cfg.tail             = 0;
-cfg.clustertail      = 0;
-cfg.alpha            = 0.025;
-
-cfg.numrandomization = 5000;
-
-cfg.channel          = 'eeg';
-cfg.latency          = [-0.2 0.8];
-cfg.frequency        = [5 30];
-
-cfg.correctm         = 'cluster';
-
-cfg.design = [
-repmat(1:1:size(M,2), 1, 2) % subject number
-[ones(1,size(M,2)), 2*ones(1,size(O,2))]];  % condition number
-
-cfg.uvar = 1;                                   % "subject" is unit of observation
-cfg.ivar = 2;                                   % "condition" is the dependent variable
-
-stat_main_numersity = ft_freqstatistics(cfg, M{1:end}, O{1:end});
-save stat_main_numersity stat_main_numersity -v7.3
-% main effect of sound magnitute
-%%%%%%%%%%%%%%%%%%%%%
-% prep data
-procAction = 'average_tf';
-cfg = [];
-L = loop_ana(ProbeMultiLoud_refBaseline,procAction,cfg,ProbeOneLoud_refBaseline); % avg(ML + OL)=L
-S = loop_ana(ProbeMultiSoft_refBaseline,procAction,cfg,ProbeOneSoft_refBaseline); % avg(MS + OS)=S
-save L L
-save S S
-%%%%%%%%%%%%%%%%%%%%%
-% prepare_neighbours determines with what sensors the planar gradient is computed
-load L
-load S
-cfg = [];
-cfg_neighb.method    = 'distance';
-cfg_neighb.layout    = 'cnc_eeg.mat';
-cfg.neighbours       = ft_prepare_neighbours(cfg_neighb, L{1});
-cfg.neighbourdist    = 4;
-
-cfg.method           = 'montecarlo';
-cfg.statistic        = 'depsamplesT';
-cfg.clusteralpha     = 0.05;
-cfg.clusterstatistic = 'maxsum';
-cfg.minnbchan        = 2;
-
-cfg.tail             = 0;
-cfg.clustertail      = 0;
-cfg.alpha            = 0.025;
-
-cfg.numrandomization = 5000;
-
-cfg.channel          = 'eeg';
-cfg.latency          = [-0.2 0.8];
-cfg.frequency        = [5 30];
-
-cfg.correctm         = 'cluster';
-
-cfg.design = [
-repmat(1:1:size(L,2), 1, 2) % subject number
-ones(1,size(L,2)), 2*ones(1,size(S,2))];  % condition number
-
-cfg.uvar = 1;                                   % "subject" is unit of observation
-cfg.ivar = 2;                                   % "condition" is the dependent variable
-
-stat_main_magnitute = ft_freqstatistics(cfg, L{1:end}, S{1:end});
-save stat_main_magnitute stat_main_magnitute -v7.3
-% %% see
-% % multi freq
-% cfg               = [];
-% cfg.marker        = 'on';
-% cfg.layout        = 'cnc_eeg.mat';
-% cfg.channel       = 'eeg';
-% cfg.xlim = [-0.2 0.8];
-% % cfg.yim = [5 30];
-% cfg.parameter     = 'stat';  % plot the t-value 
-% cfg.maskparameter = 'mask';  % use the thresholded probability to mask the data
-% cfg.maskstyle     = 'saturation';
-% cfg.alpha  = 0.10;
-% ft_multiplotTFR(cfg, stat_main_magnitute);
+VP_Beta = ft_freqstatistics(cfg, MS_ML{1:end}, OS_OL{1:end});
+save VP_Beta VP_Beta -v7.3

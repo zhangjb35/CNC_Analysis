@@ -71,7 +71,7 @@ kb_plot_tfr(roi,diff_map_oi,trange,frange,fig_title,outputfile,maskfile,outputfi
 %    Stat comparson list
 %%
 % 
-% # [SP_F_Theta] Sound Primer: Frontal, Theta
+% # [SP_Theta] Sound Primer: Frontal, Theta
 % # [SP_Beta_E1] Sound Primer: All sites, Beta Element#1
 % # [SP_Beta_E2] Sound Primer: All sites, Beta Element#2
 % # [VP_Alpha] Visual Probe: Posterior, Alpha
