@@ -1,0 +1,329 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>tfr_prep</title><meta name="generator" content="MATLAB 8.3"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2018-10-04"><meta name="DC.source" content="tfr_prep.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#1">Time-freqency analysis scritps for CNC project</a></li><li><a href="#2">--- 02 # convert eeglab data to fieldtrip format</a></li><li><a href="#3">--- 03 # calcuate ERP</a></li><li><a href="#4">--- 04 # remove ERP from each trial for extracting pure induced part of EEG activity</a></li><li><a href="#5">--- 05 # transformed to Time-Freqency domain</a></li><li><a href="#6">--- 06 # baseline on no sound condition, so we do not need to do time baseline : )</a></li><li><a href="#7">--- 07 # average TFR across subject for plot TFR prep for stat and after stat resutls visualization)</a></li><li><a href="#8">--- 08 # prep for interaction part of experimental effect</a></li><li><a href="#9">--- 09 # main effect, check interaction first, if sign, skip it. If interaction, it is no reason to see main effect (depend on another variable)</a></li></ul></div><h2>Time-freqency analysis scritps for CNC project<a name="1"></a></h2><p>Followed EEG and ERP prep step; note: start para computation first zero the world</p><pre class="codeinput">clear, clc
+restoredefaultpath; <span class="comment">%% set a clean path</span>
+<span class="comment">% addpath('/home/jinbo/.matlab/R2012b'); % for linux server only</span>
+project_dir = pwd;<span class="comment">% change to tfr_prep dir firsts</span>
+home_dir = fullfile(project_dir, <span class="string">'data'</span>, <span class="string">'TFPrep'</span>);
+matlab_dir = fullfile(project_dir, <span class="string">'toolbox'</span>);
+fuction_dir = fullfile(project_dir, <span class="string">'functions'</span>);
+
+addpath(fullfile(matlab_dir, <span class="string">'fieldtrip-20180922'</span>)); ft_defaults <span class="comment">%% initialize FieldTrip defaults</span>
+addpath(genpath([matlab_dir, filesep, <span class="string">'eeglab14_1_2b'</span>]));
+addpath(genpath(fuction_dir));
+</pre><h2>--- 02 # convert eeglab data to fieldtrip format<a name="2"></a></h2><pre class="codeinput">procAction = <span class="string">'eeglab2fieldtrip'</span>;
+eeglabData_cond{1} = kb_ls([home_dir filesep <span class="string">'*_01.set'</span>]);
+eeglabData_cond{2} = kb_ls([home_dir filesep <span class="string">'*_02.set'</span>]);
+eeglabData_cond{3} = kb_ls([home_dir filesep <span class="string">'*_03.set'</span>]);
+eeglabData_cond{4} = kb_ls([home_dir filesep <span class="string">'*_04.set'</span>]);
+eeglabData_cond{5} = kb_ls([home_dir filesep <span class="string">'*_05.set'</span>]);
+cfg = [];
+additoininfo = {};
+<span class="keyword">parfor</span> i=1:length(eeglabData_cond)
+    fData{i} = loop_ana(eeglabData_cond{i},procAction,cfg,additoininfo);
+<span class="keyword">end</span>
+</pre><pre class="codeoutput">Starting parallel pool (parpool) using the 'local' profile ... connected to 24 workers.
+pop_loadset(): loading file /data/jinbo/CNC/data/TFPrep/sub-01_bdf_04.set ...
+Reading float file '/data/jinbo/CNC/data/TFPrep/sub-01_bdf_04.fdt'...
+pop_loadset(): loading file /data/jinbo/CNC/data/TFPrep/sub-02_bdf_04.set ...
+Reading float file '/data/jinbo/CNC/data/TFPrep/sub-02_bdf_04.fdt'...
+pop_loadset(): loading file /data/jinbo/CNC/data/TFPrep/sub-03_bdf_04.set ...
+...</pre><h2>--- 03 # calcuate ERP<a name="3"></a></h2><pre class="codeinput">procAction = <span class="string">'timelocked_analysis'</span>;
+cfg = [];
+additoininfo = {};
+<span class="keyword">parfor</span> i=1:length(eeglabData_cond)
+    tl_fData{i} = loop_ana(fData{i},procAction,cfg,additoininfo);
+<span class="keyword">end</span>
+</pre><pre class="codeoutput">the input is raw data with 64 channels and 119 trials
+the input is raw data with 64 channels and 120 trials
+Warning: the data does not contain a trial definition
+ In '/data/jinbo/CNC/toolbox/fieldtrip-20180922/utilities/private/fixsampleinfo.m' at line 80
+ In '/data/jinbo/CNC/toolbox/fieldtrip-20180922/utilities/ft_datatype_raw.m' at line 147
+ In '/data/jinbo/CNC/toolbox/fieldtrip-20180922/utilities/ft_checkdata.m' at line 264
+...</pre><h2>--- 04 # remove ERP from each trial for extracting pure induced part of EEG activity<a name="4"></a></h2><pre class="codeinput">procAction = <span class="string">'untimelocked_analysis'</span>;
+cfg = [];
+<span class="keyword">parfor</span> i=1:length(eeglabData_cond)
+    utl_fData{i} = loop_ana(tl_fData{i},procAction,cfg,fData{i});
+<span class="keyword">end</span>
+save <span class="string">utl_fData</span> <span class="string">utl_fData</span> <span class="string">-v7.3</span>
+</pre><pre class="codeoutput">Removing average responses #01
+Removing average responses #02
+Removing average responses #03
+Removing average responses #04
+Removing average responses #05
+Removing average responses #06
+...</pre><h2>--- 05 # transformed to Time-Freqency domain<a name="5"></a></h2><pre class="codeinput">procAction = <span class="string">'time_frequency_representation'</span>;
+
+<span class="comment">%for high freq (&gt;30Hz), so we do not use this method, see fieldtrip</span>
+<span class="comment">%tutorial</span>
+
+<span class="comment">% cfg = [];</span>
+<span class="comment">% cfg.method = 'wavelet';</span>
+<span class="comment">% cfg.width = 4; %% width of wavelet</span>
+<span class="comment">% cfg.output = 'pow';</span>
+<span class="comment">% % cfg.method = 'mtmconvol';</span>
+<span class="comment">% cfg.foi = 2:1:30; %% frequency limits (Hz)</span>
+<span class="comment">% cfg.toi = -1.500:0.01:1.500; %% times of interest (s)</span>
+<span class="comment">% cfg.pad = 'nextpow2';</span>
+
+<span class="comment">% we foi is low freq part (&lt;30Hz)</span>
+cfg              = [];
+cfg.output       = <span class="string">'pow'</span>;
+cfg.method       = <span class="string">'mtmconvol'</span>;
+cfg.taper        = <span class="string">'hanning'</span>;
+cfg.pad          = <span class="string">'nextpow2'</span>;
+cfg.foi          = 2:0.5:30; <span class="comment">% in Hz</span>
+cfg.t_ftimwin    = 4./cfg.foi;  <span class="comment">% 4 cycles per time window</span>
+cfg.toi          = -1.5:0.01:1.5; <span class="comment">% in second</span>
+
+<span class="keyword">parfor</span> i=1:length(eeglabData_cond)
+    tfr_utl_fData{i} = loop_ana(utl_fData{i},procAction,cfg,{});
+<span class="keyword">end</span>
+<span class="comment">% save tfr results</span>
+save <span class="string">tfr_utl_fData</span> <span class="string">tfr_utl_fData</span> <span class="string">-v7.3</span>
+</pre><pre class="codeoutput">the input is raw data with 64 channels and 119 trials
+Warning: the data does not contain a trial definition
+Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous recording
+&gt; In utilities/private/fixsampleinfo at 94
+  In ft_datatype_raw at 147
+  In ft_checkdata at 264
+...</pre><h2>--- 06 # baseline on no sound condition, so we do not need to do time baseline : )<a name="6"></a></h2><pre class="codeinput">clear <span class="string">*_fData</span> <span class="comment">% release memory for followd "very computer consuming" computation</span>
+load <span class="string">tfr_utl_fData.mat</span>
+noSound_baseline = tfr_utl_fData{1};
+ProbeMultiSoft =  tfr_utl_fData{2};
+ProbeMultiLoud =  tfr_utl_fData{3};
+ProbeOneSoft =  tfr_utl_fData{4};
+ProbeOneLoud =  tfr_utl_fData{5};<span class="comment">% this correspondence checked with bdf file, see setup folder</span>
+cfg = [];
+procAction = <span class="string">'cond_baseline_ref'</span>;
+ProbeMultiSoft_refBaseline = loop_ana(ProbeMultiSoft,procAction,cfg,noSound_baseline);
+ProbeMultiLoud_refBaseline = loop_ana(ProbeMultiLoud,procAction,cfg,noSound_baseline);
+ProbeOneSoft_refBaseline = loop_ana(ProbeOneSoft,procAction,cfg,noSound_baseline);
+ProbeOneLoud_refBaseline = loop_ana(ProbeOneLoud,procAction,cfg,noSound_baseline);
+</pre><h2>--- 07 # average TFR across subject for plot TFR prep for stat and after stat resutls visualization)<a name="7"></a></h2><p>as baseline, skip it cfg = []; nosoundAVG = ft_freqgrandaverage(cfg, tfr_utl_fData{1}{1:end}); save nosoundAVG nosoundAVG</p><pre class="codeinput">cfg = [];
+multisoftAVG = ft_freqgrandaverage(cfg,ProbeMultiSoft_refBaseline{1:end});
+save <span class="string">multisoftAVG</span> <span class="string">multisoftAVG</span>
+
+cfg = [];
+multiloudAVG = ft_freqgrandaverage(cfg, ProbeMultiLoud_refBaseline{1:end});
+save <span class="string">multiloudAVG</span> <span class="string">multiloudAVG</span>
+
+cfg = [];
+onesoftAVG = ft_freqgrandaverage(cfg, ProbeOneSoft_refBaseline{1:end});
+save <span class="string">onesoftAVG</span> <span class="string">onesoftAVG</span>
+
+cfg = [];
+oneloudAVG = ft_freqgrandaverage(cfg, ProbeOneLoud_refBaseline{1:end});
+save <span class="string">oneloudAVG</span> <span class="string">oneloudAVG</span>
+</pre><pre class="codeoutput">computing average powspctrm over 22 subjects
+Warning: discarding electrode information because it cannot be averaged 
+the call to "ft_freqgrandaverage" took 1 seconds and required the additional allocation of an estimated 0 MB
+computing average powspctrm over 22 subjects
+Warning: discarding electrode information because it cannot be averaged 
+the call to "ft_freqgrandaverage" took 0 seconds and required the additional allocation of an estimated 0 MB
+...</pre><h2>--- 08 # prep for interaction part of experimental effect<a name="8"></a></h2><pre class="codeinput">procAction = <span class="string">'diff_tf'</span>;
+cfg = [];
+MS_ML = loop_ana(ProbeMultiLoud_refBaseline,procAction,cfg,ProbeMultiSoft_refBaseline); <span class="comment">% ML - MS</span>
+OS_OL = loop_ana(ProbeOneLoud_refBaseline,procAction,cfg,ProbeOneSoft_refBaseline); <span class="comment">% OL - OS</span>
+save <span class="string">MS_ML</span> <span class="string">MS_ML</span>
+save <span class="string">OS_OL</span> <span class="string">OS_OL</span>
+
+MS_OS = loop_ana(ProbeMultiSoft_refBaseline,procAction,cfg,ProbeOneSoft_refBaseline); <span class="comment">% MS - OS</span>
+ML_OL = loop_ana(ProbeMultiLoud_refBaseline,procAction,cfg,ProbeOneLoud_refBaseline); <span class="comment">% ML - OL</span>
+save <span class="string">MS_OS</span> <span class="string">MS_OS</span>
+save <span class="string">ML_OL</span> <span class="string">ML_OL</span>
+</pre><h2>--- 09 # main effect, check interaction first, if sign, skip it. If interaction, it is no reason to see main effect (depend on another variable)<a name="9"></a></h2><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2014a</a><br></p></div><!--
+##### SOURCE BEGIN #####
+%%  Time-freqency analysis scritps for CNC project
+% Followed EEG and ERP prep step; note: start para computation first
+% zero the world
+clear, clc
+restoredefaultpath; %% set a clean path
+% addpath('/home/jinbo/.matlab/R2012b'); % for linux server only
+project_dir = pwd;% change to tfr_prep dir firsts
+home_dir = fullfile(project_dir, 'data', 'TFPrep');
+matlab_dir = fullfile(project_dir, 'toolbox');
+fuction_dir = fullfile(project_dir, 'functions');
+
+addpath(fullfile(matlab_dir, 'fieldtrip-20180922')); ft_defaults %% initialize FieldTrip defaults
+addpath(genpath([matlab_dir, filesep, 'eeglab14_1_2b']));
+addpath(genpath(fuction_dir));
+
+%% REPLACE_WITH_DASH_DASH- 02 # convert eeglab data to fieldtrip format
+procAction = 'eeglab2fieldtrip';
+eeglabData_cond{1} = kb_ls([home_dir filesep '*_01.set']);
+eeglabData_cond{2} = kb_ls([home_dir filesep '*_02.set']);
+eeglabData_cond{3} = kb_ls([home_dir filesep '*_03.set']);
+eeglabData_cond{4} = kb_ls([home_dir filesep '*_04.set']);
+eeglabData_cond{5} = kb_ls([home_dir filesep '*_05.set']);
+cfg = [];
+additoininfo = {};
+parfor i=1:length(eeglabData_cond)
+    fData{i} = loop_ana(eeglabData_cond{i},procAction,cfg,additoininfo);
+end
+
+%% REPLACE_WITH_DASH_DASH- 03 # calcuate ERP
+procAction = 'timelocked_analysis';
+cfg = [];
+additoininfo = {};
+parfor i=1:length(eeglabData_cond)
+    tl_fData{i} = loop_ana(fData{i},procAction,cfg,additoininfo);
+end
+
+%% REPLACE_WITH_DASH_DASH- 04 # remove ERP from each trial for extracting pure induced part of EEG activity
+procAction = 'untimelocked_analysis';
+cfg = [];
+parfor i=1:length(eeglabData_cond)
+    utl_fData{i} = loop_ana(tl_fData{i},procAction,cfg,fData{i});
+end
+save utl_fData utl_fData -v7.3
+
+%% REPLACE_WITH_DASH_DASH- 05 # transformed to Time-Freqency domain
+procAction = 'time_frequency_representation';
+
+%for high freq (>30Hz), so we do not use this method, see fieldtrip
+%tutorial
+
+% cfg = [];
+% cfg.method = 'wavelet';
+% cfg.width = 4; %% width of wavelet
+% cfg.output = 'pow';
+% % cfg.method = 'mtmconvol';
+% cfg.foi = 2:1:30; %% frequency limits (Hz)
+% cfg.toi = -1.500:0.01:1.500; %% times of interest (s)
+% cfg.pad = 'nextpow2';
+
+% we foi is low freq part (<30Hz)
+cfg              = [];
+cfg.output       = 'pow';
+cfg.method       = 'mtmconvol';
+cfg.taper        = 'hanning';
+cfg.pad          = 'nextpow2';
+cfg.foi          = 2:0.5:30; % in Hz
+cfg.t_ftimwin    = 4./cfg.foi;  % 4 cycles per time window
+cfg.toi          = -1.5:0.01:1.5; % in second
+
+parfor i=1:length(eeglabData_cond)
+    tfr_utl_fData{i} = loop_ana(utl_fData{i},procAction,cfg,{});
+end
+% save tfr results
+save tfr_utl_fData tfr_utl_fData -v7.3
+
+%% REPLACE_WITH_DASH_DASH- 06 # baseline on no sound condition, so we do not need to do time baseline : )
+clear *_fData % release memory for followd "very computer consuming" computation
+load tfr_utl_fData.mat
+noSound_baseline = tfr_utl_fData{1};
+ProbeMultiSoft =  tfr_utl_fData{2};
+ProbeMultiLoud =  tfr_utl_fData{3};
+ProbeOneSoft =  tfr_utl_fData{4};
+ProbeOneLoud =  tfr_utl_fData{5};% this correspondence checked with bdf file, see setup folder
+cfg = [];
+procAction = 'cond_baseline_ref';
+ProbeMultiSoft_refBaseline = loop_ana(ProbeMultiSoft,procAction,cfg,noSound_baseline);
+ProbeMultiLoud_refBaseline = loop_ana(ProbeMultiLoud,procAction,cfg,noSound_baseline);
+ProbeOneSoft_refBaseline = loop_ana(ProbeOneSoft,procAction,cfg,noSound_baseline);
+ProbeOneLoud_refBaseline = loop_ana(ProbeOneLoud,procAction,cfg,noSound_baseline);
+%% REPLACE_WITH_DASH_DASH- 07 # average TFR across subject for plot TFR prep for stat and after stat resutls visualization)
+% as baseline, skip it
+% cfg = [];
+% nosoundAVG = ft_freqgrandaverage(cfg, tfr_utl_fData{1}{1:end}); 
+% save nosoundAVG nosoundAVG
+
+cfg = [];
+multisoftAVG = ft_freqgrandaverage(cfg,ProbeMultiSoft_refBaseline{1:end});
+save multisoftAVG multisoftAVG
+
+cfg = [];
+multiloudAVG = ft_freqgrandaverage(cfg, ProbeMultiLoud_refBaseline{1:end});
+save multiloudAVG multiloudAVG
+
+cfg = [];
+onesoftAVG = ft_freqgrandaverage(cfg, ProbeOneSoft_refBaseline{1:end});
+save onesoftAVG onesoftAVG
+
+cfg = [];
+oneloudAVG = ft_freqgrandaverage(cfg, ProbeOneLoud_refBaseline{1:end});
+save oneloudAVG oneloudAVG
+
+%% REPLACE_WITH_DASH_DASH- 08 # prep for interaction part of experimental effect 
+procAction = 'diff_tf';
+cfg = [];
+MS_ML = loop_ana(ProbeMultiLoud_refBaseline,procAction,cfg,ProbeMultiSoft_refBaseline); % ML - MS
+OS_OL = loop_ana(ProbeOneLoud_refBaseline,procAction,cfg,ProbeOneSoft_refBaseline); % OL - OS
+save MS_ML MS_ML
+save OS_OL OS_OL 
+
+MS_OS = loop_ana(ProbeMultiSoft_refBaseline,procAction,cfg,ProbeOneSoft_refBaseline); % MS - OS
+ML_OL = loop_ana(ProbeMultiLoud_refBaseline,procAction,cfg,ProbeOneLoud_refBaseline); % ML - OL
+save MS_OS MS_OS
+save ML_OL ML_OL
+
+%% REPLACE_WITH_DASH_DASH- 09 # main effect, check interaction first, if sign, skip it. If interaction, it is no reason to see main effect (depend on another variable)
+##### SOURCE END #####
+--></body></html>

@@ -1,10 +1,10 @@
 %%  Time-freqency analysis scritps for CNC project
-% Followed EEG and ERP prep step
+% --- 01 # Followed EEG and ERP prep step; note: start para computation first
 % zero the world
 clear, clc
 restoredefaultpath; %% set a clean path
-% addpath('/home/jinbo/.matlab/R2012b'); % for linux only
-project_dir = '/Volumes/Workspace/Projects/CNC_analysis/code/CNC_Analysis';
+% addpath('/home/jinbo/.matlab/R2012b'); % for linux server only
+project_dir = pwd;% change to tfr_prep dir firsts
 home_dir = fullfile(project_dir, 'data', 'TFPrep');
 matlab_dir = fullfile(project_dir, 'toolbox');
 fuction_dir = fullfile(project_dir, 'functions');
@@ -89,6 +89,7 @@ ProbeOneSoft_refBaseline = loop_ana(ProbeOneSoft,procAction,cfg,noSound_baseline
 ProbeOneLoud_refBaseline = loop_ana(ProbeOneLoud,procAction,cfg,noSound_baseline);
 %% --- 07 # average TFR across subject for plot TFR prep for stat and after stat resutls visualization)
 % as baseline, skip it
+
 % cfg = [];
 % nosoundAVG = ft_freqgrandaverage(cfg, tfr_utl_fData{1}{1:end}); 
 % save nosoundAVG nosoundAVG
@@ -122,4 +123,4 @@ ML_OL = loop_ana(ProbeMultiLoud_refBaseline,procAction,cfg,ProbeOneLoud_refBasel
 save MS_OS MS_OS
 save ML_OL ML_OL
 
-%% --- 09 # main effect, check interaction first, if sign, skip it. If interaction, it is no reason to see main effect (depend on another variable)
+% --- 09 # main effect, check interaction first, if sign, skip it. If interaction, it is no reason to see main effect (depend on another variable)

@@ -1,0 +1,735 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>tfr_stat</title><meta name="generator" content="MATLAB 8.3"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2018-10-04"><meta name="DC.source" content="tfr_stat.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#1">Stat about Time-freqency analysis</a></li><li><a href="#2">--- #01 load interaction effect part</a></li><li><a href="#3">--- #02 Decide what time, freq and sites to examine condition difference</a></li></ul></div><h2>Stat about Time-freqency analysis<a name="1"></a></h2><p>Followed TFR zero the world</p><pre class="codeinput">clear, clc
+restoredefaultpath; <span class="comment">%% set a clean path</span>
+<span class="comment">% addpath('/home/jinbo/.matlab/R2012b'); % for linux only</span>
+project_dir = pwd;
+home_dir = fullfile(project_dir, <span class="string">'data'</span>, <span class="string">'TFPrep'</span>);
+matlab_dir = fullfile(project_dir, <span class="string">'toolbox'</span>);
+fuction_dir = fullfile(project_dir, <span class="string">'functions'</span>);
+
+addpath(fullfile(matlab_dir, <span class="string">'fieldtrip-20180922'</span>)); ft_defaults <span class="comment">%% initialize FieldTrip defaults</span>
+addpath(genpath([matlab_dir, filesep, <span class="string">'eeglab14_1_2b'</span>]));
+addpath(genpath(fuction_dir));
+
+<span class="comment">% setup common information</span>
+fronto_central_sites = {<span class="string">'Fz'</span>, <span class="string">'F1'</span>, <span class="string">'F2'</span>, <span class="string">'F3'</span>, <span class="string">'F4'</span>, <span class="string">'F5'</span>, <span class="string">'F6'</span>, <span class="string">'FCz'</span>, <span class="string">'FC1'</span>, <span class="string">'FC2'</span>, <span class="string">'FC3'</span>, <span class="string">'FC4'</span>, <span class="string">'FC5'</span>, <span class="string">'FC6'</span>, <span class="string">'Cz'</span>, <span class="string">'C1'</span>, <span class="string">'C2'</span>, <span class="string">'C3'</span>, <span class="string">'C4'</span>, <span class="string">'C5'</span>, <span class="string">'C6'</span>};
+posterior_central_sites = {<span class="string">'CPz'</span>, <span class="string">'CP1'</span>, <span class="string">'CP2'</span>, <span class="string">'CP3'</span>, <span class="string">'CP4'</span>, <span class="string">'CP5'</span>, <span class="string">'CP6'</span>, <span class="string">'Pz'</span>, <span class="string">'P1'</span>, <span class="string">'P2'</span>, <span class="string">'P3'</span>, <span class="string">'P4'</span>, <span class="string">'P5'</span>, <span class="string">'P6'</span>, <span class="string">'P7'</span>, <span class="string">'P8'</span>, <span class="string">'POz'</span>, <span class="string">'PO3'</span>, <span class="string">'PO4'</span>, <span class="string">'PO7'</span>, <span class="string">'PO8'</span>, <span class="string">'Oz'</span>, <span class="string">'O1'</span>, <span class="string">'O2'</span>};
+eeg_sites = {<span class="string">'all'</span>, <span class="string">'-HEO'</span>, <span class="string">'-VEO'</span>};
+</pre><h2>--- #01 load interaction effect part<a name="2"></a></h2><pre class="codeinput"><span class="comment">%%%%%%%%%%%%%%%%%%%%%%%%%%</span>
+<span class="comment">%</span>
+<span class="comment">% Interaction= Loud (B1) minus Soft (B2) under Multi (A1) and One sound</span>
+<span class="comment">% condition (A2)</span>
+<span class="comment">% MS_ML, OS_OL level = M minus O</span>
+<span class="comment">%</span>
+<span class="comment">%%%%%%%%%%%%%%%%%%%%%%%%%%</span>
+load <span class="string">MS_ML</span>
+load <span class="string">OS_OL</span>
+<span class="comment">% load ML_OL % same resutls, the diff of those two is same as first two.</span>
+<span class="comment">% load MS_OS</span>
+</pre><h2>--- #02 Decide what time, freq and sites to examine condition difference<a name="3"></a></h2><div><ol><li>Sound, theta 4-8, -500 - -200, frontal-central, save as SP_Theta.mat</li><li>Sound, Beta_EL#1 12-18, -400 - -200, eeg_sites, save as SP_Beta_E1.mat</li><li>Sound, Beta_EL#2 12-18, -200 - 0, eeg_sites, save as SP_Beta_E2.mat</li><li>Probe, Alpha 8-9, 0 - 350, postior-central, VP_Alpha.mat</li><li>Probe, Beta 12-25, 50 - 250, postior-central, VP_Beta.mat</li></ol></div><pre class="codeinput"><span class="comment">%%%%%%%%%%%%%%%%%%%%%%%%%%</span>
+<span class="comment">%</span>
+<span class="comment">% Sound, theta 4-8, -500 - -200, frontal-central</span>
+<span class="comment">%</span>
+<span class="comment">%%%%%%%%%%%%%%%%%%%%%%%%%%</span>
+
+cfg = [];
+<span class="comment">% do need explore at sites level, skip it</span>
+<span class="comment">%cfg_neighb.method    = 'distance';</span>
+<span class="comment">%cfg_neighb.layout    = 'cnc_eeg.mat';</span>
+<span class="comment">%cfg.neighbours       = ft_prepare_neighbours(cfg_neighb, MS_ML{1});</span>
+<span class="comment">%cfg.neighbourdist    = 8;</span>
+<span class="comment">%cfg.neighbours = [];</span>
+<span class="comment">%setup stat parameter</span>
+
+cfg.method           = <span class="string">'montecarlo'</span>;
+cfg.statistic        = <span class="string">'depsamplesT'</span>;
+cfg.clusteralpha     = 0.05;
+cfg.clusterstatistic = <span class="string">'maxsum'</span>;
+<span class="comment">%cfg.minnbchan        = 0; % across chnnel so skip it</span>
+
+cfg.tail             = 1;
+cfg.clustertail      = 1;
+cfg.alpha            = 0.05;
+
+cfg.numrandomization = 10000;
+
+cfg.channel          = fronto_central_sites;
+
+cfg.latency          = [-0.5 -0.2];
+cfg.frequency        = [4 8];
+<span class="comment">%cfg.avgoverfreq = 'no';</span>
+<span class="comment">%cfg.avgovertime = 'no';</span>
+cfg.avgoverchan = <span class="string">'yes'</span>;
+
+cfg.correctm         = <span class="string">'cluster'</span>;
+
+cfg.design = [
+repmat(1:1:size(MS_ML,2), 1, 2) <span class="comment">% subject number (how many subject use to observe the effect)</span>
+ones(1,size(MS_ML,2)), 2*ones(1,size(OS_OL,2))];  <span class="comment">% condition number</span>
+
+cfg.uvar = 1;                                   <span class="comment">% "subject" is unit of observation</span>
+cfg.ivar = 2;                                   <span class="comment">% "condition" is the dependent variable</span>
+
+SP_Theta = ft_freqstatistics(cfg, MS_ML{1:end}, OS_OL{1:end});
+save <span class="string">SP_Theta</span> <span class="string">SP_Theta</span> <span class="string">-v7.3</span>
+<span class="comment">% stat_interaction_theta_sound_focus_numer = ft_freqstatistics(cfg, MS_OS{1:end}, ML_OL{1:end});</span>
+<span class="comment">% save stat_interaction_theta_sound_focus_numer stat_interaction_theta_sound_focus_numer -v7.3</span>
+
+
+<span class="comment">%%%%%%%%%%%%%%%%%%%%%%%%%%</span>
+<span class="comment">%</span>
+<span class="comment">% Sound, Beta_EL#1 12-18, -400 - -200, eeg_sites</span>
+<span class="comment">%</span>
+<span class="comment">%%%%%%%%%%%%%%%%%%%%%%%%%%</span>
+cfg = [];
+
+<span class="comment">%cfg_neighb.method    = 'distance';</span>
+<span class="comment">%cfg_neighb.layout    = 'cnc_eeg.mat';</span>
+<span class="comment">%cfg.neighbours       = ft_prepare_neighbours(cfg_neighb, MS_ML{1});</span>
+<span class="comment">%cfg.neighbourdist    = 8;</span>
+<span class="comment">%cfg.neighbours = [];</span>
+
+cfg.method           = <span class="string">'montecarlo'</span>;
+cfg.statistic        = <span class="string">'depsamplesT'</span>;
+cfg.clusteralpha     = 0.05;
+cfg.clusterstatistic = <span class="string">'maxsum'</span>;
+<span class="comment">%cfg.minnbchan        = 0;</span>
+
+cfg.tail             = 1;
+cfg.clustertail      = 1;
+cfg.alpha            = 0.05;
+
+cfg.numrandomization = 10000;
+
+cfg.channel = eeg_sites;
+
+cfg.latency          = [-0.4 -0.2];
+cfg.frequency        = [12 18];
+<span class="comment">%cfg.avgoverfreq = 'no';</span>
+<span class="comment">%cfg.avgovertime = 'no';</span>
+cfg.avgoverchan = <span class="string">'yes'</span>;
+
+cfg.correctm         = <span class="string">'cluster'</span>;
+
+cfg.design = [
+repmat(1:1:size(MS_ML,2), 1, 2) <span class="comment">% subject number</span>
+ones(1,size(MS_ML,2)), 2*ones(1,size(OS_OL,2))];  <span class="comment">% condition number</span>
+
+cfg.uvar = 1;                                   <span class="comment">% "subject" is unit of observation</span>
+cfg.ivar = 2;                                   <span class="comment">% "condition" is the dependent variable</span>
+
+SP_Beta_E1 = ft_freqstatistics(cfg, MS_ML{1:end}, OS_OL{1:end});
+save <span class="string">SP_Beta_E1</span> <span class="string">SP_Beta_E1</span> <span class="string">-v7.3</span>
+<span class="comment">% stat_interaction_simple_num_alpha = ft_freqstatistics(cfg, MS_OS{1:end}, ML_OL{1:end});</span>
+<span class="comment">% save stat_interaction_simple_num_alpha stat_interaction_simple_num_alpha -v7.3</span>
+
+<span class="comment">%%%%%%%%%%%%%%%%%%%%%%%%%%</span>
+<span class="comment">%</span>
+<span class="comment">% Sound, Beta_EL#2 12-18, -200 - 0, eeg_sites</span>
+<span class="comment">%</span>
+<span class="comment">%%%%%%%%%%%%%%%%%%%%%%%%%%</span>
+cfg = [];
+
+<span class="comment">%cfg_neighb.method    = 'distance';</span>
+<span class="comment">%cfg_neighb.layout    = 'cnc_eeg.mat';</span>
+<span class="comment">%cfg.neighbours       = ft_prepare_neighbours(cfg_neighb, MS_ML{1});</span>
+<span class="comment">%cfg.neighbourdist    = 8;</span>
+<span class="comment">%cfg.neighbours = [];</span>
+
+cfg.method           = <span class="string">'montecarlo'</span>;
+cfg.statistic        = <span class="string">'depsamplesT'</span>;
+cfg.clusteralpha     = 0.05;
+cfg.clusterstatistic = <span class="string">'maxsum'</span>;
+<span class="comment">%cfg.minnbchan        = 0;</span>
+
+cfg.tail             = 1;
+cfg.clustertail      = 1;
+cfg.alpha            = 0.05;
+
+cfg.numrandomization = 10000;
+
+cfg.channel = eeg_sites;
+
+cfg.latency          = [-0.2 0];
+cfg.frequency        = [12 18];
+<span class="comment">%cfg.avgoverfreq = 'no';</span>
+<span class="comment">%cfg.avgovertime = 'no';</span>
+cfg.avgoverchan = <span class="string">'yes'</span>;
+
+cfg.correctm         = <span class="string">'cluster'</span>;
+
+cfg.design = [
+repmat(1:1:size(MS_ML,2), 1, 2) <span class="comment">% subject number</span>
+ones(1,size(MS_ML,2)), 2*ones(1,size(OS_OL,2))];  <span class="comment">% condition number</span>
+
+cfg.uvar = 1;                                   <span class="comment">% "subject" is unit of observation</span>
+cfg.ivar = 2;                                   <span class="comment">% "condition" is the dependent variable</span>
+
+SP_Beta_E2 = ft_freqstatistics(cfg, MS_ML{1:end}, OS_OL{1:end});
+save <span class="string">SP_Beta_E2</span> <span class="string">SP_Beta_E2</span> <span class="string">-v7.3</span>
+<span class="comment">% stat_interaction_simple_num_alpha = ft_freqstatistics(cfg, MS_OS{1:end}, ML_OL{1:end});</span>
+<span class="comment">% save stat_interaction_simple_num_alpha stat_interaction_simple_num_alpha -v7.3</span>
+
+<span class="comment">%%%%%%%%%%%%%%%%%%%%%%%%%%</span>
+<span class="comment">%</span>
+<span class="comment">% Probe, Alpha 8-10, 0 - 350, postior-central</span>
+<span class="comment">%</span>
+<span class="comment">%%%%%%%%%%%%%%%%%%%%%%%%%%</span>
+cfg = [];
+
+<span class="comment">%cfg_neighb.method    = 'distance';</span>
+<span class="comment">%cfg_neighb.layout    = 'cnc_eeg.mat';</span>
+<span class="comment">%cfg.neighbours       = ft_prepare_neighbours(cfg_neighb, MS_ML{1});</span>
+<span class="comment">%cfg.neighbourdist    = 8;</span>
+<span class="comment">%cfg.neighbours = [];</span>
+
+cfg.method           = <span class="string">'montecarlo'</span>;
+cfg.statistic        = <span class="string">'depsamplesT'</span>;
+cfg.clusteralpha     = 0.05;
+cfg.clusterstatistic = <span class="string">'maxsum'</span>;
+<span class="comment">%cfg.minnbchan        = 0;</span>
+
+cfg.tail             = -1;
+cfg.clustertail      = -1;
+cfg.alpha            = 0.05;
+
+cfg.numrandomization = 10000;
+
+cfg.channel          = posterior_central_sites;
+
+cfg.latency          = [0 0.35];
+cfg.frequency        = [8 10];
+<span class="comment">%cfg.avgoverfreq = 'no';</span>
+<span class="comment">%cfg.avgovertime = 'no';</span>
+cfg.avgoverchan = <span class="string">'yes'</span>;
+
+cfg.correctm         = <span class="string">'cluster'</span>;
+
+cfg.design = [
+repmat(1:1:size(MS_ML,2), 1, 2) <span class="comment">% subject number</span>
+ones(1,size(MS_ML,2)), 2*ones(1,size(OS_OL,2))];  <span class="comment">% condition number</span>
+
+cfg.uvar = 1;                                   <span class="comment">% "subject" is unit of observation</span>
+cfg.ivar = 2;                                   <span class="comment">% "condition" is the dependent variable</span>
+
+VP_Alpha = ft_freqstatistics(cfg, MS_ML{1:end}, OS_OL{1:end});
+save <span class="string">VP_Alpha</span> <span class="string">VP_Alpha</span> <span class="string">-v7.3</span>
+
+<span class="comment">%%%%%%%%%%%%%%%%%%%%%%%%%%</span>
+<span class="comment">%</span>
+<span class="comment">% Probe, Beta 13-25, 50 - 200, postior-central</span>
+<span class="comment">%</span>
+<span class="comment">%%%%%%%%%%%%%%%%%%%%%%%%%%</span>
+cfg = [];
+
+<span class="comment">%cfg_neighb.method    = 'distance';</span>
+<span class="comment">%cfg_neighb.layout    = 'cnc_eeg.mat';</span>
+<span class="comment">%cfg.neighbours       = ft_prepare_neighbours(cfg_neighb, MS_ML{1});</span>
+<span class="comment">%cfg.neighbourdist    = 8;</span>
+<span class="comment">%cfg.neighbours = [];</span>
+
+cfg.method           = <span class="string">'montecarlo'</span>;
+cfg.statistic        = <span class="string">'depsamplesT'</span>;
+cfg.clusteralpha     = 0.05;
+cfg.clusterstatistic = <span class="string">'maxsum'</span>;
+<span class="comment">%cfg.minnbchan        = 0;</span>
+
+cfg.tail             = 1;
+cfg.clustertail      = 1;
+cfg.alpha            = 0.05;
+
+cfg.numrandomization = 10000;
+
+cfg.channel          = posterior_central_sites;
+
+cfg.latency          = [0.05 0.20];
+cfg.frequency        = [13 25];
+<span class="comment">%cfg.avgoverfreq = 'no';</span>
+<span class="comment">%cfg.avgovertime = 'no';</span>
+cfg.avgoverchan = <span class="string">'yes'</span>;
+
+cfg.correctm         = <span class="string">'cluster'</span>;
+
+cfg.design = [
+repmat(1:1:size(MS_ML,2), 1, 2) <span class="comment">% subject number</span>
+ones(1,size(MS_ML,2)), 2*ones(1,size(OS_OL,2))];  <span class="comment">% condition number</span>
+
+cfg.uvar = 1;                                   <span class="comment">% "subject" is unit of observation</span>
+cfg.ivar = 2;                                   <span class="comment">% "condition" is the dependent variable</span>
+
+VP_Beta = ft_freqstatistics(cfg, MS_ML{1:end}, OS_OL{1:end});
+save <span class="string">VP_Beta</span> <span class="string">VP_Beta</span> <span class="string">-v7.3</span>
+</pre><pre class="codeoutput">the call to "ft_selectdata" took 3 seconds and required the additional allocation of an estimated 0 MB
+using "ft_statistics_montecarlo" for the statistical testing
+using "ft_statfun_depsamplesT" for the single-sample statistics
+constructing randomized design
+total number of measurements     = 44
+total number of variables        = 2
+number of independent variables  = 1
+number of unit variables         = 1
+number of within-cell variables  = 0
+number of control variables      = 0
+using a permutation resampling approach
+repeated measurement in variable 1 over 22 levels
+number of repeated measurements in each level is 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+computing a parametric threshold for clustering
+computing statistic
+estimated time per randomization is 0.00 seconds
+computing statistic 10000 from 10000
+
+Warning: adding /data/jinbo/CNC/toolbox/fieldtrip-20180922/external/spm8 toolbox
+to your MATLAB path 
+found 1 positive clusters in observed data
+computing clusters in randomization
+computing clusters in randomization 10000 from 10000
+
+using a cluster-based method for multiple comparison correction
+the returned probabilities and the thresholded mask are corrected for multiple comparisons
+the call to "ft_freqstatistics" took 10 seconds and required the additional allocation of an estimated 0 MB
+the call to "ft_selectdata" took 3 seconds and required the additional allocation of an estimated 0 MB
+using "ft_statistics_montecarlo" for the statistical testing
+using "ft_statfun_depsamplesT" for the single-sample statistics
+constructing randomized design
+total number of measurements     = 44
+total number of variables        = 2
+number of independent variables  = 1
+number of unit variables         = 1
+number of within-cell variables  = 0
+number of control variables      = 0
+using a permutation resampling approach
+repeated measurement in variable 1 over 22 levels
+number of repeated measurements in each level is 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+computing a parametric threshold for clustering
+computing statistic
+estimated time per randomization is 0.00 seconds
+computing statistic 10000 from 10000
+
+found 1 positive clusters in observed data
+computing clusters in randomization
+computing clusters in randomization 10000 from 10000
+
+using a cluster-based method for multiple comparison correction
+the returned probabilities and the thresholded mask are corrected for multiple comparisons
+the call to "ft_freqstatistics" took 9 seconds and required the additional allocation of an estimated 0 MB
+the call to "ft_selectdata" took 3 seconds and required the additional allocation of an estimated 0 MB
+using "ft_statistics_montecarlo" for the statistical testing
+using "ft_statfun_depsamplesT" for the single-sample statistics
+constructing randomized design
+total number of measurements     = 44
+total number of variables        = 2
+number of independent variables  = 1
+number of unit variables         = 1
+number of within-cell variables  = 0
+number of control variables      = 0
+using a permutation resampling approach
+repeated measurement in variable 1 over 22 levels
+number of repeated measurements in each level is 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+computing a parametric threshold for clustering
+computing statistic
+estimated time per randomization is 0.00 seconds
+computing statistic 10000 from 10000
+
+found 2 positive clusters in observed data
+computing clusters in randomization
+computing clusters in randomization 10000 from 10000
+
+using a cluster-based method for multiple comparison correction
+the returned probabilities and the thresholded mask are corrected for multiple comparisons
+the call to "ft_freqstatistics" took 9 seconds and required the additional allocation of an estimated 0 MB
+the call to "ft_selectdata" took 3 seconds and required the additional allocation of an estimated 0 MB
+using "ft_statistics_montecarlo" for the statistical testing
+using "ft_statfun_depsamplesT" for the single-sample statistics
+constructing randomized design
+total number of measurements     = 44
+total number of variables        = 2
+number of independent variables  = 1
+number of unit variables         = 1
+number of within-cell variables  = 0
+number of control variables      = 0
+using a permutation resampling approach
+repeated measurement in variable 1 over 22 levels
+number of repeated measurements in each level is 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+computing a parametric threshold for clustering
+computing statistic
+estimated time per randomization is 0.00 seconds
+computing statistic 10000 from 10000
+
+found 1 negative clusters in observed data
+computing clusters in randomization
+computing clusters in randomization 10000 from 10000
+
+using a cluster-based method for multiple comparison correction
+the returned probabilities and the thresholded mask are corrected for multiple comparisons
+the call to "ft_freqstatistics" took 9 seconds and required the additional allocation of an estimated 0 MB
+the call to "ft_selectdata" took 3 seconds and required the additional allocation of an estimated 0 MB
+using "ft_statistics_montecarlo" for the statistical testing
+using "ft_statfun_depsamplesT" for the single-sample statistics
+constructing randomized design
+total number of measurements     = 44
+total number of variables        = 2
+number of independent variables  = 1
+number of unit variables         = 1
+number of within-cell variables  = 0
+number of control variables      = 0
+using a permutation resampling approach
+repeated measurement in variable 1 over 22 levels
+number of repeated measurements in each level is 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+computing a parametric threshold for clustering
+computing statistic
+estimated time per randomization is 0.00 seconds
+computing statistic 10000 from 10000
+
+found 1 positive clusters in observed data
+computing clusters in randomization
+computing clusters in randomization 10000 from 10000
+
+using a cluster-based method for multiple comparison correction
+the returned probabilities and the thresholded mask are corrected for multiple comparisons
+the call to "ft_freqstatistics" took 10 seconds and required the additional allocation of an estimated 0 MB
+</pre><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2014a</a><br></p></div><!--
+##### SOURCE BEGIN #####
+%%  Stat about Time-freqency analysis
+% Followed TFR
+% zero the world
+clear, clc
+restoredefaultpath; %% set a clean path
+% addpath('/home/jinbo/.matlab/R2012b'); % for linux only
+project_dir = pwd;
+home_dir = fullfile(project_dir, 'data', 'TFPrep');
+matlab_dir = fullfile(project_dir, 'toolbox');
+fuction_dir = fullfile(project_dir, 'functions');
+
+addpath(fullfile(matlab_dir, 'fieldtrip-20180922')); ft_defaults %% initialize FieldTrip defaults
+addpath(genpath([matlab_dir, filesep, 'eeglab14_1_2b']));
+addpath(genpath(fuction_dir));
+
+% setup common information
+fronto_central_sites = {'Fz', 'F1', 'F2', 'F3', 'F4', 'F5', 'F6', 'FCz', 'FC1', 'FC2', 'FC3', 'FC4', 'FC5', 'FC6', 'Cz', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'};
+posterior_central_sites = {'CPz', 'CP1', 'CP2', 'CP3', 'CP4', 'CP5', 'CP6', 'Pz', 'P1', 'P2', 'P3', 'P4', 'P5', 'P6', 'P7', 'P8', 'POz', 'PO3', 'PO4', 'PO7', 'PO8', 'Oz', 'O1', 'O2'};
+eeg_sites = {'all', '-HEO', '-VEO'};
+
+%% REPLACE_WITH_DASH_DASH- #01 load interaction effect part
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Interaction= Loud (B1) minus Soft (B2) under Multi (A1) and One sound
+% condition (A2)
+% MS_ML, OS_OL level = M minus O
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+load MS_ML
+load OS_OL
+% load ML_OL % same resutls, the diff of those two is same as first two.
+% load MS_OS
+
+%% REPLACE_WITH_DASH_DASH- #02 Decide what time, freq and sites to examine condition difference
+%%
+% 
+% # Sound, theta 4-8, -500 - -200, frontal-central, save as SP_Theta.mat
+% # Sound, Beta_EL#1 12-18, -400 - -200, eeg_sites, save as SP_Beta_E1.mat
+% # Sound, Beta_EL#2 12-18, -200 - 0, eeg_sites, save as SP_Beta_E2.mat
+% # Probe, Alpha 8-9, 0 - 350, postior-central, VP_Alpha.mat
+% # Probe, Beta 12-25, 50 - 250, postior-central, VP_Beta.mat
+%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Sound, theta 4-8, -500 - -200, frontal-central
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+cfg = [];
+% do need explore at sites level, skip it
+%cfg_neighb.method    = 'distance';
+%cfg_neighb.layout    = 'cnc_eeg.mat';
+%cfg.neighbours       = ft_prepare_neighbours(cfg_neighb, MS_ML{1});
+%cfg.neighbourdist    = 8;
+%cfg.neighbours = [];
+%setup stat parameter
+
+cfg.method           = 'montecarlo';
+cfg.statistic        = 'depsamplesT';
+cfg.clusteralpha     = 0.05;
+cfg.clusterstatistic = 'maxsum';
+%cfg.minnbchan        = 0; % across chnnel so skip it
+
+cfg.tail             = 1;
+cfg.clustertail      = 1;
+cfg.alpha            = 0.05;
+
+cfg.numrandomization = 10000;
+
+cfg.channel          = fronto_central_sites;
+
+cfg.latency          = [-0.5 -0.2];
+cfg.frequency        = [4 8];
+%cfg.avgoverfreq = 'no';
+%cfg.avgovertime = 'no';
+cfg.avgoverchan = 'yes';
+
+cfg.correctm         = 'cluster';
+
+cfg.design = [
+repmat(1:1:size(MS_ML,2), 1, 2) % subject number (how many subject use to observe the effect)
+ones(1,size(MS_ML,2)), 2*ones(1,size(OS_OL,2))];  % condition number
+
+cfg.uvar = 1;                                   % "subject" is unit of observation
+cfg.ivar = 2;                                   % "condition" is the dependent variable
+
+SP_Theta = ft_freqstatistics(cfg, MS_ML{1:end}, OS_OL{1:end});
+save SP_Theta SP_Theta -v7.3
+% stat_interaction_theta_sound_focus_numer = ft_freqstatistics(cfg, MS_OS{1:end}, ML_OL{1:end});
+% save stat_interaction_theta_sound_focus_numer stat_interaction_theta_sound_focus_numer -v7.3
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Sound, Beta_EL#1 12-18, -400 - -200, eeg_sites
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+cfg = [];
+
+%cfg_neighb.method    = 'distance';
+%cfg_neighb.layout    = 'cnc_eeg.mat';
+%cfg.neighbours       = ft_prepare_neighbours(cfg_neighb, MS_ML{1});
+%cfg.neighbourdist    = 8;
+%cfg.neighbours = [];
+
+cfg.method           = 'montecarlo';
+cfg.statistic        = 'depsamplesT';
+cfg.clusteralpha     = 0.05;
+cfg.clusterstatistic = 'maxsum';
+%cfg.minnbchan        = 0;
+
+cfg.tail             = 1;
+cfg.clustertail      = 1;
+cfg.alpha            = 0.05;
+
+cfg.numrandomization = 10000;
+
+cfg.channel = eeg_sites;
+
+cfg.latency          = [-0.4 -0.2];
+cfg.frequency        = [12 18];
+%cfg.avgoverfreq = 'no';
+%cfg.avgovertime = 'no';
+cfg.avgoverchan = 'yes';
+
+cfg.correctm         = 'cluster';
+
+cfg.design = [
+repmat(1:1:size(MS_ML,2), 1, 2) % subject number
+ones(1,size(MS_ML,2)), 2*ones(1,size(OS_OL,2))];  % condition number
+
+cfg.uvar = 1;                                   % "subject" is unit of observation
+cfg.ivar = 2;                                   % "condition" is the dependent variable
+
+SP_Beta_E1 = ft_freqstatistics(cfg, MS_ML{1:end}, OS_OL{1:end});
+save SP_Beta_E1 SP_Beta_E1 -v7.3
+% stat_interaction_simple_num_alpha = ft_freqstatistics(cfg, MS_OS{1:end}, ML_OL{1:end});
+% save stat_interaction_simple_num_alpha stat_interaction_simple_num_alpha -v7.3
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Sound, Beta_EL#2 12-18, -200 - 0, eeg_sites
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+cfg = [];
+
+%cfg_neighb.method    = 'distance';
+%cfg_neighb.layout    = 'cnc_eeg.mat';
+%cfg.neighbours       = ft_prepare_neighbours(cfg_neighb, MS_ML{1});
+%cfg.neighbourdist    = 8;
+%cfg.neighbours = [];
+
+cfg.method           = 'montecarlo';
+cfg.statistic        = 'depsamplesT';
+cfg.clusteralpha     = 0.05;
+cfg.clusterstatistic = 'maxsum';
+%cfg.minnbchan        = 0;
+
+cfg.tail             = 1;
+cfg.clustertail      = 1;
+cfg.alpha            = 0.05;
+
+cfg.numrandomization = 10000;
+
+cfg.channel = eeg_sites;
+
+cfg.latency          = [-0.2 0];
+cfg.frequency        = [12 18];
+%cfg.avgoverfreq = 'no';
+%cfg.avgovertime = 'no';
+cfg.avgoverchan = 'yes';
+
+cfg.correctm         = 'cluster';
+
+cfg.design = [
+repmat(1:1:size(MS_ML,2), 1, 2) % subject number
+ones(1,size(MS_ML,2)), 2*ones(1,size(OS_OL,2))];  % condition number
+
+cfg.uvar = 1;                                   % "subject" is unit of observation
+cfg.ivar = 2;                                   % "condition" is the dependent variable
+
+SP_Beta_E2 = ft_freqstatistics(cfg, MS_ML{1:end}, OS_OL{1:end});
+save SP_Beta_E2 SP_Beta_E2 -v7.3
+% stat_interaction_simple_num_alpha = ft_freqstatistics(cfg, MS_OS{1:end}, ML_OL{1:end});
+% save stat_interaction_simple_num_alpha stat_interaction_simple_num_alpha -v7.3
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Probe, Alpha 8-10, 0 - 350, postior-central
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+cfg = [];
+
+%cfg_neighb.method    = 'distance';
+%cfg_neighb.layout    = 'cnc_eeg.mat';
+%cfg.neighbours       = ft_prepare_neighbours(cfg_neighb, MS_ML{1});
+%cfg.neighbourdist    = 8;
+%cfg.neighbours = [];
+
+cfg.method           = 'montecarlo';
+cfg.statistic        = 'depsamplesT';
+cfg.clusteralpha     = 0.05;
+cfg.clusterstatistic = 'maxsum';
+%cfg.minnbchan        = 0;
+
+cfg.tail             = -1;
+cfg.clustertail      = -1;
+cfg.alpha            = 0.05;
+
+cfg.numrandomization = 10000;
+
+cfg.channel          = posterior_central_sites;
+
+cfg.latency          = [0 0.35];
+cfg.frequency        = [8 10];
+%cfg.avgoverfreq = 'no';
+%cfg.avgovertime = 'no';
+cfg.avgoverchan = 'yes';
+
+cfg.correctm         = 'cluster';
+
+cfg.design = [
+repmat(1:1:size(MS_ML,2), 1, 2) % subject number
+ones(1,size(MS_ML,2)), 2*ones(1,size(OS_OL,2))];  % condition number
+
+cfg.uvar = 1;                                   % "subject" is unit of observation
+cfg.ivar = 2;                                   % "condition" is the dependent variable
+
+VP_Alpha = ft_freqstatistics(cfg, MS_ML{1:end}, OS_OL{1:end});
+save VP_Alpha VP_Alpha -v7.3
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Probe, Beta 13-25, 50 - 200, postior-central
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+cfg = [];
+
+%cfg_neighb.method    = 'distance';
+%cfg_neighb.layout    = 'cnc_eeg.mat';
+%cfg.neighbours       = ft_prepare_neighbours(cfg_neighb, MS_ML{1});
+%cfg.neighbourdist    = 8;
+%cfg.neighbours = [];
+
+cfg.method           = 'montecarlo';
+cfg.statistic        = 'depsamplesT';
+cfg.clusteralpha     = 0.05;
+cfg.clusterstatistic = 'maxsum';
+%cfg.minnbchan        = 0;
+
+cfg.tail             = 1;
+cfg.clustertail      = 1;
+cfg.alpha            = 0.05;
+
+cfg.numrandomization = 10000;
+
+cfg.channel          = posterior_central_sites;
+
+cfg.latency          = [0.05 0.20];
+cfg.frequency        = [13 25];
+%cfg.avgoverfreq = 'no';
+%cfg.avgovertime = 'no';
+cfg.avgoverchan = 'yes';
+
+cfg.correctm         = 'cluster';
+
+cfg.design = [
+repmat(1:1:size(MS_ML,2), 1, 2) % subject number
+ones(1,size(MS_ML,2)), 2*ones(1,size(OS_OL,2))];  % condition number
+
+cfg.uvar = 1;                                   % "subject" is unit of observation
+cfg.ivar = 2;                                   % "condition" is the dependent variable
+
+VP_Beta = ft_freqstatistics(cfg, MS_ML{1:end}, OS_OL{1:end});
+save VP_Beta VP_Beta -v7.3
+##### SOURCE END #####
+--></body></html>

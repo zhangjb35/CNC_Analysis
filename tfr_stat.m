@@ -4,7 +4,7 @@
 clear, clc
 restoredefaultpath; %% set a clean path
 % addpath('/home/jinbo/.matlab/R2012b'); % for linux only
-project_dir = '/Volumes/Workspace/Projects/CNC_analysis/code/CNC_Analysis';
+project_dir = pwd;
 home_dir = fullfile(project_dir, 'data', 'TFPrep');
 matlab_dir = fullfile(project_dir, 'toolbox');
 fuction_dir = fullfile(project_dir, 'functions');
@@ -34,16 +34,16 @@ load OS_OL
 %% --- #02 Decide what time, freq and sites to examine condition difference
 %%
 % 
-% # Sound, theta 4-6, -400 - -200, frontal-central, save as SP_Theta.mat
-% # Sound, Beta_EL#1 4-6, -400 - -200, eeg_sites, save as SP_Beta_E1.mat
-% # Sound, Beta_EL#2 4-6, -400 - -200, eeg_sites, save as SP_Beta_E2.mat
+% # Sound, theta 4-8, -500 - -200, frontal-central, save as SP_Theta.mat
+% # Sound, Beta_EL#1 12-18, -400 - -200, eeg_sites, save as SP_Beta_E1.mat
+% # Sound, Beta_EL#2 12-18, -200 - 0, eeg_sites, save as SP_Beta_E2.mat
 % # Probe, Alpha 8-9, 0 - 350, postior-central, VP_Alpha.mat
-% # Probe, Beta 12-25, 50 - 250, postior-central, VP_Beta.mat
+% # Probe, Beta 13-25, 50 - 250, postior-central, VP_Beta.mat
 %
-
+%% --- #03 Do the stat (Thanks GOD)
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-% Sound, theta 4-6, -400 - -200, frontal-central
+% Sound, theta 4-8, -500 - -200, frontal-central
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -70,8 +70,8 @@ cfg.numrandomization = 10000;
 
 cfg.channel          = fronto_central_sites;
 
-cfg.latency          = [-0.4 -0.2];
-cfg.frequency        = [4 6];
+cfg.latency          = [-0.5 -0.2];
+cfg.frequency        = [4 8];
 %cfg.avgoverfreq = 'no';
 %cfg.avgovertime = 'no';
 cfg.avgoverchan = 'yes';
@@ -93,7 +93,7 @@ save SP_Theta SP_Theta -v7.3
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-% Sound, Beta_EL#1 4-6, -400 - -200, eeg_sites
+% Sound, Beta_EL#1 12-18, -400 - -200, eeg_sites
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 cfg = [];
@@ -118,7 +118,7 @@ cfg.numrandomization = 10000;
 
 cfg.channel = eeg_sites;
 
-cfg.latency          = [-0.45 0];
+cfg.latency          = [-0.4 -0.2];
 cfg.frequency        = [12 18];
 %cfg.avgoverfreq = 'no';
 %cfg.avgovertime = 'no';
@@ -140,7 +140,7 @@ save SP_Beta_E1 SP_Beta_E1 -v7.3
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-% Sound, Beta_EL#2 4-6, -400 - -200, eeg_sites
+% Sound, Beta_EL#2 12-18, -200 - 0, eeg_sites
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 cfg = [];
@@ -165,7 +165,7 @@ cfg.numrandomization = 10000;
 
 cfg.channel = eeg_sites;
 
-cfg.latency          = [-0.45 0];
+cfg.latency          = [-0.2 0];
 cfg.frequency        = [12 18];
 %cfg.avgoverfreq = 'no';
 %cfg.avgovertime = 'no';
@@ -180,14 +180,14 @@ ones(1,size(MS_ML,2)), 2*ones(1,size(OS_OL,2))];  % condition number
 cfg.uvar = 1;                                   % "subject" is unit of observation
 cfg.ivar = 2;                                   % "condition" is the dependent variable
 
-stat_interaction_sound_beta = ft_freqstatistics(cfg, MS_ML{1:end}, OS_OL{1:end});
+SP_Beta_E2 = ft_freqstatistics(cfg, MS_ML{1:end}, OS_OL{1:end});
 save SP_Beta_E2 SP_Beta_E2 -v7.3
 % stat_interaction_simple_num_alpha = ft_freqstatistics(cfg, MS_OS{1:end}, ML_OL{1:end});
 % save stat_interaction_simple_num_alpha stat_interaction_simple_num_alpha -v7.3
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-% Probe, Alpha 8-9, 0 - 350, postior-central
+% Probe, Alpha 8-10, 0 - 350, postior-central
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 cfg = [];
@@ -213,7 +213,7 @@ cfg.numrandomization = 10000;
 cfg.channel          = posterior_central_sites;
 
 cfg.latency          = [0 0.35];
-cfg.frequency        = [6 10];
+cfg.frequency        = [8 10];
 %cfg.avgoverfreq = 'no';
 %cfg.avgovertime = 'no';
 cfg.avgoverchan = 'yes';
@@ -232,7 +232,7 @@ save VP_Alpha VP_Alpha -v7.3
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-% Probe, Beta 12-25, 50 - 250, postior-central
+% Probe, Beta 13-25, 50 - 200, postior-central
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 cfg = [];
@@ -257,8 +257,8 @@ cfg.numrandomization = 10000;
 
 cfg.channel          = posterior_central_sites;
 
-cfg.latency          = [0.05 0.25];
-cfg.frequency        = [12 25];
+cfg.latency          = [0.05 0.20];
+cfg.frequency        = [13 25];
 %cfg.avgoverfreq = 'no';
 %cfg.avgovertime = 'no';
 cfg.avgoverchan = 'yes';
