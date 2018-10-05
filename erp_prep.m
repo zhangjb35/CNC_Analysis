@@ -1,5 +1,4 @@
 % SET PATHS
-
 clear variables
 restoredefaultpath; %% set a clean path
 home_dir = pwd;
@@ -22,7 +21,7 @@ bdfFile = fullfile(erp_setup_path,'bdf.txt');
 for i=1:length(subjList)
     %% --- 01# prepare path
     % setup store path
-    storePath=fullfile([filesep namePattern,sprintf('%02d',i)],'eeg','erp_70uv_threshodl');
+    storePath=fullfile(home_dir,['sub-' sprintf('%02d',i)],'eeg','erp_70uv_threshodl');
     mkdir(storePath);
     %% --- 02# load to EEGLAB
     EEG = pop_loadset('filename','coreog_ica_lfilt_hfilt_ref_data.set','filepath',fullfile([filesep namePattern,sprintf('%02d',i)],'eeg','preprocess'));
@@ -62,7 +61,6 @@ for i=1:length(subjList)
     %% --- 09# save ERP [ERPLAB]
     ERP = pop_savemyerp(ERP, 'erpname',...
         ['sub-' sprintf('%02d',i)], 'filename',  ['sub-' sprintf('%02d',i) '.erp'], 'filepath',storePath, 'Warning', 'off');
-    
     % clear up
     clear EEG
 end
