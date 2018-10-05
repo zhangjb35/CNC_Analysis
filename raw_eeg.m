@@ -18,13 +18,13 @@ eeglabpath = fileparts(which('eeglab')); % eeglab path
 
 %% Preprocess
 [subjList,namePattern] = kb_ls(fullfile(home_dir,'sub-*','eeg','*.set'));
-for i=2:length(subjList)
+for i=1:length(subjList)
     %% --- 01# prepare path
     % setup store path
     storePath=fullfile(home_dir,['sub-' sprintf('%02d',i)],'eeg','preprocess');
     mkdir(storePath);
     %% --- 02# load to EEGLAB
-    EEG = pop_loadset('filename',['sub-' sprintf('%02d',i) '_task-psychophysics_eeg.set'],'filepath',fullfile([filesep namePattern,sprintf('%02d',i)],'eeg'));
+    EEG = pop_loadset('filename',['sub-' sprintf('%02d',i) '_task-psychophysics_eeg.set'],'filepath',fullfile(home_dir,['sub-' sprintf('%02d',i)],'eeg'));
     
     %% --- 03# remove empty channel
     EEG = pop_select( EEG,'nochannel',{'M1' 'EKG' 'EMG'});
