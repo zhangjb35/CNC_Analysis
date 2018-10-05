@@ -91,14 +91,14 @@ kb_plot_tfr(roi,diff_map_oi,trange,frange,fig_title,outputfile,maskfile,outputfi
 
 %% load mask
 SP_Theta = './statMask/SP_Theta.mat';
-SP_Beta_E1 = './statMask/SP_Beta_E1.mat';
-SP_Beta_E2 = './statMask/SP_Beta_E2.mat';
+SP_Beta = './statMask/SP_Beta.mat';
+%SP_Beta_E2 = './statMask/SP_Beta.mat';
 VP_Alpha = './statMask/VP_Alpha.mat';
 VP_Beta = './statMask/VP_Beta.mat';
 
 load(SP_Theta,'-mat');
-load(SP_Beta_E1,'-mat');
-load(SP_Beta_E2,'-mat');
+load(SP_Beta,'-mat');
+%load(SP_Beta_E2,'-mat');
 load(VP_Alpha,'-mat');
 load(VP_Beta,'-mat');
 
@@ -140,8 +140,8 @@ kb_plot_tfr(roi,diff_map_oi,trange,frange,fig_title,outputfile,maskfile,outputfi
 %% all eeg
 clear maskSets
 targetTFR = diff_map;
-maskSets{1} = SP_Beta_E1;
-maskSets{2} = SP_Beta_E2;
+maskSets{1} = SP_Beta;
+%maskSets{2} = SP_Beta_E2;
 aioMask = kb_prep_mask(maskSets,targetTFR);
 
 % plot at all eeg

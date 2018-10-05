@@ -6,7 +6,7 @@
    <!--
 This HTML was auto-generated from MATLAB code.
 To make changes, update the MATLAB code and republish this document.
-      --><title>tfr_plot</title><meta name="generator" content="MATLAB 9.3"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2018-10-04"><meta name="DC.source" content="tfr_plot.m"><style type="text/css">
+      --><title>tfr_plot</title><meta name="generator" content="MATLAB 9.3"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2018-10-05"><meta name="DC.source" content="tfr_plot.m"><style type="text/css">
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
 
 html { min-height:100%; margin-bottom:1px; }
@@ -99,50 +99,50 @@ diff_map = temp;
 clear <span class="string">temp</span>
 </pre><pre class="codeoutput">computing average powspctrm over 22 subjects
 Warning: discarding electrode information because it cannot be averaged 
-the call to "ft_freqgrandaverage" took 0 seconds and required the additional allocation of an estimated 163 MB
+the call to "ft_freqgrandaverage" took 0 seconds and required the additional allocation of an estimated 257 MB
 ML_OL_avg = 
   struct with fields:
 
-    powspctrm: [64&times;57&times;301 double]
+    powspctrm: [64&times;57&times;401 double]
         label: {64&times;1 cell}
          freq: [1&times;57 double]
-         time: [1&times;301 double]
+         time: [1&times;401 double]
        dimord: 'chan_freq_time'
           cfg: [1&times;1 struct]
 computing average powspctrm over 22 subjects
 Warning: discarding electrode information because it cannot be averaged 
-the call to "ft_freqgrandaverage" took 0 seconds and required the additional allocation of an estimated 84 MB
+the call to "ft_freqgrandaverage" took 0 seconds and required the additional allocation of an estimated 112 MB
 MS_ML_avg = 
   struct with fields:
 
-    powspctrm: [64&times;57&times;301 double]
+    powspctrm: [64&times;57&times;401 double]
         label: {64&times;1 cell}
          freq: [1&times;57 double]
-         time: [1&times;301 double]
+         time: [1&times;401 double]
        dimord: 'chan_freq_time'
           cfg: [1&times;1 struct]
 computing average powspctrm over 22 subjects
 Warning: discarding electrode information because it cannot be averaged 
-the call to "ft_freqgrandaverage" took 0 seconds and required the additional allocation of an estimated 82 MB
+the call to "ft_freqgrandaverage" took 0 seconds and required the additional allocation of an estimated 112 MB
 MS_OS_avg = 
   struct with fields:
 
-    powspctrm: [64&times;57&times;301 double]
+    powspctrm: [64&times;57&times;401 double]
         label: {64&times;1 cell}
          freq: [1&times;57 double]
-         time: [1&times;301 double]
+         time: [1&times;401 double]
        dimord: 'chan_freq_time'
           cfg: [1&times;1 struct]
 computing average powspctrm over 22 subjects
 Warning: discarding electrode information because it cannot be averaged 
-the call to "ft_freqgrandaverage" took 0 seconds and required the additional allocation of an estimated 84 MB
+the call to "ft_freqgrandaverage" took 0 seconds and required the additional allocation of an estimated 112 MB
 OS_OL_avg = 
   struct with fields:
 
-    powspctrm: [64&times;57&times;301 double]
+    powspctrm: [64&times;57&times;401 double]
         label: {64&times;1 cell}
          freq: [1&times;57 double]
-         time: [1&times;301 double]
+         time: [1&times;401 double]
        dimord: 'chan_freq_time'
           cfg: [1&times;1 struct]
 </pre><pre class="codeinput"><span class="comment">%--------------------------------------------------------%</span>
@@ -161,9 +161,9 @@ outputfile = <span class="string">'./figure/Interaction/diff_map_frontal'</span>
 maskfile = <span class="string">''</span>;
 outputfile_after_mask=<span class="string">''</span>;
 kb_plot_tfr(roi,diff_map_oi,trange,frange,fig_title,outputfile,maskfile,outputfile_after_mask);
-</pre><pre class="codeoutput">the input is freq data with 64 channels, 57 frequencybins and 301 timebins
-the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
-the call to "ft_freqdescriptives" took 0 seconds and required the additional allocation of an estimated 0 MB
+</pre><pre class="codeoutput">the input is freq data with 64 channels, 57 frequencybins and 401 timebins
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 111 MB
+the call to "ft_freqdescriptives" took 0 seconds and required the additional allocation of an estimated 111 MB
 </pre><img vspace="5" hspace="5" src="tfr_plot_01.png" alt=""> <h2 id="4">diff map across posterior sites</h2><pre class="codeinput">roi = {<span class="string">'CPz'</span>, <span class="string">'CP1'</span>, <span class="string">'CP2'</span>, <span class="string">'CP3'</span>, <span class="string">'CP4'</span>, <span class="string">'CP5'</span>, <span class="string">'CP6'</span>, <span class="string">'Pz'</span>, <span class="string">'P1'</span>, <span class="string">'P2'</span>, <span class="string">'P3'</span>, <span class="string">'P4'</span>, <span class="string">'P5'</span>, <span class="string">'P6'</span>, <span class="string">'P7'</span>, <span class="string">'P8'</span>, <span class="string">'POz'</span>, <span class="string">'PO3'</span>, <span class="string">'PO4'</span>, <span class="string">'PO7'</span>, <span class="string">'PO8'</span>, <span class="string">'Oz'</span>, <span class="string">'O1'</span>, <span class="string">'O2'</span>};
 diff_map_oi = diff_map;
 trange = [-0.8, 0.8]; <span class="comment">% in seconds</span>
@@ -173,9 +173,9 @@ outputfile = <span class="string">'./figure/Interaction/diff_map_posterior'</spa
 maskfile = <span class="string">''</span>;
 outputfile_after_mask=<span class="string">''</span>;
 kb_plot_tfr(roi,diff_map_oi,trange,frange,fig_title,outputfile,maskfile,outputfile_after_mask);
-</pre><pre class="codeoutput">the input is freq data with 64 channels, 57 frequencybins and 301 timebins
-the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 5 MB
-the call to "ft_freqdescriptives" took 0 seconds and required the additional allocation of an estimated 5 MB
+</pre><pre class="codeoutput">the input is freq data with 64 channels, 57 frequencybins and 401 timebins
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 7 MB
+the call to "ft_freqdescriptives" took 0 seconds and required the additional allocation of an estimated 7 MB
 </pre><img vspace="5" hspace="5" src="tfr_plot_02.png" alt=""> <h2 id="5">diff map across all sites</h2><pre class="codeinput">roi = <span class="string">''</span>;
 diff_map_oi = diff_map;
 trange = [-0.8, 0.8]; <span class="comment">% in seconds</span>
@@ -185,9 +185,9 @@ outputfile = <span class="string">'./figure/Interaction/diff_map_all'</span>;
 maskfile = <span class="string">''</span>;
 outputfile_after_mask=<span class="string">''</span>;
 kb_plot_tfr(roi,diff_map_oi,trange,frange,fig_title,outputfile,maskfile,outputfile_after_mask);
-</pre><pre class="codeoutput">the input is freq data with 64 channels, 57 frequencybins and 301 timebins
-the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 16 MB
-the call to "ft_freqdescriptives" took 0 seconds and required the additional allocation of an estimated 16 MB
+</pre><pre class="codeoutput">the input is freq data with 64 channels, 57 frequencybins and 401 timebins
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 22 MB
+the call to "ft_freqdescriptives" took 0 seconds and required the additional allocation of an estimated 22 MB
 </pre><img vspace="5" hspace="5" src="tfr_plot_03.png" alt=""> <pre class="codeinput"><span class="comment">%--------------------------------------------------------%</span>
 <span class="comment">%</span>
 <span class="comment">%    After Stat. We highlight where and</span>
@@ -195,14 +195,14 @@ the call to "ft_freqdescriptives" took 0 seconds and required the additional all
 <span class="comment">%</span>
 <span class="comment">%--------------------------------------------------------%</span>
 </pre><h2 id="7">prep mask file for different stat results</h2><pre>  Stat comparson list</pre><div><ol><li>[SP_Theta] Sound Primer: Frontal, Theta</li><li>[SP_Beta_E1] Sound Primer: All sites, Beta Element#1</li><li>[SP_Beta_E2] Sound Primer: All sites, Beta Element#2</li><li>[VP_Alpha] Visual Probe: Posterior, Alpha</li><li>[VP_Beta] Visual Probe: Posterior, Beta</li></ol></div><h2 id="9">load mask</h2><pre class="codeinput">SP_Theta = <span class="string">'./statMask/SP_Theta.mat'</span>;
-SP_Beta_E1 = <span class="string">'./statMask/SP_Beta_E1.mat'</span>;
-SP_Beta_E2 = <span class="string">'./statMask/SP_Beta_E2.mat'</span>;
+SP_Beta = <span class="string">'./statMask/SP_Beta.mat'</span>;
+<span class="comment">%SP_Beta_E2 = './statMask/SP_Beta.mat';</span>
 VP_Alpha = <span class="string">'./statMask/VP_Alpha.mat'</span>;
 VP_Beta = <span class="string">'./statMask/VP_Beta.mat'</span>;
 
 load(SP_Theta,<span class="string">'-mat'</span>);
-load(SP_Beta_E1,<span class="string">'-mat'</span>);
-load(SP_Beta_E2,<span class="string">'-mat'</span>);
+load(SP_Beta,<span class="string">'-mat'</span>);
+<span class="comment">%load(SP_Beta_E2,'-mat');</span>
 load(VP_Alpha,<span class="string">'-mat'</span>);
 load(VP_Beta,<span class="string">'-mat'</span>);
 </pre><h2 id="10">fronto</h2><pre class="codeinput">clear <span class="string">maskSets</span>
@@ -220,9 +220,9 @@ outputfile = <span class="string">'./figure/Interaction/diff_map_frontal'</span>
 outputfile_after_mask = <span class="string">'./figure/statReport/stat_masked_diff_map_frontal'</span>;
 maskfile = aioMask;
 kb_plot_tfr(roi,diff_map_oi,trange,frange,fig_title,outputfile,maskfile,outputfile_after_mask);
-</pre><pre class="codeoutput">the input is freq data with 64 channels, 57 frequencybins and 301 timebins
-the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 5 MB
-the call to "ft_freqdescriptives" took 0 seconds and required the additional allocation of an estimated 5 MB
+</pre><pre class="codeoutput">the input is freq data with 64 channels, 57 frequencybins and 401 timebins
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 6 MB
+the call to "ft_freqdescriptives" took 0 seconds and required the additional allocation of an estimated 6 MB
 detected mask, use it
 </pre><img vspace="5" hspace="5" src="tfr_plot_04.png" alt=""> <img vspace="5" hspace="5" src="tfr_plot_05.png" alt=""> <h2 id="11">posterior-central</h2><pre class="codeinput">clear <span class="string">maskSets</span>
 targetTFR = diff_map;
@@ -240,14 +240,14 @@ outputfile = <span class="string">'./figure/Interaction/diff_map_posterior'</spa
 outputfile_after_mask = <span class="string">'./figure/statReport/stat_masked_diff_map_posterior'</span>;
 maskfile = aioMask;
 kb_plot_tfr(roi,diff_map_oi,trange,frange,fig_title,outputfile,maskfile,outputfile_after_mask);
-</pre><pre class="codeoutput">the input is freq data with 64 channels, 57 frequencybins and 301 timebins
-the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 5 MB
-the call to "ft_freqdescriptives" took 0 seconds and required the additional allocation of an estimated 5 MB
+</pre><pre class="codeoutput">the input is freq data with 64 channels, 57 frequencybins and 401 timebins
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 7 MB
+the call to "ft_freqdescriptives" took 0 seconds and required the additional allocation of an estimated 7 MB
 detected mask, use it
 </pre><img vspace="5" hspace="5" src="tfr_plot_06.png" alt=""> <img vspace="5" hspace="5" src="tfr_plot_07.png" alt=""> <h2 id="12">all eeg</h2><pre class="codeinput">clear <span class="string">maskSets</span>
 targetTFR = diff_map;
-maskSets{1} = SP_Beta_E1;
-maskSets{2} = SP_Beta_E2;
+maskSets{1} = SP_Beta;
+<span class="comment">%maskSets{2} = SP_Beta_E2;</span>
 aioMask = kb_prep_mask(maskSets,targetTFR);
 
 <span class="comment">% plot at all eeg</span>
@@ -260,9 +260,9 @@ outputfile = <span class="string">'./figure/Interaction/diff_map_alleeg'</span>;
 outputfile_after_mask = <span class="string">'./figure/statReport/stat_masked_diff_map_alleeg'</span>;
 maskfile = aioMask;
 kb_plot_tfr(roi,diff_map_oi,trange,frange,fig_title,outputfile,maskfile,outputfile_after_mask);
-</pre><pre class="codeoutput">the input is freq data with 64 channels, 57 frequencybins and 301 timebins
-the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 16 MB
-the call to "ft_freqdescriptives" took 0 seconds and required the additional allocation of an estimated 17 MB
+</pre><pre class="codeoutput">the input is freq data with 64 channels, 57 frequencybins and 401 timebins
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 21 MB
+the call to "ft_freqdescriptives" took 0 seconds and required the additional allocation of an estimated 21 MB
 detected mask, use it
 </pre><img vspace="5" hspace="5" src="tfr_plot_08.png" alt=""> <img vspace="5" hspace="5" src="tfr_plot_09.png" alt=""> <h2 id="13">end tf_plot</h2><pre class="codeinput">close <span class="string">all</span> <span class="comment">% close this file</span>
 </pre><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2017b</a><br></p></div><!--
@@ -360,14 +360,14 @@ kb_plot_tfr(roi,diff_map_oi,trange,frange,fig_title,outputfile,maskfile,outputfi
 
 %% load mask
 SP_Theta = './statMask/SP_Theta.mat';
-SP_Beta_E1 = './statMask/SP_Beta_E1.mat';
-SP_Beta_E2 = './statMask/SP_Beta_E2.mat';
+SP_Beta = './statMask/SP_Beta.mat';
+%SP_Beta_E2 = './statMask/SP_Beta.mat';
 VP_Alpha = './statMask/VP_Alpha.mat';
 VP_Beta = './statMask/VP_Beta.mat';
 
 load(SP_Theta,'-mat');
-load(SP_Beta_E1,'-mat');
-load(SP_Beta_E2,'-mat');
+load(SP_Beta,'-mat');
+%load(SP_Beta_E2,'-mat');
 load(VP_Alpha,'-mat');
 load(VP_Beta,'-mat');
 
@@ -409,8 +409,8 @@ kb_plot_tfr(roi,diff_map_oi,trange,frange,fig_title,outputfile,maskfile,outputfi
 %% all eeg
 clear maskSets
 targetTFR = diff_map;
-maskSets{1} = SP_Beta_E1;
-maskSets{2} = SP_Beta_E2;
+maskSets{1} = SP_Beta;
+%maskSets{2} = SP_Beta_E2;
 aioMask = kb_prep_mask(maskSets,targetTFR);
 
 % plot at all eeg

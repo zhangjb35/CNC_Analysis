@@ -49,23 +49,23 @@ save ./setup/cnc_eeg.mat lay
 % for single condition
 % need four plot
 outputName{1} = 'SP Theta';
-outputName{2} = 'SP Beta E1';
-outputName{3} = 'SP Beta E2';
-outputName{4} = 'VP Alpha';
-outputName{5} = 'VPBeta';
+outputName{2} = 'SP Beta';
+%outputName{3} = 'SP Beta E2';
+outputName{3} = 'VP Alpha';
+outputName{4} = 'VPBeta';
 
 % need t-f regions
 trangeSet{1} = [-0.5 -0.2];
 trangeSet{2} = [-0.4 -.02];
-trangeSet{3} = [-0.2 0];
-trangeSet{4} = [0 3.5];
-trangeSet{5} = [0.5 2.5];
+%trangeSet{3} = [-0.2 0];
+trangeSet{3} = [0 3.5];
+trangeSet{4} = [0.5 2.5];
 
 frangeSet{1}=[4 8];
 frangeSet{2}=[12 18];
-frangeSet{3}=[12 18];
-frangeSet{4}=[7.5 10.5];
-frangeSet{5}=[12 15];
+%frangeSet{3}=[12 18];
+frangeSet{3}=[7.5 10.5];
+frangeSet{4}=[12 15];
 
 % select the range is a work of art, so do it begin stupid
 % crangeSet{1}=[];
@@ -76,9 +76,9 @@ frangeSet{5}=[12 15];
 
 crangeSet{1}=[0 2]+1;
 crangeSet{2}=[0 0.25]+1;
-crangeSet{3}=[0 0.25]+1;
+%crangeSet{3}=[0 0.25]+1;
+crangeSet{3}=[-0.2 0]+1;
 crangeSet{4}=[-0.2 0]+1;
-crangeSet{5}=[-0.2 0]+1;
 
 for i=1:numel(conditionAVG)
     fieldName = cell2mat(fieldnames(conditionFig{i}));
@@ -102,30 +102,30 @@ close all
 % for single condition
 % need four plot
 outputName{1} = 'SP Theta';
-outputName{2} = 'SP Beta E1';
-outputName{3} = 'SP Beta E2';
-outputName{4} = 'VP Alpha';
-outputName{5} = 'VPBeta';
+outputName{2} = 'SP Beta';
+%outputName{3} = 'SP Beta E2';
+outputName{3} = 'VP Alpha';
+outputName{4} = 'VPBeta';
 
 % need t-f regions
 trangeSet{1} = [-0.5 -0.2];
 trangeSet{2} = [-0.4 -.02];
-trangeSet{3} = [-0.2 0];
-trangeSet{4} = [0 3.5];
-trangeSet{5} = [0.5 2.5];
+%trangeSet{3} = [-0.2 0];
+trangeSet{3} = [0 3.5];
+trangeSet{4} = [0.5 2.5];
 
 frangeSet{1}=[4 8];
 frangeSet{2}=[12 18];
-frangeSet{3}=[12 18];
-frangeSet{4}=[7.5 10.5];
-frangeSet{5}=[12 15];
+%frangeSet{3}=[12 18];
+frangeSet{3}=[7.5 10.5];
+frangeSet{4}=[12 15];
 
 % select the range is a work of art, so do it begin stupid
 crangeSet{1}=[];
 crangeSet{2}=[];
+%crangeSet{3}=[];
 crangeSet{3}=[];
 crangeSet{4}=[];
-crangeSet{5}=[];
 
 % crangeSet{1}=[0 2];
 % crangeSet{2}=[0 0.25];
@@ -148,37 +148,35 @@ for i=1:numel(effectFig)
         kb_plot_topoplot_fun(layout,trange,frange,crange,plotTarget,[fieldName '-' outputName{j}])
     end
 end
-%% close file
-close all
 
 %%%%%%%%%%%%%%%%%%%%
 % for final interaction
 % need four plot
 outputName{1} = 'SP Theta';
-outputName{2} = 'SP Beta E1';
-outputName{3} = 'SP Beta E2';
-outputName{4} = 'VP Alpha';
-outputName{5} = 'VPBeta';
+outputName{2} = 'SP Beta';
+%outputName{3} = 'SP Beta E2';
+outputName{3} = 'VP Alpha';
+outputName{4} = 'VPBeta';
 
 % need t-f regions
 trangeSet{1} = [-0.5 -0.2];
 trangeSet{2} = [-0.4 -.02];
-trangeSet{3} = [-0.2 0];
-trangeSet{4} = [0 3.5];
-trangeSet{5} = [0.5 2.5];
+%trangeSet{3} = [-0.2 0];
+trangeSet{3} = [0 3.5];
+trangeSet{4} = [0.5 2.5];
 
 frangeSet{1}=[4 8];
 frangeSet{2}=[12 18];
-frangeSet{3}=[12 18];
-frangeSet{4}=[7.5 10.5];
-frangeSet{5}=[12 15];
+%frangeSet{3}=[12 18];
+frangeSet{3}=[7.5 10.5];
+frangeSet{4}=[12 15];
 
 % select the range is a work of art, so do it begin stupid
 crangeSet{1}=[];
 crangeSet{2}=[];
+%crangeSet{3}=[];
 crangeSet{3}=[];
 crangeSet{4}=[];
-crangeSet{5}=[];
 
 % plot it
     plotTarget = interactionAVG;
@@ -193,3 +191,6 @@ crangeSet{5}=[];
         crange = crangeSet{j};
         kb_plot_topoplot_fun(layout,trange,frange,crange,plotTarget,['Interaction-' outputName{j}])
     end
+    
+%% close file
+close all

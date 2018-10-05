@@ -107,23 +107,23 @@ save <span class="string">./setup/cnc_eeg.mat</span> <span class="string">lay</s
 <span class="comment">% for single condition</span>
 <span class="comment">% need four plot</span>
 outputName{1} = <span class="string">'SP Theta'</span>;
-outputName{2} = <span class="string">'SP Beta E1'</span>;
-outputName{3} = <span class="string">'SP Beta E2'</span>;
-outputName{4} = <span class="string">'VP Alpha'</span>;
-outputName{5} = <span class="string">'VPBeta'</span>;
+outputName{2} = <span class="string">'SP Beta'</span>;
+<span class="comment">%outputName{3} = 'SP Beta E2';</span>
+outputName{3} = <span class="string">'VP Alpha'</span>;
+outputName{4} = <span class="string">'VPBeta'</span>;
 
 <span class="comment">% need t-f regions</span>
 trangeSet{1} = [-0.5 -0.2];
 trangeSet{2} = [-0.4 -.02];
-trangeSet{3} = [-0.2 0];
-trangeSet{4} = [0 3.5];
-trangeSet{5} = [0.5 2.5];
+<span class="comment">%trangeSet{3} = [-0.2 0];</span>
+trangeSet{3} = [0 3.5];
+trangeSet{4} = [0.5 2.5];
 
 frangeSet{1}=[4 8];
 frangeSet{2}=[12 18];
-frangeSet{3}=[12 18];
-frangeSet{4}=[7.5 10.5];
-frangeSet{5}=[12 15];
+<span class="comment">%frangeSet{3}=[12 18];</span>
+frangeSet{3}=[7.5 10.5];
+frangeSet{4}=[12 15];
 
 <span class="comment">% select the range is a work of art, so do it begin stupid</span>
 <span class="comment">% crangeSet{1}=[];</span>
@@ -134,9 +134,9 @@ frangeSet{5}=[12 15];
 
 crangeSet{1}=[0 2]+1;
 crangeSet{2}=[0 0.25]+1;
-crangeSet{3}=[0 0.25]+1;
+<span class="comment">%crangeSet{3}=[0 0.25]+1;</span>
+crangeSet{3}=[-0.2 0]+1;
 crangeSet{4}=[-0.2 0]+1;
-crangeSet{5}=[-0.2 0]+1;
 
 <span class="keyword">for</span> i=1:numel(conditionAVG)
     fieldName = cell2mat(fieldnames(conditionFig{i}));
@@ -163,36 +163,36 @@ the call to "ft_selectdata" took 0 seconds and required the additional allocatio
 creating layout from electrode file /Volumes/Workspace/Projects/CNC_analysis/code/CNC_Analysis/setup/eeglab_loc.sfp
 creating layout for ext1020 system
 the call to "ft_prepare_layout" took 0 seconds and required the additional allocation of an estimated 0 MB
-...</pre><img vspace="5" hspace="5" src="tfr_topoplot_01.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_02.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_03.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_04.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_05.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_06.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_07.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_08.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_09.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_10.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_11.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_12.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_13.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_14.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_15.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_16.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_17.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_18.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_19.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_20.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_21.png" alt=""> <h2 id="4">close file</h2><pre class="codeinput">close <span class="string">all</span>
+...</pre><img vspace="5" hspace="5" src="tfr_topoplot_01.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_02.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_03.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_04.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_05.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_06.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_07.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_08.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_09.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_10.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_11.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_12.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_13.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_14.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_15.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_16.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_17.png" alt=""> <h2 id="4">close file</h2><pre class="codeinput">close <span class="string">all</span>
 
 <span class="comment">%%%%%%%%%%%%%%%%%%%%%%%%%</span>
 <span class="comment">% for single condition</span>
 <span class="comment">% need four plot</span>
 outputName{1} = <span class="string">'SP Theta'</span>;
-outputName{2} = <span class="string">'SP Beta E1'</span>;
-outputName{3} = <span class="string">'SP Beta E2'</span>;
-outputName{4} = <span class="string">'VP Alpha'</span>;
-outputName{5} = <span class="string">'VPBeta'</span>;
+outputName{2} = <span class="string">'SP Beta'</span>;
+<span class="comment">%outputName{3} = 'SP Beta E2';</span>
+outputName{3} = <span class="string">'VP Alpha'</span>;
+outputName{4} = <span class="string">'VPBeta'</span>;
 
 <span class="comment">% need t-f regions</span>
 trangeSet{1} = [-0.5 -0.2];
 trangeSet{2} = [-0.4 -.02];
-trangeSet{3} = [-0.2 0];
-trangeSet{4} = [0 3.5];
-trangeSet{5} = [0.5 2.5];
+<span class="comment">%trangeSet{3} = [-0.2 0];</span>
+trangeSet{3} = [0 3.5];
+trangeSet{4} = [0.5 2.5];
 
 frangeSet{1}=[4 8];
 frangeSet{2}=[12 18];
-frangeSet{3}=[12 18];
-frangeSet{4}=[7.5 10.5];
-frangeSet{5}=[12 15];
+<span class="comment">%frangeSet{3}=[12 18];</span>
+frangeSet{3}=[7.5 10.5];
+frangeSet{4}=[12 15];
 
 <span class="comment">% select the range is a work of art, so do it begin stupid</span>
 crangeSet{1}=[];
 crangeSet{2}=[];
+<span class="comment">%crangeSet{3}=[];</span>
 crangeSet{3}=[];
 crangeSet{4}=[];
-crangeSet{5}=[];
 
 <span class="comment">% crangeSet{1}=[0 2];</span>
 <span class="comment">% crangeSet{2}=[0 0.25];</span>
@@ -215,46 +215,35 @@ crangeSet{5}=[];
         kb_plot_topoplot_fun(layout,trange,frange,crange,plotTarget,[fieldName <span class="string">'-'</span> outputName{j}])
     <span class="keyword">end</span>
 <span class="keyword">end</span>
-</pre><pre class="codeoutput">plotTarget = 
-  struct with fields:
-
-    powspctrm: [64&times;57&times;301 double]
-        label: {64&times;1 cell}
-         freq: [1&times;57 double]
-         time: [1&times;301 double]
-       dimord: 'chan_freq_time'
-          cfg: [1&times;1 struct]
-the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
-...</pre><img vspace="5" hspace="5" src="tfr_topoplot_22.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_23.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_24.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_25.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_26.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_27.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_28.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_29.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_30.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_31.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_32.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_33.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_34.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_35.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_36.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_37.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_38.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_39.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_40.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_41.png" alt=""> <h2 id="5">close file</h2><pre class="codeinput">close <span class="string">all</span>
 
 <span class="comment">%%%%%%%%%%%%%%%%%%%%</span>
 <span class="comment">% for final interaction</span>
 <span class="comment">% need four plot</span>
 outputName{1} = <span class="string">'SP Theta'</span>;
-outputName{2} = <span class="string">'SP Beta E1'</span>;
-outputName{3} = <span class="string">'SP Beta E2'</span>;
-outputName{4} = <span class="string">'VP Alpha'</span>;
-outputName{5} = <span class="string">'VPBeta'</span>;
+outputName{2} = <span class="string">'SP Beta'</span>;
+<span class="comment">%outputName{3} = 'SP Beta E2';</span>
+outputName{3} = <span class="string">'VP Alpha'</span>;
+outputName{4} = <span class="string">'VPBeta'</span>;
 
 <span class="comment">% need t-f regions</span>
 trangeSet{1} = [-0.5 -0.2];
 trangeSet{2} = [-0.4 -.02];
-trangeSet{3} = [-0.2 0];
-trangeSet{4} = [0 3.5];
-trangeSet{5} = [0.5 2.5];
+<span class="comment">%trangeSet{3} = [-0.2 0];</span>
+trangeSet{3} = [0 3.5];
+trangeSet{4} = [0.5 2.5];
 
 frangeSet{1}=[4 8];
 frangeSet{2}=[12 18];
-frangeSet{3}=[12 18];
-frangeSet{4}=[7.5 10.5];
-frangeSet{5}=[12 15];
+<span class="comment">%frangeSet{3}=[12 18];</span>
+frangeSet{3}=[7.5 10.5];
+frangeSet{4}=[12 15];
 
 <span class="comment">% select the range is a work of art, so do it begin stupid</span>
 crangeSet{1}=[];
 crangeSet{2}=[];
+<span class="comment">%crangeSet{3}=[];</span>
 crangeSet{3}=[];
 crangeSet{4}=[];
-crangeSet{5}=[];
 
 <span class="comment">% plot it</span>
     plotTarget = interactionAVG;
@@ -269,17 +258,18 @@ crangeSet{5}=[];
         crange = crangeSet{j};
         kb_plot_topoplot_fun(layout,trange,frange,crange,plotTarget,[<span class="string">'Interaction-'</span> outputName{j}])
     <span class="keyword">end</span>
-</pre><pre class="codeoutput">the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
-reading layout from file /Volumes/Workspace/Projects/CNC_analysis/code/CNC_Analysis/setup/cnc_eeg.mat
-the call to "ft_prepare_layout" took 0 seconds and required the additional allocation of an estimated 0 MB
+</pre><pre class="codeoutput">plotTarget = 
+  struct with fields:
+
+    powspctrm: [64&times;57&times;401 double]
+        label: {64&times;1 cell}
+         freq: [1&times;57 double]
+         time: [1&times;401 double]
+       dimord: 'chan_freq_time'
+          cfg: [1&times;1 struct]
 the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
-the call to "ft_topoplotTFR" took 1 seconds and required the additional allocation of an estimated 5 MB
-reading layout from file /Volumes/Workspace/Projects/CNC_analysis/code/CNC_Analysis/setup/cnc_eeg.mat
-the call to "ft_prepare_layout" took 0 seconds and required the additional allocation of an estimated 0 MB
-the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
-the call to "ft_topoplotTFR" took 1 seconds and required the additional allocation of an estimated 3 MB
-reading layout from file /Volumes/Workspace/Projects/CNC_analysis/code/CNC_Analysis/setup/cnc_eeg.mat
-...</pre><img vspace="5" hspace="5" src="tfr_topoplot_42.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_43.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_44.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_45.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_46.png" alt=""> <p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2017b</a><br></p></div><!--
+...</pre><img vspace="5" hspace="5" src="tfr_topoplot_18.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_19.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_20.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_21.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_22.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_23.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_24.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_25.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_26.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_27.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_28.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_29.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_30.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_31.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_32.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_33.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_34.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_35.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_36.png" alt=""> <img vspace="5" hspace="5" src="tfr_topoplot_37.png" alt=""> <h2 id="5">close file</h2><pre class="codeinput">close <span class="string">all</span>
+</pre><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2017b</a><br></p></div><!--
 ##### SOURCE BEGIN #####
 %% Topoplot
 % for further demonstrate the meaning of the results
@@ -332,23 +322,23 @@ save ./setup/cnc_eeg.mat lay
 % for single condition
 % need four plot
 outputName{1} = 'SP Theta';
-outputName{2} = 'SP Beta E1';
-outputName{3} = 'SP Beta E2';
-outputName{4} = 'VP Alpha';
-outputName{5} = 'VPBeta';
+outputName{2} = 'SP Beta';
+%outputName{3} = 'SP Beta E2';
+outputName{3} = 'VP Alpha';
+outputName{4} = 'VPBeta';
 
 % need t-f regions
 trangeSet{1} = [-0.5 -0.2];
 trangeSet{2} = [-0.4 -.02];
-trangeSet{3} = [-0.2 0];
-trangeSet{4} = [0 3.5];
-trangeSet{5} = [0.5 2.5];
+%trangeSet{3} = [-0.2 0];
+trangeSet{3} = [0 3.5];
+trangeSet{4} = [0.5 2.5];
 
 frangeSet{1}=[4 8];
 frangeSet{2}=[12 18];
-frangeSet{3}=[12 18];
-frangeSet{4}=[7.5 10.5];
-frangeSet{5}=[12 15];
+%frangeSet{3}=[12 18];
+frangeSet{3}=[7.5 10.5];
+frangeSet{4}=[12 15];
 
 % select the range is a work of art, so do it begin stupid
 % crangeSet{1}=[];
@@ -359,9 +349,9 @@ frangeSet{5}=[12 15];
 
 crangeSet{1}=[0 2]+1;
 crangeSet{2}=[0 0.25]+1;
-crangeSet{3}=[0 0.25]+1;
+%crangeSet{3}=[0 0.25]+1;
+crangeSet{3}=[-0.2 0]+1;
 crangeSet{4}=[-0.2 0]+1;
-crangeSet{5}=[-0.2 0]+1;
 
 for i=1:numel(conditionAVG)
     fieldName = cell2mat(fieldnames(conditionFig{i}));
@@ -385,30 +375,30 @@ close all
 % for single condition
 % need four plot
 outputName{1} = 'SP Theta';
-outputName{2} = 'SP Beta E1';
-outputName{3} = 'SP Beta E2';
-outputName{4} = 'VP Alpha';
-outputName{5} = 'VPBeta';
+outputName{2} = 'SP Beta';
+%outputName{3} = 'SP Beta E2';
+outputName{3} = 'VP Alpha';
+outputName{4} = 'VPBeta';
 
 % need t-f regions
 trangeSet{1} = [-0.5 -0.2];
 trangeSet{2} = [-0.4 -.02];
-trangeSet{3} = [-0.2 0];
-trangeSet{4} = [0 3.5];
-trangeSet{5} = [0.5 2.5];
+%trangeSet{3} = [-0.2 0];
+trangeSet{3} = [0 3.5];
+trangeSet{4} = [0.5 2.5];
 
 frangeSet{1}=[4 8];
 frangeSet{2}=[12 18];
-frangeSet{3}=[12 18];
-frangeSet{4}=[7.5 10.5];
-frangeSet{5}=[12 15];
+%frangeSet{3}=[12 18];
+frangeSet{3}=[7.5 10.5];
+frangeSet{4}=[12 15];
 
 % select the range is a work of art, so do it begin stupid
 crangeSet{1}=[];
 crangeSet{2}=[];
+%crangeSet{3}=[];
 crangeSet{3}=[];
 crangeSet{4}=[];
-crangeSet{5}=[];
 
 % crangeSet{1}=[0 2];
 % crangeSet{2}=[0 0.25];
@@ -431,37 +421,35 @@ for i=1:numel(effectFig)
         kb_plot_topoplot_fun(layout,trange,frange,crange,plotTarget,[fieldName '-' outputName{j}])
     end
 end
-%% close file
-close all
 
 %%%%%%%%%%%%%%%%%%%%
 % for final interaction
 % need four plot
 outputName{1} = 'SP Theta';
-outputName{2} = 'SP Beta E1';
-outputName{3} = 'SP Beta E2';
-outputName{4} = 'VP Alpha';
-outputName{5} = 'VPBeta';
+outputName{2} = 'SP Beta';
+%outputName{3} = 'SP Beta E2';
+outputName{3} = 'VP Alpha';
+outputName{4} = 'VPBeta';
 
 % need t-f regions
 trangeSet{1} = [-0.5 -0.2];
 trangeSet{2} = [-0.4 -.02];
-trangeSet{3} = [-0.2 0];
-trangeSet{4} = [0 3.5];
-trangeSet{5} = [0.5 2.5];
+%trangeSet{3} = [-0.2 0];
+trangeSet{3} = [0 3.5];
+trangeSet{4} = [0.5 2.5];
 
 frangeSet{1}=[4 8];
 frangeSet{2}=[12 18];
-frangeSet{3}=[12 18];
-frangeSet{4}=[7.5 10.5];
-frangeSet{5}=[12 15];
+%frangeSet{3}=[12 18];
+frangeSet{3}=[7.5 10.5];
+frangeSet{4}=[12 15];
 
 % select the range is a work of art, so do it begin stupid
 crangeSet{1}=[];
 crangeSet{2}=[];
+%crangeSet{3}=[];
 crangeSet{3}=[];
 crangeSet{4}=[];
-crangeSet{5}=[];
 
 % plot it
     plotTarget = interactionAVG;
@@ -476,5 +464,8 @@ crangeSet{5}=[];
         crange = crangeSet{j};
         kb_plot_topoplot_fun(layout,trange,frange,crange,plotTarget,['Interaction-' outputName{j}])
     end
+    
+%% close file
+close all
 ##### SOURCE END #####
 --></body></html>

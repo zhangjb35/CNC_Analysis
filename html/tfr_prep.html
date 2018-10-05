@@ -6,7 +6,7 @@
    <!--
 This HTML was auto-generated from MATLAB code.
 To make changes, update the MATLAB code and republish this document.
-      --><title>tfr_prep</title><meta name="generator" content="MATLAB 8.3"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2018-10-04"><meta name="DC.source" content="tfr_prep.m"><style type="text/css">
+      --><title>tfr_prep</title><meta name="generator" content="MATLAB 8.3"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2018-10-05"><meta name="DC.source" content="tfr_prep.m"><style type="text/css">
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
 
 html { min-height:100%; margin-bottom:1px; }
@@ -66,7 +66,7 @@ table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px soli
 
 
 
-  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#1">Time-freqency analysis scritps for CNC project</a></li><li><a href="#2">--- 02 # convert eeglab data to fieldtrip format</a></li><li><a href="#3">--- 03 # calcuate ERP</a></li><li><a href="#4">--- 04 # remove ERP from each trial for extracting pure induced part of EEG activity</a></li><li><a href="#5">--- 05 # transformed to Time-Freqency domain</a></li><li><a href="#6">--- 06 # baseline on no sound condition, so we do not need to do time baseline : )</a></li><li><a href="#7">--- 07 # average TFR across subject for plot TFR prep for stat and after stat resutls visualization)</a></li><li><a href="#8">--- 08 # prep for interaction part of experimental effect</a></li><li><a href="#9">--- 09 # main effect, check interaction first, if sign, skip it. If interaction, it is no reason to see main effect (depend on another variable)</a></li></ul></div><h2>Time-freqency analysis scritps for CNC project<a name="1"></a></h2><p>Followed EEG and ERP prep step; note: start para computation first zero the world</p><pre class="codeinput">clear, clc
+  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#1">Time-freqency analysis scritps for CNC project</a></li><li><a href="#2">--- 02 # convert eeglab data to fieldtrip format</a></li><li><a href="#3">--- 03 # calcuate ERP</a></li><li><a href="#4">--- 04 # remove ERP from each trial for extracting pure induced part of EEG activity</a></li><li><a href="#5">--- 05 # transformed to Time-Freqency domain</a></li><li><a href="#6">--- 06 # baseline on no sound condition, so we do not need to do time baseline : )</a></li><li><a href="#7">--- 07 # average TFR across subject for plot TFR prep for stat and after stat resutls visualization)</a></li><li><a href="#8">--- 08 # prep for interaction part of experimental effect</a></li></ul></div><h2>Time-freqency analysis scritps for CNC project<a name="1"></a></h2><p>--- 01 # Followed EEG and ERP prep step; note: start para computation first zero the world</p><pre class="codeinput">clear, clc
 restoredefaultpath; <span class="comment">%% set a clean path</span>
 <span class="comment">% addpath('/home/jinbo/.matlab/R2012b'); % for linux server only</span>
 project_dir = pwd;<span class="comment">% change to tfr_prep dir firsts</span>
@@ -88,37 +88,19 @@ additoininfo = {};
 <span class="keyword">parfor</span> i=1:length(eeglabData_cond)
     fData{i} = loop_ana(eeglabData_cond{i},procAction,cfg,additoininfo);
 <span class="keyword">end</span>
-</pre><pre class="codeoutput">Starting parallel pool (parpool) using the 'local' profile ... connected to 24 workers.
-pop_loadset(): loading file /data/jinbo/CNC/data/TFPrep/sub-01_bdf_04.set ...
-Reading float file '/data/jinbo/CNC/data/TFPrep/sub-01_bdf_04.fdt'...
-pop_loadset(): loading file /data/jinbo/CNC/data/TFPrep/sub-02_bdf_04.set ...
-Reading float file '/data/jinbo/CNC/data/TFPrep/sub-02_bdf_04.fdt'...
-pop_loadset(): loading file /data/jinbo/CNC/data/TFPrep/sub-03_bdf_04.set ...
-...</pre><h2>--- 03 # calcuate ERP<a name="3"></a></h2><pre class="codeinput">procAction = <span class="string">'timelocked_analysis'</span>;
+</pre><h2>--- 03 # calcuate ERP<a name="3"></a></h2><pre class="codeinput">procAction = <span class="string">'timelocked_analysis'</span>;
 cfg = [];
 additoininfo = {};
 <span class="keyword">parfor</span> i=1:length(eeglabData_cond)
     tl_fData{i} = loop_ana(fData{i},procAction,cfg,additoininfo);
 <span class="keyword">end</span>
-</pre><pre class="codeoutput">the input is raw data with 64 channels and 119 trials
-the input is raw data with 64 channels and 120 trials
-Warning: the data does not contain a trial definition
- In '/data/jinbo/CNC/toolbox/fieldtrip-20180922/utilities/private/fixsampleinfo.m' at line 80
- In '/data/jinbo/CNC/toolbox/fieldtrip-20180922/utilities/ft_datatype_raw.m' at line 147
- In '/data/jinbo/CNC/toolbox/fieldtrip-20180922/utilities/ft_checkdata.m' at line 264
-...</pre><h2>--- 04 # remove ERP from each trial for extracting pure induced part of EEG activity<a name="4"></a></h2><pre class="codeinput">procAction = <span class="string">'untimelocked_analysis'</span>;
+</pre><h2>--- 04 # remove ERP from each trial for extracting pure induced part of EEG activity<a name="4"></a></h2><pre class="codeinput">procAction = <span class="string">'untimelocked_analysis'</span>;
 cfg = [];
 <span class="keyword">parfor</span> i=1:length(eeglabData_cond)
     utl_fData{i} = loop_ana(tl_fData{i},procAction,cfg,fData{i});
 <span class="keyword">end</span>
 save <span class="string">utl_fData</span> <span class="string">utl_fData</span> <span class="string">-v7.3</span>
-</pre><pre class="codeoutput">Removing average responses #01
-Removing average responses #02
-Removing average responses #03
-Removing average responses #04
-Removing average responses #05
-Removing average responses #06
-...</pre><h2>--- 05 # transformed to Time-Freqency domain<a name="5"></a></h2><pre class="codeinput">procAction = <span class="string">'time_frequency_representation'</span>;
+</pre><h2>--- 05 # transformed to Time-Freqency domain<a name="5"></a></h2><pre class="codeinput">procAction = <span class="string">'time_frequency_representation'</span>;
 
 <span class="comment">%for high freq (&gt;30Hz), so we do not use this method, see fieldtrip</span>
 <span class="comment">%tutorial</span>
@@ -140,20 +122,14 @@ cfg.taper        = <span class="string">'hanning'</span>;
 cfg.pad          = <span class="string">'nextpow2'</span>;
 cfg.foi          = 2:0.5:30; <span class="comment">% in Hz</span>
 cfg.t_ftimwin    = 4./cfg.foi;  <span class="comment">% 4 cycles per time window</span>
-cfg.toi          = -1.5:0.01:1.5; <span class="comment">% in second</span>
+cfg.toi          = -2:0.01:2; <span class="comment">% in second</span>
 
 <span class="keyword">parfor</span> i=1:length(eeglabData_cond)
     tfr_utl_fData{i} = loop_ana(utl_fData{i},procAction,cfg,{});
 <span class="keyword">end</span>
 <span class="comment">% save tfr results</span>
 save <span class="string">tfr_utl_fData</span> <span class="string">tfr_utl_fData</span> <span class="string">-v7.3</span>
-</pre><pre class="codeoutput">the input is raw data with 64 channels and 119 trials
-Warning: the data does not contain a trial definition
-Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous recording
-&gt; In utilities/private/fixsampleinfo at 94
-  In ft_datatype_raw at 147
-  In ft_checkdata at 264
-...</pre><h2>--- 06 # baseline on no sound condition, so we do not need to do time baseline : )<a name="6"></a></h2><pre class="codeinput">clear <span class="string">*_fData</span> <span class="comment">% release memory for followd "very computer consuming" computation</span>
+</pre><h2>--- 06 # baseline on no sound condition, so we do not need to do time baseline : )<a name="6"></a></h2><pre class="codeinput">clear <span class="string">*_fData</span> <span class="comment">% release memory for followd "very computer consuming" computation</span>
 load <span class="string">tfr_utl_fData.mat</span>
 noSound_baseline = tfr_utl_fData{1};
 ProbeMultiSoft =  tfr_utl_fData{2};
@@ -166,7 +142,11 @@ ProbeMultiSoft_refBaseline = loop_ana(ProbeMultiSoft,procAction,cfg,noSound_base
 ProbeMultiLoud_refBaseline = loop_ana(ProbeMultiLoud,procAction,cfg,noSound_baseline);
 ProbeOneSoft_refBaseline = loop_ana(ProbeOneSoft,procAction,cfg,noSound_baseline);
 ProbeOneLoud_refBaseline = loop_ana(ProbeOneLoud,procAction,cfg,noSound_baseline);
-</pre><h2>--- 07 # average TFR across subject for plot TFR prep for stat and after stat resutls visualization)<a name="7"></a></h2><p>as baseline, skip it cfg = []; nosoundAVG = ft_freqgrandaverage(cfg, tfr_utl_fData{1}{1:end}); save nosoundAVG nosoundAVG</p><pre class="codeinput">cfg = [];
+</pre><h2>--- 07 # average TFR across subject for plot TFR prep for stat and after stat resutls visualization)<a name="7"></a></h2><p>as baseline, skip it</p><pre class="codeinput"><span class="comment">% cfg = [];</span>
+<span class="comment">% nosoundAVG = ft_freqgrandaverage(cfg, tfr_utl_fData{1}{1:end});</span>
+<span class="comment">% save nosoundAVG nosoundAVG</span>
+
+cfg = [];
 multisoftAVG = ft_freqgrandaverage(cfg,ProbeMultiSoft_refBaseline{1:end});
 save <span class="string">multisoftAVG</span> <span class="string">multisoftAVG</span>
 
@@ -181,13 +161,7 @@ save <span class="string">onesoftAVG</span> <span class="string">onesoftAVG</spa
 cfg = [];
 oneloudAVG = ft_freqgrandaverage(cfg, ProbeOneLoud_refBaseline{1:end});
 save <span class="string">oneloudAVG</span> <span class="string">oneloudAVG</span>
-</pre><pre class="codeoutput">computing average powspctrm over 22 subjects
-Warning: discarding electrode information because it cannot be averaged 
-the call to "ft_freqgrandaverage" took 1 seconds and required the additional allocation of an estimated 0 MB
-computing average powspctrm over 22 subjects
-Warning: discarding electrode information because it cannot be averaged 
-the call to "ft_freqgrandaverage" took 0 seconds and required the additional allocation of an estimated 0 MB
-...</pre><h2>--- 08 # prep for interaction part of experimental effect<a name="8"></a></h2><pre class="codeinput">procAction = <span class="string">'diff_tf'</span>;
+</pre><h2>--- 08 # prep for interaction part of experimental effect<a name="8"></a></h2><pre class="codeinput">procAction = <span class="string">'diff_tf'</span>;
 cfg = [];
 MS_ML = loop_ana(ProbeMultiLoud_refBaseline,procAction,cfg,ProbeMultiSoft_refBaseline); <span class="comment">% ML - MS</span>
 OS_OL = loop_ana(ProbeOneLoud_refBaseline,procAction,cfg,ProbeOneSoft_refBaseline); <span class="comment">% OL - OS</span>
@@ -198,10 +172,12 @@ MS_OS = loop_ana(ProbeMultiSoft_refBaseline,procAction,cfg,ProbeOneSoft_refBasel
 ML_OL = loop_ana(ProbeMultiLoud_refBaseline,procAction,cfg,ProbeOneLoud_refBaseline); <span class="comment">% ML - OL</span>
 save <span class="string">MS_OS</span> <span class="string">MS_OS</span>
 save <span class="string">ML_OL</span> <span class="string">ML_OL</span>
-</pre><h2>--- 09 # main effect, check interaction first, if sign, skip it. If interaction, it is no reason to see main effect (depend on another variable)<a name="9"></a></h2><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2014a</a><br></p></div><!--
+
+<span class="comment">% --- 09 # main effect, check interaction first, if sign, skip it. If interaction, it is no reason to see main effect (depend on another variable)</span>
+</pre><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2014a</a><br></p></div><!--
 ##### SOURCE BEGIN #####
 %%  Time-freqency analysis scritps for CNC project
-% Followed EEG and ERP prep step; note: start para computation first
+% REPLACE_WITH_DASH_DASH- 01 # Followed EEG and ERP prep step; note: start para computation first
 % zero the world
 clear, clc
 restoredefaultpath; %% set a clean path
@@ -267,7 +243,7 @@ cfg.taper        = 'hanning';
 cfg.pad          = 'nextpow2';
 cfg.foi          = 2:0.5:30; % in Hz
 cfg.t_ftimwin    = 4./cfg.foi;  % 4 cycles per time window
-cfg.toi          = -1.5:0.01:1.5; % in second
+cfg.toi          = -2:0.01:2; % in second
 
 parfor i=1:length(eeglabData_cond)
     tfr_utl_fData{i} = loop_ana(utl_fData{i},procAction,cfg,{});
@@ -291,6 +267,7 @@ ProbeOneSoft_refBaseline = loop_ana(ProbeOneSoft,procAction,cfg,noSound_baseline
 ProbeOneLoud_refBaseline = loop_ana(ProbeOneLoud,procAction,cfg,noSound_baseline);
 %% REPLACE_WITH_DASH_DASH- 07 # average TFR across subject for plot TFR prep for stat and after stat resutls visualization)
 % as baseline, skip it
+
 % cfg = [];
 % nosoundAVG = ft_freqgrandaverage(cfg, tfr_utl_fData{1}{1:end}); 
 % save nosoundAVG nosoundAVG
@@ -324,6 +301,6 @@ ML_OL = loop_ana(ProbeMultiLoud_refBaseline,procAction,cfg,ProbeOneLoud_refBasel
 save MS_OS MS_OS
 save ML_OL ML_OL
 
-%% REPLACE_WITH_DASH_DASH- 09 # main effect, check interaction first, if sign, skip it. If interaction, it is no reason to see main effect (depend on another variable)
+% REPLACE_WITH_DASH_DASH- 09 # main effect, check interaction first, if sign, skip it. If interaction, it is no reason to see main effect (depend on another variable)
 ##### SOURCE END #####
 --></body></html>
