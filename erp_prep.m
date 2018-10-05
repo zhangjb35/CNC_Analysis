@@ -2,25 +2,18 @@
 
 clear variables
 restoredefaultpath; %% set a clean path
-home_dir = '/home/jinbo/Project/CNC/';
+home_dir = pwd;
 
 matlab_dir = fullfile(home_dir, 'matlab'); % change according to your path
-data_dir = fullfile(home_dir, '/data/');
-erp_setup_path = fullfile(home_dir,'erp');
-figures_dir = []; % means no figures are saved
+data_dir = fullfile(home_dir, '/data/rawEEG');
+erp_setup_path = fullfile(home_dir,'/setup');
 
 % ADD PATHS
 
 % add your toolbox
 % addpath('/home/jinbo/.matlab/R2012b'); % for linux only
-addpath(fullfile(matlab_dir, 'fieldtrip-20180922'));
-ft_defaults %% initialize FieldTrip defaults
-addpath(fullfile(matlab_dir, 'eeglab14_1_2b'));
-addpath(genpath(fullfile(matlab_dir, 'FastICA_25/')));
-addpath(genpath(fullfile(matlab_dir, 'JinboToolbox/')));
-addpath(genpath(fullfile(matlab_dir, 'ERPWAVELABv1.2/')));
-
-eeglab
+addpath(fullfile(matlab_dir, 'fieldtrip-20180922'));ft_defaults %% initialize FieldTrip defaults
+addpath(genpath(fullfile(matlab_dir, 'eeglab14_1_2b')));
 eeglabpath = fileparts(which('eeglab')); % eeglab path
 
 bdfFile = fullfile(erp_setup_path,'bdf.txt');
@@ -77,13 +70,13 @@ end
 % get individual subject erp file list
 all_ERP = k_ls(fullfile(data_dir, 'sub-*', 'eeg', 'erp_70uv_threshodl', '*.erp'));
 dlmcell( 'grandAVG_list.txt',all_ERP);
-movefile('grandAVG_list.txt',[home_dir, filesep, 'erp']);
+movefile('grandAVG_list.txt',[home_dir, filesep, 'ERP']);
 % grand average and save grand erp
-ERP_weight = pop_gaverager(fullfile(home_dir, 'erp', 'grandAVG_list.txt') , 'Criterion',  30, 'ExcludeNullBin', 'on', 'SEM', 'on', 'Weighted', 'on');
+ERP_weight = pop_gaverager(fullfile(home_dir, 'ERP', 'grandAVG_list.txt') , 'Criterion',  30, 'ExcludeNullBin', 'on', 'SEM', 'on', 'Weighted', 'on');
 pop_savemyerp(ERP_weight, 'erpname',...
        'grand_avg_weight', 'filename', 'grand_avg_weight.erp', 'filepath',fullfile(home_dir, 'erp') , 'Warning', 'off');
    
-ERP_noweigth = pop_gaverager(fullfile(home_dir, 'erp', 'grandAVG_list.txt') , 'Criterion',  30, 'ExcludeNullBin', 'on', 'SEM', 'on', 'Weighted', 'off' );
+ERP_noweigth = pop_gaverager(fullfile(home_dir, 'ERP', 'grandAVG_list.txt') , 'Criterion',  30, 'ExcludeNullBin', 'on', 'SEM', 'on', 'Weighted', 'off' );
 pop_savemyerp(ERP_noweigth, 'erpname',...
        'grand_avg_noweight', 'filename', 'grand_avg_noweight.erp', 'filepath',fullfile(home_dir, 'erp') , 'Warning', 'off');
 %% --- 11# warning 30% limit, rm redo

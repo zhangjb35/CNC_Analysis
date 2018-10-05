@@ -21,7 +21,7 @@ eeglabpath = fileparts(which('eeglab')); % eeglab path
 for i=2:length(subjList)
     %% --- 01# prepare path
     % setup store path
-    storePath=fullfile([filesep namePattern,sprintf('%02d',i)],'eeg','preprocess');
+    storePath=fullfile(home_dir,['sub-' sprintf('%02d',i)],'eeg','preprocess');
     mkdir(storePath);
     %% --- 02# load to EEGLAB
     EEG = pop_loadset('filename',['sub-' sprintf('%02d',i) '_task-psychophysics_eeg.set'],'filepath',fullfile([filesep namePattern,sprintf('%02d',i)],'eeg'));
@@ -63,7 +63,7 @@ for i=2:length(subjList)
     
     %% --- 10# correct eog
     % save data
-    load([fullfile(fuction_dir) 'saica_cfg.mat'])
+    load(fullfile(fuction_dir, 'saica_cfg.mat'),'-mat')
     [EEG_temp, ~] = eeg_SASICA(EEG,varargin{1,1});
     rmIndex = find(EEG_temp.reject.gcompreject>0);
     
@@ -75,7 +75,7 @@ for i=2:length(subjList)
     else
         clear EEG_temp
         clear varargin
-        load([fullfile(matlab_dir, 'JinboToolbox/') 'saica_cfg_adjust.mat']);
+        load(fullfile(fuction_dir,'saica_cfg_adjust.mat','-mat');
         [EEG_temp, ~] = eeg_SASICA(EEG,varargin{1,1});
         rmIndex = find(EEG_temp.reject.gcompreject>0);
         if isempty(rmIndex)
