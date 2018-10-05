@@ -35,8 +35,8 @@ load OS_OL
 %%
 % 
 % # Sound, theta 4-8, -500 - -200, frontal-central, save as SP_Theta.mat
-% # Sound, Beta_EL#1 12-18, -400 - -200, eeg_sites, save as SP_Beta_E1.mat
-% # Sound, Beta_EL#2 12-18, -200 - 0, eeg_sites, save as SP_Beta_E2.mat
+% # Sound, Beta 12-18, -400 - 0, eeg_sites, save as SP_Beta.mat
+% # (Merged with Previous) Sound, Beta_EL#2 12-18, -200 - 0, eeg_sites, save as SP_Beta_E2.mat
 % # Probe, Alpha 7.5-10.5, 0 - 350, postior-central, VP_Alpha.mat
 % # Probe, Beta 12-25, 50 - 250, postior-central, VP_Beta.mat
 %
@@ -93,7 +93,7 @@ save SP_Theta SP_Theta -v7.3
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-% Sound, Beta_EL#1 12-18, -400 - -200, eeg_sites
+% Sound, Beta 12-18, -400 - 0, eeg_sites
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 cfg = [];
@@ -118,7 +118,7 @@ cfg.numrandomization = 10000;
 
 cfg.channel = eeg_sites;
 
-cfg.latency          = [-0.4 -0.2];
+cfg.latency          = [-0.4 0];
 cfg.frequency        = [12 18];
 %cfg.avgoverfreq = 'no';
 %cfg.avgovertime = 'no';
@@ -133,8 +133,8 @@ ones(1,size(MS_ML,2)), 2*ones(1,size(OS_OL,2))];  % condition number
 cfg.uvar = 1;                                   % "subject" is unit of observation
 cfg.ivar = 2;                                   % "condition" is the dependent variable
 
-SP_Beta_E1 = ft_freqstatistics(cfg, MS_ML{1:end}, OS_OL{1:end});
-save SP_Beta_E1 SP_Beta_E1 -v7.3
+SP_Beta = ft_freqstatistics(cfg, MS_ML{1:end}, OS_OL{1:end});
+save SP_Beta SP_Beta -v7.3
 % stat_interaction_simple_num_alpha = ft_freqstatistics(cfg, MS_OS{1:end}, ML_OL{1:end});
 % save stat_interaction_simple_num_alpha stat_interaction_simple_num_alpha -v7.3
 
@@ -143,47 +143,47 @@ save SP_Beta_E1 SP_Beta_E1 -v7.3
 % Sound, Beta_EL#2 12-18, -200 - 0, eeg_sites
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%
-cfg = [];
-
-%cfg_neighb.method    = 'distance';
-%cfg_neighb.layout    = 'cnc_eeg.mat';
-%cfg.neighbours       = ft_prepare_neighbours(cfg_neighb, MS_ML{1});
-%cfg.neighbourdist    = 8;
-%cfg.neighbours = [];
-
-cfg.method           = 'montecarlo';
-cfg.statistic        = 'depsamplesT';
-cfg.clusteralpha     = 0.05;
-cfg.clusterstatistic = 'maxsum';
-%cfg.minnbchan        = 0;
-
-cfg.tail             = 1;
-cfg.clustertail      = 1;
-cfg.alpha            = 0.05;
-
-cfg.numrandomization = 10000;
-
-cfg.channel = eeg_sites;
-
-cfg.latency          = [-0.2 0];
-cfg.frequency        = [12 18];
-%cfg.avgoverfreq = 'no';
-%cfg.avgovertime = 'no';
-cfg.avgoverchan = 'yes';
-
-cfg.correctm         = 'cluster';
-
-cfg.design = [
-repmat(1:1:size(MS_ML,2), 1, 2) % subject number
-ones(1,size(MS_ML,2)), 2*ones(1,size(OS_OL,2))];  % condition number
-
-cfg.uvar = 1;                                   % "subject" is unit of observation
-cfg.ivar = 2;                                   % "condition" is the dependent variable
-
-SP_Beta_E2 = ft_freqstatistics(cfg, MS_ML{1:end}, OS_OL{1:end});
-save SP_Beta_E2 SP_Beta_E2 -v7.3
-% stat_interaction_simple_num_alpha = ft_freqstatistics(cfg, MS_OS{1:end}, ML_OL{1:end});
-% save stat_interaction_simple_num_alpha stat_interaction_simple_num_alpha -v7.3
+% cfg = [];
+% 
+% %cfg_neighb.method    = 'distance';
+% %cfg_neighb.layout    = 'cnc_eeg.mat';
+% %cfg.neighbours       = ft_prepare_neighbours(cfg_neighb, MS_ML{1});
+% %cfg.neighbourdist    = 8;
+% %cfg.neighbours = [];
+% 
+% cfg.method           = 'montecarlo';
+% cfg.statistic        = 'depsamplesT';
+% cfg.clusteralpha     = 0.05;
+% cfg.clusterstatistic = 'maxsum';
+% %cfg.minnbchan        = 0;
+% 
+% cfg.tail             = 1;
+% cfg.clustertail      = 1;
+% cfg.alpha            = 0.05;
+% 
+% cfg.numrandomization = 10000;
+% 
+% cfg.channel = eeg_sites;
+% 
+% cfg.latency          = [-0.2 0];
+% cfg.frequency        = [12 18];
+% %cfg.avgoverfreq = 'no';
+% %cfg.avgovertime = 'no';
+% cfg.avgoverchan = 'yes';
+% 
+% cfg.correctm         = 'cluster';
+% 
+% cfg.design = [
+% repmat(1:1:size(MS_ML,2), 1, 2) % subject number
+% ones(1,size(MS_ML,2)), 2*ones(1,size(OS_OL,2))];  % condition number
+% 
+% cfg.uvar = 1;                                   % "subject" is unit of observation
+% cfg.ivar = 2;                                   % "condition" is the dependent variable
+% 
+% SP_Beta_E2 = ft_freqstatistics(cfg, MS_ML{1:end}, OS_OL{1:end});
+% save SP_Beta_E2 SP_Beta_E2 -v7.3
+% % stat_interaction_simple_num_alpha = ft_freqstatistics(cfg, MS_OS{1:end}, ML_OL{1:end});
+% % save stat_interaction_simple_num_alpha stat_interaction_simple_num_alpha -v7.3
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %
