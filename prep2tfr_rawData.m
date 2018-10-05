@@ -1,40 +1,34 @@
-% SET PATHS
 clear variables
+clc
 restoredefaultpath; %% set a clean path
-home_dir = '/home/jinbo/Project/CNC/';
 
-matlab_dir = fullfile(home_dir, 'matlab'); % change according to your path
-data_dir = fullfile(home_dir, '/data/');
-erp_setup_path = fullfile(home_dir,'erp');
-figures_dir = []; % means no figures are saved
+% path
+project_dir = pwd; % the file located
+home_dir = fullfile(project_dir, 'data', 'rawEEG');
+data_dir = fullfile(project_dir, 'data');
+matlab_dir = fullfile(project_dir, 'toolbox');
+fuction_dir = fullfile(project_dir, 'functions');
+% toolbox
+% addpath('/home/jinbo/.matlab/R2012b');
+addpath(fullfile(matlab_dir, 'fieldtrip-20180922')); ft_defaults %% initialize FieldTrip defaults
+addpath(genpath([matlab_dir, filesep, 'eeglab14_1_2b']));
+addpath(genpath(fuction_dir));
 
-% ADD PATHS
-
-% add your toolbox
-addpath('/home/jinbo/.matlab/R2012b'); % for linux only
-addpath(fullfile(matlab_dir, 'fieldtrip-20180922'));
-ft_defaults %% initialize FieldTrip defaults
-addpath(fullfile(matlab_dir, 'eeglab14_1_2b'));
-% addpath(genpath(fullfile(matlab_dir, 'FastICA_25/')));
-addpath(genpath(fullfile(matlab_dir, 'JinboToolbox/')));
-% addpath(genpath(fullfile(matlab_dir, 'ERPWAVELABv1.2/')));
-
-eeglab
+% located setup file from eeglab
 eeglabpath = fileparts(which('eeglab')); % eeglab path
-
-% detect target
-[subjList,namePattern] = k_ls(fullfile(data_dir, 'sub-*', 'eeg', 'erp', 'ass_event_eeg.set'));
-% please rm bad subj manully
+erp_setup_path = fullfile(project_dir,'setup','tfr_bdf');
+%% --- 01# detect target
+[subjList,namePattern] = kb_ls(fullfile(home_dir, 'sub-*', 'eeg', 'erp', 'ass_event_eeg.set')); % please remove bad subj manully first
 % store path
 storePath=fullfile(data_dir,'TFPrep');
 mkdir(storePath)
 
-bdfFile = k_ls(fullfile(erp_setup_path,'bdf_*.txt'));
+bdfFile = kb_ls(fullfile(erp_setup_path,'bdf_*.txt'));
 %% ERP
-[subjList,namePattern] = k_ls(fullfile(data_dir, 'sub-*', 'eeg', 'preprocess', 'coreog_ica_lfilt_hfilt_ref_data.set'));
+[subjList,namePattern] = kb_ls(fullfile(home_dir, 'sub-*', 'eeg', 'preprocess', 'coreog_ica_lfilt_hfilt_ref_data.set'));
 for i=1:length(subjList)
     %% --- 01# load to EEGLAB
-    EEG = pop_loadset('filename','coreog_ica_lfilt_hfilt_ref_data.set','filepath',fullfile([filesep namePattern,sprintf('%02d',i)],'eeg','preprocess'));
+    EEG = pop_loadset('filename','coreog_ica_lfilt_hfilt_ref_data.set','filepath',fullfile(home_dir, ['sub-' sprintf('%02d',i)],'eeg','preprocess'));
     
     %% --- 02# gen event list [ERPLAB]
     EEG = pop_creabasiceventlist( EEG , 'AlphanumericCleaning', 'on', 'BoundaryNumeric', { -99 }, 'BoundaryString', { 'boundary' }, 'Eventlist',...
@@ -55,7 +49,7 @@ for i=1:length(subjList)
     end
     for j=1:numel(bdfFile)
         %% --- 05# extract epoch [ERPLAB]
-        EEG_epoch{j} = pop_epochbin( EEG_epoch{j} , [-1000 1500], [-200 0]);
+        EEG_epoch{j} = pop_epochbin( EEG_epoch{j} , [-2000 2000], [-200 0]);
         EEG_sync_epoch{j} = pop_epochbin( EEG_sync_epoch{j} , [-200 800], [-200 0]);
         
         %% --- 06# artifacts reject [ERPLAB]
@@ -71,30 +65,3 @@ for i=1:length(subjList)
     % clear up
     clear EEG
 end
-
-%     %% --- 08# average [ERPLAB]
-%     ERP = pop_averager( EEG , 'Criterion', 'good', 'ExcludeBoundary', 'on', 'SEM', 'on' );
-%     EEG.setname='avg_artifact_epoch_ass_event_eeg';
-%     
-%     %% --- 09# save ERP [ERPLAB]
-%     ERP = pop_savemyerp(ERP, 'erpname',...
-%         ['sub-' sprintf('%02d',i)], 'filename',  ['sub-' sprintf('%02d',i) '.erp'], 'filepath',storePath, 'Warning', 'off');
-    
-% for i=1:length(subjList)
-%     %% --- 01# sync epoch for TFR
-%      % load
-%      EEG = pop_loadset('filename','ass_event_eeg.set','filepath',fullfile([filesep namePattern,sprintf('%02d',i)],'eeg','erp'));
-%      % epoch for TF
-%      EEG = pop_epochbin( EEG , [-1000 1500], [-200 0]);
-%     EEG.setname='epoch_ass_event_eeg';
-%     
-%      EEG  = pop_artextval( EEG , 'Channel',  1:62, 'Flag', [ 1 2], 'Threshold', [ -70 70], 'Twindow', [-200 798] );
-%          EEG = pop_summary_AR_eeg_detection(EEG);
-%     EEG.setname='artifact_epoch_ass_event_eeg';
-%     subjList{i}
-% end
-% %% --- 02# import to BrainStorm
-% %% --- 03# TFR
-% %% --- 04# Total
-% %% --- 05# Evoked
-% %% --- 06# Induced

@@ -17,7 +17,7 @@ eeglabpath = fileparts(which('eeglab')); % eeglab path
 
 bdfFile = fullfile(erp_setup_path,'bdf.txt');
 %% ERP
-[subjList,namePattern] = k_ls(fullfile(data_dir, 'sub-*', 'eeg', 'preprocess', 'coreog_ica_lfilt_hfilt_ref_data.set'));
+[subjList,namePattern] = kb_ls(fullfile(data_dir, 'sub-*', 'eeg', 'preprocess', 'coreog_ica_lfilt_hfilt_ref_data.set'));
 for i=1:length(subjList)
     %% --- 01# prepare path
     % setup store path
@@ -66,7 +66,7 @@ for i=1:length(subjList)
 end
 %% --- 10# grand avage  [ERPLAB]
 % get individual subject erp file list
-all_ERP = k_ls(fullfile(data_dir, 'sub-*', 'eeg', 'erp_70uv_threshodl', '*.erp'));
+all_ERP = kb_ls(fullfile(data_dir, 'sub-*', 'eeg', 'erp_70uv_threshodl', '*.erp'));
 dlmcell( 'grandAVG_list.txt',all_ERP);
 movefile('grandAVG_list.txt',[home_dir, filesep, 'ERP']);
 % grand average and save grand erp
