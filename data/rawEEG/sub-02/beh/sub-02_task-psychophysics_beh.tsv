@@ -1,0 +1,601 @@
+participant_id,Name,Handedness,Age,Sex,Block,numresponse_OnsetTime,NumCondition,SoundCondition,probestimuli,teststimuli,sound,correctResp,Resp,ACC,RT
+2,huangzhen   ,right,24,female,17,160651,2,4,1_44_2  ,1_43_1  ,multisoft,6,6,1,5027
+2,huangzhen   ,right,24,female,18,168867,4,1,6_260_2 ,6_259_1 ,         ,5,6,0,1619
+2,huangzhen   ,right,24,female,19,173967,2,2,2_76_2  ,2_75_1  ,onesoft1 ,6,5,0,2726
+2,huangzhen   ,right,24,female,20,180134,2,5,5_210_2 ,5_209_1 ,multiloud,6,5,0,1623
+2,huangzhen   ,right,24,female,21,184834,3,4,4_168_2 ,4_167_1 ,multisoft,6,6,1,1211
+2,huangzhen   ,right,24,female,22,189484,3,3,2_60_2  ,2_59_1  ,oneloud  ,6,5,0,1481
+2,huangzhen   ,right,24,female,23,194450,1,2,3_138_2 ,3_137_1 ,onesoft  ,6,5,0,2435
+2,huangzhen   ,right,24,female,24,200067,4,1,7_292_2 ,7_291_1 ,         ,5,5,1,1058
+2,huangzhen   ,right,24,female,25,204467,1,1,9_410_2 ,9_409_1 ,         ,6,6,1,1730
+2,huangzhen   ,right,24,female,26,209333,4,4,1_2_2   ,1_1_1   ,multisoft,5,5,1,1327
+2,huangzhen   ,right,24,female,27,213833,6,3,3_140_2 ,3_139_1 ,oneloud1 ,5,5,1,915
+2,huangzhen   ,right,24,female,28,218066,2,2,5_206_2 ,5_205_1 ,onesoft  ,6,6,1,2322
+2,huangzhen   ,right,24,female,29,223716,2,4,3_144_2 ,3_143_1 ,multisoft,6,5,0,1744
+2,huangzhen   ,right,24,female,30,228799,6,1,8_380_2 ,8_379_1 ,         ,5,5,1,2117
+2,huangzhen   ,right,24,female,31,234299,6,2,2_56_2  ,2_55_1  ,onesoft1 ,5,5,1,905
+2,huangzhen   ,right,24,female,32,238366,1,2,3_142_2 ,3_141_1 ,onesoft  ,6,6,1,1022
+2,huangzhen   ,right,24,female,33,242882,3,2,2_50_2  ,2_49_1  ,onesoft1 ,6,6,1,3641
+2,huangzhen   ,right,24,female,34,249966,6,3,5_220_2 ,5_219_1 ,oneloud1 ,5,5,1,733
+2,huangzhen   ,right,24,female,35,253749,3,3,5_230_2 ,5_229_1 ,oneloud1 ,6,6,1,1278
+2,huangzhen   ,right,24,female,36,258232,2,3,1_18_2  ,1_17_1  ,oneloud  ,6,6,1,1235
+2,huangzhen   ,right,24,female,37,262849,4,3,2_54_2  ,2_53_1  ,oneloud  ,5,6,0,1562
+2,huangzhen   ,right,24,female,38,267699,5,4,4_148_2 ,4_147_1 ,multisoft,5,5,1,736
+2,huangzhen   ,right,24,female,39,271782,6,5,4_146_2 ,4_145_1 ,multiloud,5,5,1,725
+2,huangzhen   ,right,24,female,40,275915,2,4,2_78_2  ,2_77_1  ,multisoft,6,5,0,1552
+2,huangzhen   ,right,24,female,41,280982,6,5,2_82_2  ,2_81_1  ,multiloud,5,5,1,660
+2,huangzhen   ,right,24,female,42,284615,6,4,2_66_2  ,2_65_1  ,multisoft,5,5,1,667
+2,huangzhen   ,right,24,female,43,288648,3,2,1_6_2   ,1_5_1   ,onesoft1 ,6,6,1,1138
+2,huangzhen   ,right,24,female,44,293181,6,5,4_154_2 ,4_153_1 ,multiloud,5,5,1,893
+2,huangzhen   ,right,24,female,45,297381,5,4,4_180_2 ,4_179_1 ,multisoft,5,5,1,717
+2,huangzhen   ,right,24,female,46,301381,1,2,1_40_2  ,1_39_1  ,onesoft1 ,6,6,1,1765
+2,huangzhen   ,right,24,female,47,306581,6,4,3_114_2 ,3_113_1 ,multisoft,5,5,1,1525
+2,huangzhen   ,right,24,female,48,311314,4,3,2_58_2  ,2_57_1  ,oneloud  ,5,5,1,664
+2,huangzhen   ,right,24,female,49,315347,1,4,2_52_2  ,2_51_1  ,multisoft,6,5,0,1790
+2,huangzhen   ,right,24,female,50,320147,3,1,7_322_2 ,7_321_1 ,         ,6,6,1,974
+2,huangzhen   ,right,24,female,51,324347,3,5,3_118_2 ,3_117_1 ,multiloud,6,5,0,1582
+2,huangzhen   ,right,24,female,52,329247,5,5,1_10_2  ,1_9_1   ,multiloud,5,5,1,706
+2,huangzhen   ,right,24,female,53,333347,2,3,4_166_2 ,4_165_1 ,oneloud1 ,6,6,1,1310
+2,huangzhen   ,right,24,female,54,338080,2,4,3_130_2 ,3_129_1 ,multisoft,6,6,1,1057
+2,huangzhen   ,right,24,female,55,342580,4,5,1_46_2  ,1_45_1  ,multiloud,5,6,0,1349
+2,huangzhen   ,right,24,female,56,347197,5,4,1_14_2  ,1_13_1  ,multisoft,5,5,1,652
+2,huangzhen   ,right,24,female,57,351397,6,2,5_220_2 ,5_219_1 ,onesoft  ,5,5,1,844
+2,huangzhen   ,right,24,female,58,355780,1,4,2_64_2  ,2_63_1  ,multisoft,6,6,1,788
+2,huangzhen   ,right,24,female,59,359596,2,5,3_144_2 ,3_143_1 ,multiloud,6,6,1,828
+2,huangzhen   ,right,24,female,60,363580,3,1,7_324_2 ,7_323_1 ,         ,6,5,0,628
+2,huangzhen   ,right,24,female,61,367480,3,2,1_42_2  ,1_41_1  ,onesoft1 ,6,6,1,800
+2,huangzhen   ,right,24,female,62,371546,5,1,6_266_2 ,6_265_1 ,         ,5,6,0,1454
+2,huangzhen   ,right,24,female,63,376246,3,3,3_104_2 ,3_103_1 ,oneloud  ,6,6,1,890
+2,huangzhen   ,right,24,female,64,380363,4,5,1_8_2   ,1_7_1   ,multiloud,5,5,1,709
+2,huangzhen   ,right,24,female,65,384296,2,5,2_76_2  ,2_75_1  ,multiloud,6,6,1,720
+2,huangzhen   ,right,24,female,66,388579,4,5,1_34_2  ,1_33_1  ,multiloud,5,6,0,1484
+2,huangzhen   ,right,24,female,67,556775,4,2,1_2_2   ,1_1_1   ,onesoft1 ,5,5,1,1732
+2,huangzhen   ,right,24,female,68,561875,6,2,1_48_2  ,1_47_1  ,onesoft1 ,5,5,1,936
+2,huangzhen   ,right,24,female,69,565975,2,1,9_430_2 ,9_429_1 ,         ,6,6,1,492
+2,huangzhen   ,right,24,female,70,569642,3,3,5_232_2 ,5_231_1 ,oneloud1 ,6,5,0,705
+2,huangzhen   ,right,24,female,71,573658,2,5,2_96_2  ,2_95_1  ,multiloud,6,6,1,1192
+2,huangzhen   ,right,24,female,72,577958,3,1,10_472_2,10_471_1,         ,6,5,0,700
+2,huangzhen   ,right,24,female,73,581908,6,5,5_222_2 ,5_221_1 ,multiloud,5,5,1,558
+2,huangzhen   ,right,24,female,74,585841,3,4,3_118_2 ,3_117_1 ,multisoft,6,5,0,473
+2,huangzhen   ,right,24,female,75,589758,1,2,4_176_2 ,4_175_1 ,onesoft  ,6,6,1,564
+2,huangzhen   ,right,24,female,76,593658,5,5,5_218_2 ,5_217_1 ,multiloud,5,5,1,560
+2,huangzhen   ,right,24,female,77,597691,3,2,5_232_2 ,5_231_1 ,onesoft  ,6,5,0,727
+2,huangzhen   ,right,24,female,78,601491,2,3,3_130_2 ,3_129_1 ,oneloud  ,6,6,1,1087
+2,huangzhen   ,right,24,female,79,605674,3,3,3_118_2 ,3_117_1 ,oneloud1 ,6,5,0,712
+2,huangzhen   ,right,24,female,80,609924,2,2,2_78_2  ,2_77_1  ,onesoft1 ,6,5,0,1117
+2,huangzhen   ,right,24,female,81,614241,4,4,4_162_2 ,4_161_1 ,multisoft,5,6,0,1544
+2,huangzhen   ,right,24,female,82,618874,2,1,10_458_2,10_457_1,         ,6,6,1,935
+2,huangzhen   ,right,24,female,83,622974,4,5,4_178_2 ,4_177_1 ,multiloud,5,5,1,883
+2,huangzhen   ,right,24,female,84,627324,1,2,5_198_2 ,5_197_1 ,onesoft  ,6,6,1,1237
+2,huangzhen   ,right,24,female,85,631557,6,1,7_306_2 ,7_305_1 ,         ,5,5,1,684
+2,huangzhen   ,right,24,female,86,635624,5,2,1_10_2  ,1_9_1   ,onesoft1 ,5,6,0,1249
+2,huangzhen   ,right,24,female,87,640157,3,1,9_390_2 ,9_389_1 ,         ,6,5,0,1028
+2,huangzhen   ,right,24,female,88,644673,5,3,3_100_2 ,3_99_1  ,oneloud  ,5,5,1,663
+2,huangzhen   ,right,24,female,89,648573,6,3,5_238_2 ,5_237_1 ,oneloud1 ,5,5,1,683
+2,huangzhen   ,right,24,female,90,652573,6,5,3_140_2 ,3_139_1 ,multiloud,5,5,1,691
+2,huangzhen   ,right,24,female,91,656756,3,4,1_42_2  ,1_41_1  ,multisoft,6,6,1,556
+2,huangzhen   ,right,24,female,92,660690,6,5,1_36_2  ,1_35_1  ,multiloud,5,5,1,902
+2,huangzhen   ,right,24,female,93,664856,6,4,4_170_2 ,4_169_1 ,multisoft,5,5,1,680
+2,huangzhen   ,right,24,female,94,668689,2,5,4_164_2 ,4_163_1 ,multiloud,6,6,1,567
+2,huangzhen   ,right,24,female,95,672423,2,5,1_44_2  ,1_43_1  ,multiloud,6,6,1,929
+2,huangzhen   ,right,24,female,96,676756,6,2,5_212_2 ,5_211_1 ,onesoft  ,5,5,1,620
+2,huangzhen   ,right,24,female,97,680839,2,3,5_210_2 ,5_209_1 ,oneloud1 ,6,5,0,1216
+2,huangzhen   ,right,24,female,98,685389,4,2,1_8_2   ,1_7_1   ,onesoft1 ,5,5,1,650
+2,huangzhen   ,right,24,female,99,689239,6,3,1_4_2   ,1_3_1   ,oneloud  ,5,5,1,584
+2,huangzhen   ,right,24,female,100,693072,6,1,9_404_2 ,9_403_1 ,         ,5,6,0,927
+2,huangzhen   ,right,24,female,101,697439,1,2,2_68_2  ,2_67_1  ,onesoft1 ,6,6,1,960
+2,huangzhen   ,right,24,female,102,701905,3,2,1_22_2  ,1_21_1  ,onesoft1 ,6,5,0,1278
+2,huangzhen   ,right,24,female,103,706355,4,2,5_240_2 ,5_239_1 ,onesoft  ,5,5,1,772
+2,huangzhen   ,right,24,female,104,710272,5,2,2_72_2  ,2_71_1  ,onesoft1 ,5,5,1,1687
+2,huangzhen   ,right,24,female,105,715122,6,1,7_330_2 ,7_329_1 ,         ,5,5,1,861
+2,huangzhen   ,right,24,female,106,719105,5,1,7_304_2 ,7_303_1 ,         ,5,5,1,573
+2,huangzhen   ,right,24,female,107,723022,4,3,5_226_2 ,5_225_1 ,oneloud1 ,5,6,0,640
+2,huangzhen   ,right,24,female,108,727188,5,2,5_234_2 ,5_233_1 ,onesoft  ,5,5,1,826
+2,huangzhen   ,right,24,female,109,731405,5,4,3_116_2 ,3_115_1 ,multisoft,5,6,0,705
+2,huangzhen   ,right,24,female,110,735471,1,4,3_102_2 ,3_101_1 ,multisoft,6,6,1,1487
+2,huangzhen   ,right,24,female,111,740204,1,4,1_28_2  ,1_27_1  ,multisoft,6,6,1,1546
+2,huangzhen   ,right,24,female,112,744904,3,5,3_106_2 ,3_105_1 ,multiloud,6,5,0,982
+2,huangzhen   ,right,24,female,113,749421,1,3,2_92_2  ,2_91_1  ,oneloud  ,6,6,1,857
+2,huangzhen   ,right,24,female,114,753521,1,2,5_200_2 ,5_199_1 ,onesoft  ,6,6,1,1196
+2,huangzhen   ,right,24,female,115,757937,6,5,2_66_2  ,2_65_1  ,multiloud,5,5,1,660
+2,huangzhen   ,right,24,female,116,761654,3,4,5_232_2 ,5_231_1 ,multisoft,6,5,0,1599
+2,huangzhen   ,right,24,female,117,895034,2,5,3_130_2 ,3_129_1 ,multiloud,6,6,1,9487
+2,huangzhen   ,right,24,female,118,907667,4,4,2_90_2  ,2_89_1  ,multisoft,5,6,0,1854
+2,huangzhen   ,right,24,female,119,912784,1,3,5_198_2 ,5_197_1 ,oneloud1 ,6,6,1,545
+2,huangzhen   ,right,24,female,120,916717,1,5,1_24_2  ,1_23_1  ,multiloud,6,5,0,684
+2,huangzhen   ,right,24,female,121,920717,3,5,2_94_2  ,2_93_1  ,multiloud,6,5,0,556
+2,huangzhen   ,right,24,female,122,924717,2,4,2_96_2  ,2_95_1  ,multisoft,6,5,0,780
+2,huangzhen   ,right,24,female,123,928867,6,1,8_378_2 ,8_377_1 ,         ,5,5,1,726
+2,huangzhen   ,right,24,female,124,932733,5,2,4_156_2 ,4_155_1 ,onesoft  ,5,5,1,772
+2,huangzhen   ,right,24,female,125,936983,5,3,2_86_2  ,2_85_1  ,oneloud  ,5,5,1,833
+2,huangzhen   ,right,24,female,126,940950,1,3,2_68_2  ,2_67_1  ,oneloud  ,6,6,1,498
+2,huangzhen   ,right,24,female,127,944766,4,5,4_162_2 ,4_161_1 ,multiloud,5,5,1,1602
+2,huangzhen   ,right,24,female,128,949616,2,1,7_312_2 ,7_311_1 ,         ,6,6,1,672
+2,huangzhen   ,right,24,female,129,953400,3,3,1_6_2   ,1_5_1   ,oneloud  ,6,6,1,1216
+2,huangzhen   ,right,24,female,130,958166,1,1,10_446_2,10_445_1,         ,6,6,1,674
+2,huangzhen   ,right,24,female,131,962033,5,5,3_112_2 ,3_111_1 ,multiloud,5,5,1,1071
+2,huangzhen   ,right,24,female,132,966349,3,3,4_192_2 ,4_191_1 ,oneloud1 ,6,6,1,699
+2,huangzhen   ,right,24,female,133,970533,4,5,3_124_2 ,3_123_1 ,multiloud,5,6,0,1538
+2,huangzhen   ,right,24,female,134,975266,2,2,1_16_2  ,1_15_1  ,onesoft1 ,6,6,1,813
+2,huangzhen   ,right,24,female,135,979432,5,3,1_30_2  ,1_29_1  ,oneloud  ,5,5,1,479
+2,huangzhen   ,right,24,female,136,983366,1,1,6_242_2 ,6_241_1 ,         ,6,6,1,1089
+2,huangzhen   ,right,24,female,137,987765,3,3,1_42_2  ,1_41_1  ,oneloud  ,6,6,1,1330
+2,huangzhen   ,right,24,female,138,992332,6,3,3_108_2 ,3_107_1 ,oneloud  ,5,6,0,1203
+2,huangzhen   ,right,24,female,139,996815,3,2,3_106_2 ,3_105_1 ,onesoft  ,6,6,1,896
+2,huangzhen   ,right,24,female,140,1000882,3,3,4_168_2 ,4_167_1 ,oneloud1 ,6,6,1,1069
+2,huangzhen   ,right,24,female,141,1005282,4,1,6_284_2 ,6_283_1 ,         ,5,5,1,565
+2,huangzhen   ,right,24,female,142,1009082,4,4,3_124_2 ,3_123_1 ,multisoft,5,5,1,684
+2,huangzhen   ,right,24,female,143,1013198,4,3,1_2_2   ,1_1_1   ,oneloud  ,5,5,1,664
+2,huangzhen   ,right,24,female,144,1016848,3,4,1_22_2  ,1_21_1  ,multisoft,6,5,0,774
+2,huangzhen   ,right,24,female,145,1020865,1,1,8_366_2 ,8_365_1 ,         ,6,6,1,677
+2,huangzhen   ,right,24,female,146,1024931,6,5,2_56_2  ,2_55_1  ,multiloud,5,5,1,659
+2,huangzhen   ,right,24,female,147,1028965,1,3,4_188_2 ,4_187_1 ,oneloud1 ,6,6,1,1017
+2,huangzhen   ,right,24,female,148,1033248,5,5,1_14_2  ,1_13_1  ,multiloud,5,5,1,630
+2,huangzhen   ,right,24,female,149,1037364,4,2,4_178_2 ,4_177_1 ,onesoft  ,5,5,1,850
+2,huangzhen   ,right,24,female,150,1041348,6,1,9_402_2 ,9_401_1 ,         ,5,5,1,650
+2,huangzhen   ,right,24,female,151,1045281,3,4,2_60_2  ,2_59_1  ,multisoft,6,5,0,1812
+2,huangzhen   ,right,24,female,152,1050181,4,5,2_90_2  ,2_89_1  ,multiloud,5,6,0,848
+2,huangzhen   ,right,24,female,153,1054347,1,1,10_438_2,10_437_1,         ,6,5,0,1034
+2,huangzhen   ,right,24,female,154,1058497,6,4,5_238_2 ,5_237_1 ,multisoft,5,5,1,540
+2,huangzhen   ,right,24,female,155,1062297,6,5,2_88_2  ,2_87_1  ,multiloud,5,5,1,420
+2,huangzhen   ,right,24,female,156,1065980,5,5,2_80_2  ,2_79_1  ,multiloud,5,6,0,985
+2,huangzhen   ,right,24,female,157,1070314,2,5,3_120_2 ,3_119_1 ,multiloud,6,5,0,523
+2,huangzhen   ,right,24,female,158,1074030,3,3,3_106_2 ,3_105_1 ,oneloud1 ,6,6,1,855
+2,huangzhen   ,right,24,female,159,1078047,5,3,2_84_2  ,2_83_1  ,oneloud  ,5,5,1,734
+2,huangzhen   ,right,24,female,160,1082247,5,3,2_72_2  ,2_71_1  ,oneloud  ,5,5,1,2253
+2,huangzhen   ,right,24,female,161,1087897,3,4,3_104_2 ,3_103_1 ,multisoft,6,6,1,803
+2,huangzhen   ,right,24,female,162,1092180,1,4,5_200_2 ,5_199_1 ,multisoft,6,6,1,808
+2,huangzhen   ,right,24,female,163,1096130,4,3,3_124_2 ,3_123_1 ,oneloud  ,5,6,0,1258
+2,huangzhen   ,right,24,female,164,1100696,3,4,1_26_2  ,1_25_1  ,multisoft,6,5,0,1068
+2,huangzhen   ,right,24,female,165,1105096,6,4,4_160_2 ,4_159_1 ,multisoft,5,5,1,780
+2,huangzhen   ,right,24,female,166,1109063,3,5,2_62_2  ,2_61_1  ,multiloud,6,6,1,661
+2,huangzhen   ,right,24,female,167,1267126,5,4,3_112_2 ,3_111_1 ,multisoft,5,6,0,841
+2,huangzhen   ,right,24,female,168,1271459,1,4,3_142_2 ,3_141_1 ,multisoft,6,6,1,556
+2,huangzhen   ,right,24,female,169,1275142,5,1,7_310_2 ,7_309_1 ,         ,5,5,1,577
+2,huangzhen   ,right,24,female,170,1279142,5,4,3_100_2 ,3_99_1  ,multisoft,5,5,1,561
+2,huangzhen   ,right,24,female,171,1283125,1,2,4_186_2 ,4_185_1 ,onesoft  ,6,6,1,426
+2,huangzhen   ,right,24,female,172,1286675,3,1,9_394_2 ,9_393_1 ,         ,6,6,1,1228
+2,huangzhen   ,right,24,female,173,1291359,3,1,6_246_2 ,6_245_1 ,         ,6,6,1,512
+2,huangzhen   ,right,24,female,174,1295075,4,2,2_58_2  ,2_57_1  ,onesoft1 ,5,5,1,452
+2,huangzhen   ,right,24,female,175,1298825,2,1,10_450_2,10_449_1,         ,6,6,1,597
+2,huangzhen   ,right,24,female,176,1302708,1,4,4_186_2 ,4_185_1 ,multisoft,6,6,1,954
+2,huangzhen   ,right,24,female,177,1306842,3,4,2_62_2  ,2_61_1  ,multisoft,6,6,1,996
+2,huangzhen   ,right,24,female,178,1311308,2,5,5_206_2 ,5_205_1 ,multiloud,6,6,1,818
+2,huangzhen   ,right,24,female,179,1315441,5,2,3_100_2 ,3_99_1  ,onesoft1 ,5,5,1,821
+2,huangzhen   ,right,24,female,180,1319558,2,5,1_16_2  ,1_15_1  ,multiloud,6,5,0,1712
+2,huangzhen   ,right,24,female,181,1324575,1,1,9_416_2 ,9_415_1 ,         ,6,6,1,743
+2,huangzhen   ,right,24,female,182,1328508,5,5,2_84_2  ,2_83_1  ,multiloud,5,5,1,530
+2,huangzhen   ,right,24,female,183,1332374,1,3,5_194_2 ,5_193_1 ,oneloud1 ,6,5,0,584
+2,huangzhen   ,right,24,female,184,1336008,1,4,4_184_2 ,4_183_1 ,multisoft,6,6,1,365
+2,huangzhen   ,right,24,female,185,1339941,2,2,1_32_2  ,1_31_1  ,onesoft1 ,6,5,0,1504
+2,huangzhen   ,right,24,female,186,1344857,4,5,4_174_2 ,4_173_1 ,multiloud,5,5,1,572
+2,huangzhen   ,right,24,female,187,1348774,5,5,1_30_2  ,1_29_1  ,multiloud,5,5,1,503
+2,huangzhen   ,right,24,female,188,1352607,2,2,2_74_2  ,2_73_1  ,onesoft1 ,6,6,1,550
+2,huangzhen   ,right,24,female,189,1356540,5,5,3_100_2 ,3_99_1  ,multiloud,5,5,1,465
+2,huangzhen   ,right,24,female,190,1360507,6,3,1_48_2  ,1_47_1  ,oneloud  ,5,5,1,682
+2,huangzhen   ,right,24,female,191,1364424,5,1,9_396_2 ,9_395_1 ,         ,5,6,0,1437
+2,huangzhen   ,right,24,female,192,1368873,6,5,3_108_2 ,3_107_1 ,multiloud,5,6,0,1044
+2,huangzhen   ,right,24,female,193,1373173,6,1,8_360_2 ,8_359_1 ,         ,5,5,1,767
+2,huangzhen   ,right,24,female,194,1377507,4,5,5_240_2 ,5_239_1 ,multiloud,5,6,0,657
+2,huangzhen   ,right,24,female,195,1381790,5,2,3_132_2 ,3_131_1 ,onesoft  ,5,5,1,702
+2,huangzhen   ,right,24,female,196,1385706,6,3,3_136_2 ,3_135_1 ,oneloud1 ,5,5,1,570
+2,huangzhen   ,right,24,female,197,1389423,6,1,6_258_2 ,6_257_1 ,         ,5,5,1,645
+2,huangzhen   ,right,24,female,198,1393340,2,2,3_144_2 ,3_143_1 ,onesoft  ,6,5,0,952
+2,huangzhen   ,right,24,female,199,1397506,6,3,4_154_2 ,4_153_1 ,oneloud1 ,5,6,0,594
+2,huangzhen   ,right,24,female,200,1401139,2,2,3_134_2 ,3_133_1 ,onesoft  ,6,6,1,481
+2,huangzhen   ,right,24,female,201,1405089,4,2,1_46_2  ,1_45_1  ,onesoft1 ,5,6,0,539
+2,huangzhen   ,right,24,female,202,1408773,6,3,4_170_2 ,4_169_1 ,oneloud1 ,5,5,1,486
+2,huangzhen   ,right,24,female,203,1412439,3,2,2_60_2  ,2_59_1  ,onesoft1 ,6,5,0,804
+2,huangzhen   ,right,24,female,204,1416672,6,1,7_314_2 ,7_313_1 ,         ,5,5,1,515
+2,huangzhen   ,right,24,female,205,1420506,1,5,4_176_2 ,4_175_1 ,multiloud,6,6,1,1209
+2,huangzhen   ,right,24,female,206,1424972,5,2,2_80_2  ,2_79_1  ,onesoft1 ,5,6,0,1335
+2,huangzhen   ,right,24,female,207,1429755,6,3,2_66_2  ,2_65_1  ,oneloud  ,5,5,1,464
+2,huangzhen   ,right,24,female,208,1433439,6,4,1_36_2  ,1_35_1  ,multisoft,5,5,1,548
+2,huangzhen   ,right,24,female,209,1437355,4,5,2_58_2  ,2_57_1  ,multiloud,5,5,1,656
+2,huangzhen   ,right,24,female,210,1441455,3,4,4_182_2 ,4_181_1 ,multisoft,6,6,1,844
+2,huangzhen   ,right,24,female,211,1445422,2,4,1_16_2  ,1_15_1  ,multisoft,6,5,0,972
+2,huangzhen   ,right,24,female,212,1449538,1,5,3_102_2 ,3_101_1 ,multiloud,6,6,1,576
+2,huangzhen   ,right,24,female,213,1453405,6,3,3_114_2 ,3_113_1 ,oneloud  ,5,5,1,909
+2,huangzhen   ,right,24,female,214,1457771,6,4,2_88_2  ,2_87_1  ,multisoft,5,5,1,527
+2,huangzhen   ,right,24,female,215,1461505,5,5,2_72_2  ,2_71_1  ,multiloud,5,6,0,1513
+2,huangzhen   ,right,24,female,216,1466438,2,2,1_44_2  ,1_43_1  ,onesoft1 ,6,6,1,564
+2,huangzhen   ,right,24,female,217,1619451,4,4,5_214_2 ,5_213_1 ,multisoft,5,5,1,859
+2,huangzhen   ,right,24,female,218,1623734,4,5,5_226_2 ,5_225_1 ,multiloud,5,6,0,496
+2,huangzhen   ,right,24,female,219,1627301,6,3,5_212_2 ,5_211_1 ,oneloud1 ,5,5,1,432
+2,huangzhen   ,right,24,female,220,1630951,5,4,4_172_2 ,4_171_1 ,multisoft,5,6,0,934
+2,huangzhen   ,right,24,female,221,1634984,5,1,8_376_2 ,8_375_1 ,         ,5,5,1,341
+2,huangzhen   ,right,24,female,222,1638434,2,1,8_384_2 ,8_383_1 ,         ,6,6,1,611
+2,huangzhen   ,right,24,female,223,1642301,2,4,4_150_2 ,4_149_1 ,multisoft,6,6,1,424
+2,huangzhen   ,right,24,female,224,1646151,2,4,2_76_2  ,2_75_1  ,multisoft,6,6,1,598
+2,huangzhen   ,right,24,female,225,1650017,4,1,10_456_2,10_455_1,         ,5,5,1,412
+2,huangzhen   ,right,24,female,226,1653534,4,5,1_2_2   ,1_1_1   ,multiloud,5,5,1,615
+2,huangzhen   ,right,24,female,227,1657550,1,2,3_110_2 ,3_109_1 ,onesoft1 ,6,6,1,431
+2,huangzhen   ,right,24,female,228,1661167,3,1,6_264_2 ,6_263_1 ,         ,6,5,0,342
+2,huangzhen   ,right,24,female,229,1665017,1,2,1_24_2  ,1_23_1  ,onesoft1 ,6,6,1,363
+2,huangzhen   ,right,24,female,230,1668567,4,2,4_174_2 ,4_173_1 ,onesoft  ,5,5,1,341
+2,huangzhen   ,right,24,female,231,1672317,4,1,10_468_2,10_467_1,         ,5,5,1,983
+2,huangzhen   ,right,24,female,232,1676783,6,2,1_4_2   ,1_3_1   ,onesoft1 ,5,5,1,525
+2,huangzhen   ,right,24,female,233,1680416,5,1,8_354_2 ,8_353_1 ,         ,5,5,1,484
+2,huangzhen   ,right,24,female,234,1684183,3,4,4_190_2 ,4_189_1 ,multisoft,6,5,0,637
+2,huangzhen   ,right,24,female,235,1688200,6,1,10_442_2,10_441_1,         ,5,5,1,404
+2,huangzhen   ,right,24,female,236,1691999,4,5,5_214_2 ,5_213_1 ,multiloud,5,5,1,1157
+2,huangzhen   ,right,24,female,237,1696333,5,2,4_172_2 ,4_171_1 ,onesoft  ,5,5,1,583
+2,huangzhen   ,right,24,female,238,1699999,1,3,3_142_2 ,3_141_1 ,oneloud1 ,6,6,1,468
+2,huangzhen   ,right,24,female,239,1703549,6,5,5_212_2 ,5_211_1 ,multiloud,5,5,1,510
+2,huangzhen   ,right,24,female,240,1707482,4,4,2_58_2  ,2_57_1  ,multisoft,5,5,1,513
+2,huangzhen   ,right,24,female,241,1711299,1,3,3_102_2 ,3_101_1 ,oneloud  ,6,6,1,440
+2,huangzhen   ,right,24,female,242,1714899,6,3,2_82_2  ,2_81_1  ,oneloud  ,5,5,1,368
+2,huangzhen   ,right,24,female,243,1718549,5,1,10_474_2,10_473_1,         ,5,5,1,398
+2,huangzhen   ,right,24,female,244,1722349,6,4,2_82_2  ,2_81_1  ,multisoft,5,5,1,406
+2,huangzhen   ,right,24,female,245,1725915,2,2,4_166_2 ,4_165_1 ,onesoft  ,6,6,1,360
+2,huangzhen   ,right,24,female,246,1729732,3,3,2_50_2  ,2_49_1  ,oneloud  ,6,6,1,919
+2,huangzhen   ,right,24,female,247,1733682,1,5,3_138_2 ,3_137_1 ,multiloud,6,6,1,473
+2,huangzhen   ,right,24,female,248,1737432,4,2,4_162_2 ,4_161_1 ,onesoft  ,5,6,0,1074
+2,huangzhen   ,right,24,female,249,1741915,5,2,4_148_2 ,4_147_1 ,onesoft  ,5,5,1,423
+2,huangzhen   ,right,24,female,250,1745582,3,3,1_22_2  ,1_21_1  ,oneloud  ,6,6,1,500
+2,huangzhen   ,right,24,female,251,1749548,4,3,1_34_2  ,1_33_1  ,oneloud  ,5,5,1,1390
+2,huangzhen   ,right,24,female,252,1754248,3,1,7_308_2 ,7_307_1 ,         ,6,6,1,522
+2,huangzhen   ,right,24,female,253,1758131,2,2,5_196_2 ,5_195_1 ,onesoft  ,6,6,1,423
+2,huangzhen   ,right,24,female,254,1761531,3,5,4_182_2 ,4_181_1 ,multiloud,6,5,0,831
+2,huangzhen   ,right,24,female,255,1765731,4,1,8_382_2 ,8_381_1 ,         ,5,6,0,743
+2,huangzhen   ,right,24,female,256,1769714,4,2,3_126_2 ,3_125_1 ,onesoft  ,5,5,1,568
+2,huangzhen   ,right,24,female,257,1773514,3,2,4_190_2 ,4_189_1 ,onesoft  ,6,5,0,663
+2,huangzhen   ,right,24,female,258,1777547,3,4,5_216_2 ,5_215_1 ,multisoft,6,6,1,750
+2,huangzhen   ,right,24,female,259,1781631,2,1,6_262_2 ,6_261_1 ,         ,6,5,0,1298
+2,huangzhen   ,right,24,female,260,1786431,2,2,3_120_2 ,3_119_1 ,onesoft1 ,6,6,1,442
+2,huangzhen   ,right,24,female,261,1790097,4,2,2_54_2  ,2_53_1  ,onesoft1 ,5,5,1,976
+2,huangzhen   ,right,24,female,262,1794247,1,5,2_52_2  ,2_51_1  ,multiloud,6,5,0,1090
+2,huangzhen   ,right,24,female,263,1798680,4,1,10_434_2,10_433_1,         ,5,5,1,681
+2,huangzhen   ,right,24,female,264,1802780,2,4,2_74_2  ,2_73_1  ,multisoft,6,6,1,325
+2,huangzhen   ,right,24,female,265,1806147,2,2,5_210_2 ,5_209_1 ,onesoft  ,6,5,0,814
+2,huangzhen   ,right,24,female,266,1810147,1,4,4_176_2 ,4_175_1 ,multisoft,6,6,1,925
+2,huangzhen   ,right,24,female,267,1877029,3,1,9_414_2 ,9_413_1 ,         ,6,6,1,578
+2,huangzhen   ,right,24,female,268,1880812,6,1,8_372_2 ,8_371_1 ,         ,5,5,1,426
+2,huangzhen   ,right,24,female,269,1884595,6,5,3_136_2 ,3_135_1 ,multiloud,5,5,1,627
+2,huangzhen   ,right,24,female,270,1888662,5,1,6_272_2 ,6_271_1 ,         ,5,5,1,520
+2,huangzhen   ,right,24,female,271,1892562,5,4,5_202_2 ,5_201_1 ,multisoft,5,5,1,1388
+2,huangzhen   ,right,24,female,272,1897295,1,1,8_344_2 ,8_343_1 ,         ,6,6,1,503
+2,huangzhen   ,right,24,female,273,1901195,5,1,7_334_2 ,7_333_1 ,         ,5,5,1,1331
+2,huangzhen   ,right,24,female,274,1905595,4,1,9_422_2 ,9_421_1 ,         ,5,5,1,475
+2,huangzhen   ,right,24,female,275,1909228,3,1,8_368_2 ,8_367_1 ,         ,6,5,0,586
+2,huangzhen   ,right,24,female,276,1913161,1,2,3_102_2 ,3_101_1 ,onesoft1 ,6,6,1,661
+2,huangzhen   ,right,24,female,277,1916794,4,3,3_126_2 ,3_125_1 ,oneloud1 ,5,5,1,508
+2,huangzhen   ,right,24,female,278,1920394,2,3,1_16_2  ,1_15_1  ,oneloud  ,6,6,1,627
+2,huangzhen   ,right,24,female,279,1924394,6,4,4_154_2 ,4_153_1 ,multisoft,5,5,1,1307
+2,huangzhen   ,right,24,female,280,1929011,1,3,1_28_2  ,1_27_1  ,oneloud  ,6,6,1,890
+2,huangzhen   ,right,24,female,281,1933294,6,4,1_48_2  ,1_47_1  ,multisoft,5,6,0,1095
+2,huangzhen   ,right,24,female,282,1937844,5,5,5_202_2 ,5_201_1 ,multiloud,5,6,0,1417
+2,huangzhen   ,right,24,female,283,1942360,2,4,5_196_2 ,5_195_1 ,multisoft,6,6,1,797
+2,huangzhen   ,right,24,female,284,1946560,2,3,4_152_2 ,4_151_1 ,oneloud1 ,6,5,0,1085
+2,huangzhen   ,right,24,female,285,1950760,5,2,5_218_2 ,5_217_1 ,onesoft  ,5,5,1,581
+2,huangzhen   ,right,24,female,286,1954577,1,1,8_348_2 ,8_347_1 ,         ,6,6,1,811
+2,huangzhen   ,right,24,female,287,1958743,4,2,3_128_2 ,3_127_1 ,onesoft  ,5,6,0,1373
+2,huangzhen   ,right,24,female,288,1963510,1,3,5_204_2 ,5_203_1 ,oneloud1 ,6,5,0,1238
+2,huangzhen   ,right,24,female,289,1968076,5,3,3_132_2 ,3_131_1 ,oneloud1 ,5,5,1,832
+2,huangzhen   ,right,24,female,290,1972026,4,3,4_178_2 ,4_177_1 ,oneloud1 ,5,5,1,1474
+2,huangzhen   ,right,24,female,291,1976976,4,4,5_240_2 ,5_239_1 ,multisoft,5,6,0,676
+2,huangzhen   ,right,24,female,292,1980876,5,5,3_132_2 ,3_131_1 ,multiloud,5,5,1,544
+2,huangzhen   ,right,24,female,293,1984443,4,1,6_252_2 ,6_251_1 ,         ,5,6,0,609
+2,huangzhen   ,right,24,female,294,1988326,3,5,5_236_2 ,5_235_1 ,multiloud,6,5,0,1102
+2,huangzhen   ,right,24,female,295,1992976,3,4,3_98_2  ,3_97_1  ,multisoft,6,6,1,1675
+2,huangzhen   ,right,24,female,296,1998042,2,3,5_206_2 ,5_205_1 ,oneloud1 ,6,6,1,633
+2,huangzhen   ,right,24,female,297,2001876,2,3,2_78_2  ,2_77_1  ,oneloud  ,6,5,0,1223
+2,huangzhen   ,right,24,female,298,2006226,4,5,4_158_2 ,4_157_1 ,multiloud,5,5,1,633
+2,huangzhen   ,right,24,female,299,2009992,2,1,10_440_2,10_439_1,         ,6,5,0,1291
+2,huangzhen   ,right,24,female,300,2014775,5,3,5_208_2 ,5_207_1 ,oneloud1 ,5,6,0,1228
+2,huangzhen   ,right,24,female,301,2019375,1,5,2_68_2  ,2_67_1  ,multiloud,6,6,1,652
+2,huangzhen   ,right,24,female,302,2023159,2,1,9_406_2 ,9_405_1 ,         ,6,6,1,1924
+2,huangzhen   ,right,24,female,303,2028408,1,5,5_198_2 ,5_197_1 ,multiloud,6,6,1,826
+2,huangzhen   ,right,24,female,304,2032758,6,2,5_238_2 ,5_237_1 ,onesoft  ,5,5,1,676
+2,huangzhen   ,right,24,female,305,2036992,1,3,3_110_2 ,3_109_1 ,oneloud  ,6,6,1,666
+2,huangzhen   ,right,24,female,306,2040791,5,2,2_86_2  ,2_85_1  ,onesoft1 ,5,5,1,875
+2,huangzhen   ,right,24,female,307,2045025,3,3,5_216_2 ,5_215_1 ,oneloud1 ,6,6,1,1249
+2,huangzhen   ,right,24,female,308,2049458,2,3,2_74_2  ,2_73_1  ,oneloud  ,6,6,1,848
+2,huangzhen   ,right,24,female,309,2053425,1,1,6_274_2 ,6_273_1 ,         ,6,6,1,625
+2,huangzhen   ,right,24,female,310,2057441,3,1,7_336_2 ,7_335_1 ,         ,6,6,1,1593
+2,huangzhen   ,right,24,female,311,2062141,4,4,5_226_2 ,5_225_1 ,multisoft,5,6,0,1700
+2,huangzhen   ,right,24,female,312,2067191,5,2,3_116_2 ,3_115_1 ,onesoft  ,5,6,0,1850
+2,huangzhen   ,right,24,female,313,2072341,2,1,7_318_2 ,7_317_1 ,         ,6,5,0,948
+2,huangzhen   ,right,24,female,314,2076741,6,4,1_4_2   ,1_3_1   ,multisoft,5,5,1,700
+2,huangzhen   ,right,24,female,315,2080524,4,3,4_174_2 ,4_173_1 ,oneloud1 ,5,5,1,533
+2,huangzhen   ,right,24,female,316,2084474,2,5,3_134_2 ,3_133_1 ,multiloud,6,6,1,607
+2,huangzhen   ,right,24,female,317,2155122,3,4,2_94_2  ,2_93_1  ,multisoft,6,5,0,781
+2,huangzhen   ,right,24,female,318,2159055,3,5,1_6_2   ,1_5_1   ,multiloud,6,6,1,1072
+2,huangzhen   ,right,24,female,319,2163155,1,1,7_316_2 ,7_315_1 ,         ,6,6,1,516
+2,huangzhen   ,right,24,female,320,2167089,4,4,4_174_2 ,4_173_1 ,multisoft,5,5,1,478
+2,huangzhen   ,right,24,female,321,2171088,5,3,3_116_2 ,3_115_1 ,oneloud1 ,5,5,1,1662
+2,huangzhen   ,right,24,female,322,2175905,2,5,2_74_2  ,2_73_1  ,multiloud,6,6,1,525
+2,huangzhen   ,right,24,female,323,2179738,6,1,9_426_2 ,9_425_1 ,         ,5,5,1,452
+2,huangzhen   ,right,24,female,324,2183472,6,2,2_88_2  ,2_87_1  ,onesoft1 ,5,5,1,462
+2,huangzhen   ,right,24,female,325,2187055,1,4,5_194_2 ,5_193_1 ,multisoft,6,6,1,535
+2,huangzhen   ,right,24,female,326,2190838,4,3,1_8_2   ,1_7_1   ,oneloud  ,5,5,1,456
+2,huangzhen   ,right,24,female,327,2194705,2,3,3_120_2 ,3_119_1 ,oneloud  ,6,6,1,373
+2,huangzhen   ,right,24,female,328,2198505,2,5,4_152_2 ,4_151_1 ,multiloud,6,6,1,557
+2,huangzhen   ,right,24,female,329,2202138,5,4,2_84_2  ,2_83_1  ,multisoft,5,5,1,428
+2,huangzhen   ,right,24,female,330,2205821,2,1,7_332_2 ,7_331_1 ,         ,6,6,1,425
+2,huangzhen   ,right,24,female,331,2209621,4,3,3_122_2 ,3_121_1 ,oneloud  ,5,5,1,432
+2,huangzhen   ,right,24,female,332,2213638,3,2,4_182_2 ,4_181_1 ,onesoft  ,6,5,0,831
+2,huangzhen   ,right,24,female,333,2217737,5,2,4_180_2 ,4_179_1 ,onesoft  ,5,5,1,548
+2,huangzhen   ,right,24,female,334,2221771,3,3,1_26_2  ,1_25_1  ,oneloud  ,6,5,0,474
+2,huangzhen   ,right,24,female,335,2225687,3,4,5_230_2 ,5_229_1 ,multisoft,6,6,1,366
+2,huangzhen   ,right,24,female,336,2229587,3,5,5_216_2 ,5_215_1 ,multiloud,6,6,1,1338
+2,huangzhen   ,right,24,female,337,2234087,1,5,5_204_2 ,5_203_1 ,multiloud,6,6,1,606
+2,huangzhen   ,right,24,female,338,2237870,3,4,5_236_2 ,5_235_1 ,multisoft,6,5,0,479
+2,huangzhen   ,right,24,female,339,2241370,5,5,4_156_2 ,4_155_1 ,multiloud,5,6,0,1155
+2,huangzhen   ,right,24,female,340,2245820,5,5,4_148_2 ,4_147_1 ,multiloud,5,5,1,448
+2,huangzhen   ,right,24,female,341,2249420,5,1,10_480_2,10_479_1,         ,5,5,1,440
+2,huangzhen   ,right,24,female,342,2252970,2,2,3_130_2 ,3_129_1 ,onesoft1 ,6,6,1,442
+2,huangzhen   ,right,24,female,343,2256770,6,2,4_146_2 ,4_145_1 ,onesoft  ,5,5,1,514
+2,huangzhen   ,right,24,female,344,2260553,4,5,3_126_2 ,3_125_1 ,multiloud,5,5,1,515
+2,huangzhen   ,right,24,female,345,2264203,5,3,4_172_2 ,4_171_1 ,oneloud1 ,5,5,1,1329
+2,huangzhen   ,right,24,female,346,2268703,4,5,5_228_2 ,5_227_1 ,multiloud,5,5,1,397
+2,huangzhen   ,right,24,female,347,2272520,4,1,8_342_2 ,8_341_1 ,         ,5,5,1,716
+2,huangzhen   ,right,24,female,348,2276519,3,2,5_216_2 ,5_215_1 ,onesoft  ,6,6,1,421
+2,huangzhen   ,right,24,female,349,2280369,1,1,6_268_2 ,6_267_1 ,         ,6,6,1,443
+2,huangzhen   ,right,24,female,350,2284336,2,1,6_286_2 ,6_285_1 ,         ,6,6,1,459
+2,huangzhen   ,right,24,female,351,2287919,3,4,4_192_2 ,4_191_1 ,multisoft,6,5,0,1100
+2,huangzhen   ,right,24,female,352,2292269,1,1,7_296_2 ,7_295_1 ,         ,6,6,1,406
+2,huangzhen   ,right,24,female,353,2296036,6,3,2_56_2  ,2_55_1  ,oneloud  ,5,5,1,487
+2,huangzhen   ,right,24,female,354,2299802,2,5,2_78_2  ,2_77_1  ,multiloud,6,6,1,665
+2,huangzhen   ,right,24,female,355,2303669,5,2,5_202_2 ,5_201_1 ,onesoft  ,5,5,1,1102
+2,huangzhen   ,right,24,female,356,2307935,2,3,2_76_2  ,2_75_1  ,oneloud  ,6,6,1,388
+2,huangzhen   ,right,24,female,357,2311435,2,2,1_18_2  ,1_17_1  ,onesoft1 ,6,6,1,416
+2,huangzhen   ,right,24,female,358,2315369,5,2,1_20_2  ,1_19_1  ,onesoft1 ,5,5,1,482
+2,huangzhen   ,right,24,female,359,2319135,3,5,3_98_2  ,3_97_1  ,multiloud,6,5,0,675
+2,huangzhen   ,right,24,female,360,2323185,1,3,5_200_2 ,5_199_1 ,oneloud1 ,6,6,1,369
+2,huangzhen   ,right,24,female,361,2326685,5,4,3_132_2 ,3_131_1 ,multisoft,5,5,1,461
+2,huangzhen   ,right,24,female,362,2330335,1,5,1_28_2  ,1_27_1  ,multiloud,6,6,1,491
+2,huangzhen   ,right,24,female,363,2334185,6,5,1_4_2   ,1_3_1   ,multiloud,5,5,1,473
+2,huangzhen   ,right,24,female,364,2337868,5,3,3_112_2 ,3_111_1 ,oneloud  ,5,5,1,622
+2,huangzhen   ,right,24,female,365,2341918,1,1,6_270_2 ,6_269_1 ,         ,6,5,0,1228
+2,huangzhen   ,right,24,female,366,2346685,2,5,1_32_2  ,1_31_1  ,multiloud,6,6,1,509
+2,huangzhen   ,right,24,female,367,2382217,3,1,8_352_2 ,8_351_1 ,         ,6,6,1,1320
+2,huangzhen   ,right,24,female,368,2387000,1,2,2_64_2  ,2_63_1  ,onesoft1 ,6,6,1,609
+2,huangzhen   ,right,24,female,369,2390750,1,2,4_188_2 ,4_187_1 ,onesoft  ,6,6,1,602
+2,huangzhen   ,right,24,female,370,2394650,1,1,9_408_2 ,9_407_1 ,         ,6,5,0,2038
+2,huangzhen   ,right,24,female,371,2399917,6,2,3_108_2 ,3_107_1 ,onesoft1 ,5,6,0,1427
+2,huangzhen   ,right,24,female,372,2404450,4,4,1_8_2   ,1_7_1   ,multisoft,5,5,1,550
+2,huangzhen   ,right,24,female,373,2408066,5,1,8_370_2 ,8_369_1 ,         ,5,6,0,742
+2,huangzhen   ,right,24,female,374,2412200,5,3,1_14_2  ,1_13_1  ,oneloud  ,5,5,1,376
+2,huangzhen   ,right,24,female,375,2415850,4,1,7_294_2 ,7_293_1 ,         ,5,5,1,1166
+2,huangzhen   ,right,24,female,376,2420500,2,5,4_150_2 ,4_149_1 ,multiloud,6,6,1,628
+2,huangzhen   ,right,24,female,377,2424216,1,2,2_92_2  ,2_91_1  ,onesoft1 ,6,6,1,1064
+2,huangzhen   ,right,24,female,378,2428683,4,4,3_126_2 ,3_125_1 ,multisoft,5,5,1,452
+2,huangzhen   ,right,24,female,379,2432433,5,3,1_20_2  ,1_19_1  ,oneloud  ,5,5,1,686
+2,huangzhen   ,right,24,female,380,2436299,3,1,9_388_2 ,9_387_1 ,         ,6,5,0,716
+2,huangzhen   ,right,24,female,381,2440199,6,2,2_66_2  ,2_65_1  ,onesoft1 ,5,5,1,752
+2,huangzhen   ,right,24,female,382,2444299,1,3,2_52_2  ,2_51_1  ,oneloud  ,6,6,1,612
+2,huangzhen   ,right,24,female,383,2447999,4,4,4_158_2 ,4_157_1 ,multisoft,5,5,1,488
+2,huangzhen   ,right,24,female,384,2451899,5,3,5_218_2 ,5_217_1 ,oneloud1 ,5,5,1,372
+2,huangzhen   ,right,24,female,385,2455782,6,4,4_146_2 ,4_145_1 ,multisoft,5,5,1,409
+2,huangzhen   ,right,24,female,386,2459532,6,2,4_170_2 ,4_169_1 ,onesoft  ,5,5,1,467
+2,huangzhen   ,right,24,female,387,2463315,1,4,3_138_2 ,3_137_1 ,multisoft,6,6,1,907
+2,huangzhen   ,right,24,female,388,2467548,3,1,6_280_2 ,6_279_1 ,         ,6,6,1,1610
+2,huangzhen   ,right,24,female,389,2472432,2,4,4_164_2 ,4_163_1 ,multisoft,6,6,1,758
+2,huangzhen   ,right,24,female,390,2476565,4,2,5_226_2 ,5_225_1 ,onesoft  ,5,6,0,1473
+2,huangzhen   ,right,24,female,391,2481148,2,4,5_206_2 ,5_205_1 ,multisoft,6,6,1,682
+2,huangzhen   ,right,24,female,392,2484915,6,4,5_222_2 ,5_221_1 ,multisoft,5,6,0,939
+2,huangzhen   ,right,24,female,393,2489315,5,3,5_202_2 ,5_201_1 ,oneloud1 ,5,5,1,611
+2,huangzhen   ,right,24,female,394,2493248,1,5,2_64_2  ,2_63_1  ,multiloud,6,6,1,486
+2,huangzhen   ,right,24,female,395,2496914,3,2,1_26_2  ,1_25_1  ,onesoft1 ,6,5,0,476
+2,huangzhen   ,right,24,female,396,2500714,6,1,6_278_2 ,6_277_1 ,         ,5,5,1,547
+2,huangzhen   ,right,24,female,397,2504414,1,5,5_194_2 ,5_193_1 ,multiloud,6,6,1,807
+2,huangzhen   ,right,24,female,398,2508347,2,2,5_224_2 ,5_223_1 ,onesoft  ,6,6,1,466
+2,huangzhen   ,right,24,female,399,2511797,2,4,3_134_2 ,3_133_1 ,multisoft,6,6,1,480
+2,huangzhen   ,right,24,female,400,2515564,3,1,10_470_2,10_469_1,         ,6,5,0,825
+2,huangzhen   ,right,24,female,401,2519764,6,5,4_170_2 ,4_169_1 ,multiloud,5,5,1,481
+2,huangzhen   ,right,24,female,402,2523680,5,1,10_436_2,10_435_1,         ,5,6,0,501
+2,huangzhen   ,right,24,female,403,2527597,4,2,5_228_2 ,5_227_1 ,onesoft  ,5,5,1,392
+2,huangzhen   ,right,24,female,404,2531297,3,5,1_22_2  ,1_21_1  ,multiloud,6,5,0,1396
+2,huangzhen   ,right,24,female,405,2536264,3,2,3_118_2 ,3_117_1 ,onesoft  ,6,5,0,516
+2,huangzhen   ,right,24,female,406,2539813,2,1,6_288_2 ,6_287_1 ,         ,6,6,1,535
+2,huangzhen   ,right,24,female,407,2543380,5,1,8_356_2 ,8_355_1 ,         ,5,5,1,432
+2,huangzhen   ,right,24,female,408,2546897,6,5,1_48_2  ,1_47_1  ,multiloud,5,5,1,659
+2,huangzhen   ,right,24,female,409,2551013,5,1,9_392_2 ,9_391_1 ,         ,5,5,1,527
+2,huangzhen   ,right,24,female,410,2554913,2,5,5_196_2 ,5_195_1 ,multiloud,6,6,1,475
+2,huangzhen   ,right,24,female,411,2558696,4,2,2_70_2  ,2_69_1  ,onesoft1 ,5,5,1,484
+2,huangzhen   ,right,24,female,412,2562563,4,3,5_228_2 ,5_227_1 ,oneloud1 ,5,5,1,425
+2,huangzhen   ,right,24,female,413,2566396,2,2,4_152_2 ,4_151_1 ,onesoft  ,6,5,0,1120
+2,huangzhen   ,right,24,female,414,2570713,3,3,4_182_2 ,4_181_1 ,oneloud1 ,6,5,0,459
+2,huangzhen   ,right,24,female,415,2574346,5,1,9_398_2 ,9_397_1 ,         ,5,5,1,393
+2,huangzhen   ,right,24,female,416,2577929,3,1,8_338_2 ,8_337_1 ,         ,6,5,0,426
+2,huangzhen   ,right,24,female,417,2680827,1,4,1_12_2  ,1_11_1  ,multisoft,6,6,1,430
+2,huangzhen   ,right,24,female,418,2684793,3,5,3_104_2 ,3_103_1 ,multiloud,6,6,1,1031
+2,huangzhen   ,right,24,female,419,2688893,4,4,3_122_2 ,3_121_1 ,multisoft,5,5,1,675
+2,huangzhen   ,right,24,female,420,2692927,6,5,4_160_2 ,4_159_1 ,multiloud,5,5,1,361
+2,huangzhen   ,right,24,female,421,2696560,3,5,2_60_2  ,2_59_1  ,multiloud,6,5,0,536
+2,huangzhen   ,right,24,female,422,2700376,4,1,7_300_2 ,7_299_1 ,         ,5,6,0,704
+2,huangzhen   ,right,24,female,423,2704260,5,3,2_80_2  ,2_79_1  ,oneloud  ,5,6,0,540
+2,huangzhen   ,right,24,female,424,2708260,4,1,6_244_2 ,6_243_1 ,         ,5,5,1,420
+2,huangzhen   ,right,24,female,425,2711843,1,5,4_188_2 ,4_187_1 ,multiloud,6,6,1,509
+2,huangzhen   ,right,24,female,426,2715576,2,4,1_32_2  ,1_31_1  ,multisoft,6,6,1,632
+2,huangzhen   ,right,24,female,427,2719693,1,1,9_420_2 ,9_419_1 ,         ,6,6,1,626
+2,huangzhen   ,right,24,female,428,2723426,4,3,2_90_2  ,2_89_1  ,oneloud  ,5,5,1,677
+2,huangzhen   ,right,24,female,429,2727443,1,4,2_68_2  ,2_67_1  ,multisoft,6,6,1,492
+2,huangzhen   ,right,24,female,430,2731176,4,1,9_412_2 ,9_411_1 ,         ,5,5,1,463
+2,huangzhen   ,right,24,female,431,2734926,6,4,3_140_2 ,3_139_1 ,multisoft,5,5,1,393
+2,huangzhen   ,right,24,female,432,2738559,4,2,4_158_2 ,4_157_1 ,onesoft  ,5,5,1,872
+2,huangzhen   ,right,24,female,433,2742792,2,5,5_224_2 ,5_223_1 ,multiloud,6,6,1,335
+2,huangzhen   ,right,24,female,434,2746425,2,3,2_96_2  ,2_95_1  ,oneloud  ,6,6,1,646
+2,huangzhen   ,right,24,female,435,2750559,6,2,1_36_2  ,1_35_1  ,onesoft1 ,5,5,1,360
+2,huangzhen   ,right,24,female,436,2754092,6,1,10_454_2,10_453_1,         ,5,6,0,658
+2,huangzhen   ,right,24,female,437,2758042,6,4,5_220_2 ,5_219_1 ,multisoft,5,5,1,340
+2,huangzhen   ,right,24,female,438,2761725,2,1,8_358_2 ,8_357_1 ,         ,6,6,1,425
+2,huangzhen   ,right,24,female,439,2765258,3,5,1_26_2  ,1_25_1  ,multiloud,6,5,0,420
+2,huangzhen   ,right,24,female,440,2768842,6,2,3_140_2 ,3_139_1 ,onesoft  ,5,5,1,532
+2,huangzhen   ,right,24,female,441,2772725,5,3,4_148_2 ,4_147_1 ,oneloud1 ,5,5,1,761
+2,huangzhen   ,right,24,female,442,2777008,5,3,4_156_2 ,4_155_1 ,oneloud1 ,5,5,1,766
+2,huangzhen   ,right,24,female,443,2780791,3,2,4_168_2 ,4_167_1 ,onesoft  ,6,6,1,359
+2,huangzhen   ,right,24,female,444,2784541,6,4,1_38_2  ,1_37_1  ,multisoft,5,5,1,465
+2,huangzhen   ,right,24,female,445,2788208,1,3,4_184_2 ,4_183_1 ,oneloud1 ,6,6,1,342
+2,huangzhen   ,right,24,female,446,2791608,2,1,9_432_2 ,9_431_1 ,         ,6,5,0,509
+2,huangzhen   ,right,24,female,447,2795241,5,4,1_30_2  ,1_29_1  ,multisoft,5,5,1,468
+2,huangzhen   ,right,24,female,448,2799174,3,2,3_98_2  ,3_97_1  ,onesoft1 ,6,5,0,783
+2,huangzhen   ,right,24,female,449,2803291,1,3,3_138_2 ,3_137_1 ,oneloud1 ,6,6,1,450
+2,huangzhen   ,right,24,female,450,2807124,1,5,2_92_2  ,2_91_1  ,multiloud,6,6,1,513
+2,huangzhen   ,right,24,female,451,2810874,1,2,1_12_2  ,1_11_1  ,onesoft1 ,6,6,1,419
+2,huangzhen   ,right,24,female,452,2814741,5,4,4_156_2 ,4_155_1 ,multisoft,5,6,0,1040
+2,huangzhen   ,right,24,female,453,2819057,2,2,4_164_2 ,4_163_1 ,onesoft  ,6,6,1,1444
+2,huangzhen   ,right,24,female,454,2823607,6,1,10_466_2,10_465_1,         ,5,5,1,510
+2,huangzhen   ,right,24,female,455,2827574,5,1,9_386_2 ,9_385_1 ,         ,5,5,1,502
+2,huangzhen   ,right,24,female,456,2831157,5,1,6_256_2 ,6_255_1 ,         ,5,5,1,463
+2,huangzhen   ,right,24,female,457,2834940,1,3,4_176_2 ,4_175_1 ,oneloud1 ,6,6,1,624
+2,huangzhen   ,right,24,female,458,2838840,4,2,5_214_2 ,5_213_1 ,onesoft  ,5,5,1,380
+2,huangzhen   ,right,24,female,459,2842373,4,4,2_54_2  ,2_53_1  ,multisoft,5,6,0,439
+2,huangzhen   ,right,24,female,460,2846073,3,2,4_192_2 ,4_191_1 ,onesoft  ,6,6,1,411
+2,huangzhen   ,right,24,female,461,2850006,3,2,5_230_2 ,5_229_1 ,onesoft  ,6,6,1,398
+2,huangzhen   ,right,24,female,462,2853523,1,5,4_186_2 ,4_185_1 ,multiloud,6,6,1,361
+2,huangzhen   ,right,24,female,463,2857223,1,2,5_204_2 ,5_203_1 ,onesoft  ,6,6,1,581
+2,huangzhen   ,right,24,female,464,2860923,3,4,2_50_2  ,2_49_1  ,multisoft,6,5,0,513
+2,huangzhen   ,right,24,female,465,2864806,3,1,6_254_2 ,6_253_1 ,         ,6,6,1,333
+2,huangzhen   ,right,24,female,466,2868456,1,4,5_204_2 ,5_203_1 ,multisoft,6,6,1,603
+2,huangzhen   ,right,24,female,467,2928588,3,4,1_6_2   ,1_5_1   ,multisoft,6,6,1,518
+2,huangzhen   ,right,24,female,468,2932471,6,1,6_276_2 ,6_275_1 ,         ,5,5,1,395
+2,huangzhen   ,right,24,female,469,2936038,6,5,3_114_2 ,3_113_1 ,multiloud,5,5,1,292
+2,huangzhen   ,right,24,female,470,2939621,3,3,2_62_2  ,2_61_1  ,oneloud  ,6,6,1,252
+2,huangzhen   ,right,24,female,471,2943471,4,5,3_122_2 ,3_121_1 ,multiloud,5,5,1,410
+2,huangzhen   ,right,24,female,472,2947021,3,3,3_98_2  ,3_97_1  ,oneloud  ,6,5,0,1148
+2,huangzhen   ,right,24,female,473,2951654,1,2,2_52_2  ,2_51_1  ,onesoft1 ,6,5,0,1627
+2,huangzhen   ,right,24,female,474,2956754,1,3,1_24_2  ,1_23_1  ,oneloud  ,6,6,1,535
+2,huangzhen   ,right,24,female,475,2960437,2,1,8_350_2 ,8_349_1 ,         ,6,6,1,420
+2,huangzhen   ,right,24,female,476,2964037,2,1,8_374_2 ,8_373_1 ,         ,6,6,1,1524
+2,huangzhen   ,right,24,female,477,2968920,1,4,2_92_2  ,2_91_1  ,multisoft,6,6,1,553
+2,huangzhen   ,right,24,female,478,2972754,3,5,4_168_2 ,4_167_1 ,multiloud,6,6,1,422
+2,huangzhen   ,right,24,female,479,2976454,5,5,3_116_2 ,3_115_1 ,multiloud,5,5,1,1098
+2,huangzhen   ,right,24,female,480,2981037,2,5,4_166_2 ,4_165_1 ,multiloud,6,6,1,539
+2,huangzhen   ,right,24,female,481,2984603,4,5,3_128_2 ,3_127_1 ,multiloud,5,6,0,1069
+2,huangzhen   ,right,24,female,482,2988937,6,3,1_38_2  ,1_37_1  ,oneloud  ,5,5,1,471
+2,huangzhen   ,right,24,female,483,2992853,5,5,1_20_2  ,1_19_1  ,multiloud,5,5,1,627
+2,huangzhen   ,right,24,female,484,2996770,1,1,7_290_2 ,7_289_1 ,         ,6,5,0,846
+2,huangzhen   ,right,24,female,485,3000870,3,5,5_232_2 ,5_231_1 ,multiloud,6,6,1,618
+2,huangzhen   ,right,24,female,486,3004720,6,2,4_160_2 ,4_159_1 ,onesoft  ,5,5,1,360
+2,huangzhen   ,right,24,female,487,3008253,3,1,8_340_2 ,8_339_1 ,         ,6,6,1,1402
+2,huangzhen   ,right,24,female,488,3013219,5,4,5_218_2 ,5_217_1 ,multisoft,5,5,1,436
+2,huangzhen   ,right,24,female,489,3016919,5,2,2_84_2  ,2_83_1  ,onesoft1 ,5,5,1,480
+2,huangzhen   ,right,24,female,490,3020469,2,3,4_164_2 ,4_163_1 ,oneloud1 ,6,6,1,522
+2,huangzhen   ,right,24,female,491,3024319,4,3,5_240_2 ,5_239_1 ,oneloud1 ,5,5,1,1048
+2,huangzhen   ,right,24,female,492,3028752,3,3,4_190_2 ,4_189_1 ,oneloud1 ,6,5,0,663
+2,huangzhen   ,right,24,female,493,3032819,6,4,5_212_2 ,5_211_1 ,multisoft,5,5,1,468
+2,huangzhen   ,right,24,female,494,3036552,5,3,1_10_2  ,1_9_1   ,oneloud1 ,5,6,0,695
+2,huangzhen   ,right,24,female,495,3040302,4,3,2_70_2  ,2_69_1  ,oneloud  ,5,5,1,585
+2,huangzhen   ,right,24,female,496,3044435,3,5,5_230_2 ,5_229_1 ,multiloud,6,6,1,932
+2,huangzhen   ,right,24,female,497,3048735,5,5,5_234_2 ,5_233_1 ,multiloud,5,5,1,415
+2,huangzhen   ,right,24,female,498,3052402,2,3,4_150_2 ,4_149_1 ,oneloud1 ,6,6,1,476
+2,huangzhen   ,right,24,female,499,3056002,6,1,6_282_2 ,6_281_1 ,         ,5,6,0,900
+2,huangzhen   ,right,24,female,500,3060285,1,2,5_194_2 ,5_193_1 ,onesoft  ,6,6,1,1185
+2,huangzhen   ,right,24,female,501,3064852,5,5,2_86_2  ,2_85_1  ,multiloud,5,5,1,362
+2,huangzhen   ,right,24,female,502,3068301,3,5,4_190_2 ,4_189_1 ,multiloud,6,5,0,569
+2,huangzhen   ,right,24,female,503,3072235,6,2,2_82_2  ,2_81_1  ,onesoft1 ,5,5,1,427
+2,huangzhen   ,right,24,female,504,3075785,2,5,1_18_2  ,1_17_1  ,multiloud,6,6,1,397
+2,huangzhen   ,right,24,female,505,3079618,4,4,3_128_2 ,3_127_1 ,multisoft,5,6,0,988
+2,huangzhen   ,right,24,female,506,3083918,5,3,4_180_2 ,4_179_1 ,oneloud1 ,5,5,1,359
+2,huangzhen   ,right,24,female,507,3087484,3,1,10_448_2,10_447_1,         ,6,6,1,409
+2,huangzhen   ,right,24,female,508,3091268,1,1,10_476_2,10_475_1,         ,6,5,0,521
+2,huangzhen   ,right,24,female,509,3094968,1,4,1_24_2  ,1_23_1  ,multisoft,6,6,1,653
+2,huangzhen   ,right,24,female,510,3098984,6,4,3_108_2 ,3_107_1 ,multisoft,5,6,0,1533
+2,huangzhen   ,right,24,female,511,3103801,6,2,3_136_2 ,3_135_1 ,onesoft  ,5,5,1,588
+2,huangzhen   ,right,24,female,512,3107517,6,3,2_88_2  ,2_87_1  ,oneloud  ,5,5,1,552
+2,huangzhen   ,right,24,female,513,3111417,5,4,2_72_2  ,2_71_1  ,multisoft,5,5,1,1052
+2,huangzhen   ,right,24,female,514,3115817,4,3,3_128_2 ,3_127_1 ,oneloud1 ,5,6,0,1156
+2,huangzhen   ,right,24,female,515,3119984,1,5,4_184_2 ,4_183_1 ,multiloud,6,6,1,380
+2,huangzhen   ,right,24,female,516,3123534,1,1,10_478_2,10_477_1,         ,6,6,1,638
+2,huangzhen   ,right,24,female,517,3185632,6,3,4_160_2 ,4_159_1 ,oneloud1 ,5,5,1,371
+2,huangzhen   ,right,24,female,518,3189265,1,4,3_110_2 ,3_109_1 ,multisoft,6,6,1,314
+2,huangzhen   ,right,24,female,519,3192999,2,3,5_224_2 ,5_223_1 ,oneloud1 ,6,6,1,539
+2,huangzhen   ,right,24,female,520,3196715,6,2,5_222_2 ,5_221_1 ,onesoft  ,5,6,0,887
+2,huangzhen   ,right,24,female,521,3200932,5,4,5_208_2 ,5_207_1 ,multisoft,5,6,0,918
+2,huangzhen   ,right,24,female,522,3205048,6,5,5_220_2 ,5_219_1 ,multiloud,5,5,1,458
+2,huangzhen   ,right,24,female,523,3208948,5,2,3_112_2 ,3_111_1 ,onesoft1 ,5,6,0,414
+2,huangzhen   ,right,24,female,524,3212631,5,2,5_208_2 ,5_207_1 ,onesoft  ,5,6,0,427
+2,huangzhen   ,right,24,female,525,3216281,2,3,1_32_2  ,1_31_1  ,oneloud  ,6,6,1,761
+2,huangzhen   ,right,24,female,526,3220231,5,4,1_20_2  ,1_19_1  ,multisoft,5,5,1,467
+2,huangzhen   ,right,24,female,527,3224065,1,3,1_40_2  ,1_39_1  ,oneloud  ,6,5,0,1033
+2,huangzhen   ,right,24,female,528,3228248,2,4,4_166_2 ,4_165_1 ,multisoft,6,6,1,585
+2,huangzhen   ,right,24,female,529,3232248,4,2,3_124_2 ,3_123_1 ,onesoft1 ,5,5,1,465
+2,huangzhen   ,right,24,female,530,3235864,1,4,5_198_2 ,5_197_1 ,multisoft,6,6,1,441
+2,huangzhen   ,right,24,female,531,3239698,5,5,4_180_2 ,4_179_1 ,multiloud,5,5,1,415
+2,huangzhen   ,right,24,female,532,3243231,2,2,4_150_2 ,4_149_1 ,onesoft  ,6,6,1,322
+2,huangzhen   ,right,24,female,533,3247097,5,5,4_172_2 ,4_171_1 ,multiloud,5,5,1,432
+2,huangzhen   ,right,24,female,534,3250814,5,1,10_462_2,10_461_1,         ,5,5,1,443
+2,huangzhen   ,right,24,female,535,3254630,3,5,4_192_2 ,4_191_1 ,multiloud,6,6,1,1067
+2,huangzhen   ,right,24,female,536,3258764,1,1,7_298_2 ,7_297_1 ,         ,6,6,1,605
+2,huangzhen   ,right,24,female,537,3262447,4,1,9_400_2 ,9_399_1 ,         ,5,6,0,1362
+2,huangzhen   ,right,24,female,538,3267164,3,3,2_94_2  ,2_93_1  ,oneloud  ,6,5,0,500
+2,huangzhen   ,right,24,female,539,3271030,2,2,2_96_2  ,2_95_1  ,onesoft1 ,6,6,1,1354
+2,huangzhen   ,right,24,female,540,3275747,4,1,7_326_2 ,7_325_1 ,         ,5,5,1,1645
+2,huangzhen   ,right,24,female,541,3280647,5,5,5_208_2 ,5_207_1 ,multiloud,5,6,0,449
+2,huangzhen   ,right,24,female,542,3284396,6,1,7_320_2 ,7_319_1 ,         ,5,5,1,420
+2,huangzhen   ,right,24,female,543,3288196,3,1,10_452_2,10_451_1,         ,6,5,0,556
+2,huangzhen   ,right,24,female,544,3291863,2,3,1_44_2  ,1_43_1  ,oneloud  ,6,6,1,505
+2,huangzhen   ,right,24,female,545,3295663,3,2,2_62_2  ,2_61_1  ,onesoft1 ,6,6,1,1537
+2,huangzhen   ,right,24,female,546,3300229,4,1,8_346_2 ,8_345_1 ,         ,5,5,1,362
+2,huangzhen   ,right,24,female,547,3303896,1,2,4_184_2 ,4_183_1 ,onesoft  ,6,6,1,415
+2,huangzhen   ,right,24,female,548,3307696,5,2,1_30_2  ,1_29_1  ,onesoft1 ,5,5,1,407
+2,huangzhen   ,right,24,female,549,3311679,2,3,3_134_2 ,3_133_1 ,oneloud1 ,6,6,1,472
+2,huangzhen   ,right,24,female,550,3315379,2,1,10_464_2,10_463_1,         ,6,6,1,604
+2,huangzhen   ,right,24,female,551,3319529,6,2,1_38_2  ,1_37_1  ,onesoft1 ,5,5,1,390
+2,huangzhen   ,right,24,female,552,3323229,5,4,2_86_2  ,2_85_1  ,multisoft,5,5,1,498
+2,huangzhen   ,right,24,female,553,3326796,6,2,3_114_2 ,3_113_1 ,onesoft1 ,5,5,1,307
+2,huangzhen   ,right,24,female,554,3330195,4,4,5_228_2 ,5_227_1 ,multisoft,5,5,1,348
+2,huangzhen   ,right,24,female,555,3333762,4,4,1_46_2  ,1_45_1  ,multisoft,5,6,0,453
+2,huangzhen   ,right,24,female,556,3337362,4,1,8_364_2 ,8_363_1 ,         ,5,5,1,356
+2,huangzhen   ,right,24,female,557,3341095,2,4,5_210_2 ,5_209_1 ,multisoft,6,5,0,847
+2,huangzhen   ,right,24,female,558,3345245,4,4,4_178_2 ,4_177_1 ,multisoft,5,5,1,401
+2,huangzhen   ,right,24,female,559,3349112,3,2,3_104_2 ,3_103_1 ,onesoft1 ,6,6,1,582
+2,huangzhen   ,right,24,female,560,3352862,4,4,2_70_2  ,2_69_1  ,multisoft,5,5,1,400
+2,huangzhen   ,right,24,female,561,3356662,2,1,9_428_2 ,9_427_1 ,         ,6,6,1,368
+2,huangzhen   ,right,24,female,562,3360211,4,2,1_34_2  ,1_33_1  ,onesoft1 ,5,6,0,1363
+2,huangzhen   ,right,24,female,563,3365128,4,3,5_214_2 ,5_213_1 ,oneloud1 ,5,5,1,406
+2,huangzhen   ,right,24,female,564,3368695,2,4,1_18_2  ,1_17_1  ,multisoft,6,6,1,407
+2,huangzhen   ,right,24,female,565,3372361,4,5,2_70_2  ,2_69_1  ,multiloud,5,5,1,357
+2,huangzhen   ,right,24,female,566,3375778,1,5,5_200_2 ,5_199_1 ,multiloud,6,6,1,443
+2,huangzhen   ,right,24,female,567,3452809,5,4,2_80_2  ,2_79_1  ,multisoft,5,6,0,850
+2,huangzhen   ,right,24,female,568,3456826,1,2,1_28_2  ,1_27_1  ,onesoft1 ,6,6,1,425
+2,huangzhen   ,right,24,female,569,3460809,1,5,1_40_2  ,1_39_1  ,multiloud,6,5,0,682
+2,huangzhen   ,right,24,female,570,3464592,1,5,3_110_2 ,3_109_1 ,multiloud,6,6,1,907
+2,huangzhen   ,right,24,female,571,3468692,4,1,9_418_2 ,9_417_1 ,         ,5,5,1,463
+2,huangzhen   ,right,24,female,572,3472542,6,3,1_36_2  ,1_35_1  ,oneloud  ,5,5,1,333
+2,huangzhen   ,right,24,female,573,3476159,1,3,4_186_2 ,4_185_1 ,oneloud1 ,6,6,1,332
+2,huangzhen   ,right,24,female,574,3479875,5,1,7_302_2 ,7_301_1 ,         ,5,5,1,376
+2,huangzhen   ,right,24,female,575,3483459,2,1,7_328_2 ,7_327_1 ,         ,6,6,1,295
+2,huangzhen   ,right,24,female,576,3486925,3,5,2_50_2  ,2_49_1  ,multiloud,6,6,1,1165
+2,huangzhen   ,right,24,female,577,3491458,5,1,6_250_2 ,6_249_1 ,         ,5,5,1,544
+2,huangzhen   ,right,24,female,578,3495292,1,1,8_362_2 ,8_361_1 ,         ,6,6,1,326
+2,huangzhen   ,right,24,female,579,3498925,6,5,5_238_2 ,5_237_1 ,multiloud,5,5,1,309
+2,huangzhen   ,right,24,female,580,3502675,6,1,10_460_2,10_459_1,         ,5,5,1,255
+2,huangzhen   ,right,24,female,581,3506141,2,4,4_152_2 ,4_151_1 ,multisoft,6,6,1,421
+2,huangzhen   ,right,24,female,582,3509675,2,4,5_224_2 ,5_223_1 ,multisoft,6,6,1,375
+2,huangzhen   ,right,24,female,583,3513425,4,3,4_162_2 ,4_161_1 ,oneloud1 ,5,6,0,497
+2,huangzhen   ,right,24,female,584,3517025,1,5,3_142_2 ,3_141_1 ,multiloud,6,6,1,401
+2,huangzhen   ,right,24,female,585,3520758,4,1,10_444_2,10_443_1,         ,5,6,0,1195
+2,huangzhen   ,right,24,female,586,3525024,2,1,6_248_2 ,6_247_1 ,         ,6,6,1,1649
+2,huangzhen   ,right,24,female,587,3529708,5,2,1_14_2  ,1_13_1  ,onesoft1 ,5,5,1,341
+2,huangzhen   ,right,24,female,588,3533474,1,4,1_40_2  ,1_39_1  ,multisoft,6,5,0,559
+2,huangzhen   ,right,24,female,589,3537424,3,5,1_42_2  ,1_41_1  ,multiloud,6,6,1,393
+2,huangzhen   ,right,24,female,590,3541024,6,3,5_222_2 ,5_221_1 ,oneloud1 ,5,5,1,409
+2,huangzhen   ,right,24,female,591,3544691,6,5,1_38_2  ,1_37_1  ,multiloud,5,5,1,310
+2,huangzhen   ,right,24,female,592,3548557,5,3,5_234_2 ,5_233_1 ,oneloud1 ,5,5,1,316
+2,huangzhen   ,right,24,female,593,3552224,5,4,5_234_2 ,5_233_1 ,multisoft,5,5,1,177
+2,huangzhen   ,right,24,female,594,3555740,4,2,2_90_2  ,2_89_1  ,onesoft1 ,5,6,0,900
+2,huangzhen   ,right,24,female,595,3559724,6,4,3_136_2 ,3_135_1 ,multisoft,5,5,1,428
+2,huangzhen   ,right,24,female,596,3563340,4,3,4_158_2 ,4_157_1 ,oneloud1 ,5,5,1,244
+2,huangzhen   ,right,24,female,597,3566940,1,3,1_12_2  ,1_11_1  ,oneloud  ,6,6,1,436
+2,huangzhen   ,right,24,female,598,3570757,6,2,4_154_2 ,4_153_1 ,onesoft  ,5,5,1,491
+2,huangzhen   ,right,24,female,599,3574657,3,2,5_236_2 ,5_235_1 ,onesoft  ,6,5,0,1095
+2,huangzhen   ,right,24,female,600,3578823,3,2,2_94_2  ,2_93_1  ,onesoft1 ,6,6,1,545
+2,huangzhen   ,right,24,female,601,3582790,4,3,1_46_2  ,1_45_1  ,oneloud  ,5,6,0,754
+2,huangzhen   ,right,24,female,602,3586973,2,3,3_144_2 ,3_143_1 ,oneloud1 ,6,5,0,467
+2,huangzhen   ,right,24,female,603,3590623,5,4,1_10_2  ,1_9_1   ,multisoft,5,6,0,473
+2,huangzhen   ,right,24,female,604,3594439,3,3,5_236_2 ,5_235_1 ,oneloud1 ,6,5,0,336
+2,huangzhen   ,right,24,female,605,3597856,4,2,3_122_2 ,3_121_1 ,onesoft1 ,5,5,1,335
+2,huangzhen   ,right,24,female,606,3601573,1,3,2_64_2  ,2_63_1  ,oneloud  ,6,6,1,402
+2,huangzhen   ,right,24,female,607,3605339,4,4,1_34_2  ,1_33_1  ,multisoft,5,5,1,428
+2,huangzhen   ,right,24,female,608,3609189,4,5,2_54_2  ,2_53_1  ,multiloud,5,6,0,362
+2,huangzhen   ,right,24,female,609,3612789,1,4,4_188_2 ,4_187_1 ,multisoft,6,6,1,1010
+2,huangzhen   ,right,24,female,610,3616822,6,1,9_424_2 ,9_423_1 ,         ,5,5,1,345
+2,huangzhen   ,right,24,female,611,3620556,2,3,5_196_2 ,5_195_1 ,oneloud1 ,6,6,1,731
+2,huangzhen   ,right,24,female,612,3624639,2,4,3_120_2 ,3_119_1 ,multisoft,6,6,1,624
+2,huangzhen   ,right,24,female,613,3628655,6,4,2_56_2  ,2_55_1  ,multisoft,5,5,1,351
+2,huangzhen   ,right,24,female,614,3632155,3,4,3_106_2 ,3_105_1 ,multisoft,6,6,1,427
+2,huangzhen   ,right,24,female,615,3635972,1,5,1_12_2  ,1_11_1  ,multiloud,6,6,1,346
+2,huangzhen   ,right,24,female,616,3639655,6,3,4_146_2 ,4_145_1 ,oneloud1 ,5,5,1,391

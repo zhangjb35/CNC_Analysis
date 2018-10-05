@@ -1,0 +1,601 @@
+participant_id,Name,Handedness,Age,Sex,Block,numresponse_OnsetTime,NumCondition,SoundCondition,probestimuli,teststimuli,sound,correctResp,Resp,ACC,RT
+11,jinjinlian  ,right,18,female,9,168110,1,3,2_52_2  ,2_51_1  ,oneloud  ,5,5,1,2883
+11,jinjinlian  ,right,18,female,10,174193,2,3,1_44_2  ,1_43_1  ,oneloud  ,5,5,1,1912
+11,jinjinlian  ,right,18,female,11,179510,4,4,1_8_2   ,1_7_1   ,multisoft,6,5,0,1099
+11,jinjinlian  ,right,18,female,12,183910,4,5,2_54_2  ,2_53_1  ,multiloud,6,5,0,2067
+11,jinjinlian  ,right,18,female,13,189426,3,2,2_60_2  ,2_59_1  ,onesoft1 ,5,6,0,1319
+11,jinjinlian  ,right,18,female,14,193726,3,1,9_390_2 ,9_389_1 ,         ,5,6,0,2107
+11,jinjinlian  ,right,18,female,15,199143,3,4,1_42_2  ,1_41_1  ,multisoft,5,5,1,714
+11,jinjinlian  ,right,18,female,16,203009,6,3,5_220_2 ,5_219_1 ,oneloud1 ,6,5,0,1007
+11,jinjinlian  ,right,18,female,17,207493,6,4,5_212_2 ,5_211_1 ,multisoft,6,6,1,1523
+11,jinjinlian  ,right,18,female,18,212342,1,5,3_102_2 ,3_101_1 ,multiloud,5,6,0,850
+11,jinjinlian  ,right,18,female,19,216276,2,2,1_44_2  ,1_43_1  ,onesoft1 ,5,5,1,1492
+11,jinjinlian  ,right,18,female,20,220792,5,1,10_462_2,10_461_1,         ,6,5,0,2176
+11,jinjinlian  ,right,18,female,21,226242,4,3,4_178_2 ,4_177_1 ,oneloud1 ,6,6,1,1510
+11,jinjinlian  ,right,18,female,22,231176,2,1,6_288_2 ,6_287_1 ,         ,5,5,1,1096
+11,jinjinlian  ,right,18,female,23,235459,5,5,3_112_2 ,3_111_1 ,multiloud,6,6,1,693
+11,jinjinlian  ,right,18,female,24,239559,4,3,3_128_2 ,3_127_1 ,oneloud1 ,6,5,0,1049
+11,jinjinlian  ,right,18,female,25,244025,5,2,5_208_2 ,5_207_1 ,onesoft  ,6,6,1,479
+11,jinjinlian  ,right,18,female,26,247975,2,5,1_16_2  ,1_15_1  ,multiloud,5,5,1,1336
+11,jinjinlian  ,right,18,female,27,252442,2,1,8_358_2 ,8_357_1 ,         ,5,5,1,629
+11,jinjinlian  ,right,18,female,28,256142,3,3,2_94_2  ,2_93_1  ,oneloud  ,5,6,0,1025
+11,jinjinlian  ,right,18,female,29,260458,4,1,8_382_2 ,8_381_1 ,         ,6,5,0,901
+11,jinjinlian  ,right,18,female,30,264758,5,5,3_100_2 ,3_99_1  ,multiloud,6,6,1,713
+11,jinjinlian  ,right,18,female,31,269008,1,2,3_138_2 ,3_137_1 ,onesoft  ,5,5,1,447
+11,jinjinlian  ,right,18,female,32,272608,4,3,3_126_2 ,3_125_1 ,oneloud1 ,6,6,1,783
+11,jinjinlian  ,right,18,female,33,276808,4,5,5_240_2 ,5_239_1 ,multiloud,6,6,1,783
+11,jinjinlian  ,right,18,female,34,280841,3,5,1_42_2  ,1_41_1  ,multiloud,5,6,0,606
+11,jinjinlian  ,right,18,female,35,284641,2,5,3_130_2 ,3_129_1 ,multiloud,5,5,1,718
+11,jinjinlian  ,right,18,female,36,288808,6,4,2_82_2  ,2_81_1  ,multisoft,6,6,1,535
+11,jinjinlian  ,right,18,female,37,292791,2,1,9_430_2 ,9_429_1 ,         ,5,5,1,1184
+11,jinjinlian  ,right,18,female,38,297141,4,2,2_90_2  ,2_89_1  ,onesoft1 ,6,6,1,553
+11,jinjinlian  ,right,18,female,39,300908,6,3,1_48_2  ,1_47_1  ,oneloud  ,6,6,1,1074
+11,jinjinlian  ,right,18,female,40,305374,2,4,3_130_2 ,3_129_1 ,multisoft,5,5,1,672
+11,jinjinlian  ,right,18,female,41,309358,4,5,1_34_2  ,1_33_1  ,multiloud,6,6,1,608
+11,jinjinlian  ,right,18,female,42,313007,6,3,4_170_2 ,4_169_1 ,oneloud1 ,6,6,1,615
+11,jinjinlian  ,right,18,female,43,317174,1,3,2_68_2  ,2_67_1  ,oneloud  ,5,5,1,512
+11,jinjinlian  ,right,18,female,44,320941,2,5,3_120_2 ,3_119_1 ,multiloud,5,5,1,1145
+11,jinjinlian  ,right,18,female,45,325207,6,3,3_140_2 ,3_139_1 ,oneloud1 ,6,6,1,831
+11,jinjinlian  ,right,18,female,46,329374,1,1,10_476_2,10_475_1,         ,5,6,0,952
+11,jinjinlian  ,right,18,female,47,333757,1,2,3_142_2 ,3_141_1 ,onesoft  ,5,5,1,881
+11,jinjinlian  ,right,18,female,48,337807,1,3,4_186_2 ,4_185_1 ,oneloud1 ,5,5,1,1183
+11,jinjinlian  ,right,18,female,49,342174,6,5,1_4_2   ,1_3_1   ,multiloud,6,6,1,687
+11,jinjinlian  ,right,18,female,50,346340,5,3,1_30_2  ,1_29_1  ,oneloud  ,6,6,1,433
+11,jinjinlian  ,right,18,female,51,350307,5,5,2_84_2  ,2_83_1  ,multiloud,6,5,0,626
+11,jinjinlian  ,right,18,female,52,353840,1,1,9_420_2 ,9_419_1 ,         ,5,6,0,661
+11,jinjinlian  ,right,18,female,53,357523,2,1,7_318_2 ,7_317_1 ,         ,5,6,0,1170
+11,jinjinlian  ,right,18,female,54,362090,4,5,2_58_2  ,2_57_1  ,multiloud,6,5,0,803
+11,jinjinlian  ,right,18,female,55,365990,2,3,4_164_2 ,4_163_1 ,oneloud1 ,5,6,0,543
+11,jinjinlian  ,right,18,female,56,369956,3,1,10_472_2,10_471_1,         ,5,5,1,921
+11,jinjinlian  ,right,18,female,57,374106,1,4,1_40_2  ,1_39_1  ,multisoft,5,5,1,1363
+11,jinjinlian  ,right,18,female,58,378656,5,3,4_180_2 ,4_179_1 ,oneloud1 ,6,6,1,645
+11,jinjinlian  ,right,18,female,59,480205,3,5,5_230_2 ,5_229_1 ,multiloud,5,5,1,9853
+11,jinjinlian  ,right,18,female,60,493338,3,5,1_26_2  ,1_25_1  ,multiloud,5,5,1,3360
+11,jinjinlian  ,right,18,female,61,500038,5,5,2_72_2  ,2_71_1  ,multiloud,6,5,0,2404
+11,jinjinlian  ,right,18,female,62,505988,2,3,5_210_2 ,5_209_1 ,oneloud1 ,5,5,1,2718
+11,jinjinlian  ,right,18,female,63,512037,6,5,3_136_2 ,3_135_1 ,multiloud,6,6,1,2149
+11,jinjinlian  ,right,18,female,64,517521,3,3,1_26_2  ,1_25_1  ,oneloud  ,5,5,1,1689
+11,jinjinlian  ,right,18,female,65,522404,5,3,4_148_2 ,4_147_1 ,oneloud1 ,6,6,1,1902
+11,jinjinlian  ,right,18,female,66,527854,4,4,2_58_2  ,2_57_1  ,multisoft,6,6,1,1979
+11,jinjinlian  ,right,18,female,67,533020,2,2,5_224_2 ,5_223_1 ,onesoft  ,5,5,1,2093
+11,jinjinlian  ,right,18,female,68,538370,1,3,1_24_2  ,1_23_1  ,oneloud  ,5,5,1,2991
+11,jinjinlian  ,right,18,female,69,544770,4,5,3_126_2 ,3_125_1 ,multiloud,6,5,0,1703
+11,jinjinlian  ,right,18,female,70,549570,3,3,5_230_2 ,5_229_1 ,oneloud1 ,5,5,1,1495
+11,jinjinlian  ,right,18,female,71,554470,6,2,4_160_2 ,4_159_1 ,onesoft  ,6,6,1,923
+11,jinjinlian  ,right,18,female,72,558370,6,1,9_424_2 ,9_423_1 ,         ,6,6,1,1503
+11,jinjinlian  ,right,18,female,73,563403,2,5,4_150_2 ,4_149_1 ,multiloud,5,5,1,1038
+11,jinjinlian  ,right,18,female,74,567803,2,4,2_96_2  ,2_95_1  ,multisoft,5,5,1,902
+11,jinjinlian  ,right,18,female,75,571936,6,3,3_108_2 ,3_107_1 ,oneloud  ,6,6,1,1385
+11,jinjinlian  ,right,18,female,76,576553,4,4,1_46_2  ,1_45_1  ,multisoft,6,6,1,599
+11,jinjinlian  ,right,18,female,77,580386,1,1,9_416_2 ,9_415_1 ,         ,5,5,1,2526
+11,jinjinlian  ,right,18,female,78,586003,5,3,1_14_2  ,1_13_1  ,oneloud  ,6,6,1,1373
+11,jinjinlian  ,right,18,female,79,590803,5,4,4_156_2 ,4_155_1 ,multisoft,6,6,1,1205
+11,jinjinlian  ,right,18,female,80,595569,4,5,4_178_2 ,4_177_1 ,multiloud,6,5,0,1143
+11,jinjinlian  ,right,18,female,81,599869,4,5,3_124_2 ,3_123_1 ,multiloud,6,6,1,1931
+11,jinjinlian  ,right,18,female,82,605369,2,5,1_18_2  ,1_17_1  ,multiloud,5,5,1,2671
+11,jinjinlian  ,right,18,female,83,611436,6,4,3_136_2 ,3_135_1 ,multisoft,6,6,1,1260
+11,jinjinlian  ,right,18,female,84,616002,4,4,1_2_2   ,1_1_1   ,multisoft,6,6,1,1350
+11,jinjinlian  ,right,18,female,85,620402,6,5,4_146_2 ,4_145_1 ,multiloud,6,6,1,654
+11,jinjinlian  ,right,18,female,86,624319,4,5,1_2_2   ,1_1_1   ,multiloud,6,6,1,1000
+11,jinjinlian  ,right,18,female,87,628619,2,4,5_224_2 ,5_223_1 ,multisoft,5,6,0,1380
+11,jinjinlian  ,right,18,female,88,633435,1,5,3_110_2 ,3_109_1 ,multiloud,5,5,1,1692
+11,jinjinlian  ,right,18,female,89,638302,2,4,1_32_2  ,1_31_1  ,multisoft,5,5,1,1529
+11,jinjinlian  ,right,18,female,90,642968,5,5,1_14_2  ,1_13_1  ,multiloud,6,6,1,3887
+11,jinjinlian  ,right,18,female,91,650252,5,4,4_180_2 ,4_179_1 ,multisoft,6,6,1,891
+11,jinjinlian  ,right,18,female,92,654335,5,4,1_20_2  ,1_19_1  ,multisoft,6,6,1,1312
+11,jinjinlian  ,right,18,female,93,659035,5,1,7_310_2 ,7_309_1 ,         ,6,6,1,1572
+11,jinjinlian  ,right,18,female,94,664101,5,5,1_10_2  ,1_9_1   ,multiloud,6,6,1,1250
+11,jinjinlian  ,right,18,female,95,668451,4,4,4_158_2 ,4_157_1 ,multisoft,6,6,1,1379
+11,jinjinlian  ,right,18,female,96,673185,4,3,5_214_2 ,5_213_1 ,oneloud1 ,6,6,1,2501
+11,jinjinlian  ,right,18,female,97,678901,3,4,4_168_2 ,4_167_1 ,multisoft,5,5,1,4417
+11,jinjinlian  ,right,18,female,98,686734,4,3,1_2_2   ,1_1_1   ,oneloud  ,6,6,1,1312
+11,jinjinlian  ,right,18,female,99,691118,4,1,6_244_2 ,6_243_1 ,         ,6,6,1,816
+11,jinjinlian  ,right,18,female,100,695218,2,1,7_328_2 ,7_327_1 ,         ,5,5,1,1180
+11,jinjinlian  ,right,18,female,101,699618,4,5,5_226_2 ,5_225_1 ,multiloud,6,5,0,5044
+11,jinjinlian  ,right,18,female,102,707984,1,2,2_52_2  ,2_51_1  ,onesoft1 ,5,5,1,2686
+11,jinjinlian  ,right,18,female,103,713717,1,1,10_446_2,10_445_1,         ,5,5,1,1456
+11,jinjinlian  ,right,18,female,104,718551,2,1,9_428_2 ,9_427_1 ,         ,5,5,1,1086
+11,jinjinlian  ,right,18,female,105,722817,5,5,4_148_2 ,4_147_1 ,multiloud,6,6,1,1236
+11,jinjinlian  ,right,18,female,106,727317,1,1,8_344_2 ,8_343_1 ,         ,5,6,0,4504
+11,jinjinlian  ,right,18,female,107,735317,1,4,5_194_2 ,5_193_1 ,multisoft,5,5,1,3464
+11,jinjinlian  ,right,18,female,108,742117,4,2,1_2_2   ,1_1_1   ,onesoft1 ,6,6,1,3368
+11,jinjinlian  ,right,18,female,109,769200,2,3,4_166_2 ,4_165_1 ,oneloud1 ,5,5,1,1108
+11,jinjinlian  ,right,18,female,110,773400,4,1,7_292_2 ,7_291_1 ,         ,6,6,1,1276
+11,jinjinlian  ,right,18,female,111,777966,5,5,1_30_2  ,1_29_1  ,multiloud,6,5,0,694
+11,jinjinlian  ,right,18,female,112,781883,1,4,5_198_2 ,5_197_1 ,multisoft,5,6,0,737
+11,jinjinlian  ,right,18,female,113,785849,4,2,3_126_2 ,3_125_1 ,onesoft  ,6,6,1,819
+11,jinjinlian  ,right,18,female,114,789999,3,1,6_280_2 ,6_279_1 ,         ,5,5,1,477
+11,jinjinlian  ,right,18,female,115,793783,3,1,8_340_2 ,8_339_1 ,         ,5,6,0,917
+11,jinjinlian  ,right,18,female,116,797799,1,4,2_68_2  ,2_67_1  ,multisoft,5,5,1,1245
+11,jinjinlian  ,right,18,female,117,802516,2,1,8_350_2 ,8_349_1 ,         ,5,5,1,840
+11,jinjinlian  ,right,18,female,118,806449,4,1,8_346_2 ,8_345_1 ,         ,6,6,1,602
+11,jinjinlian  ,right,18,female,119,810282,6,2,4_146_2 ,4_145_1 ,onesoft  ,6,6,1,577
+11,jinjinlian  ,right,18,female,120,814149,2,4,5_210_2 ,5_209_1 ,multisoft,5,6,0,430
+11,jinjinlian  ,right,18,female,121,817882,5,2,5_234_2 ,5_233_1 ,onesoft  ,6,6,1,793
+11,jinjinlian  ,right,18,female,122,822099,3,4,2_50_2  ,2_49_1  ,multisoft,5,5,1,552
+11,jinjinlian  ,right,18,female,123,826149,4,3,5_240_2 ,5_239_1 ,oneloud1 ,6,6,1,510
+11,jinjinlian  ,right,18,female,124,829832,6,4,1_4_2   ,1_3_1   ,multisoft,6,6,1,459
+11,jinjinlian  ,right,18,female,125,833482,5,4,5_208_2 ,5_207_1 ,multisoft,6,5,0,3449
+11,jinjinlian  ,right,18,female,126,840148,5,4,5_202_2 ,5_201_1 ,multisoft,6,6,1,1719
+11,jinjinlian  ,right,18,female,127,845348,6,5,4_154_2 ,4_153_1 ,multiloud,6,5,0,743
+11,jinjinlian  ,right,18,female,128,849315,4,5,5_214_2 ,5_213_1 ,multiloud,6,6,1,816
+11,jinjinlian  ,right,18,female,129,853248,2,2,2_78_2  ,2_77_1  ,onesoft1 ,5,5,1,1498
+11,jinjinlian  ,right,18,female,130,858031,3,3,2_50_2  ,2_49_1  ,oneloud  ,5,5,1,5267
+11,jinjinlian  ,right,18,female,131,866548,4,5,3_122_2 ,3_121_1 ,multiloud,6,6,1,710
+11,jinjinlian  ,right,18,female,132,870515,5,1,6_250_2 ,6_249_1 ,         ,6,6,1,767
+11,jinjinlian  ,right,18,female,133,874531,6,2,1_48_2  ,1_47_1  ,onesoft1 ,6,5,0,1495
+11,jinjinlian  ,right,18,female,134,879298,5,4,4_148_2 ,4_147_1 ,multisoft,6,6,1,1536
+11,jinjinlian  ,right,18,female,135,884298,4,3,4_158_2 ,4_157_1 ,oneloud1 ,6,6,1,2320
+11,jinjinlian  ,right,18,female,136,889714,5,5,5_208_2 ,5_207_1 ,multiloud,6,5,0,2176
+11,jinjinlian  ,right,18,female,137,895081,6,1,7_314_2 ,7_313_1 ,         ,6,6,1,1089
+11,jinjinlian  ,right,18,female,138,899447,1,3,5_198_2 ,5_197_1 ,oneloud1 ,5,5,1,986
+11,jinjinlian  ,right,18,female,139,903847,3,2,4_182_2 ,4_181_1 ,onesoft  ,5,5,1,2202
+11,jinjinlian  ,right,18,female,140,909231,6,4,5_222_2 ,5_221_1 ,multisoft,6,6,1,994
+11,jinjinlian  ,right,18,female,141,913681,6,5,2_88_2  ,2_87_1  ,multiloud,6,6,1,944
+11,jinjinlian  ,right,18,female,142,918047,1,1,7_316_2 ,7_315_1 ,         ,5,5,1,5586
+11,jinjinlian  ,right,18,female,143,926864,1,3,1_40_2  ,1_39_1  ,oneloud  ,5,5,1,985
+11,jinjinlian  ,right,18,female,144,931047,4,5,3_128_2 ,3_127_1 ,multiloud,6,6,1,506
+11,jinjinlian  ,right,18,female,145,934563,4,1,6_284_2 ,6_283_1 ,         ,6,6,1,494
+11,jinjinlian  ,right,18,female,146,938180,3,3,5_232_2 ,5_231_1 ,oneloud1 ,5,6,0,549
+11,jinjinlian  ,right,18,female,147,942180,3,3,4_182_2 ,4_181_1 ,oneloud1 ,5,6,0,317
+11,jinjinlian  ,right,18,female,148,945730,1,4,4_176_2 ,4_175_1 ,multisoft,5,5,1,574
+11,jinjinlian  ,right,18,female,149,949630,5,1,10_436_2,10_435_1,         ,6,6,1,394
+11,jinjinlian  ,right,18,female,150,953463,2,3,2_78_2  ,2_77_1  ,oneloud  ,5,5,1,825
+11,jinjinlian  ,right,18,female,151,957463,1,5,3_142_2 ,3_141_1 ,multiloud,5,5,1,809
+11,jinjinlian  ,right,18,female,152,961696,3,5,1_6_2   ,1_5_1   ,multiloud,5,5,1,1160
+11,jinjinlian  ,right,18,female,153,966313,3,5,3_98_2  ,3_97_1  ,multiloud,5,6,0,423
+11,jinjinlian  ,right,18,female,154,969863,4,2,4_174_2 ,4_173_1 ,onesoft  ,6,6,1,2353
+11,jinjinlian  ,right,18,female,155,975563,2,1,6_286_2 ,6_285_1 ,         ,5,6,0,637
+11,jinjinlian  ,right,18,female,156,979446,6,5,2_56_2  ,2_55_1  ,multiloud,6,6,1,578
+11,jinjinlian  ,right,18,female,157,983496,3,4,3_106_2 ,3_105_1 ,multisoft,5,6,0,1800
+11,jinjinlian  ,right,18,female,158,988413,4,4,3_122_2 ,3_121_1 ,multisoft,6,6,1,1251
+11,jinjinlian  ,right,18,female,159,1021012,4,3,4_174_2 ,4_173_1 ,oneloud1 ,6,6,1,1507
+11,jinjinlian  ,right,18,female,160,1025862,2,4,1_18_2  ,1_17_1  ,multisoft,5,5,1,745
+11,jinjinlian  ,right,18,female,161,1029679,3,2,1_22_2  ,1_21_1  ,onesoft1 ,5,6,0,264
+11,jinjinlian  ,right,18,female,162,1033228,2,2,1_32_2  ,1_31_1  ,onesoft1 ,5,6,0,235
+11,jinjinlian  ,right,18,female,163,1036795,6,2,3_108_2 ,3_107_1 ,onesoft1 ,6,6,1,236
+11,jinjinlian  ,right,18,female,164,1040162,2,5,2_76_2  ,2_75_1  ,multiloud,5,5,1,220
+11,jinjinlian  ,right,18,female,165,1043662,5,2,1_10_2  ,1_9_1   ,onesoft1 ,6,6,1,248
+11,jinjinlian  ,right,18,female,166,1047362,2,4,2_74_2  ,2_73_1  ,multisoft,5,5,1,244
+11,jinjinlian  ,right,18,female,167,1050761,3,1,8_368_2 ,8_367_1 ,         ,5,6,0,1549
+11,jinjinlian  ,right,18,female,168,1055411,6,2,3_136_2 ,3_135_1 ,onesoft  ,6,6,1,267
+11,jinjinlian  ,right,18,female,169,1059261,5,4,5_234_2 ,5_233_1 ,multisoft,6,6,1,249
+11,jinjinlian  ,right,18,female,170,1062661,2,1,8_384_2 ,8_383_1 ,         ,5,6,0,913
+11,jinjinlian  ,right,18,female,171,1067078,2,3,5_196_2 ,5_195_1 ,oneloud1 ,5,5,1,376
+11,jinjinlian  ,right,18,female,172,1070561,6,5,5_238_2 ,5_237_1 ,multiloud,6,6,1,461
+11,jinjinlian  ,right,18,female,173,1074411,5,3,1_20_2  ,1_19_1  ,oneloud  ,6,6,1,915
+11,jinjinlian  ,right,18,female,174,1078561,2,3,3_144_2 ,3_143_1 ,oneloud1 ,5,5,1,421
+11,jinjinlian  ,right,18,female,175,1082328,1,2,5_194_2 ,5_193_1 ,onesoft  ,5,5,1,526
+11,jinjinlian  ,right,18,female,176,1086111,3,4,4_182_2 ,4_181_1 ,multisoft,5,5,1,598
+11,jinjinlian  ,right,18,female,177,1089861,2,3,3_130_2 ,3_129_1 ,oneloud  ,5,5,1,520
+11,jinjinlian  ,right,18,female,178,1093627,5,2,2_84_2  ,2_83_1  ,onesoft1 ,6,6,1,1938
+11,jinjinlian  ,right,18,female,179,1099027,4,2,5_226_2 ,5_225_1 ,onesoft  ,6,5,0,1498
+11,jinjinlian  ,right,18,female,180,1103811,5,2,2_86_2  ,2_85_1  ,onesoft1 ,6,6,1,1306
+11,jinjinlian  ,right,18,female,181,1108310,6,4,3_140_2 ,3_139_1 ,multisoft,6,6,1,391
+11,jinjinlian  ,right,18,female,182,1111944,2,4,4_152_2 ,4_151_1 ,multisoft,5,6,0,1501
+11,jinjinlian  ,right,18,female,183,1116827,5,2,5_218_2 ,5_217_1 ,onesoft  ,6,6,1,426
+11,jinjinlian  ,right,18,female,184,1120394,5,1,7_334_2 ,7_333_1 ,         ,6,5,0,411
+11,jinjinlian  ,right,18,female,185,1124327,1,4,4_186_2 ,4_185_1 ,multisoft,5,5,1,518
+11,jinjinlian  ,right,18,female,186,1128127,1,4,3_138_2 ,3_137_1 ,multisoft,5,5,1,3837
+11,jinjinlian  ,right,18,female,187,1135277,6,4,4_154_2 ,4_153_1 ,multisoft,6,5,0,1431
+11,jinjinlian  ,right,18,female,188,1139827,6,1,9_426_2 ,9_425_1 ,         ,6,6,1,689
+11,jinjinlian  ,right,18,female,189,1144060,2,3,2_76_2  ,2_75_1  ,oneloud  ,5,5,1,1024
+11,jinjinlian  ,right,18,female,190,1148293,4,3,1_34_2  ,1_33_1  ,oneloud  ,6,6,1,535
+11,jinjinlian  ,right,18,female,191,1151976,5,3,3_112_2 ,3_111_1 ,oneloud  ,6,5,0,1220
+11,jinjinlian  ,right,18,female,192,1156576,5,5,4_156_2 ,4_155_1 ,multiloud,6,6,1,1260
+11,jinjinlian  ,right,18,female,193,1161160,2,4,2_78_2  ,2_77_1  ,multisoft,5,6,0,852
+11,jinjinlian  ,right,18,female,194,1165160,1,1,7_298_2 ,7_297_1 ,         ,5,5,1,1924
+11,jinjinlian  ,right,18,female,195,1170393,3,2,5_236_2 ,5_235_1 ,onesoft  ,5,5,1,627
+11,jinjinlian  ,right,18,female,196,1174376,5,1,9_398_2 ,9_397_1 ,         ,6,6,1,1652
+11,jinjinlian  ,right,18,female,197,1179309,6,3,4_146_2 ,4_145_1 ,oneloud1 ,6,6,1,438
+11,jinjinlian  ,right,18,female,198,1182926,3,3,4_168_2 ,4_167_1 ,oneloud1 ,5,5,1,1021
+11,jinjinlian  ,right,18,female,199,1187142,4,2,5_228_2 ,5_227_1 ,onesoft  ,6,6,1,477
+11,jinjinlian  ,right,18,female,200,1191026,5,4,3_132_2 ,3_131_1 ,multisoft,6,6,1,2625
+11,jinjinlian  ,right,18,female,201,1196659,4,1,6_260_2 ,6_259_1 ,         ,6,5,0,600
+11,jinjinlian  ,right,18,female,202,1200792,2,2,3_130_2 ,3_129_1 ,onesoft1 ,5,5,1,643
+11,jinjinlian  ,right,18,female,203,1204892,3,4,5_216_2 ,5_215_1 ,multisoft,5,5,1,1095
+11,jinjinlian  ,right,18,female,204,1209292,3,4,5_232_2 ,5_231_1 ,multisoft,5,5,1,2375
+11,jinjinlian  ,right,18,female,205,1215042,2,2,4_166_2 ,4_165_1 ,onesoft  ,5,6,0,2081
+11,jinjinlian  ,right,18,female,206,1220209,2,3,2_74_2  ,2_73_1  ,oneloud  ,5,5,1,354
+11,jinjinlian  ,right,18,female,207,1223875,4,4,4_174_2 ,4_173_1 ,multisoft,6,6,1,1479
+11,jinjinlian  ,right,18,female,208,1228292,5,1,6_266_2 ,6_265_1 ,         ,6,6,1,2734
+11,jinjinlian  ,right,18,female,209,1249891,2,3,1_32_2  ,1_31_1  ,oneloud  ,5,5,1,2199
+11,jinjinlian  ,right,18,female,210,1255391,1,5,2_68_2  ,2_67_1  ,multiloud,5,5,1,619
+11,jinjinlian  ,right,18,female,211,1259141,4,3,2_54_2  ,2_53_1  ,oneloud  ,6,6,1,373
+11,jinjinlian  ,right,18,female,212,1262758,4,1,9_418_2 ,9_417_1 ,         ,6,6,1,276
+11,jinjinlian  ,right,18,female,213,1266558,3,3,4_190_2 ,4_189_1 ,oneloud1 ,5,5,1,636
+11,jinjinlian  ,right,18,female,214,1270574,6,1,6_258_2 ,6_257_1 ,         ,6,6,1,315
+11,jinjinlian  ,right,18,female,215,1274208,4,1,10_434_2,10_433_1,         ,6,6,1,249
+11,jinjinlian  ,right,18,female,216,1277708,2,2,3_144_2 ,3_143_1 ,onesoft  ,5,5,1,341
+11,jinjinlian  ,right,18,female,217,1281374,3,3,4_192_2 ,4_191_1 ,oneloud1 ,5,5,1,395
+11,jinjinlian  ,right,18,female,218,1285041,2,2,1_16_2  ,1_15_1  ,onesoft1 ,5,5,1,360
+11,jinjinlian  ,right,18,female,219,1288574,4,1,10_468_2,10_467_1,         ,6,6,1,443
+11,jinjinlian  ,right,18,female,220,1292157,2,4,1_16_2  ,1_15_1  ,multisoft,5,6,0,4668
+11,jinjinlian  ,right,18,female,221,1299941,3,3,1_6_2   ,1_5_1   ,oneloud  ,5,5,1,324
+11,jinjinlian  ,right,18,female,222,1303707,6,2,1_38_2  ,1_37_1  ,onesoft1 ,6,6,1,190
+11,jinjinlian  ,right,18,female,223,1307124,6,5,1_48_2  ,1_47_1  ,multiloud,6,5,0,389
+11,jinjinlian  ,right,18,female,224,1310857,6,1,6_276_2 ,6_275_1 ,         ,6,6,1,920
+11,jinjinlian  ,right,18,female,225,1315174,1,3,3_142_2 ,3_141_1 ,oneloud1 ,5,5,1,626
+11,jinjinlian  ,right,18,female,226,1318974,4,4,2_90_2  ,2_89_1  ,multisoft,6,6,1,610
+11,jinjinlian  ,right,18,female,227,1323023,1,3,2_92_2  ,2_91_1  ,oneloud  ,5,5,1,545
+11,jinjinlian  ,right,18,female,228,1327007,1,3,3_138_2 ,3_137_1 ,oneloud1 ,5,5,1,1153
+11,jinjinlian  ,right,18,female,229,1331290,1,5,2_52_2  ,2_51_1  ,multiloud,5,5,1,550
+11,jinjinlian  ,right,18,female,230,1335223,5,4,1_30_2  ,1_29_1  ,multisoft,6,6,1,337
+11,jinjinlian  ,right,18,female,231,1338690,1,1,9_410_2 ,9_409_1 ,         ,5,5,1,1350
+11,jinjinlian  ,right,18,female,232,1343473,3,1,7_308_2 ,7_307_1 ,         ,5,6,0,463
+11,jinjinlian  ,right,18,female,233,1346940,6,1,7_330_2 ,7_329_1 ,         ,6,6,1,628
+11,jinjinlian  ,right,18,female,234,1350840,2,5,5_196_2 ,5_195_1 ,multiloud,5,5,1,432
+11,jinjinlian  ,right,18,female,235,1354856,4,3,4_162_2 ,4_161_1 ,oneloud1 ,6,5,0,1328
+11,jinjinlian  ,right,18,female,236,1359423,6,3,5_212_2 ,5_211_1 ,oneloud1 ,6,6,1,1201
+11,jinjinlian  ,right,18,female,237,1364273,6,4,5_238_2 ,5_237_1 ,multisoft,6,6,1,1182
+11,jinjinlian  ,right,18,female,238,1368789,6,2,5_238_2 ,5_237_1 ,onesoft  ,6,6,1,1474
+11,jinjinlian  ,right,18,female,239,1373523,6,4,5_220_2 ,5_219_1 ,multisoft,6,6,1,1092
+11,jinjinlian  ,right,18,female,240,1377639,3,2,2_50_2  ,2_49_1  ,onesoft1 ,5,5,1,416
+11,jinjinlian  ,right,18,female,241,1381289,1,5,5_194_2 ,5_193_1 ,multiloud,5,5,1,1222
+11,jinjinlian  ,right,18,female,242,1385706,1,2,1_12_2  ,1_11_1  ,onesoft1 ,5,5,1,525
+11,jinjinlian  ,right,18,female,243,1389506,3,4,2_60_2  ,2_59_1  ,multisoft,5,5,1,2325
+11,jinjinlian  ,right,18,female,244,1395039,2,4,3_134_2 ,3_133_1 ,multisoft,5,5,1,376
+11,jinjinlian  ,right,18,female,245,1398589,3,2,4_192_2 ,4_191_1 ,onesoft  ,5,5,1,1482
+11,jinjinlian  ,right,18,female,246,1403522,1,4,2_52_2  ,2_51_1  ,multisoft,5,5,1,493
+11,jinjinlian  ,right,18,female,247,1407305,1,3,3_102_2 ,3_101_1 ,oneloud  ,5,5,1,838
+11,jinjinlian  ,right,18,female,248,1411622,5,5,4_172_2 ,4_171_1 ,multiloud,6,5,0,1504
+11,jinjinlian  ,right,18,female,249,1416289,4,3,3_122_2 ,3_121_1 ,oneloud  ,6,6,1,165
+11,jinjinlian  ,right,18,female,250,1419522,2,1,10_458_2,10_457_1,         ,5,6,0,1028
+11,jinjinlian  ,right,18,female,251,1424138,3,5,5_236_2 ,5_235_1 ,multiloud,5,5,1,436
+11,jinjinlian  ,right,18,female,252,1427805,5,2,2_72_2  ,2_71_1  ,onesoft1 ,6,6,1,817
+11,jinjinlian  ,right,18,female,253,1432088,4,3,2_58_2  ,2_57_1  ,oneloud  ,6,6,1,406
+11,jinjinlian  ,right,18,female,254,1435705,1,5,1_24_2  ,1_23_1  ,multiloud,5,6,0,533
+11,jinjinlian  ,right,18,female,255,1439621,2,2,4_164_2 ,4_163_1 ,onesoft  ,5,5,1,1009
+11,jinjinlian  ,right,18,female,256,1443938,4,5,4_158_2 ,4_157_1 ,multiloud,6,6,1,588
+11,jinjinlian  ,right,18,female,257,1447688,1,4,4_188_2 ,4_187_1 ,multisoft,5,5,1,518
+11,jinjinlian  ,right,18,female,258,1451238,2,5,2_78_2  ,2_77_1  ,multiloud,5,6,0,512
+11,jinjinlian  ,right,18,female,259,1528603,2,4,1_44_2  ,1_43_1  ,multisoft,5,6,0,433
+11,jinjinlian  ,right,18,female,260,1532437,1,5,2_92_2  ,2_91_1  ,multiloud,5,5,1,255
+11,jinjinlian  ,right,18,female,261,1535753,1,5,2_64_2  ,2_63_1  ,multiloud,5,6,0,339
+11,jinjinlian  ,right,18,female,262,1539403,4,5,4_162_2 ,4_161_1 ,multiloud,6,6,1,585
+11,jinjinlian  ,right,18,female,263,1543353,2,2,2_74_2  ,2_73_1  ,onesoft1 ,5,5,1,219
+11,jinjinlian  ,right,18,female,264,1547020,6,3,1_4_2   ,1_3_1   ,oneloud  ,6,6,1,407
+11,jinjinlian  ,right,18,female,265,1550570,6,1,9_402_2 ,9_401_1 ,         ,6,6,1,249
+11,jinjinlian  ,right,18,female,266,1554319,5,2,1_20_2  ,1_19_1  ,onesoft1 ,6,6,1,372
+11,jinjinlian  ,right,18,female,267,1558019,1,1,8_366_2 ,8_365_1 ,         ,5,5,1,200
+11,jinjinlian  ,right,18,female,268,1561286,2,3,1_16_2  ,1_15_1  ,oneloud  ,5,5,1,373
+11,jinjinlian  ,right,18,female,269,1564969,4,2,1_8_2   ,1_7_1   ,onesoft1 ,6,6,1,258
+11,jinjinlian  ,right,18,female,270,1568403,6,2,3_140_2 ,3_139_1 ,onesoft  ,6,6,1,544
+11,jinjinlian  ,right,18,female,271,1572153,3,2,5_232_2 ,5_231_1 ,onesoft  ,5,6,0,186
+11,jinjinlian  ,right,18,female,272,1575419,4,1,10_456_2,10_455_1,         ,6,6,1,184
+11,jinjinlian  ,right,18,female,273,1579152,3,3,3_104_2 ,3_103_1 ,oneloud  ,5,5,1,235
+11,jinjinlian  ,right,18,female,274,1582619,1,5,4_184_2 ,4_183_1 ,multiloud,5,5,1,448
+11,jinjinlian  ,right,18,female,275,1586302,6,2,1_36_2  ,1_35_1  ,onesoft1 ,6,6,1,293
+11,jinjinlian  ,right,18,female,276,1590119,6,3,5_238_2 ,5_237_1 ,oneloud1 ,6,6,1,284
+11,jinjinlian  ,right,18,female,277,1593519,5,4,1_10_2  ,1_9_1   ,multisoft,6,6,1,299
+11,jinjinlian  ,right,18,female,278,1597152,5,1,10_480_2,10_479_1,         ,6,6,1,258
+11,jinjinlian  ,right,18,female,279,1600852,4,2,3_128_2 ,3_127_1 ,onesoft  ,6,6,1,254
+11,jinjinlian  ,right,18,female,280,1604552,1,4,1_12_2  ,1_11_1  ,multisoft,5,5,1,322
+11,jinjinlian  ,right,18,female,281,1608135,5,1,6_272_2 ,6_271_1 ,         ,6,6,1,459
+11,jinjinlian  ,right,18,female,282,1611919,5,2,3_132_2 ,3_131_1 ,onesoft  ,6,6,1,259
+11,jinjinlian  ,right,18,female,283,1615202,4,2,2_58_2  ,2_57_1  ,onesoft1 ,6,6,1,112
+11,jinjinlian  ,right,18,female,284,1618635,1,5,5_204_2 ,5_203_1 ,multiloud,5,5,1,359
+11,jinjinlian  ,right,18,female,285,1622218,2,4,3_144_2 ,3_143_1 ,multisoft,5,5,1,256
+11,jinjinlian  ,right,18,female,286,1625635,5,5,2_80_2  ,2_79_1  ,multiloud,6,6,1,255
+11,jinjinlian  ,right,18,female,287,1628985,6,1,8_372_2 ,8_371_1 ,         ,6,6,1,209
+11,jinjinlian  ,right,18,female,288,1632735,4,2,1_34_2  ,1_33_1  ,onesoft1 ,6,6,1,267
+11,jinjinlian  ,right,18,female,289,1636268,3,2,1_26_2  ,1_25_1  ,onesoft1 ,5,5,1,542
+11,jinjinlian  ,right,18,female,290,1640185,1,3,2_64_2  ,2_63_1  ,oneloud  ,5,5,1,176
+11,jinjinlian  ,right,18,female,291,1643368,6,2,5_220_2 ,5_219_1 ,onesoft  ,6,6,1,281
+11,jinjinlian  ,right,18,female,292,1646901,1,2,2_68_2  ,2_67_1  ,onesoft1 ,5,5,1,228
+11,jinjinlian  ,right,18,female,293,1650518,4,5,5_228_2 ,5_227_1 ,multiloud,6,6,1,267
+11,jinjinlian  ,right,18,female,294,1653801,1,1,6_274_2 ,6_273_1 ,         ,5,5,1,416
+11,jinjinlian  ,right,18,female,295,1657568,6,4,1_48_2  ,1_47_1  ,multisoft,6,6,1,305
+11,jinjinlian  ,right,18,female,296,1661201,1,5,1_40_2  ,1_39_1  ,multiloud,5,5,1,288
+11,jinjinlian  ,right,18,female,297,1664884,4,3,5_226_2 ,5_225_1 ,oneloud1 ,6,6,1,589
+11,jinjinlian  ,right,18,female,298,1668634,1,3,5_200_2 ,5_199_1 ,oneloud1 ,5,5,1,319
+11,jinjinlian  ,right,18,female,299,1672301,1,1,7_296_2 ,7_295_1 ,         ,5,6,0,460
+11,jinjinlian  ,right,18,female,300,1675801,5,5,3_132_2 ,3_131_1 ,multiloud,6,6,1,312
+11,jinjinlian  ,right,18,female,301,1679151,4,4,4_162_2 ,4_161_1 ,multisoft,6,6,1,26
+11,jinjinlian  ,right,18,female,302,1682517,2,2,3_120_2 ,3_119_1 ,onesoft1 ,5,5,1,1340
+11,jinjinlian  ,right,18,female,303,1687034,1,3,4_176_2 ,4_175_1 ,oneloud1 ,5,5,1,454
+11,jinjinlian  ,right,18,female,304,1690967,3,3,2_62_2  ,2_61_1  ,oneloud  ,5,6,0,393
+11,jinjinlian  ,right,18,female,305,1694934,2,4,5_206_2 ,5_205_1 ,multisoft,5,5,1,586
+11,jinjinlian  ,right,18,female,306,1698884,6,3,1_36_2  ,1_35_1  ,oneloud  ,6,6,1,292
+11,jinjinlian  ,right,18,female,307,1702384,6,2,1_4_2   ,1_3_1   ,onesoft1 ,6,6,1,248
+11,jinjinlian  ,right,18,female,308,1706100,2,5,3_134_2 ,3_133_1 ,multiloud,5,5,1,236
+11,jinjinlian  ,right,18,female,309,1775599,5,4,3_116_2 ,3_115_1 ,multisoft,6,5,0,584
+11,jinjinlian  ,right,18,female,310,1779316,4,2,2_70_2  ,2_69_1  ,onesoft1 ,6,6,1,1978
+11,jinjinlian  ,right,18,female,311,1784649,1,1,7_290_2 ,7_289_1 ,         ,5,5,1,261
+11,jinjinlian  ,right,18,female,312,1788099,3,4,1_22_2  ,1_21_1  ,multisoft,5,6,0,267
+11,jinjinlian  ,right,18,female,313,1791415,3,1,8_338_2 ,8_337_1 ,         ,5,6,0,1479
+11,jinjinlian  ,right,18,female,314,1796099,4,2,2_54_2  ,2_53_1  ,onesoft1 ,6,6,1,275
+11,jinjinlian  ,right,18,female,315,1799765,2,2,2_96_2  ,2_95_1  ,onesoft1 ,5,5,1,241
+11,jinjinlian  ,right,18,female,316,1803082,4,4,5_228_2 ,5_227_1 ,multisoft,6,6,1,340
+11,jinjinlian  ,right,18,female,317,1806482,6,4,3_108_2 ,3_107_1 ,multisoft,6,6,1,276
+11,jinjinlian  ,right,18,female,318,1810232,1,5,5_198_2 ,5_197_1 ,multiloud,5,6,0,310
+11,jinjinlian  ,right,18,female,319,1813898,3,1,7_324_2 ,7_323_1 ,         ,5,5,1,452
+11,jinjinlian  ,right,18,female,320,1817432,5,1,8_354_2 ,8_353_1 ,         ,6,6,1,246
+11,jinjinlian  ,right,18,female,321,1821032,2,3,5_224_2 ,5_223_1 ,oneloud1 ,5,5,1,414
+11,jinjinlian  ,right,18,female,322,1824982,6,2,3_114_2 ,3_113_1 ,onesoft1 ,6,6,1,248
+11,jinjinlian  ,right,18,female,323,1828582,5,2,4_156_2 ,4_155_1 ,onesoft  ,6,6,1,327
+11,jinjinlian  ,right,18,female,324,1832265,1,3,5_204_2 ,5_203_1 ,oneloud1 ,5,5,1,404
+11,jinjinlian  ,right,18,female,325,1836148,2,3,4_150_2 ,4_149_1 ,oneloud1 ,5,5,1,393
+11,jinjinlian  ,right,18,female,326,1839898,5,2,3_100_2 ,3_99_1  ,onesoft1 ,6,6,1,587
+11,jinjinlian  ,right,18,female,327,1843665,4,3,3_124_2 ,3_123_1 ,oneloud  ,6,5,0,540
+11,jinjinlian  ,right,18,female,328,1847365,4,3,2_70_2  ,2_69_1  ,oneloud  ,6,6,1,560
+11,jinjinlian  ,right,18,female,329,1851281,5,3,2_72_2  ,2_71_1  ,oneloud  ,6,6,1,276
+11,jinjinlian  ,right,18,female,330,1854631,1,2,4_188_2 ,4_187_1 ,onesoft  ,5,5,1,342
+11,jinjinlian  ,right,18,female,331,1858231,2,5,4_164_2 ,4_163_1 ,multiloud,5,5,1,246
+11,jinjinlian  ,right,18,female,332,1861614,2,1,10_440_2,10_439_1,         ,5,6,0,343
+11,jinjinlian  ,right,18,female,333,1865314,1,2,3_102_2 ,3_101_1 ,onesoft1 ,5,5,1,211
+11,jinjinlian  ,right,18,female,334,1868581,3,5,2_94_2  ,2_93_1  ,multiloud,5,5,1,408
+11,jinjinlian  ,right,18,female,335,1872464,2,5,2_74_2  ,2_73_1  ,multiloud,5,5,1,396
+11,jinjinlian  ,right,18,female,336,1876081,6,5,3_140_2 ,3_139_1 ,multiloud,6,6,1,347
+11,jinjinlian  ,right,18,female,337,1879781,6,5,3_108_2 ,3_107_1 ,multiloud,6,6,1,239
+11,jinjinlian  ,right,18,female,338,1883164,3,2,5_216_2 ,5_215_1 ,onesoft  ,5,5,1,384
+11,jinjinlian  ,right,18,female,339,1886647,4,5,4_174_2 ,4_173_1 ,multiloud,6,6,1,317
+11,jinjinlian  ,right,18,female,340,1890414,2,3,3_120_2 ,3_119_1 ,oneloud  ,5,5,1,422
+11,jinjinlian  ,right,18,female,341,1894314,6,3,2_82_2  ,2_81_1  ,oneloud  ,6,6,1,266
+11,jinjinlian  ,right,18,female,342,1897914,6,4,2_66_2  ,2_65_1  ,multisoft,6,6,1,186
+11,jinjinlian  ,right,18,female,343,1901530,2,1,10_464_2,10_463_1,         ,5,5,1,210
+11,jinjinlian  ,right,18,female,344,1904880,6,3,2_88_2  ,2_87_1  ,oneloud  ,6,6,1,36
+11,jinjinlian  ,right,18,female,345,1908363,5,5,3_116_2 ,3_115_1 ,multiloud,6,5,0,225
+11,jinjinlian  ,right,18,female,346,1911647,6,3,4_154_2 ,4_153_1 ,oneloud1 ,6,6,1,189
+11,jinjinlian  ,right,18,female,347,1915397,6,2,2_56_2  ,2_55_1  ,onesoft1 ,6,6,1,159
+11,jinjinlian  ,right,18,female,348,1918630,1,5,1_28_2  ,1_27_1  ,multiloud,5,5,1,189
+11,jinjinlian  ,right,18,female,349,1921997,1,1,8_362_2 ,8_361_1 ,         ,5,5,1,262
+11,jinjinlian  ,right,18,female,350,1925513,6,1,10_454_2,10_453_1,         ,6,6,1,242
+11,jinjinlian  ,right,18,female,351,1929163,4,3,1_46_2  ,1_45_1  ,oneloud  ,6,6,1,232
+11,jinjinlian  ,right,18,female,352,1932580,1,4,5_204_2 ,5_203_1 ,multisoft,5,5,1,247
+11,jinjinlian  ,right,18,female,353,1935946,6,2,5_222_2 ,5_221_1 ,onesoft  ,6,6,1,169
+11,jinjinlian  ,right,18,female,354,1939496,2,5,5_224_2 ,5_223_1 ,multiloud,5,5,1,235
+11,jinjinlian  ,right,18,female,355,1942930,3,3,1_22_2  ,1_21_1  ,oneloud  ,5,5,1,257
+11,jinjinlian  ,right,18,female,356,1946696,5,2,1_14_2  ,1_13_1  ,onesoft1 ,6,6,1,299
+11,jinjinlian  ,right,18,female,357,1950296,1,4,3_142_2 ,3_141_1 ,multisoft,5,5,1,315
+11,jinjinlian  ,right,18,female,358,1954029,2,3,4_152_2 ,4_151_1 ,oneloud1 ,5,5,1,390
+11,jinjinlian  ,right,18,female,359,1966212,5,4,2_80_2  ,2_79_1  ,multisoft,6,6,1,214
+11,jinjinlian  ,right,18,female,360,1969779,1,4,2_64_2  ,2_63_1  ,multisoft,5,5,1,151
+11,jinjinlian  ,right,18,female,361,1973079,3,5,2_50_2  ,2_49_1  ,multiloud,5,6,0,203
+11,jinjinlian  ,right,18,female,362,1976646,5,5,2_86_2  ,2_85_1  ,multiloud,6,6,1,204
+11,jinjinlian  ,right,18,female,363,1980146,1,4,1_24_2  ,1_23_1  ,multisoft,5,5,1,168
+11,jinjinlian  ,right,18,female,364,1983345,3,3,1_42_2  ,1_41_1  ,oneloud  ,5,6,0,185
+11,jinjinlian  ,right,18,female,365,1986912,3,1,10_452_2,10_451_1,         ,5,6,0,298
+11,jinjinlian  ,right,18,female,366,1990695,1,2,3_110_2 ,3_109_1 ,onesoft1 ,5,5,1,211
+11,jinjinlian  ,right,18,female,367,1994412,3,5,2_60_2  ,2_59_1  ,multiloud,5,5,1,302
+11,jinjinlian  ,right,18,female,368,1997962,5,3,1_10_2  ,1_9_1   ,oneloud1 ,6,6,1,152
+11,jinjinlian  ,right,18,female,369,2001279,5,1,8_356_2 ,8_355_1 ,         ,6,5,0,267
+11,jinjinlian  ,right,18,female,370,2004795,6,5,1_36_2  ,1_35_1  ,multiloud,6,6,1,255
+11,jinjinlian  ,right,18,female,371,2008345,6,1,10_442_2,10_441_1,         ,6,6,1,273
+11,jinjinlian  ,right,18,female,372,2011828,6,5,5_220_2 ,5_219_1 ,multiloud,6,6,1,166
+11,jinjinlian  ,right,18,female,373,2015095,3,5,3_118_2 ,3_117_1 ,multiloud,5,5,1,378
+11,jinjinlian  ,right,18,female,374,2018995,1,2,5_198_2 ,5_197_1 ,onesoft  ,5,5,1,198
+11,jinjinlian  ,right,18,female,375,2022445,4,2,4_178_2 ,4_177_1 ,onesoft  ,6,6,1,276
+11,jinjinlian  ,right,18,female,376,2025878,1,3,1_28_2  ,1_27_1  ,oneloud  ,5,5,1,283
+11,jinjinlian  ,right,18,female,377,2029445,3,5,1_22_2  ,1_21_1  ,multiloud,5,5,1,284
+11,jinjinlian  ,right,18,female,378,2033161,6,3,2_66_2  ,2_65_1  ,oneloud  ,6,6,1,264
+11,jinjinlian  ,right,18,female,379,2036511,6,3,5_222_2 ,5_221_1 ,oneloud1 ,6,6,1,314
+11,jinjinlian  ,right,18,female,380,2040095,2,4,5_196_2 ,5_195_1 ,multisoft,5,5,1,210
+11,jinjinlian  ,right,18,female,381,2043861,2,5,3_144_2 ,3_143_1 ,multiloud,5,5,1,204
+11,jinjinlian  ,right,18,female,382,2047244,3,4,4_190_2 ,4_189_1 ,multisoft,5,6,0,413
+11,jinjinlian  ,right,18,female,383,2050894,1,1,10_438_2,10_437_1,         ,5,6,0,3075
+11,jinjinlian  ,right,18,female,384,2057228,3,2,3_104_2 ,3_103_1 ,onesoft1 ,5,5,1,348
+11,jinjinlian  ,right,18,female,385,2061061,2,3,1_18_2  ,1_17_1  ,oneloud  ,5,5,1,259
+11,jinjinlian  ,right,18,female,386,2064677,3,4,1_6_2   ,1_5_1   ,multisoft,5,5,1,499
+11,jinjinlian  ,right,18,female,387,2068261,4,4,1_34_2  ,1_33_1  ,multisoft,6,6,1,307
+11,jinjinlian  ,right,18,female,388,2072044,4,4,5_214_2 ,5_213_1 ,multisoft,6,6,1,220
+11,jinjinlian  ,right,18,female,389,2075811,1,4,4_184_2 ,4_183_1 ,multisoft,5,5,1,181
+11,jinjinlian  ,right,18,female,390,2079294,5,2,4_172_2 ,4_171_1 ,onesoft  ,6,6,1,218
+11,jinjinlian  ,right,18,female,391,2082744,3,3,3_118_2 ,3_117_1 ,oneloud1 ,5,5,1,232
+11,jinjinlian  ,right,18,female,392,2086427,1,5,4_176_2 ,4_175_1 ,multiloud,5,5,1,397
+11,jinjinlian  ,right,18,female,393,2090060,1,2,4_184_2 ,4_183_1 ,onesoft  ,5,5,1,380
+11,jinjinlian  ,right,18,female,394,2093527,3,4,5_230_2 ,5_229_1 ,multisoft,5,5,1,433
+11,jinjinlian  ,right,18,female,395,2097110,1,1,10_478_2,10_477_1,         ,5,5,1,266
+11,jinjinlian  ,right,18,female,396,2100460,4,5,2_90_2  ,2_89_1  ,multiloud,6,5,0,228
+11,jinjinlian  ,right,18,female,397,2104043,1,4,3_110_2 ,3_109_1 ,multisoft,5,5,1,124
+11,jinjinlian  ,right,18,female,398,2107293,4,5,2_70_2  ,2_69_1  ,multiloud,6,6,1,314
+11,jinjinlian  ,right,18,female,399,2110827,4,1,7_294_2 ,7_293_1 ,         ,6,6,1,324
+11,jinjinlian  ,right,18,female,400,2114460,2,1,9_432_2 ,9_431_1 ,         ,5,5,1,259
+11,jinjinlian  ,right,18,female,401,2118143,2,5,2_96_2  ,2_95_1  ,multiloud,5,5,1,320
+11,jinjinlian  ,right,18,female,402,2121843,6,5,2_82_2  ,2_81_1  ,multiloud,6,6,1,300
+11,jinjinlian  ,right,18,female,403,2125260,5,3,4_156_2 ,4_155_1 ,oneloud1 ,6,5,0,299
+11,jinjinlian  ,right,18,female,404,2128860,4,3,2_90_2  ,2_89_1  ,oneloud  ,6,6,1,507
+11,jinjinlian  ,right,18,female,405,2132610,6,4,1_38_2  ,1_37_1  ,multisoft,6,6,1,453
+11,jinjinlian  ,right,18,female,406,2136410,2,5,4_166_2 ,4_165_1 ,multiloud,5,5,1,245
+11,jinjinlian  ,right,18,female,407,2139876,2,2,1_18_2  ,1_17_1  ,onesoft1 ,5,5,1,283
+11,jinjinlian  ,right,18,female,408,2143493,3,3,2_60_2  ,2_59_1  ,oneloud  ,5,6,0,1106
+11,jinjinlian  ,right,18,female,409,2204775,3,5,4_192_2 ,4_191_1 ,multiloud,5,5,1,382
+11,jinjinlian  ,right,18,female,410,2208625,4,1,6_252_2 ,6_251_1 ,         ,6,5,0,404
+11,jinjinlian  ,right,18,female,411,2212458,1,2,5_204_2 ,5_203_1 ,onesoft  ,5,5,1,659
+11,jinjinlian  ,right,18,female,412,2216191,3,4,2_62_2  ,2_61_1  ,multisoft,5,5,1,278
+11,jinjinlian  ,right,18,female,413,2219658,5,4,3_100_2 ,3_99_1  ,multisoft,6,6,1,251
+11,jinjinlian  ,right,18,female,414,2223108,3,4,3_118_2 ,3_117_1 ,multisoft,5,6,0,281
+11,jinjinlian  ,right,18,female,415,2226475,4,1,9_400_2 ,9_399_1 ,         ,6,6,1,330
+11,jinjinlian  ,right,18,female,416,2230008,1,2,1_24_2  ,1_23_1  ,onesoft1 ,5,5,1,261
+11,jinjinlian  ,right,18,female,417,2233491,6,2,4_154_2 ,4_153_1 ,onesoft  ,6,5,0,346
+11,jinjinlian  ,right,18,female,418,2237358,3,4,4_192_2 ,4_191_1 ,multisoft,5,5,1,327
+11,jinjinlian  ,right,18,female,419,2240658,2,1,9_406_2 ,9_405_1 ,         ,5,5,1,187
+11,jinjinlian  ,right,18,female,420,2244274,6,5,3_114_2 ,3_113_1 ,multiloud,6,6,1,226
+11,jinjinlian  ,right,18,female,421,2247908,2,4,4_164_2 ,4_163_1 ,multisoft,5,5,1,592
+11,jinjinlian  ,right,18,female,422,2251774,6,4,2_88_2  ,2_87_1  ,multisoft,6,6,1,342
+11,jinjinlian  ,right,18,female,423,2255441,6,1,8_378_2 ,8_377_1 ,         ,6,6,1,107
+11,jinjinlian  ,right,18,female,424,2258824,1,1,6_242_2 ,6_241_1 ,         ,5,5,1,140
+11,jinjinlian  ,right,18,female,425,2262157,4,2,5_240_2 ,5_239_1 ,onesoft  ,6,5,0,295
+11,jinjinlian  ,right,18,female,426,2265891,3,5,5_232_2 ,5_231_1 ,multiloud,5,5,1,217
+11,jinjinlian  ,right,18,female,427,2269274,4,2,4_158_2 ,4_157_1 ,onesoft  ,6,6,1,250
+11,jinjinlian  ,right,18,female,428,2273141,5,1,7_302_2 ,7_301_1 ,         ,6,6,1,343
+11,jinjinlian  ,right,18,female,429,2276840,6,5,4_170_2 ,4_169_1 ,multiloud,6,6,1,252
+11,jinjinlian  ,right,18,female,430,2280340,4,2,3_124_2 ,3_123_1 ,onesoft1 ,6,5,0,256
+11,jinjinlian  ,right,18,female,431,2283540,4,1,8_342_2 ,8_341_1 ,         ,6,6,1,408
+11,jinjinlian  ,right,18,female,432,2287240,3,2,5_230_2 ,5_229_1 ,onesoft  ,5,5,1,188
+11,jinjinlian  ,right,18,female,433,2290640,4,1,9_412_2 ,9_411_1 ,         ,6,6,1,227
+11,jinjinlian  ,right,18,female,434,2293840,5,2,1_30_2  ,1_29_1  ,onesoft1 ,6,6,1,251
+11,jinjinlian  ,right,18,female,435,2297423,2,2,5_196_2 ,5_195_1 ,onesoft  ,5,5,1,300
+11,jinjinlian  ,right,18,female,436,2301107,2,1,7_312_2 ,7_311_1 ,         ,5,5,1,296
+11,jinjinlian  ,right,18,female,437,2304840,6,1,10_460_2,10_459_1,         ,6,6,1,219
+11,jinjinlian  ,right,18,female,438,2308490,3,1,10_448_2,10_447_1,         ,5,5,1,289
+11,jinjinlian  ,right,18,female,439,2311923,1,2,5_200_2 ,5_199_1 ,onesoft  ,5,5,1,224
+11,jinjinlian  ,right,18,female,440,2315440,6,2,5_212_2 ,5_211_1 ,onesoft  ,6,6,1,259
+11,jinjinlian  ,right,18,female,441,2318823,6,1,9_404_2 ,9_403_1 ,         ,6,5,0,244
+11,jinjinlian  ,right,18,female,442,2322223,4,4,5_240_2 ,5_239_1 ,multisoft,6,5,0,260
+11,jinjinlian  ,right,18,female,443,2326006,1,4,3_102_2 ,3_101_1 ,multisoft,5,5,1,525
+11,jinjinlian  ,right,18,female,444,2329723,2,3,2_96_2  ,2_95_1  ,oneloud  ,5,5,1,1184
+11,jinjinlian  ,right,18,female,445,2333973,3,2,2_94_2  ,2_93_1  ,onesoft1 ,5,5,1,326
+11,jinjinlian  ,right,18,female,446,2337573,2,2,5_206_2 ,5_205_1 ,onesoft  ,5,6,0,317
+11,jinjinlian  ,right,18,female,447,2341406,5,1,9_386_2 ,9_385_1 ,         ,6,6,1,268
+11,jinjinlian  ,right,18,female,448,2345023,5,3,5_218_2 ,5_217_1 ,oneloud1 ,6,6,1,611
+11,jinjinlian  ,right,18,female,449,2348923,2,5,1_32_2  ,1_31_1  ,multiloud,5,5,1,327
+11,jinjinlian  ,right,18,female,450,2352622,6,3,1_38_2  ,1_37_1  ,oneloud  ,6,6,1,220
+11,jinjinlian  ,right,18,female,451,2355956,3,4,3_104_2 ,3_103_1 ,multisoft,5,5,1,238
+11,jinjinlian  ,right,18,female,452,2359206,4,5,1_46_2  ,1_45_1  ,multiloud,6,6,1,164
+11,jinjinlian  ,right,18,female,453,2362906,5,3,2_84_2  ,2_83_1  ,oneloud  ,6,6,1,448
+11,jinjinlian  ,right,18,female,454,2366822,5,4,3_112_2 ,3_111_1 ,multisoft,6,5,0,380
+11,jinjinlian  ,right,18,female,455,2370589,1,4,1_28_2  ,1_27_1  ,multisoft,5,5,1,293
+11,jinjinlian  ,right,18,female,456,2373972,1,5,4_188_2 ,4_187_1 ,multiloud,5,5,1,366
+11,jinjinlian  ,right,18,female,457,2377839,6,5,4_160_2 ,4_159_1 ,multiloud,6,6,1,115
+11,jinjinlian  ,right,18,female,458,2381222,3,3,5_236_2 ,5_235_1 ,oneloud1 ,5,5,1,387
+11,jinjinlian  ,right,18,female,459,2394338,3,1,9_414_2 ,9_413_1 ,         ,5,5,1,263
+11,jinjinlian  ,right,18,female,460,2398022,4,1,7_326_2 ,7_325_1 ,         ,6,5,0,211
+11,jinjinlian  ,right,18,female,461,2401738,5,1,8_370_2 ,8_369_1 ,         ,6,6,1,103
+11,jinjinlian  ,right,18,female,462,2405372,5,3,3_116_2 ,3_115_1 ,oneloud1 ,6,5,0,501
+11,jinjinlian  ,right,18,female,463,2409055,3,1,9_388_2 ,9_387_1 ,         ,5,6,0,362
+11,jinjinlian  ,right,18,female,464,2412488,6,4,3_114_2 ,3_113_1 ,multisoft,6,6,1,497
+11,jinjinlian  ,right,18,female,465,2416171,5,1,9_392_2 ,9_391_1 ,         ,6,5,0,230
+11,jinjinlian  ,right,18,female,466,2419638,4,2,1_46_2  ,1_45_1  ,onesoft1 ,6,6,1,75
+11,jinjinlian  ,right,18,female,467,2422938,1,5,3_138_2 ,3_137_1 ,multiloud,5,5,1,191
+11,jinjinlian  ,right,18,female,468,2426388,2,1,8_374_2 ,8_373_1 ,         ,5,5,1,197
+11,jinjinlian  ,right,18,female,469,2429971,4,4,3_126_2 ,3_125_1 ,multisoft,6,6,1,181
+11,jinjinlian  ,right,18,female,470,2433354,6,4,2_56_2  ,2_55_1  ,multisoft,6,6,1,214
+11,jinjinlian  ,right,18,female,471,2436988,5,3,4_172_2 ,4_171_1 ,oneloud1 ,6,6,1,260
+11,jinjinlian  ,right,18,female,472,2440604,1,4,2_92_2  ,2_91_1  ,multisoft,5,5,1,212
+11,jinjinlian  ,right,18,female,473,2443921,2,1,10_450_2,10_449_1,         ,5,6,0,1247
+11,jinjinlian  ,right,18,female,474,2448271,1,1,6_270_2 ,6_269_1 ,         ,5,5,1,249
+11,jinjinlian  ,right,18,female,475,2451937,3,2,2_62_2  ,2_61_1  ,onesoft1 ,5,5,1,279
+11,jinjinlian  ,right,18,female,476,2455671,5,3,5_202_2 ,5_201_1 ,oneloud1 ,6,6,1,337
+11,jinjinlian  ,right,18,female,477,2459087,5,2,2_80_2  ,2_79_1  ,onesoft1 ,6,6,1,401
+11,jinjinlian  ,right,18,female,478,2463021,1,2,1_28_2  ,1_27_1  ,onesoft1 ,5,5,1,251
+11,jinjinlian  ,right,18,female,479,2466687,4,4,2_70_2  ,2_69_1  ,multisoft,6,6,1,289
+11,jinjinlian  ,right,18,female,480,2470354,5,1,10_474_2,10_473_1,         ,6,6,1,558
+11,jinjinlian  ,right,18,female,481,2474004,5,3,3_132_2 ,3_131_1 ,oneloud1 ,6,6,1,411
+11,jinjinlian  ,right,18,female,482,2477704,3,5,4_168_2 ,4_167_1 ,multiloud,5,5,1,215
+11,jinjinlian  ,right,18,female,483,2481004,2,5,4_152_2 ,4_151_1 ,multiloud,5,5,1,243
+11,jinjinlian  ,right,18,female,484,2484704,6,4,4_170_2 ,4_169_1 ,multisoft,6,6,1,175
+11,jinjinlian  ,right,18,female,485,2488137,2,4,4_166_2 ,4_165_1 ,multisoft,5,5,1,334
+11,jinjinlian  ,right,18,female,486,2491503,6,5,2_66_2  ,2_65_1  ,multiloud,6,6,1,256
+11,jinjinlian  ,right,18,female,487,2494953,4,1,7_300_2 ,7_299_1 ,         ,6,5,0,1350
+11,jinjinlian  ,right,18,female,488,2499787,5,4,2_72_2  ,2_71_1  ,multisoft,6,6,1,476
+11,jinjinlian  ,right,18,female,489,2503787,4,2,4_162_2 ,4_161_1 ,onesoft  ,6,5,0,244
+11,jinjinlian  ,right,18,female,490,2507170,4,1,8_364_2 ,8_363_1 ,         ,6,6,1,365
+11,jinjinlian  ,right,18,female,491,2510520,6,1,7_320_2 ,7_319_1 ,         ,6,6,1,295
+11,jinjinlian  ,right,18,female,492,2513986,1,1,6_268_2 ,6_267_1 ,         ,5,5,1,405
+11,jinjinlian  ,right,18,female,493,2517603,4,4,5_226_2 ,5_225_1 ,multisoft,6,5,0,572
+11,jinjinlian  ,right,18,female,494,2521536,6,1,8_380_2 ,8_379_1 ,         ,6,6,1,398
+11,jinjinlian  ,right,18,female,495,2525370,2,5,5_210_2 ,5_209_1 ,multiloud,5,6,0,52
+11,jinjinlian  ,right,18,female,496,2528853,6,5,1_38_2  ,1_37_1  ,multiloud,6,6,1,153
+11,jinjinlian  ,right,18,female,497,2532386,6,2,4_170_2 ,4_169_1 ,onesoft  ,6,6,1,212
+11,jinjinlian  ,right,18,female,498,2535936,5,4,2_84_2  ,2_83_1  ,multisoft,6,6,1,214
+11,jinjinlian  ,right,18,female,499,2539586,3,5,4_182_2 ,4_181_1 ,multiloud,5,5,1,1564
+11,jinjinlian  ,right,18,female,500,2544169,1,2,2_92_2  ,2_91_1  ,onesoft1 ,5,5,1,229
+11,jinjinlian  ,right,18,female,501,2547702,5,5,5_234_2 ,5_233_1 ,multiloud,6,6,1,328
+11,jinjinlian  ,right,18,female,502,2551202,1,5,5_200_2 ,5_199_1 ,multiloud,5,5,1,244
+11,jinjinlian  ,right,18,female,503,2554469,6,4,4_160_2 ,4_159_1 ,multisoft,6,6,1,329
+11,jinjinlian  ,right,18,female,504,2558186,6,1,6_278_2 ,6_277_1 ,         ,6,6,1,220
+11,jinjinlian  ,right,18,female,505,2561686,5,1,9_396_2 ,9_395_1 ,         ,6,5,0,288
+11,jinjinlian  ,right,18,female,506,2565385,6,1,10_466_2,10_465_1,         ,6,6,1,229
+11,jinjinlian  ,right,18,female,507,2569169,1,3,3_110_2 ,3_109_1 ,oneloud  ,5,5,1,228
+11,jinjinlian  ,right,18,female,508,2572819,5,2,5_202_2 ,5_201_1 ,onesoft  ,6,5,0,234
+11,jinjinlian  ,right,18,female,509,2597302,5,3,5_208_2 ,5_207_1 ,oneloud1 ,6,6,1,423
+11,jinjinlian  ,right,18,female,510,2600802,3,2,4_190_2 ,4_189_1 ,onesoft  ,5,5,1,755
+11,jinjinlian  ,right,18,female,511,2604801,1,5,1_12_2  ,1_11_1  ,multiloud,5,5,1,412
+11,jinjinlian  ,right,18,female,512,2608635,4,3,5_228_2 ,5_227_1 ,oneloud1 ,6,6,1,210
+11,jinjinlian  ,right,18,female,513,2611935,4,2,5_214_2 ,5_213_1 ,onesoft  ,6,6,1,310
+11,jinjinlian  ,right,18,female,514,2615651,1,2,1_40_2  ,1_39_1  ,onesoft1 ,5,5,1,249
+11,jinjinlian  ,right,18,female,515,2619285,4,4,4_178_2 ,4_177_1 ,multisoft,6,5,0,311
+11,jinjinlian  ,right,18,female,516,2622985,3,5,3_104_2 ,3_103_1 ,multiloud,5,5,1,227
+11,jinjinlian  ,right,18,female,517,2626434,3,5,5_216_2 ,5_215_1 ,multiloud,5,6,0,362
+11,jinjinlian  ,right,18,female,518,2629984,2,1,6_262_2 ,6_261_1 ,         ,5,5,1,212
+11,jinjinlian  ,right,18,female,519,2633268,3,1,7_322_2 ,7_321_1 ,         ,5,5,1,192
+11,jinjinlian  ,right,18,female,520,2636584,6,5,5_222_2 ,5_221_1 ,multiloud,6,6,1,116
+11,jinjinlian  ,right,18,female,521,2640018,3,1,6_264_2 ,6_263_1 ,         ,5,5,1,338
+11,jinjinlian  ,right,18,female,522,2643684,4,1,10_444_2,10_443_1,         ,6,5,0,352
+11,jinjinlian  ,right,18,female,523,2647217,6,2,2_82_2  ,2_81_1  ,onesoft1 ,6,6,1,187
+11,jinjinlian  ,right,18,female,524,2650601,3,1,8_352_2 ,8_351_1 ,         ,5,5,1,219
+11,jinjinlian  ,right,18,female,525,2654184,3,4,5_236_2 ,5_235_1 ,multisoft,5,5,1,316
+11,jinjinlian  ,right,18,female,526,2657634,3,1,7_336_2 ,7_335_1 ,         ,5,6,0,218
+11,jinjinlian  ,right,18,female,527,2660967,3,2,1_42_2  ,1_41_1  ,onesoft1 ,5,5,1,188
+11,jinjinlian  ,right,18,female,528,2664317,4,2,3_122_2 ,3_121_1 ,onesoft1 ,6,6,1,302
+11,jinjinlian  ,right,18,female,529,2668184,5,1,6_256_2 ,6_255_1 ,         ,6,5,0,371
+11,jinjinlian  ,right,18,female,530,2671817,1,2,4_176_2 ,4_175_1 ,onesoft  ,5,5,1,266
+11,jinjinlian  ,right,18,female,531,2675417,1,3,4_184_2 ,4_183_1 ,oneloud1 ,5,5,1,210
+11,jinjinlian  ,right,18,female,532,2678684,6,3,3_136_2 ,3_135_1 ,oneloud1 ,6,6,1,295
+11,jinjinlian  ,right,18,female,533,2682267,3,4,3_98_2  ,3_97_1  ,multisoft,5,5,1,256
+11,jinjinlian  ,right,18,female,534,2685817,4,5,1_8_2   ,1_7_1   ,multiloud,6,6,1,258
+11,jinjinlian  ,right,18,female,535,2689517,5,1,7_304_2 ,7_303_1 ,         ,6,6,1,238
+11,jinjinlian  ,right,18,female,536,2692833,3,4,1_26_2  ,1_25_1  ,multisoft,5,5,1,554
+11,jinjinlian  ,right,18,female,537,2696550,1,2,4_186_2 ,4_185_1 ,onesoft  ,5,5,1,885
+11,jinjinlian  ,right,18,female,538,2700833,2,5,5_206_2 ,5_205_1 ,multiloud,5,6,0,194
+11,jinjinlian  ,right,18,female,539,2704600,1,3,5_194_2 ,5_193_1 ,oneloud1 ,5,5,1,275
+11,jinjinlian  ,right,18,female,540,2708166,6,3,4_160_2 ,4_159_1 ,oneloud1 ,6,6,1,212
+11,jinjinlian  ,right,18,female,541,2711600,5,2,4_148_2 ,4_147_1 ,onesoft  ,6,6,1,154
+11,jinjinlian  ,right,18,female,542,2714733,5,4,1_14_2  ,1_13_1  ,multisoft,6,6,1,237
+11,jinjinlian  ,right,18,female,543,2718333,3,1,9_394_2 ,9_393_1 ,         ,5,5,1,117
+11,jinjinlian  ,right,18,female,544,2721633,6,4,1_36_2  ,1_35_1  ,multisoft,6,6,1,217
+11,jinjinlian  ,right,18,female,545,2725433,3,2,3_118_2 ,3_117_1 ,onesoft  ,5,6,0,393
+11,jinjinlian  ,right,18,female,546,2729166,5,5,1_20_2  ,1_19_1  ,multiloud,6,6,1,300
+11,jinjinlian  ,right,18,female,547,2732933,6,1,6_282_2 ,6_281_1 ,         ,6,6,1,189
+11,jinjinlian  ,right,18,female,548,2736249,5,4,4_172_2 ,4_171_1 ,multisoft,6,6,1,225
+11,jinjinlian  ,right,18,female,549,2739683,5,1,8_376_2 ,8_375_1 ,         ,6,6,1,135
+11,jinjinlian  ,right,18,female,550,2742882,2,1,7_332_2 ,7_331_1 ,         ,5,5,1,160
+11,jinjinlian  ,right,18,female,551,2746399,2,3,5_206_2 ,5_205_1 ,oneloud1 ,5,5,1,339
+11,jinjinlian  ,right,18,female,552,2750232,5,5,4_180_2 ,4_179_1 ,multiloud,6,6,1,250
+11,jinjinlian  ,right,18,female,553,2753549,1,2,2_64_2  ,2_63_1  ,onesoft1 ,5,5,1,308
+11,jinjinlian  ,right,18,female,554,2757282,6,2,2_88_2  ,2_87_1  ,onesoft1 ,6,6,1,231
+11,jinjinlian  ,right,18,female,555,2761049,2,2,4_150_2 ,4_149_1 ,onesoft  ,5,5,1,512
+11,jinjinlian  ,right,18,female,556,2764732,1,5,4_186_2 ,4_185_1 ,multiloud,5,5,1,285
+11,jinjinlian  ,right,18,female,557,2768299,4,3,1_8_2   ,1_7_1   ,oneloud  ,6,6,1,246
+11,jinjinlian  ,right,18,female,558,2771682,2,2,5_210_2 ,5_209_1 ,onesoft  ,5,6,0,583
+11,jinjinlian  ,right,18,female,559,2799281,3,1,10_470_2,10_469_1,         ,5,5,1,687
+11,jinjinlian  ,right,18,female,560,2803448,5,4,5_218_2 ,5_217_1 ,multisoft,6,6,1,1064
+11,jinjinlian  ,right,18,female,561,2807748,2,3,3_134_2 ,3_133_1 ,oneloud1 ,5,5,1,316
+11,jinjinlian  ,right,18,female,562,2811248,2,5,1_44_2  ,1_43_1  ,multiloud,5,5,1,184
+11,jinjinlian  ,right,18,female,563,2814931,1,4,5_200_2 ,5_199_1 ,multisoft,5,5,1,181
+11,jinjinlian  ,right,18,female,564,2818331,4,4,2_54_2  ,2_53_1  ,multisoft,6,5,0,477
+11,jinjinlian  ,right,18,female,565,2821898,5,4,2_86_2  ,2_85_1  ,multisoft,6,6,1,350
+11,jinjinlian  ,right,18,female,566,2825664,2,2,4_152_2 ,4_151_1 ,onesoft  ,5,5,1,152
+11,jinjinlian  ,right,18,female,567,2828931,1,1,9_408_2 ,9_407_1 ,         ,5,5,1,237
+11,jinjinlian  ,right,18,female,568,2832464,3,3,5_216_2 ,5_215_1 ,oneloud1 ,5,5,1,208
+11,jinjinlian  ,right,18,female,569,2835898,6,4,4_146_2 ,4_145_1 ,multisoft,6,6,1,166
+11,jinjinlian  ,right,18,female,570,2839248,5,2,4_180_2 ,4_179_1 ,onesoft  ,6,6,1,192
+11,jinjinlian  ,right,18,female,571,2842697,2,4,4_150_2 ,4_149_1 ,multisoft,5,5,1,223
+11,jinjinlian  ,right,18,female,572,2846247,3,5,2_62_2  ,2_61_1  ,multiloud,5,5,1,72
+11,jinjinlian  ,right,18,female,573,2849597,5,5,5_202_2 ,5_201_1 ,multiloud,6,6,1,306
+11,jinjinlian  ,right,18,female,574,2853064,6,2,2_66_2  ,2_65_1  ,onesoft1 ,6,6,1,191
+11,jinjinlian  ,right,18,female,575,2856681,3,1,6_254_2 ,6_253_1 ,         ,5,5,1,278
+11,jinjinlian  ,right,18,female,576,2860297,6,1,7_306_2 ,7_305_1 ,         ,6,6,1,78
+11,jinjinlian  ,right,18,female,577,2863814,6,1,8_360_2 ,8_359_1 ,         ,6,6,1,321
+11,jinjinlian  ,right,18,female,578,2867397,3,2,1_6_2   ,1_5_1   ,onesoft1 ,5,5,1,354
+11,jinjinlian  ,right,18,female,579,2871097,6,5,5_212_2 ,5_211_1 ,multiloud,6,6,1,198
+11,jinjinlian  ,right,18,female,580,2874297,2,1,6_248_2 ,6_247_1 ,         ,5,6,0,438
+11,jinjinlian  ,right,18,female,581,2878213,6,3,2_56_2  ,2_55_1  ,oneloud  ,6,6,1,154
+11,jinjinlian  ,right,18,female,582,2881480,5,3,2_80_2  ,2_79_1  ,oneloud  ,6,6,1,151
+11,jinjinlian  ,right,18,female,583,2884763,3,1,6_246_2 ,6_245_1 ,         ,5,5,1,284
+11,jinjinlian  ,right,18,female,584,2888413,3,5,3_106_2 ,3_105_1 ,multiloud,5,5,1,250
+11,jinjinlian  ,right,18,female,585,2892047,3,5,4_190_2 ,4_189_1 ,multiloud,5,6,0,247
+11,jinjinlian  ,right,18,female,586,2895447,4,4,3_124_2 ,3_123_1 ,multisoft,6,6,1,375
+11,jinjinlian  ,right,18,female,587,2899180,1,3,4_188_2 ,4_187_1 ,oneloud1 ,5,5,1,162
+11,jinjinlian  ,right,18,female,588,2902680,3,2,3_106_2 ,3_105_1 ,onesoft  ,5,5,1,278
+11,jinjinlian  ,right,18,female,589,2906363,5,2,3_112_2 ,3_111_1 ,onesoft1 ,6,5,0,211
+11,jinjinlian  ,right,18,female,590,2909730,5,5,5_218_2 ,5_217_1 ,multiloud,6,6,1,212
+11,jinjinlian  ,right,18,female,591,2913080,1,3,1_12_2  ,1_11_1  ,oneloud  ,5,5,1,174
+11,jinjinlian  ,right,18,female,592,2916613,5,2,3_116_2 ,3_115_1 ,onesoft  ,6,6,1,209
+11,jinjinlian  ,right,18,female,593,2920129,4,1,9_422_2 ,9_421_1 ,         ,6,6,1,261
+11,jinjinlian  ,right,18,female,594,2923596,1,1,8_348_2 ,8_347_1 ,         ,5,5,1,298
+11,jinjinlian  ,right,18,female,595,2927129,3,4,2_94_2  ,2_93_1  ,multisoft,5,6,0,549
+11,jinjinlian  ,right,18,female,596,2930829,5,3,5_234_2 ,5_233_1 ,oneloud1 ,6,6,1,201
+11,jinjinlian  ,right,18,female,597,2934296,2,2,2_76_2  ,2_75_1  ,onesoft1 ,5,5,1,238
+11,jinjinlian  ,right,18,female,598,2938046,3,2,3_98_2  ,3_97_1  ,onesoft1 ,5,6,0,335
+11,jinjinlian  ,right,18,female,599,2941462,2,4,2_76_2  ,2_75_1  ,multisoft,5,5,1,383
+11,jinjinlian  ,right,18,female,600,2945129,5,3,3_100_2 ,3_99_1  ,oneloud  ,6,6,1,196
+11,jinjinlian  ,right,18,female,601,2948646,4,4,3_128_2 ,3_127_1 ,multisoft,6,5,0,295
+11,jinjinlian  ,right,18,female,602,2952346,2,4,3_120_2 ,3_119_1 ,multisoft,5,5,1,227
+11,jinjinlian  ,right,18,female,603,2955945,2,2,3_134_2 ,3_133_1 ,onesoft  ,5,5,1,236
+11,jinjinlian  ,right,18,female,604,2959445,6,3,3_114_2 ,3_113_1 ,oneloud  ,6,6,1,176
+11,jinjinlian  ,right,18,female,605,2962895,3,3,3_98_2  ,3_97_1  ,oneloud  ,5,6,0,278
+11,jinjinlian  ,right,18,female,606,2966562,3,2,4_168_2 ,4_167_1 ,onesoft  ,5,6,0,219
+11,jinjinlian  ,right,18,female,607,2970045,3,3,3_106_2 ,3_105_1 ,oneloud1 ,5,5,1,200
+11,jinjinlian  ,right,18,female,608,2973378,5,3,2_86_2  ,2_85_1  ,oneloud  ,6,6,1,235

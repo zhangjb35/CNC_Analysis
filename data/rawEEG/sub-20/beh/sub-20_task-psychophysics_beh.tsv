@@ -1,0 +1,601 @@
+participant_id,Name,Handedness,Age,Sex,Block,numresponse_OnsetTime,NumCondition,SoundCondition,probestimuli,teststimuli,sound,correctResp,Resp,ACC,RT
+20,liruixia    ,right,19,female,9,450065,5,4,5_208_2 ,5_207_1 ,multisoft,5,5,1,936
+20,liruixia    ,right,19,female,10,454431,1,5,3_110_2 ,3_109_1 ,multiloud,6,6,1,2882
+20,liruixia    ,right,19,female,11,460614,4,3,3_122_2 ,3_121_1 ,oneloud  ,5,5,1,723
+20,liruixia    ,right,19,female,12,464581,4,4,5_226_2 ,5_225_1 ,multisoft,5,5,1,2540
+20,liruixia    ,right,19,female,13,470531,4,5,2_54_2  ,2_53_1  ,multiloud,5,6,0,3486
+20,liruixia    ,right,19,female,14,477214,5,1,6_272_2 ,6_271_1 ,         ,5,5,1,2195
+20,liruixia    ,right,19,female,15,482714,2,3,5_196_2 ,5_195_1 ,oneloud1 ,6,6,1,1566
+20,liruixia    ,right,19,female,16,487531,3,1,6_254_2 ,6_253_1 ,         ,6,6,1,2365
+20,liruixia    ,right,19,female,17,493264,3,1,6_246_2 ,6_245_1 ,         ,6,6,1,1592
+20,liruixia    ,right,19,female,18,498180,3,3,2_60_2  ,2_59_1  ,oneloud  ,6,5,0,3916
+20,liruixia    ,right,19,female,19,505180,3,5,1_22_2  ,1_21_1  ,multiloud,6,6,1,2900
+20,liruixia    ,right,19,female,20,511264,3,2,1_42_2  ,1_41_1  ,onesoft1 ,6,6,1,1928
+20,liruixia    ,right,19,female,21,516730,4,3,5_240_2 ,5_239_1 ,oneloud1 ,5,6,0,2766
+20,liruixia    ,right,19,female,22,522713,2,2,2_74_2  ,2_73_1  ,onesoft1 ,6,6,1,2919
+20,liruixia    ,right,19,female,23,529230,1,4,4_188_2 ,4_187_1 ,multisoft,6,6,1,1969
+20,liruixia    ,right,19,female,24,534663,2,5,5_196_2 ,5_195_1 ,multiloud,6,6,1,3304
+20,liruixia    ,right,19,female,25,541313,2,3,4_166_2 ,4_165_1 ,oneloud1 ,6,5,0,8134
+20,liruixia    ,right,19,female,26,552763,3,5,3_104_2 ,3_103_1 ,multiloud,6,6,1,1644
+20,liruixia    ,right,19,female,27,557779,6,3,5_238_2 ,5_237_1 ,oneloud1 ,5,5,1,1804
+20,liruixia    ,right,19,female,28,562713,6,3,5_222_2 ,5_221_1 ,oneloud1 ,5,6,0,5446
+20,liruixia    ,right,19,female,29,571563,5,2,3_100_2 ,3_99_1  ,onesoft1 ,5,5,1,3643
+20,liruixia    ,right,19,female,30,578796,1,2,3_138_2 ,3_137_1 ,onesoft  ,6,6,1,2474
+20,liruixia    ,right,19,female,31,584662,3,4,3_106_2 ,3_105_1 ,multisoft,6,6,1,1808
+20,liruixia    ,right,19,female,32,589462,1,1,7_296_2 ,7_295_1 ,         ,6,6,1,3472
+20,liruixia    ,right,19,female,33,596345,1,5,2_64_2  ,2_63_1  ,multiloud,6,6,1,2437
+20,liruixia    ,right,19,female,34,601995,1,1,9_420_2 ,9_419_1 ,         ,6,6,1,2315
+20,liruixia    ,right,19,female,35,607479,6,3,2_66_2  ,2_65_1  ,oneloud  ,5,5,1,2487
+20,liruixia    ,right,19,female,36,613562,1,2,2_52_2  ,2_51_1  ,onesoft1 ,6,6,1,3164
+20,liruixia    ,right,19,female,37,619945,2,3,1_16_2  ,1_15_1  ,oneloud  ,6,5,0,3588
+20,liruixia    ,right,19,female,38,626812,3,3,1_22_2  ,1_21_1  ,oneloud  ,6,6,1,3401
+20,liruixia    ,right,19,female,39,633678,6,1,6_282_2 ,6_281_1 ,         ,5,6,0,2127
+20,liruixia    ,right,19,female,40,639078,4,2,2_90_2  ,2_89_1  ,onesoft1 ,5,6,0,9231
+20,liruixia    ,right,19,female,41,651628,4,3,4_162_2 ,4_161_1 ,oneloud1 ,5,6,0,3321
+20,liruixia    ,right,19,female,42,658378,1,4,1_40_2  ,1_39_1  ,multisoft,6,6,1,2355
+20,liruixia    ,right,19,female,43,664044,4,5,1_2_2   ,1_1_1   ,multiloud,5,5,1,3064
+20,liruixia    ,right,19,female,44,670494,1,1,7_290_2 ,7_289_1 ,         ,6,5,0,3526
+20,liruixia    ,right,19,female,45,677077,1,2,5_204_2 ,5_203_1 ,onesoft  ,6,6,1,2343
+20,liruixia    ,right,19,female,46,682394,6,1,10_442_2,10_441_1,         ,5,5,1,2394
+20,liruixia    ,right,19,female,47,688244,2,2,5_224_2 ,5_223_1 ,onesoft  ,6,6,1,4896
+20,liruixia    ,right,19,female,48,696360,2,3,2_74_2  ,2_73_1  ,oneloud  ,6,6,1,3308
+20,liruixia    ,right,19,female,49,702860,2,1,6_286_2 ,6_285_1 ,         ,6,6,1,4600
+20,liruixia    ,right,19,female,50,710777,1,3,5_198_2 ,5_197_1 ,oneloud1 ,6,6,1,2922
+20,liruixia    ,right,19,female,51,716893,3,4,5_216_2 ,5_215_1 ,multisoft,6,5,0,4222
+20,liruixia    ,right,19,female,52,724710,3,4,2_60_2  ,2_59_1  ,multisoft,6,5,0,3565
+20,liruixia    ,right,19,female,53,731760,5,4,5_218_2 ,5_217_1 ,multisoft,5,5,1,9547
+20,liruixia    ,right,19,female,54,744726,4,4,5_240_2 ,5_239_1 ,multisoft,5,5,1,2165
+20,liruixia    ,right,19,female,55,750726,2,3,5_224_2 ,5_223_1 ,oneloud1 ,6,6,1,5757
+20,liruixia    ,right,19,female,56,759793,2,2,5_206_2 ,5_205_1 ,onesoft  ,6,6,1,2569
+20,liruixia    ,right,19,female,57,765476,4,3,4_178_2 ,4_177_1 ,oneloud1 ,5,6,0,2998
+20,liruixia    ,right,19,female,58,771809,4,2,1_8_2   ,1_7_1   ,onesoft1 ,5,5,1,4905
+20,liruixia    ,right,19,female,59,824108,4,1,6_284_2 ,6_283_1 ,         ,5,5,1,573
+20,liruixia    ,right,19,female,60,828175,1,4,2_52_2  ,2_51_1  ,multisoft,6,6,1,1266
+20,liruixia    ,right,19,female,61,832725,3,4,4_190_2 ,4_189_1 ,multisoft,6,5,0,916
+20,liruixia    ,right,19,female,62,836775,3,3,1_6_2   ,1_5_1   ,oneloud  ,6,6,1,1826
+20,liruixia    ,right,19,female,63,841991,3,3,4_182_2 ,4_181_1 ,oneloud1 ,6,6,1,1138
+20,liruixia    ,right,19,female,64,846491,6,3,2_56_2  ,2_55_1  ,oneloud  ,5,5,1,1614
+20,liruixia    ,right,19,female,65,851408,2,5,2_74_2  ,2_73_1  ,multiloud,6,6,1,1184
+20,liruixia    ,right,19,female,66,855874,6,4,5_212_2 ,5_211_1 ,multisoft,5,5,1,1694
+20,liruixia    ,right,19,female,67,861007,6,4,5_238_2 ,5_237_1 ,multisoft,5,5,1,2065
+20,liruixia    ,right,19,female,68,866341,2,1,8_350_2 ,8_349_1 ,         ,6,6,1,3107
+20,liruixia    ,right,19,female,69,872807,5,4,3_100_2 ,3_99_1  ,multisoft,5,5,1,1361
+20,liruixia    ,right,19,female,70,877574,3,2,3_104_2 ,3_103_1 ,onesoft1 ,6,6,1,2730
+20,liruixia    ,right,19,female,71,883457,1,5,1_24_2  ,1_23_1  ,multiloud,6,6,1,1719
+20,liruixia    ,right,19,female,72,888524,2,1,6_288_2 ,6_287_1 ,         ,6,6,1,1108
+20,liruixia    ,right,19,female,73,892707,6,1,6_258_2 ,6_257_1 ,         ,5,6,0,1477
+20,liruixia    ,right,19,female,74,897407,5,5,2_86_2  ,2_85_1  ,multiloud,5,6,0,4232
+20,liruixia    ,right,19,female,75,904957,1,5,4_176_2 ,4_175_1 ,multiloud,6,6,1,2970
+20,liruixia    ,right,19,female,76,911057,5,1,9_396_2 ,9_395_1 ,         ,5,6,0,2134
+20,liruixia    ,right,19,female,77,916240,4,1,9_422_2 ,9_421_1 ,         ,5,5,1,2591
+20,liruixia    ,right,19,female,78,922290,5,3,4_172_2 ,4_171_1 ,oneloud1 ,5,6,0,4213
+20,liruixia    ,right,19,female,79,930090,6,5,3_108_2 ,3_107_1 ,multiloud,5,6,0,1789
+20,liruixia    ,right,19,female,80,935340,4,5,2_90_2  ,2_89_1  ,multiloud,5,6,0,4411
+20,liruixia    ,right,19,female,81,943106,2,5,4_166_2 ,4_165_1 ,multiloud,6,6,1,1412
+20,liruixia    ,right,19,female,82,947923,6,5,4_154_2 ,4_153_1 ,multiloud,5,6,0,1491
+20,liruixia    ,right,19,female,83,952673,4,2,1_46_2  ,1_45_1  ,onesoft1 ,5,6,0,1589
+20,liruixia    ,right,19,female,84,957822,6,4,4_154_2 ,4_153_1 ,multisoft,5,5,1,1160
+20,liruixia    ,right,19,female,85,962272,5,3,1_30_2  ,1_29_1  ,oneloud  ,5,6,0,2262
+20,liruixia    ,right,19,female,86,967706,4,1,8_342_2 ,8_341_1 ,         ,5,5,1,1132
+20,liruixia    ,right,19,female,87,972239,1,5,5_198_2 ,5_197_1 ,multiloud,6,6,1,1103
+20,liruixia    ,right,19,female,88,976872,2,4,4_164_2 ,4_163_1 ,multisoft,6,6,1,886
+20,liruixia    ,right,19,female,89,981022,2,5,1_16_2  ,1_15_1  ,multiloud,6,5,0,1040
+20,liruixia    ,right,19,female,90,985239,2,2,4_164_2 ,4_163_1 ,onesoft  ,6,5,0,1543
+20,liruixia    ,right,19,female,91,990072,3,3,5_230_2 ,5_229_1 ,oneloud1 ,6,6,1,42197
+20,liruixia    ,right,19,female,92,1035771,3,4,3_104_2 ,3_103_1 ,multisoft,6,5,0,2137
+20,liruixia    ,right,19,female,93,1041138,3,4,4_168_2 ,4_167_1 ,multisoft,6,6,1,2098
+20,liruixia    ,right,19,female,94,1046388,6,1,6_278_2 ,6_277_1 ,         ,5,5,1,1216
+20,liruixia    ,right,19,female,95,1051004,5,3,3_112_2 ,3_111_1 ,oneloud  ,5,5,1,2304
+20,liruixia    ,right,19,female,96,1056821,4,5,3_122_2 ,3_121_1 ,multiloud,5,5,1,1615
+20,liruixia    ,right,19,female,97,1061837,4,3,2_54_2  ,2_53_1  ,oneloud  ,5,6,0,1343
+20,liruixia    ,right,19,female,98,1066404,4,3,4_158_2 ,4_157_1 ,oneloud1 ,5,6,0,2368
+20,liruixia    ,right,19,female,99,1071870,1,3,1_28_2  ,1_27_1  ,oneloud  ,6,5,0,3102
+20,liruixia    ,right,19,female,100,1078354,2,5,3_134_2 ,3_133_1 ,multiloud,6,6,1,2946
+20,liruixia    ,right,19,female,101,1084420,3,1,8_340_2 ,8_339_1 ,         ,6,5,0,1711
+20,liruixia    ,right,19,female,102,1089570,5,4,3_112_2 ,3_111_1 ,multisoft,5,6,0,1569
+20,liruixia    ,right,19,female,103,1094270,5,5,4_172_2 ,4_171_1 ,multiloud,5,6,0,2045
+20,liruixia    ,right,19,female,104,1099820,6,5,3_140_2 ,3_139_1 ,multiloud,5,5,1,2063
+20,liruixia    ,right,19,female,105,1105170,2,4,5_196_2 ,5_195_1 ,multisoft,6,6,1,2041
+20,liruixia    ,right,19,female,106,1110736,4,4,2_58_2  ,2_57_1  ,multisoft,5,5,1,2003
+20,liruixia    ,right,19,female,107,1116036,5,2,5_234_2 ,5_233_1 ,onesoft  ,5,6,0,3071
+20,liruixia    ,right,19,female,108,1122420,5,5,3_116_2 ,3_115_1 ,multiloud,5,5,1,1631
+20,liruixia    ,right,19,female,109,1203318,4,2,3_124_2 ,3_123_1 ,onesoft1 ,5,5,1,1611
+20,liruixia    ,right,19,female,110,1208318,6,5,5_238_2 ,5_237_1 ,multiloud,5,5,1,1419
+20,liruixia    ,right,19,female,111,1212918,5,1,8_354_2 ,8_353_1 ,         ,5,5,1,2475
+20,liruixia    ,right,19,female,112,1218935,1,3,4_176_2 ,4_175_1 ,oneloud1 ,6,5,0,3681
+20,liruixia    ,right,19,female,113,1226034,6,3,4_146_2 ,4_145_1 ,oneloud1 ,5,5,1,2278
+20,liruixia    ,right,19,female,114,1231634,6,3,5_220_2 ,5_219_1 ,oneloud1 ,5,6,0,2814
+20,liruixia    ,right,19,female,115,1237751,1,2,4_184_2 ,4_183_1 ,onesoft  ,6,6,1,2313
+20,liruixia    ,right,19,female,116,1243084,2,4,1_16_2  ,1_15_1  ,multisoft,6,5,0,2700
+20,liruixia    ,right,19,female,117,1249084,4,2,3_128_2 ,3_127_1 ,onesoft  ,5,6,0,3812
+20,liruixia    ,right,19,female,118,1256284,2,2,1_18_2  ,1_17_1  ,onesoft1 ,6,6,1,2772
+20,liruixia    ,right,19,female,119,1262467,6,2,3_140_2 ,3_139_1 ,onesoft  ,5,5,1,2109
+20,liruixia    ,right,19,female,120,1267734,3,4,5_230_2 ,5_229_1 ,multisoft,6,6,1,2697
+20,liruixia    ,right,19,female,121,1273734,3,2,4_168_2 ,4_167_1 ,onesoft  ,6,6,1,1225
+20,liruixia    ,right,19,female,122,1278367,2,3,2_76_2  ,2_75_1  ,oneloud  ,6,6,1,2792
+20,liruixia    ,right,19,female,123,1284533,6,3,4_160_2 ,4_159_1 ,oneloud1 ,5,5,1,4258
+20,liruixia    ,right,19,female,124,1291950,4,1,8_364_2 ,8_363_1 ,         ,5,5,1,2649
+20,liruixia    ,right,19,female,125,1297900,6,4,2_88_2  ,2_87_1  ,multisoft,5,5,1,1923
+20,liruixia    ,right,19,female,126,1303083,2,5,1_18_2  ,1_17_1  ,multiloud,6,6,1,3332
+20,liruixia    ,right,19,female,127,1309700,6,4,2_66_2  ,2_65_1  ,multisoft,5,5,1,3435
+20,liruixia    ,right,19,female,128,1316333,2,4,3_120_2 ,3_119_1 ,multisoft,6,6,1,1801
+20,liruixia    ,right,19,female,129,1321699,1,5,4_184_2 ,4_183_1 ,multiloud,6,6,1,1683
+20,liruixia    ,right,19,female,130,1326466,1,1,8_366_2 ,8_365_1 ,         ,6,6,1,1636
+20,liruixia    ,right,19,female,131,1331233,1,4,5_204_2 ,5_203_1 ,multisoft,6,6,1,1941
+20,liruixia    ,right,19,female,132,1336749,4,5,5_226_2 ,5_225_1 ,multiloud,5,5,1,2689
+20,liruixia    ,right,19,female,133,1342966,2,2,5_196_2 ,5_195_1 ,onesoft  ,6,6,1,1976
+20,liruixia    ,right,19,female,134,1348282,2,4,4_166_2 ,4_165_1 ,multisoft,6,6,1,1468
+20,liruixia    ,right,19,female,135,1352982,3,3,4_190_2 ,4_189_1 ,oneloud1 ,6,6,1,2208
+20,liruixia    ,right,19,female,136,1358315,3,2,3_98_2  ,3_97_1  ,onesoft1 ,6,6,1,1355
+20,liruixia    ,right,19,female,137,1362799,3,2,2_60_2  ,2_59_1  ,onesoft1 ,6,5,0,4502
+20,liruixia    ,right,19,female,138,1370749,6,1,7_306_2 ,7_305_1 ,         ,5,5,1,1928
+20,liruixia    ,right,19,female,139,1376065,5,4,4_180_2 ,4_179_1 ,multisoft,5,5,1,1596
+20,liruixia    ,right,19,female,140,1381032,1,5,3_138_2 ,3_137_1 ,multiloud,6,6,1,1285
+20,liruixia    ,right,19,female,141,1385532,5,2,1_30_2  ,1_29_1  ,onesoft1 ,5,5,1,2897
+20,liruixia    ,right,19,female,142,1392382,6,3,1_36_2  ,1_35_1  ,oneloud  ,5,5,1,1335
+20,liruixia    ,right,19,female,143,1397148,5,3,3_100_2 ,3_99_1  ,oneloud  ,5,6,0,3393
+20,liruixia    ,right,19,female,144,1403931,6,2,2_66_2  ,2_65_1  ,onesoft1 ,5,5,1,2442
+20,liruixia    ,right,19,female,145,1409381,6,1,9_402_2 ,9_401_1 ,         ,5,5,1,2015
+20,liruixia    ,right,19,female,146,1414631,6,2,4_154_2 ,4_153_1 ,onesoft  ,5,5,1,1877
+20,liruixia    ,right,19,female,147,1419948,3,1,10_470_2,10_469_1,         ,6,6,1,2264
+20,liruixia    ,right,19,female,148,1425548,4,2,5_240_2 ,5_239_1 ,onesoft  ,5,6,0,2296
+20,liruixia    ,right,19,female,149,1431198,1,2,3_110_2 ,3_109_1 ,onesoft1 ,6,6,1,1742
+20,liruixia    ,right,19,female,150,1436431,4,2,5_214_2 ,5_213_1 ,onesoft  ,5,6,0,3165
+20,liruixia    ,right,19,female,151,1443131,2,3,1_44_2  ,1_43_1  ,oneloud  ,6,6,1,2529
+20,liruixia    ,right,19,female,152,1448997,5,4,5_234_2 ,5_233_1 ,multisoft,5,6,0,4934
+20,liruixia    ,right,19,female,153,1457114,4,4,2_70_2  ,2_69_1  ,multisoft,5,5,1,1729
+20,liruixia    ,right,19,female,154,1462197,1,1,9_410_2 ,9_409_1 ,         ,6,6,1,2062
+20,liruixia    ,right,19,female,155,1467614,1,5,5_200_2 ,5_199_1 ,multiloud,6,6,1,2981
+20,liruixia    ,right,19,female,156,1473730,6,5,1_48_2  ,1_47_1  ,multiloud,5,6,0,2473
+20,liruixia    ,right,19,female,157,1479497,5,3,4_148_2 ,4_147_1 ,oneloud1 ,5,5,1,2434
+20,liruixia    ,right,19,female,158,1485530,3,4,2_50_2  ,2_49_1  ,multisoft,6,5,0,1817
+20,liruixia    ,right,19,female,159,1508529,2,5,2_78_2  ,2_77_1  ,multiloud,6,5,0,1617
+20,liruixia    ,right,19,female,160,1513263,3,4,5_232_2 ,5_231_1 ,multisoft,6,6,1,947
+20,liruixia    ,right,19,female,161,1517496,6,4,3_114_2 ,3_113_1 ,multisoft,5,5,1,1634
+20,liruixia    ,right,19,female,162,1522496,5,1,7_302_2 ,7_301_1 ,         ,5,5,1,1530
+20,liruixia    ,right,19,female,163,1527412,4,5,3_124_2 ,3_123_1 ,multiloud,5,5,1,1702
+20,liruixia    ,right,19,female,164,1532612,4,4,1_8_2   ,1_7_1   ,multisoft,5,5,1,1502
+20,liruixia    ,right,19,female,165,1537629,5,2,4_180_2 ,4_179_1 ,onesoft  ,5,6,0,1165
+20,liruixia    ,right,19,female,166,1542062,3,4,3_118_2 ,3_117_1 ,multisoft,6,5,0,1756
+20,liruixia    ,right,19,female,167,1547395,4,2,4_174_2 ,4_173_1 ,onesoft  ,5,5,1,1686
+20,liruixia    ,right,19,female,168,1552445,5,3,5_234_2 ,5_233_1 ,oneloud1 ,5,5,1,1380
+20,liruixia    ,right,19,female,169,1556945,6,4,1_4_2   ,1_3_1   ,multisoft,5,5,1,2104
+20,liruixia    ,right,19,female,170,1562195,2,4,5_224_2 ,5_223_1 ,multisoft,6,6,1,1942
+20,liruixia    ,right,19,female,171,1567362,2,5,5_210_2 ,5_209_1 ,multiloud,6,5,0,2607
+20,liruixia    ,right,19,female,172,1573078,3,1,8_338_2 ,8_337_1 ,         ,6,5,0,1739
+20,liruixia    ,right,19,female,173,1578412,1,5,3_102_2 ,3_101_1 ,multiloud,6,6,1,1325
+20,liruixia    ,right,19,female,174,1583178,3,2,2_94_2  ,2_93_1  ,onesoft1 ,6,6,1,1583
+20,liruixia    ,right,19,female,175,1587978,4,3,5_228_2 ,5_227_1 ,oneloud1 ,5,5,1,2639
+20,liruixia    ,right,19,female,176,1594145,5,5,5_202_2 ,5_201_1 ,multiloud,5,6,0,2455
+20,liruixia    ,right,19,female,177,1599778,1,3,3_142_2 ,3_141_1 ,oneloud1 ,6,6,1,5302
+20,liruixia    ,right,19,female,178,1608261,4,3,2_58_2  ,2_57_1  ,oneloud  ,5,5,1,1651
+20,liruixia    ,right,19,female,179,1613278,1,3,4_186_2 ,4_185_1 ,oneloud1 ,6,5,0,2570
+20,liruixia    ,right,19,female,180,1619244,2,5,1_32_2  ,1_31_1  ,multiloud,6,6,1,1476
+20,liruixia    ,right,19,female,181,1624177,3,2,5_232_2 ,5_231_1 ,onesoft  ,6,6,1,503
+20,liruixia    ,right,19,female,182,1627744,6,1,9_426_2 ,9_425_1 ,         ,5,5,1,1136
+20,liruixia    ,right,19,female,183,1631994,3,3,1_26_2  ,1_25_1  ,oneloud  ,6,5,0,1542
+20,liruixia    ,right,19,female,184,1636811,1,2,5_194_2 ,5_193_1 ,onesoft  ,6,6,1,1469
+20,liruixia    ,right,19,female,185,1641794,6,5,3_136_2 ,3_135_1 ,multiloud,5,6,0,3685
+20,liruixia    ,right,19,female,186,1648860,5,3,5_202_2 ,5_201_1 ,oneloud1 ,5,6,0,1403
+20,liruixia    ,right,19,female,187,1653560,3,5,3_106_2 ,3_105_1 ,multiloud,6,6,1,3143
+20,liruixia    ,right,19,female,188,1659927,5,5,2_80_2  ,2_79_1  ,multiloud,5,6,0,2304
+20,liruixia    ,right,19,female,189,1665843,5,5,3_132_2 ,3_131_1 ,multiloud,5,5,1,2308
+20,liruixia    ,right,19,female,190,1671510,4,5,1_8_2   ,1_7_1   ,multiloud,5,5,1,1185
+20,liruixia    ,right,19,female,191,1675877,6,5,4_146_2 ,4_145_1 ,multiloud,5,5,1,1170
+20,liruixia    ,right,19,female,192,1680293,4,4,3_124_2 ,3_123_1 ,multisoft,5,5,1,1258
+20,liruixia    ,right,19,female,193,1684693,6,4,1_48_2  ,1_47_1  ,multisoft,5,6,0,1297
+20,liruixia    ,right,19,female,194,1689626,2,4,4_152_2 ,4_151_1 ,multisoft,6,5,0,1340
+20,liruixia    ,right,19,female,195,1694526,5,3,4_156_2 ,4_155_1 ,oneloud1 ,5,6,0,1296
+20,liruixia    ,right,19,female,196,1699060,3,3,5_216_2 ,5_215_1 ,oneloud1 ,6,6,1,1810
+20,liruixia    ,right,19,female,197,1704226,2,1,7_332_2 ,7_331_1 ,         ,6,6,1,1516
+20,liruixia    ,right,19,female,198,1708809,3,5,1_6_2   ,1_5_1   ,multiloud,6,5,0,1805
+20,liruixia    ,right,19,female,199,1714076,1,4,2_92_2  ,2_91_1  ,multisoft,6,6,1,2194
+20,liruixia    ,right,19,female,200,1719476,6,3,2_88_2  ,2_87_1  ,oneloud  ,5,5,1,1034
+20,liruixia    ,right,19,female,201,1723576,4,5,4_178_2 ,4_177_1 ,multiloud,5,5,1,918
+20,liruixia    ,right,19,female,202,1727576,5,1,9_386_2 ,9_385_1 ,         ,5,6,0,854
+20,liruixia    ,right,19,female,203,1731826,2,1,8_358_2 ,8_357_1 ,         ,6,6,1,523
+20,liruixia    ,right,19,female,204,1735742,2,3,4_152_2 ,4_151_1 ,oneloud1 ,6,6,1,671
+20,liruixia    ,right,19,female,205,1739775,3,2,3_118_2 ,3_117_1 ,onesoft  ,6,5,0,1430
+20,liruixia    ,right,19,female,206,1744542,1,5,5_204_2 ,5_203_1 ,multiloud,6,6,1,1167
+20,liruixia    ,right,19,female,207,1749125,3,5,4_192_2 ,4_191_1 ,multiloud,6,6,1,1152
+20,liruixia    ,right,19,female,208,1753559,5,1,6_250_2 ,6_249_1 ,         ,5,5,1,414
+20,liruixia    ,right,19,female,209,2010354,4,1,6_260_2 ,6_259_1 ,         ,5,6,0,741
+20,liruixia    ,right,19,female,210,2014421,2,3,2_96_2  ,2_95_1  ,oneloud  ,6,6,1,1002
+20,liruixia    ,right,19,female,211,2018637,4,5,4_162_2 ,4_161_1 ,multiloud,5,6,0,1858
+20,liruixia    ,right,19,female,212,2023670,6,5,5_222_2 ,5_221_1 ,multiloud,5,6,0,2809
+20,liruixia    ,right,19,female,213,2029820,2,4,2_76_2  ,2_75_1  ,multisoft,6,6,1,1819
+20,liruixia    ,right,19,female,214,2034920,5,2,5_208_2 ,5_207_1 ,onesoft  ,5,6,0,1847
+20,liruixia    ,right,19,female,215,2040254,6,4,4_146_2 ,4_145_1 ,multisoft,5,5,1,1129
+20,liruixia    ,right,19,female,216,2044637,2,1,9_406_2 ,9_405_1 ,         ,6,6,1,1442
+20,liruixia    ,right,19,female,217,2049353,2,3,5_210_2 ,5_209_1 ,oneloud1 ,6,5,0,2142
+20,liruixia    ,right,19,female,218,2055003,3,3,4_168_2 ,4_167_1 ,oneloud1 ,6,6,1,1691
+20,liruixia    ,right,19,female,219,2059970,1,3,5_200_2 ,5_199_1 ,oneloud1 ,6,6,1,1492
+20,liruixia    ,right,19,female,220,2064870,4,5,4_158_2 ,4_157_1 ,multiloud,5,6,0,2880
+20,liruixia    ,right,19,female,221,2070953,1,4,5_194_2 ,5_193_1 ,multisoft,6,5,0,1581
+20,liruixia    ,right,19,female,222,2075753,2,1,8_374_2 ,8_373_1 ,         ,6,6,1,1565
+20,liruixia    ,right,19,female,223,2080719,1,2,1_24_2  ,1_23_1  ,onesoft1 ,6,6,1,1799
+20,liruixia    ,right,19,female,224,2086103,1,3,3_110_2 ,3_109_1 ,oneloud  ,6,5,0,1423
+20,liruixia    ,right,19,female,225,2090803,5,4,2_86_2  ,2_85_1  ,multisoft,5,6,0,2075
+20,liruixia    ,right,19,female,226,2096269,5,3,3_132_2 ,3_131_1 ,oneloud1 ,5,5,1,1353
+20,liruixia    ,right,19,female,227,2100902,2,4,3_130_2 ,3_129_1 ,multisoft,6,6,1,1983
+20,liruixia    ,right,19,female,228,2106252,2,5,4_164_2 ,4_163_1 ,multiloud,6,6,1,1569
+20,liruixia    ,right,19,female,229,2111019,5,5,5_218_2 ,5_217_1 ,multiloud,5,5,1,1282
+20,liruixia    ,right,19,female,230,2115669,5,4,2_80_2  ,2_79_1  ,multisoft,5,6,0,944
+20,liruixia    ,right,19,female,231,2119952,2,1,8_384_2 ,8_383_1 ,         ,6,6,1,1837
+20,liruixia    ,right,19,female,232,2125202,5,3,4_180_2 ,4_179_1 ,oneloud1 ,5,5,1,2115
+20,liruixia    ,right,19,female,233,2130569,6,3,2_82_2  ,2_81_1  ,oneloud  ,5,6,0,1356
+20,liruixia    ,right,19,female,234,2135185,1,3,2_64_2  ,2_63_1  ,oneloud  ,6,6,1,2508
+20,liruixia    ,right,19,female,235,2140818,4,1,9_418_2 ,9_417_1 ,         ,5,6,0,2339
+20,liruixia    ,right,19,female,236,2146585,5,4,1_14_2  ,1_13_1  ,multisoft,5,5,1,1508
+20,liruixia    ,right,19,female,237,2151485,3,5,4_168_2 ,4_167_1 ,multiloud,6,6,1,1239
+20,liruixia    ,right,19,female,238,2156235,6,3,1_38_2  ,1_37_1  ,oneloud  ,5,5,1,1513
+20,liruixia    ,right,19,female,239,2161251,1,4,1_12_2  ,1_11_1  ,multisoft,6,6,1,1849
+20,liruixia    ,right,19,female,240,2166135,6,3,3_136_2 ,3_135_1 ,oneloud1 ,5,6,0,2317
+20,liruixia    ,right,19,female,241,2171935,3,3,2_50_2  ,2_49_1  ,oneloud  ,6,5,0,1133
+20,liruixia    ,right,19,female,242,2176118,4,1,6_244_2 ,6_243_1 ,         ,5,6,0,2174
+20,liruixia    ,right,19,female,243,2181701,5,2,1_20_2  ,1_19_1  ,onesoft1 ,5,6,0,3831
+20,liruixia    ,right,19,female,244,2189034,3,5,5_232_2 ,5_231_1 ,multiloud,6,6,1,1354
+20,liruixia    ,right,19,female,245,2193868,4,2,4_158_2 ,4_157_1 ,onesoft  ,5,6,0,1807
+20,liruixia    ,right,19,female,246,2198967,2,4,4_150_2 ,4_149_1 ,multisoft,6,6,1,1580
+20,liruixia    ,right,19,female,247,2203767,2,1,6_248_2 ,6_247_1 ,         ,6,5,0,1588
+20,liruixia    ,right,19,female,248,2208501,6,3,1_4_2   ,1_3_1   ,oneloud  ,5,5,1,1702
+20,liruixia    ,right,19,female,249,2213501,5,4,1_30_2  ,1_29_1  ,multisoft,5,6,0,2014
+20,liruixia    ,right,19,female,250,2218884,6,4,1_36_2  ,1_35_1  ,multisoft,5,5,1,1479
+20,liruixia    ,right,19,female,251,2223750,6,5,5_220_2 ,5_219_1 ,multiloud,5,5,1,2077
+20,liruixia    ,right,19,female,252,2228950,2,2,3_144_2 ,3_143_1 ,onesoft  ,6,5,0,2253
+20,liruixia    ,right,19,female,253,2234400,1,5,3_142_2 ,3_141_1 ,multiloud,6,6,1,1675
+20,liruixia    ,right,19,female,254,2239650,5,5,4_180_2 ,4_179_1 ,multiloud,5,5,1,2928
+20,liruixia    ,right,19,female,255,2245750,3,5,3_118_2 ,3_117_1 ,multiloud,6,5,0,2204
+20,liruixia    ,right,19,female,256,2251400,2,4,1_18_2  ,1_17_1  ,multisoft,6,6,1,1186
+20,liruixia    ,right,19,female,257,2255633,4,1,7_326_2 ,7_325_1 ,         ,5,6,0,1473
+20,liruixia    ,right,19,female,258,2260500,6,5,4_160_2 ,4_159_1 ,multiloud,5,5,1,1526
+20,liruixia    ,right,19,female,259,2347615,4,3,3_128_2 ,3_127_1 ,oneloud1 ,5,6,0,937
+20,liruixia    ,right,19,female,260,2351698,2,3,2_78_2  ,2_77_1  ,oneloud  ,6,5,0,2206
+20,liruixia    ,right,19,female,261,2357248,6,3,3_108_2 ,3_107_1 ,oneloud  ,5,6,0,1720
+20,liruixia    ,right,19,female,262,2362415,5,4,2_72_2  ,2_71_1  ,multisoft,5,5,1,3057
+20,liruixia    ,right,19,female,263,2368565,6,2,1_48_2  ,1_47_1  ,onesoft1 ,5,5,1,1411
+20,liruixia    ,right,19,female,264,2373098,1,4,4_186_2 ,4_185_1 ,multisoft,6,6,1,1470
+20,liruixia    ,right,19,female,265,2378048,1,5,4_186_2 ,4_185_1 ,multiloud,6,6,1,1328
+20,liruixia    ,right,19,female,266,2382848,3,2,1_22_2  ,1_21_1  ,onesoft1 ,6,6,1,2095
+20,liruixia    ,right,19,female,267,2388397,2,1,7_318_2 ,7_317_1 ,         ,6,5,0,1442
+20,liruixia    ,right,19,female,268,2392831,6,5,5_212_2 ,5_211_1 ,multiloud,5,5,1,1600
+20,liruixia    ,right,19,female,269,2397664,3,2,3_106_2 ,3_105_1 ,onesoft  ,6,6,1,1311
+20,liruixia    ,right,19,female,270,2402314,5,2,2_80_2  ,2_79_1  ,onesoft1 ,5,6,0,1101
+20,liruixia    ,right,19,female,271,2406764,5,3,1_20_2  ,1_19_1  ,oneloud  ,5,5,1,1179
+20,liruixia    ,right,19,female,272,2410997,1,1,10_438_2,10_437_1,         ,6,6,1,1234
+20,liruixia    ,right,19,female,273,2415597,3,5,5_230_2 ,5_229_1 ,multiloud,6,6,1,2242
+20,liruixia    ,right,19,female,274,2420814,5,4,2_84_2  ,2_83_1  ,multisoft,5,5,1,1337
+20,liruixia    ,right,19,female,275,2425497,4,3,1_8_2   ,1_7_1   ,oneloud  ,5,5,1,1805
+20,liruixia    ,right,19,female,276,2430497,5,3,1_14_2  ,1_13_1  ,oneloud  ,5,5,1,1701
+20,liruixia    ,right,19,female,277,2435680,6,4,5_220_2 ,5_219_1 ,multisoft,5,6,0,1766
+20,liruixia    ,right,19,female,278,2440663,2,3,3_134_2 ,3_133_1 ,oneloud1 ,6,6,1,2263
+20,liruixia    ,right,19,female,279,2446446,5,1,6_256_2 ,6_255_1 ,         ,5,5,1,2944
+20,liruixia    ,right,19,female,280,2452430,3,5,1_42_2  ,1_41_1  ,multiloud,6,6,1,1768
+20,liruixia    ,right,19,female,281,2457413,2,1,7_312_2 ,7_311_1 ,         ,6,6,1,1593
+20,liruixia    ,right,19,female,282,2462513,1,2,1_40_2  ,1_39_1  ,onesoft1 ,6,6,1,2541
+20,liruixia    ,right,19,female,283,2468213,1,1,6_242_2 ,6_241_1 ,         ,6,6,1,1841
+20,liruixia    ,right,19,female,284,2473213,3,1,9_388_2 ,9_387_1 ,         ,6,6,1,1344
+20,liruixia    ,right,19,female,285,2477763,3,4,1_22_2  ,1_21_1  ,multisoft,6,6,1,2954
+20,liruixia    ,right,19,female,286,2484046,1,4,3_102_2 ,3_101_1 ,multisoft,6,6,1,1023
+20,liruixia    ,right,19,female,287,2488462,3,2,5_216_2 ,5_215_1 ,onesoft  ,6,5,0,2391
+20,liruixia    ,right,19,female,288,2494146,4,5,4_174_2 ,4_173_1 ,multiloud,5,5,1,1971
+20,liruixia    ,right,19,female,289,2499246,4,3,4_174_2 ,4_173_1 ,oneloud1 ,5,5,1,1591
+20,liruixia    ,right,19,female,290,2504146,5,4,5_202_2 ,5_201_1 ,multisoft,5,5,1,2563
+20,liruixia    ,right,19,female,291,2510095,6,2,4_146_2 ,4_145_1 ,onesoft  ,5,5,1,1078
+20,liruixia    ,right,19,female,292,2514312,2,5,2_76_2  ,2_75_1  ,multiloud,6,6,1,1301
+20,liruixia    ,right,19,female,293,2518995,2,2,2_96_2  ,2_95_1  ,onesoft1 ,6,6,1,1769
+20,liruixia    ,right,19,female,294,2524278,3,3,3_106_2 ,3_105_1 ,oneloud1 ,6,6,1,1342
+20,liruixia    ,right,19,female,295,2528828,3,1,7_336_2 ,7_335_1 ,         ,6,5,0,1752
+20,liruixia    ,right,19,female,296,2533862,2,1,6_262_2 ,6_261_1 ,         ,6,6,1,1438
+20,liruixia    ,right,19,female,297,2538378,5,5,4_148_2 ,4_147_1 ,multiloud,5,5,1,2514
+20,liruixia    ,right,19,female,298,2544528,5,3,2_84_2  ,2_83_1  ,oneloud  ,5,5,1,1780
+20,liruixia    ,right,19,female,299,2549661,2,4,1_32_2  ,1_31_1  ,multisoft,6,6,1,2871
+20,liruixia    ,right,19,female,300,2555778,5,5,2_72_2  ,2_71_1  ,multiloud,5,5,1,2082
+20,liruixia    ,right,19,female,301,2561345,1,3,5_204_2 ,5_203_1 ,oneloud1 ,6,6,1,1907
+20,liruixia    ,right,19,female,302,2566428,4,4,2_90_2  ,2_89_1  ,multisoft,5,5,1,2591
+20,liruixia    ,right,19,female,303,2572228,6,5,2_88_2  ,2_87_1  ,multiloud,5,5,1,1751
+20,liruixia    ,right,19,female,304,2577411,4,4,3_128_2 ,3_127_1 ,multisoft,5,6,0,1576
+20,liruixia    ,right,19,female,305,2582044,4,4,5_214_2 ,5_213_1 ,multisoft,5,5,1,1967
+20,liruixia    ,right,19,female,306,2587394,6,3,3_140_2 ,3_139_1 ,oneloud1 ,5,5,1,1769
+20,liruixia    ,right,19,female,307,2592644,2,4,5_210_2 ,5_209_1 ,multisoft,6,5,0,1743
+20,liruixia    ,right,19,female,308,2597511,2,1,9_430_2 ,9_429_1 ,         ,6,5,0,1380
+20,liruixia    ,right,19,female,309,2664476,6,5,1_36_2  ,1_35_1  ,multiloud,5,5,1,1293
+20,liruixia    ,right,19,female,310,2669059,2,2,1_32_2  ,1_31_1  ,onesoft1 ,6,6,1,1758
+20,liruixia    ,right,19,female,311,2673926,6,1,7_330_2 ,7_329_1 ,         ,5,5,1,1939
+20,liruixia    ,right,19,female,312,2679042,2,5,5_206_2 ,5_205_1 ,multiloud,6,6,1,1863
+20,liruixia    ,right,19,female,313,2684176,3,4,1_6_2   ,1_5_1   ,multisoft,6,5,0,1801
+20,liruixia    ,right,19,female,314,2689409,5,3,1_10_2  ,1_9_1   ,oneloud1 ,5,6,0,2336
+20,liruixia    ,right,19,female,315,2695159,5,1,10_474_2,10_473_1,         ,5,5,1,1850
+20,liruixia    ,right,19,female,316,2700342,6,2,3_114_2 ,3_113_1 ,onesoft1 ,5,5,1,2387
+20,liruixia    ,right,19,female,317,2706109,4,2,2_54_2  ,2_53_1  ,onesoft1 ,5,6,0,1907
+20,liruixia    ,right,19,female,318,2711442,3,2,4_182_2 ,4_181_1 ,onesoft  ,6,6,1,2446
+20,liruixia    ,right,19,female,319,2717125,1,2,2_68_2  ,2_67_1  ,onesoft1 ,6,6,1,1787
+20,liruixia    ,right,19,female,320,2721925,2,5,3_120_2 ,3_119_1 ,multiloud,6,6,1,2299
+20,liruixia    ,right,19,female,321,2727408,5,5,5_208_2 ,5_207_1 ,multiloud,5,5,1,2928
+20,liruixia    ,right,19,female,322,2733558,4,4,5_228_2 ,5_227_1 ,multisoft,5,5,1,1954
+20,liruixia    ,right,19,female,323,2739008,1,1,8_362_2 ,8_361_1 ,         ,6,6,1,1968
+20,liruixia    ,right,19,female,324,2744141,5,5,4_156_2 ,4_155_1 ,multiloud,5,6,0,1427
+20,liruixia    ,right,19,female,325,2748625,4,1,9_400_2 ,9_399_1 ,         ,5,6,0,2447
+20,liruixia    ,right,19,female,326,2754474,1,4,1_28_2  ,1_27_1  ,multisoft,6,6,1,2053
+20,liruixia    ,right,19,female,327,2759541,1,1,6_268_2 ,6_267_1 ,         ,6,6,1,1490
+20,liruixia    ,right,19,female,328,2764624,2,4,3_144_2 ,3_143_1 ,multisoft,6,5,0,1215
+20,liruixia    ,right,19,female,329,2769108,5,5,3_100_2 ,3_99_1  ,multiloud,5,5,1,1083
+20,liruixia    ,right,19,female,330,2773391,2,1,9_428_2 ,9_427_1 ,         ,6,6,1,672
+20,liruixia    ,right,19,female,331,2777324,6,2,3_108_2 ,3_107_1 ,onesoft1 ,5,6,0,611
+20,liruixia    ,right,19,female,332,2781157,2,5,4_152_2 ,4_151_1 ,multiloud,6,6,1,786
+20,liruixia    ,right,19,female,333,2785291,3,5,4_182_2 ,4_181_1 ,multiloud,6,6,1,1092
+20,liruixia    ,right,19,female,334,2789924,1,2,3_142_2 ,3_141_1 ,onesoft  ,6,6,1,851
+20,liruixia    ,right,19,female,335,2794090,1,3,3_102_2 ,3_101_1 ,oneloud  ,6,6,1,709
+20,liruixia    ,right,19,female,336,2798157,6,2,4_170_2 ,4_169_1 ,onesoft  ,5,5,1,953
+20,liruixia    ,right,19,female,337,2802207,1,4,3_142_2 ,3_141_1 ,multisoft,6,6,1,687
+20,liruixia    ,right,19,female,338,2806124,3,5,5_216_2 ,5_215_1 ,multiloud,6,6,1,1986
+20,liruixia    ,right,19,female,339,2811257,4,2,2_70_2  ,2_69_1  ,onesoft1 ,5,5,1,1229
+20,liruixia    ,right,19,female,340,2815557,5,1,7_334_2 ,7_333_1 ,         ,5,5,1,1713
+20,liruixia    ,right,19,female,341,2820690,2,1,7_328_2 ,7_327_1 ,         ,6,6,1,1452
+20,liruixia    ,right,19,female,342,2825657,5,3,2_80_2  ,2_79_1  ,oneloud  ,5,6,0,1517
+20,liruixia    ,right,19,female,343,2830457,5,4,1_20_2  ,1_19_1  ,multisoft,5,5,1,1149
+20,liruixia    ,right,19,female,344,2834806,2,2,3_120_2 ,3_119_1 ,onesoft1 ,6,6,1,1200
+20,liruixia    ,right,19,female,345,2838990,1,2,4_176_2 ,4_175_1 ,onesoft  ,6,6,1,1472
+20,liruixia    ,right,19,female,346,2843756,6,4,2_56_2  ,2_55_1  ,multisoft,5,6,0,2017
+20,liruixia    ,right,19,female,347,2848906,6,4,1_38_2  ,1_37_1  ,multisoft,5,5,1,2259
+20,liruixia    ,right,19,female,348,2854506,4,5,1_46_2  ,1_45_1  ,multiloud,5,6,0,1995
+20,liruixia    ,right,19,female,349,2859973,4,3,2_70_2  ,2_69_1  ,oneloud  ,5,6,0,1248
+20,liruixia    ,right,19,female,350,2864706,3,4,2_94_2  ,2_93_1  ,multisoft,6,6,1,2123
+20,liruixia    ,right,19,female,351,2870289,4,4,4_174_2 ,4_173_1 ,multisoft,5,5,1,1652
+20,liruixia    ,right,19,female,352,2875272,2,2,5_210_2 ,5_209_1 ,onesoft  ,6,5,0,1981
+20,liruixia    ,right,19,female,353,2880839,1,4,5_198_2 ,5_197_1 ,multisoft,6,6,1,1438
+20,liruixia    ,right,19,female,354,2885389,6,1,8_380_2 ,8_379_1 ,         ,5,5,1,2064
+20,liruixia    ,right,19,female,355,2890639,5,2,1_14_2  ,1_13_1  ,onesoft1 ,5,5,1,2125
+20,liruixia    ,right,19,female,356,2895739,5,2,3_112_2 ,3_111_1 ,onesoft1 ,5,6,0,2225
+20,liruixia    ,right,19,female,357,2901289,3,4,2_62_2  ,2_61_1  ,multisoft,6,6,1,2051
+20,liruixia    ,right,19,female,358,2906655,4,2,3_126_2 ,3_125_1 ,onesoft  ,5,5,1,2749
+20,liruixia    ,right,19,female,359,3044886,5,1,7_304_2 ,7_303_1 ,         ,5,5,1,1275
+20,liruixia    ,right,19,female,360,3049303,3,4,4_192_2 ,4_191_1 ,multisoft,6,5,0,1930
+20,liruixia    ,right,19,female,361,3054586,3,1,9_414_2 ,9_413_1 ,         ,6,6,1,2215
+20,liruixia    ,right,19,female,362,3060052,4,5,3_126_2 ,3_125_1 ,multiloud,5,5,1,2061
+20,liruixia    ,right,19,female,363,3065269,3,2,5_230_2 ,5_229_1 ,onesoft  ,6,6,1,1412
+20,liruixia    ,right,19,female,364,3070019,4,5,2_58_2  ,2_57_1  ,multiloud,5,5,1,1990
+20,liruixia    ,right,19,female,365,3075336,4,1,10_468_2,10_467_1,         ,5,6,0,1784
+20,liruixia    ,right,19,female,366,3080319,5,2,3_116_2 ,3_115_1 ,onesoft  ,5,5,1,2193
+20,liruixia    ,right,19,female,367,3085885,5,3,5_208_2 ,5_207_1 ,oneloud1 ,5,6,0,1763
+20,liruixia    ,right,19,female,368,3090802,1,1,10_478_2,10_477_1,         ,6,6,1,2638
+20,liruixia    ,right,19,female,369,3096735,5,3,3_116_2 ,3_115_1 ,oneloud1 ,5,5,1,1817
+20,liruixia    ,right,19,female,370,3101968,2,1,10_464_2,10_463_1,         ,6,6,1,1696
+20,liruixia    ,right,19,female,371,3106952,3,5,2_60_2  ,2_59_1  ,multiloud,6,5,0,1824
+20,liruixia    ,right,19,female,372,3112202,5,2,5_202_2 ,5_201_1 ,onesoft  ,5,5,1,1950
+20,liruixia    ,right,19,female,373,3117285,5,2,5_218_2 ,5_217_1 ,onesoft  ,5,5,1,1347
+20,liruixia    ,right,19,female,374,3121951,5,1,10_462_2,10_461_1,         ,5,5,1,1768
+20,liruixia    ,right,19,female,375,3127068,4,1,9_412_2 ,9_411_1 ,         ,5,5,1,1267
+20,liruixia    ,right,19,female,376,3131601,5,5,1_14_2  ,1_13_1  ,multiloud,5,5,1,1886
+20,liruixia    ,right,19,female,377,3136535,2,3,4_150_2 ,4_149_1 ,oneloud1 ,6,6,1,976
+20,liruixia    ,right,19,female,378,3140834,6,5,1_38_2  ,1_37_1  ,multiloud,5,5,1,2253
+20,liruixia    ,right,19,female,379,3146251,4,3,5_226_2 ,5_225_1 ,oneloud1 ,5,5,1,2860
+20,liruixia    ,right,19,female,380,3152101,4,4,3_126_2 ,3_125_1 ,multisoft,5,5,1,1666
+20,liruixia    ,right,19,female,381,3157051,4,2,5_228_2 ,5_227_1 ,onesoft  ,5,5,1,1524
+20,liruixia    ,right,19,female,382,3161767,4,4,1_2_2   ,1_1_1   ,multisoft,5,6,0,1808
+20,liruixia    ,right,19,female,383,3166734,5,1,9_392_2 ,9_391_1 ,         ,5,5,1,1872
+20,liruixia    ,right,19,female,384,3172001,3,1,9_394_2 ,9_393_1 ,         ,6,5,0,1933
+20,liruixia    ,right,19,female,385,3177334,2,4,1_44_2  ,1_43_1  ,multisoft,6,6,1,1408
+20,liruixia    ,right,19,female,386,3182284,2,5,1_44_2  ,1_43_1  ,multiloud,6,6,1,3178
+20,liruixia    ,right,19,female,387,3188734,6,3,1_48_2  ,1_47_1  ,oneloud  ,5,6,0,2496
+20,liruixia    ,right,19,female,388,3194567,2,1,9_432_2 ,9_431_1 ,         ,6,5,0,3039
+20,liruixia    ,right,19,female,389,3200917,3,1,7_322_2 ,7_321_1 ,         ,6,6,1,1929
+20,liruixia    ,right,19,female,390,3206117,6,2,2_88_2  ,2_87_1  ,onesoft1 ,5,5,1,2753
+20,liruixia    ,right,19,female,391,3211950,3,1,8_352_2 ,8_351_1 ,         ,6,6,1,1232
+20,liruixia    ,right,19,female,392,3216500,5,1,10_480_2,10_479_1,         ,5,5,1,1681
+20,liruixia    ,right,19,female,393,3221233,1,3,3_138_2 ,3_137_1 ,oneloud1 ,6,6,1,1932
+20,liruixia    ,right,19,female,394,3226550,6,2,5_220_2 ,5_219_1 ,onesoft  ,5,5,1,1575
+20,liruixia    ,right,19,female,395,3231466,1,1,7_298_2 ,7_297_1 ,         ,6,6,1,1747
+20,liruixia    ,right,19,female,396,3236399,4,3,5_214_2 ,5_213_1 ,oneloud1 ,5,6,0,1622
+20,liruixia    ,right,19,female,397,3241583,3,4,3_98_2  ,3_97_1  ,multisoft,6,6,1,2182
+20,liruixia    ,right,19,female,398,3246983,1,4,3_110_2 ,3_109_1 ,multisoft,6,6,1,1830
+20,liruixia    ,right,19,female,399,3252283,4,3,2_90_2  ,2_89_1  ,oneloud  ,5,5,1,1666
+20,liruixia    ,right,19,female,400,3257232,6,4,4_170_2 ,4_169_1 ,multisoft,5,5,1,1589
+20,liruixia    ,right,19,female,401,3261949,5,2,4_148_2 ,4_147_1 ,onesoft  ,5,5,1,1663
+20,liruixia    ,right,19,female,402,3266916,1,3,1_12_2  ,1_11_1  ,oneloud  ,6,6,1,1152
+20,liruixia    ,right,19,female,403,3271615,2,4,3_134_2 ,3_133_1 ,multisoft,6,5,0,1981
+20,liruixia    ,right,19,female,404,3276582,1,4,4_184_2 ,4_183_1 ,multisoft,6,6,1,2190
+20,liruixia    ,right,19,female,405,3281999,1,3,4_184_2 ,4_183_1 ,oneloud1 ,6,6,1,557
+20,liruixia    ,right,19,female,406,3285982,5,1,6_266_2 ,6_265_1 ,         ,5,6,0,1518
+20,liruixia    ,right,19,female,407,3290582,6,1,8_378_2 ,8_377_1 ,         ,5,6,0,1590
+20,liruixia    ,right,19,female,408,3295615,1,3,1_24_2  ,1_23_1  ,oneloud  ,6,6,1,1325
+20,liruixia    ,right,19,female,409,3342914,5,2,2_72_2  ,2_71_1  ,onesoft1 ,5,6,0,1449
+20,liruixia    ,right,19,female,410,3347564,4,5,5_228_2 ,5_227_1 ,multiloud,5,5,1,1455
+20,liruixia    ,right,19,female,411,3352181,6,1,7_320_2 ,7_319_1 ,         ,5,5,1,1213
+20,liruixia    ,right,19,female,412,3356814,2,3,5_206_2 ,5_205_1 ,oneloud1 ,6,6,1,1804
+20,liruixia    ,right,19,female,413,3361731,1,1,10_446_2,10_445_1,         ,6,6,1,1823
+20,liruixia    ,right,19,female,414,3367014,2,3,3_130_2 ,3_129_1 ,oneloud  ,6,6,1,2284
+20,liruixia    ,right,19,female,415,3372614,3,3,2_94_2  ,2_93_1  ,oneloud  ,6,6,1,1708
+20,liruixia    ,right,19,female,416,3377364,1,1,8_348_2 ,8_347_1 ,         ,6,6,1,1550
+20,liruixia    ,right,19,female,417,3382080,6,5,1_4_2   ,1_3_1   ,multiloud,5,5,1,2010
+20,liruixia    ,right,19,female,418,3387347,3,3,5_236_2 ,5_235_1 ,oneloud1 ,6,5,0,1903
+20,liruixia    ,right,19,female,419,3392663,4,1,10_444_2,10_443_1,         ,5,5,1,1171
+20,liruixia    ,right,19,female,420,3397130,5,2,4_156_2 ,4_155_1 ,onesoft  ,5,6,0,600
+20,liruixia    ,right,19,female,421,3400913,4,2,1_34_2  ,1_33_1  ,onesoft1 ,5,5,1,496
+20,liruixia    ,right,19,female,422,3404813,4,4,4_158_2 ,4_157_1 ,multisoft,5,5,1,1276
+20,liruixia    ,right,19,female,423,3409630,2,3,1_32_2  ,1_31_1  ,oneloud  ,6,6,1,1371
+20,liruixia    ,right,19,female,424,3414213,4,5,3_128_2 ,3_127_1 ,multiloud,5,6,0,1252
+20,liruixia    ,right,19,female,425,3418730,6,4,5_222_2 ,5_221_1 ,multisoft,5,5,1,1695
+20,liruixia    ,right,19,female,426,3423763,1,5,4_188_2 ,4_187_1 ,multiloud,6,6,1,1486
+20,liruixia    ,right,19,female,427,3428563,5,5,1_10_2  ,1_9_1   ,multiloud,5,6,0,1646
+20,liruixia    ,right,19,female,428,3433446,5,5,1_20_2  ,1_19_1  ,multiloud,5,5,1,1771
+20,liruixia    ,right,19,female,429,3438646,1,5,1_28_2  ,1_27_1  ,multiloud,6,6,1,2643
+20,liruixia    ,right,19,female,430,3444479,4,4,1_46_2  ,1_45_1  ,multisoft,5,6,0,2009
+20,liruixia    ,right,19,female,431,3449962,1,2,2_64_2  ,2_63_1  ,onesoft1 ,6,6,1,1550
+20,liruixia    ,right,19,female,432,3454629,1,2,2_92_2  ,2_91_1  ,onesoft1 ,6,6,1,1819
+20,liruixia    ,right,19,female,433,3459796,5,1,9_398_2 ,9_397_1 ,         ,5,5,1,2204
+20,liruixia    ,right,19,female,434,3465595,6,5,2_56_2  ,2_55_1  ,multiloud,5,6,0,1253
+20,liruixia    ,right,19,female,435,3470029,4,3,1_46_2  ,1_45_1  ,oneloud  ,5,6,0,1387
+20,liruixia    ,right,19,female,436,3474745,4,2,5_226_2 ,5_225_1 ,onesoft  ,5,6,0,1263
+20,liruixia    ,right,19,female,437,3479295,2,3,1_18_2  ,1_17_1  ,oneloud  ,6,6,1,1585
+20,liruixia    ,right,19,female,438,3484312,6,2,1_4_2   ,1_3_1   ,onesoft1 ,5,5,1,2488
+20,liruixia    ,right,19,female,439,3490112,3,1,10_452_2,10_451_1,         ,6,5,0,2607
+20,liruixia    ,right,19,female,440,3495762,3,4,1_26_2  ,1_25_1  ,multisoft,6,5,0,1677
+20,liruixia    ,right,19,female,441,3500645,3,3,3_118_2 ,3_117_1 ,oneloud1 ,6,5,0,1450
+20,liruixia    ,right,19,female,442,3505545,5,5,5_234_2 ,5_233_1 ,multiloud,5,5,1,1598
+20,liruixia    ,right,19,female,443,3510295,4,4,4_162_2 ,4_161_1 ,multisoft,5,5,1,1656
+20,liruixia    ,right,19,female,444,3515261,1,5,1_40_2  ,1_39_1  ,multiloud,6,5,0,1386
+20,liruixia    ,right,19,female,445,3520111,4,1,10_434_2,10_433_1,         ,5,5,1,1432
+20,liruixia    ,right,19,female,446,3524911,5,5,3_112_2 ,3_111_1 ,multiloud,5,6,0,1112
+20,liruixia    ,right,19,female,447,3529428,3,4,4_182_2 ,4_181_1 ,multisoft,6,6,1,2147
+20,liruixia    ,right,19,female,448,3534961,3,3,4_192_2 ,4_191_1 ,oneloud1 ,6,5,0,2030
+20,liruixia    ,right,19,female,449,3540077,2,4,2_74_2  ,2_73_1  ,multisoft,6,6,1,1329
+20,liruixia    ,right,19,female,450,3544411,1,2,1_12_2  ,1_11_1  ,onesoft1 ,6,6,1,971
+20,liruixia    ,right,19,female,451,3548927,3,2,2_62_2  ,2_61_1  ,onesoft1 ,6,6,1,655
+20,liruixia    ,right,19,female,452,3552961,2,2,4_150_2 ,4_149_1 ,onesoft  ,6,6,1,909
+20,liruixia    ,right,19,female,453,3557061,1,5,2_52_2  ,2_51_1  ,multiloud,6,5,0,1401
+20,liruixia    ,right,19,female,454,3561561,1,1,9_408_2 ,9_407_1 ,         ,6,5,0,2293
+20,liruixia    ,right,19,female,455,3567344,2,4,2_78_2  ,2_77_1  ,multisoft,6,5,0,1470
+20,liruixia    ,right,19,female,456,3572060,5,3,2_72_2  ,2_71_1  ,oneloud  ,5,5,1,2458
+20,liruixia    ,right,19,female,457,3577710,1,3,2_92_2  ,2_91_1  ,oneloud  ,6,6,1,1352
+20,liruixia    ,right,19,female,458,3582277,6,1,10_454_2,10_453_1,         ,5,5,1,2113
+20,liruixia    ,right,19,female,459,3760724,2,2,4_152_2 ,4_151_1 ,onesoft  ,6,5,0,1110
+20,liruixia    ,right,19,female,460,3765157,2,4,2_96_2  ,2_95_1  ,multisoft,6,6,1,1957
+20,liruixia    ,right,19,female,461,3770557,4,5,1_34_2  ,1_33_1  ,multiloud,5,5,1,1996
+20,liruixia    ,right,19,female,462,3776107,5,4,1_10_2  ,1_9_1   ,multisoft,5,6,0,1694
+20,liruixia    ,right,19,female,463,3781223,6,1,10_466_2,10_465_1,         ,5,5,1,2210
+20,liruixia    ,right,19,female,464,3786740,3,2,1_6_2   ,1_5_1   ,onesoft1 ,6,6,1,2325
+20,liruixia    ,right,19,female,465,3792123,6,4,3_108_2 ,3_107_1 ,multisoft,5,6,0,2366
+20,liruixia    ,right,19,female,466,3797640,2,4,5_206_2 ,5_205_1 ,multisoft,6,6,1,2089
+20,liruixia    ,right,19,female,467,3802890,1,4,2_64_2  ,2_63_1  ,multisoft,6,6,1,2151
+20,liruixia    ,right,19,female,468,3808206,3,2,4_190_2 ,4_189_1 ,onesoft  ,6,5,0,1923
+20,liruixia    ,right,19,female,469,3813389,5,1,8_376_2 ,8_375_1 ,         ,5,5,1,2332
+20,liruixia    ,right,19,female,470,3818756,6,2,5_222_2 ,5_221_1 ,onesoft  ,5,5,1,1964
+20,liruixia    ,right,19,female,471,3824056,1,2,4_186_2 ,4_185_1 ,onesoft  ,6,6,1,1672
+20,liruixia    ,right,19,female,472,3828889,6,2,1_38_2  ,1_37_1  ,onesoft1 ,5,5,1,2367
+20,liruixia    ,right,19,female,473,3834606,4,3,3_126_2 ,3_125_1 ,oneloud1 ,5,5,1,2546
+20,liruixia    ,right,19,female,474,3840739,1,2,3_102_2 ,3_101_1 ,onesoft1 ,6,6,1,1933
+20,liruixia    ,right,19,female,475,3845856,4,3,1_34_2  ,1_33_1  ,oneloud  ,5,5,1,2672
+20,liruixia    ,right,19,female,476,3851905,2,2,1_44_2  ,1_43_1  ,onesoft1 ,6,6,1,1823
+20,liruixia    ,right,19,female,477,3856889,5,2,1_10_2  ,1_9_1   ,onesoft1 ,5,6,0,2911
+20,liruixia    ,right,19,female,478,3862872,4,2,3_122_2 ,3_121_1 ,onesoft1 ,5,5,1,2495
+20,liruixia    ,right,19,female,479,3868755,4,5,5_214_2 ,5_213_1 ,multiloud,5,5,1,2372
+20,liruixia    ,right,19,female,480,3874605,1,2,1_28_2  ,1_27_1  ,onesoft1 ,6,6,1,2770
+20,liruixia    ,right,19,female,481,3880622,2,2,4_166_2 ,4_165_1 ,onesoft  ,6,6,1,1905
+20,liruixia    ,right,19,female,482,3885988,3,1,10_448_2,10_447_1,         ,6,6,1,2243
+20,liruixia    ,right,19,female,483,3891455,2,2,3_130_2 ,3_129_1 ,onesoft1 ,6,6,1,1624
+20,liruixia    ,right,19,female,484,3896255,5,1,7_310_2 ,7_309_1 ,         ,5,5,1,1784
+20,liruixia    ,right,19,female,485,3901088,3,1,7_324_2 ,7_323_1 ,         ,6,5,0,1935
+20,liruixia    ,right,19,female,486,3906471,3,2,2_50_2  ,2_49_1  ,onesoft1 ,6,6,1,2776
+20,liruixia    ,right,19,female,487,3912554,3,4,1_42_2  ,1_41_1  ,multisoft,6,6,1,2068
+20,liruixia    ,right,19,female,488,3917838,5,4,3_116_2 ,3_115_1 ,multisoft,5,5,1,1896
+20,liruixia    ,right,19,female,489,3923104,4,1,8_346_2 ,8_345_1 ,         ,5,5,1,1806
+20,liruixia    ,right,19,female,490,3928154,1,3,4_188_2 ,4_187_1 ,oneloud1 ,6,6,1,2020
+20,liruixia    ,right,19,female,491,3933404,2,2,2_78_2  ,2_77_1  ,onesoft1 ,6,5,0,2274
+20,liruixia    ,right,19,female,492,3938687,6,4,2_82_2  ,2_81_1  ,multisoft,5,5,1,2583
+20,liruixia    ,right,19,female,493,3944804,4,2,4_178_2 ,4_177_1 ,onesoft  ,5,5,1,2122
+20,liruixia    ,right,19,female,494,3950387,5,3,2_86_2  ,2_85_1  ,oneloud  ,5,5,1,2523
+20,liruixia    ,right,19,female,495,3955987,5,2,2_86_2  ,2_85_1  ,onesoft1 ,5,5,1,2162
+20,liruixia    ,right,19,female,496,3961470,5,5,1_30_2  ,1_29_1  ,multiloud,5,6,0,1879
+20,liruixia    ,right,19,female,497,3966303,4,1,7_294_2 ,7_293_1 ,         ,5,6,0,2854
+20,liruixia    ,right,19,female,498,3972387,4,5,2_70_2  ,2_69_1  ,multiloud,5,5,1,1994
+20,liruixia    ,right,19,female,499,3977703,1,2,5_198_2 ,5_197_1 ,onesoft  ,6,6,1,1638
+20,liruixia    ,right,19,female,500,3982787,3,1,8_368_2 ,8_367_1 ,         ,6,6,1,2426
+20,liruixia    ,right,19,female,501,3988453,5,4,4_172_2 ,4_171_1 ,multisoft,5,5,1,1984
+20,liruixia    ,right,19,female,502,3993686,1,4,3_138_2 ,3_137_1 ,multisoft,6,6,1,1951
+20,liruixia    ,right,19,female,503,3999136,1,5,2_68_2  ,2_67_1  ,multiloud,6,6,1,2525
+20,liruixia    ,right,19,female,504,4004919,4,1,8_382_2 ,8_381_1 ,         ,5,6,0,2925
+20,liruixia    ,right,19,female,505,4011086,1,1,6_270_2 ,6_269_1 ,         ,6,5,0,2110
+20,liruixia    ,right,19,female,506,4016619,3,1,10_472_2,10_471_1,         ,6,6,1,2361
+20,liruixia    ,right,19,female,507,4022486,3,3,5_232_2 ,5_231_1 ,oneloud1 ,6,6,1,2870
+20,liruixia    ,right,19,female,508,4028336,6,1,9_424_2 ,9_423_1 ,         ,5,5,1,2084
+20,liruixia    ,right,19,female,509,4153050,1,1,10_476_2,10_475_1,         ,6,6,1,1919
+20,liruixia    ,right,19,female,510,4158150,2,3,3_144_2 ,3_143_1 ,oneloud1 ,6,6,1,2411
+20,liruixia    ,right,19,female,511,4163933,3,1,6_280_2 ,6_279_1 ,         ,6,6,1,2372
+20,liruixia    ,right,19,female,512,4169417,3,1,6_264_2 ,6_263_1 ,         ,6,5,0,2048
+20,liruixia    ,right,19,female,513,4174733,3,2,4_192_2 ,4_191_1 ,onesoft  ,6,6,1,1932
+20,liruixia    ,right,19,female,514,4179916,2,1,10_450_2,10_449_1,         ,6,6,1,2445
+20,liruixia    ,right,19,female,515,4185466,2,3,4_164_2 ,4_163_1 ,oneloud1 ,6,6,1,2334
+20,liruixia    ,right,19,female,516,4190900,5,2,4_172_2 ,4_171_1 ,onesoft  ,5,5,1,1708
+20,liruixia    ,right,19,female,517,4196016,4,1,10_456_2,10_455_1,         ,5,5,1,1528
+20,liruixia    ,right,19,female,518,4200866,3,2,5_236_2 ,5_235_1 ,onesoft  ,6,5,0,2254
+20,liruixia    ,right,19,female,519,4206683,1,2,4_188_2 ,4_187_1 ,onesoft  ,6,6,1,2829
+20,liruixia    ,right,19,female,520,4212799,3,4,5_236_2 ,5_235_1 ,multisoft,6,5,0,2761
+20,liruixia    ,right,19,female,521,4218882,5,2,3_132_2 ,3_131_1 ,onesoft  ,5,5,1,1926
+20,liruixia    ,right,19,female,522,4224066,1,1,6_274_2 ,6_273_1 ,         ,6,6,1,2310
+20,liruixia    ,right,19,female,523,4229549,3,3,2_62_2  ,2_61_1  ,oneloud  ,6,6,1,3371
+20,liruixia    ,right,19,female,524,4236382,3,5,2_50_2  ,2_49_1  ,multiloud,6,5,0,2457
+20,liruixia    ,right,19,female,525,4242049,1,1,9_416_2 ,9_415_1 ,         ,6,6,1,3166
+20,liruixia    ,right,19,female,526,4248699,1,4,2_68_2  ,2_67_1  ,multisoft,6,6,1,2804
+20,liruixia    ,right,19,female,527,4254765,2,2,3_134_2 ,3_133_1 ,onesoft  ,6,5,0,2546
+20,liruixia    ,right,19,female,528,4260465,5,2,2_84_2  ,2_83_1  ,onesoft1 ,5,5,1,2086
+20,liruixia    ,right,19,female,529,4265765,5,1,8_370_2 ,8_369_1 ,         ,5,6,0,2466
+20,liruixia    ,right,19,female,530,4271548,3,5,1_26_2  ,1_25_1  ,multiloud,6,5,0,2147
+20,liruixia    ,right,19,female,531,4276915,4,4,1_34_2  ,1_33_1  ,multisoft,5,5,1,2388
+20,liruixia    ,right,19,female,532,4282665,3,3,1_42_2  ,1_41_1  ,oneloud  ,6,6,1,2469
+20,liruixia    ,right,19,female,533,4288581,4,3,3_124_2 ,3_123_1 ,oneloud  ,5,5,1,2057
+20,liruixia    ,right,19,female,534,4293798,6,3,5_212_2 ,5_211_1 ,oneloud1 ,5,5,1,1952
+20,liruixia    ,right,19,female,535,4299014,5,4,4_156_2 ,4_155_1 ,multisoft,5,6,0,2136
+20,liruixia    ,right,19,female,536,4304681,4,4,2_54_2  ,2_53_1  ,multisoft,5,6,0,2557
+20,liruixia    ,right,19,female,537,4310548,1,4,4_176_2 ,4_175_1 ,multisoft,6,6,1,2218
+20,liruixia    ,right,19,female,538,4316114,4,3,1_2_2   ,1_1_1   ,oneloud  ,5,5,1,1980
+20,liruixia    ,right,19,female,539,4321397,1,5,5_194_2 ,5_193_1 ,multiloud,6,5,0,2049
+20,liruixia    ,right,19,female,540,4326514,2,2,1_16_2  ,1_15_1  ,onesoft1 ,6,5,0,2107
+20,liruixia    ,right,19,female,541,4332030,6,2,5_238_2 ,5_237_1 ,onesoft  ,5,5,1,1751
+20,liruixia    ,right,19,female,542,4337047,5,5,2_84_2  ,2_83_1  ,multiloud,5,5,1,1998
+20,liruixia    ,right,19,female,543,4342097,4,2,1_2_2   ,1_1_1   ,onesoft1 ,5,6,0,1932
+20,liruixia    ,right,19,female,544,4347430,1,1,7_316_2 ,7_315_1 ,         ,6,6,1,1903
+20,liruixia    ,right,19,female,545,4352597,3,2,1_26_2  ,1_25_1  ,onesoft1 ,6,5,0,1720
+20,liruixia    ,right,19,female,546,4357563,6,2,2_56_2  ,2_55_1  ,onesoft1 ,5,6,0,2386
+20,liruixia    ,right,19,female,547,4363347,6,5,4_170_2 ,4_169_1 ,multiloud,5,5,1,1714
+20,liruixia    ,right,19,female,548,4368530,6,5,2_82_2  ,2_81_1  ,multiloud,5,5,1,2843
+20,liruixia    ,right,19,female,549,4374613,4,1,7_300_2 ,7_299_1 ,         ,5,5,1,2135
+20,liruixia    ,right,19,female,550,4380313,2,5,2_96_2  ,2_95_1  ,multiloud,6,6,1,1587
+20,liruixia    ,right,19,female,551,4385280,2,5,3_130_2 ,3_129_1 ,multiloud,6,6,1,2036
+20,liruixia    ,right,19,female,552,4390596,3,5,5_236_2 ,5_235_1 ,multiloud,6,5,0,1288
+20,liruixia    ,right,19,female,553,4395179,1,3,5_194_2 ,5_193_1 ,oneloud1 ,6,5,0,2409
+20,liruixia    ,right,19,female,554,4400979,4,2,4_162_2 ,4_161_1 ,onesoft  ,5,6,0,2001
+20,liruixia    ,right,19,female,555,4406146,1,4,1_24_2  ,1_23_1  ,multisoft,6,6,1,2122
+20,liruixia    ,right,19,female,556,4411346,6,2,1_36_2  ,1_35_1  ,onesoft1 ,5,5,1,2474
+20,liruixia    ,right,19,female,557,4416996,6,2,2_82_2  ,2_81_1  ,onesoft1 ,5,5,1,1872
+20,liruixia    ,right,19,female,558,4421979,5,1,8_356_2 ,8_355_1 ,         ,5,5,1,2016
+20,liruixia    ,right,19,female,559,4490961,6,1,7_314_2 ,7_313_1 ,         ,5,5,1,1481
+20,liruixia    ,right,19,female,560,4495744,3,5,2_94_2  ,2_93_1  ,multiloud,6,6,1,1546
+20,liruixia    ,right,19,female,561,4500644,4,2,2_58_2  ,2_57_1  ,onesoft1 ,5,5,1,2286
+20,liruixia    ,right,19,female,562,4506444,4,4,3_122_2 ,3_121_1 ,multisoft,5,5,1,1878
+20,liruixia    ,right,19,female,563,4511477,3,5,3_98_2  ,3_97_1  ,multiloud,6,6,1,1524
+20,liruixia    ,right,19,female,564,4516511,3,5,2_62_2  ,2_61_1  ,multiloud,6,6,1,1666
+20,liruixia    ,right,19,female,565,4521461,1,1,8_344_2 ,8_343_1 ,         ,6,5,0,2044
+20,liruixia    ,right,19,female,566,4526710,6,2,3_136_2 ,3_135_1 ,onesoft  ,5,5,1,1539
+20,liruixia    ,right,19,female,567,4531327,1,5,2_92_2  ,2_91_1  ,multiloud,6,6,1,2250
+20,liruixia    ,right,19,female,568,4536777,1,2,5_200_2 ,5_199_1 ,onesoft  ,6,6,1,2568
+20,liruixia    ,right,19,female,569,4542760,6,1,9_404_2 ,9_403_1 ,         ,5,5,1,1609
+20,liruixia    ,right,19,female,570,4547710,6,2,4_160_2 ,4_159_1 ,onesoft  ,5,6,0,2555
+20,liruixia    ,right,19,female,571,4553360,4,1,6_252_2 ,6_251_1 ,         ,5,5,1,2129
+20,liruixia    ,right,19,female,572,4558810,4,4,4_178_2 ,4_177_1 ,multisoft,5,5,1,1830
+20,liruixia    ,right,19,female,573,4563943,4,5,5_240_2 ,5_239_1 ,multiloud,5,6,0,3185
+20,liruixia    ,right,19,female,574,4570226,2,5,5_224_2 ,5_223_1 ,multiloud,6,6,1,2254
+20,liruixia    ,right,19,female,575,4575893,2,1,10_440_2,10_439_1,         ,6,5,0,2219
+20,liruixia    ,right,19,female,576,4581360,1,3,2_52_2  ,2_51_1  ,oneloud  ,6,5,0,2608
+20,liruixia    ,right,19,female,577,4587543,5,4,3_132_2 ,3_131_1 ,multisoft,5,6,0,1929
+20,liruixia    ,right,19,female,578,4592576,6,2,5_212_2 ,5_211_1 ,onesoft  ,5,5,1,2096
+20,liruixia    ,right,19,female,579,4598026,1,4,5_200_2 ,5_199_1 ,multisoft,6,5,0,1998
+20,liruixia    ,right,19,female,580,4603042,3,3,3_104_2 ,3_103_1 ,oneloud  ,6,6,1,1957
+20,liruixia    ,right,19,female,581,4608109,4,1,7_292_2 ,7_291_1 ,         ,5,5,1,1546
+20,liruixia    ,right,19,female,582,4613042,1,5,1_12_2  ,1_11_1  ,multiloud,6,6,1,1813
+20,liruixia    ,right,19,female,583,4618276,2,5,4_150_2 ,4_149_1 ,multiloud,6,6,1,2451
+20,liruixia    ,right,19,female,584,4624175,6,4,3_136_2 ,3_135_1 ,multisoft,5,5,1,2344
+20,liruixia    ,right,19,female,585,4629892,6,4,4_160_2 ,4_159_1 ,multisoft,5,5,1,1627
+20,liruixia    ,right,19,female,586,4634675,6,4,3_140_2 ,3_139_1 ,multisoft,5,5,1,2092
+20,liruixia    ,right,19,female,587,4639975,2,1,10_458_2,10_457_1,         ,6,6,1,1640
+20,liruixia    ,right,19,female,588,4645092,1,3,2_68_2  ,2_67_1  ,oneloud  ,6,6,1,2163
+20,liruixia    ,right,19,female,589,4650408,6,3,4_170_2 ,4_169_1 ,oneloud1 ,5,5,1,1758
+20,liruixia    ,right,19,female,590,4655292,6,1,8_360_2 ,8_359_1 ,         ,5,6,0,1506
+20,liruixia    ,right,19,female,591,4659908,6,3,3_114_2 ,3_113_1 ,oneloud  ,5,5,1,1634
+20,liruixia    ,right,19,female,592,4664958,3,3,3_98_2  ,3_97_1  ,oneloud  ,6,6,1,1960
+20,liruixia    ,right,19,female,593,4670275,2,3,3_120_2 ,3_119_1 ,oneloud  ,6,6,1,1627
+20,liruixia    ,right,19,female,594,4675241,2,2,2_76_2  ,2_75_1  ,onesoft1 ,6,6,1,1637
+20,liruixia    ,right,19,female,595,4679958,5,4,4_148_2 ,4_147_1 ,multisoft,5,5,1,2408
+20,liruixia    ,right,19,female,596,4685658,3,5,4_190_2 ,4_189_1 ,multiloud,6,5,0,2124
+20,liruixia    ,right,19,female,597,4691258,5,1,10_436_2,10_435_1,         ,5,6,0,1596
+20,liruixia    ,right,19,female,598,4695874,6,1,6_276_2 ,6_275_1 ,         ,5,5,1,1628
+20,liruixia    ,right,19,female,599,4700874,6,5,3_114_2 ,3_113_1 ,multiloud,5,5,1,1659
+20,liruixia    ,right,19,female,600,4705574,6,3,4_154_2 ,4_153_1 ,oneloud1 ,5,6,0,2895
+20,liruixia    ,right,19,female,601,4711641,3,1,9_390_2 ,9_389_1 ,         ,6,5,0,1836
+20,liruixia    ,right,19,female,602,4717024,1,3,1_40_2  ,1_39_1  ,oneloud  ,6,6,1,2277
+20,liruixia    ,right,19,female,603,4722590,6,1,10_460_2,10_459_1,         ,5,5,1,1415
+20,liruixia    ,right,19,female,604,4727207,2,5,3_144_2 ,3_143_1 ,multiloud,6,6,1,1694
+20,liruixia    ,right,19,female,605,4732274,6,5,2_66_2  ,2_65_1  ,multiloud,5,5,1,1499
+20,liruixia    ,right,19,female,606,4737040,3,1,7_308_2 ,7_307_1 ,         ,6,6,1,1429
+20,liruixia    ,right,19,female,607,4741457,5,3,5_218_2 ,5_217_1 ,oneloud1 ,5,5,1,1780
+20,liruixia    ,right,19,female,608,4746457,6,1,8_372_2 ,8_371_1 ,         ,5,5,1,2411

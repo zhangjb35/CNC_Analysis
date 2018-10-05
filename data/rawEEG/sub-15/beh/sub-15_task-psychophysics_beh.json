@@ -1,0 +1,8 @@
+{
+  "participant_id": "format like sub-01",
+  "Block": "just like trial",
+  "NumCondition": ["1=>15","2=>16","3=>18","4=>22","5=>24","6=>27"],
+  "SoundCondition": ["1=>nosound","2=>one-soft-sound","3=>one-loud-sound","4=>multi-soft-sound","5=>multi-loud-sound"],
+  "ButtonSet": ["5:test is small","6:test is bigger"],
+  "ACC": "0=Wrong;1=Correct"
+}

@@ -1,0 +1,601 @@
+participant_id,Name,Handedness,Age,Sex,Block,numresponse_OnsetTime,NumCondition,SoundCondition,probestimuli,teststimuli,sound,correctResp,Resp,ACC,RT
+9,caoyuan     ,right,23,female,9,531071,2,5,3_134_2 ,3_133_1 ,multiloud,5,5,1,1332
+9,caoyuan     ,right,23,female,10,535788,5,4,3_112_2 ,3_111_1 ,multisoft,6,5,0,1647
+9,caoyuan     ,right,23,female,11,540705,5,3,4_148_2 ,4_147_1 ,oneloud1 ,6,6,1,1601
+9,caoyuan     ,right,23,female,12,545705,6,1,8_378_2 ,8_377_1 ,         ,6,6,1,801
+9,caoyuan     ,right,23,female,13,549871,5,3,5_234_2 ,5_233_1 ,oneloud1 ,6,6,1,2747
+9,caoyuan     ,right,23,female,14,555671,3,1,9_414_2 ,9_413_1 ,         ,5,5,1,2363
+9,caoyuan     ,right,23,female,15,561321,5,5,4_172_2 ,4_171_1 ,multiloud,6,5,0,3393
+9,caoyuan     ,right,23,female,16,567971,2,1,9_430_2 ,9_429_1 ,         ,5,5,1,1551
+9,caoyuan     ,right,23,female,17,572871,3,5,5_216_2 ,5_215_1 ,multiloud,5,5,1,3747
+9,caoyuan     ,right,23,female,18,579804,1,5,5_200_2 ,5_199_1 ,multiloud,5,5,1,1486
+9,caoyuan     ,right,23,female,19,584654,6,3,1_4_2   ,1_3_1   ,oneloud  ,6,6,1,1339
+9,caoyuan     ,right,23,female,20,589370,2,1,7_318_2 ,7_317_1 ,         ,5,5,1,1255
+9,caoyuan     ,right,23,female,21,593670,1,4,4_184_2 ,4_183_1 ,multisoft,5,5,1,1347
+9,caoyuan     ,right,23,female,22,598437,3,2,1_22_2  ,1_21_1  ,onesoft1 ,5,5,1,1284
+9,caoyuan     ,right,23,female,23,602920,3,4,1_26_2  ,1_25_1  ,multisoft,5,5,1,3609
+9,caoyuan     ,right,23,female,24,609970,1,3,4_186_2 ,4_185_1 ,oneloud1 ,5,5,1,2063
+9,caoyuan     ,right,23,female,25,615403,1,3,3_102_2 ,3_101_1 ,oneloud  ,5,5,1,958
+9,caoyuan     ,right,23,female,26,619487,5,4,4_172_2 ,4_171_1 ,multisoft,6,5,0,4842
+9,caoyuan     ,right,23,female,27,627586,1,3,4_184_2 ,4_183_1 ,oneloud1 ,5,5,1,2175
+9,caoyuan     ,right,23,female,28,633086,6,2,5_220_2 ,5_219_1 ,onesoft  ,6,6,1,986
+9,caoyuan     ,right,23,female,29,636986,1,1,10_476_2,10_475_1,         ,5,5,1,1702
+9,caoyuan     ,right,23,female,30,641953,5,1,6_266_2 ,6_265_1 ,         ,6,5,0,3367
+9,caoyuan     ,right,23,female,31,648769,4,1,7_300_2 ,7_299_1 ,         ,6,5,0,3967
+9,caoyuan     ,right,23,female,32,656286,1,2,2_68_2  ,2_67_1  ,onesoft1 ,5,5,1,4674
+9,caoyuan     ,right,23,female,33,664069,4,3,1_34_2  ,1_33_1  ,oneloud  ,6,6,1,2683
+9,caoyuan     ,right,23,female,34,670052,1,2,1_12_2  ,1_11_1  ,onesoft1 ,5,5,1,2380
+9,caoyuan     ,right,23,female,35,675702,4,5,5_228_2 ,5_227_1 ,multiloud,6,6,1,2537
+9,caoyuan     ,right,23,female,36,681319,3,4,2_60_2  ,2_59_1  ,multisoft,5,5,1,2552
+9,caoyuan     ,right,23,female,37,687319,4,5,4_174_2 ,4_173_1 ,multiloud,6,6,1,1472
+9,caoyuan     ,right,23,female,38,692119,4,1,9_418_2 ,9_417_1 ,         ,6,6,1,1280
+9,caoyuan     ,right,23,female,39,696569,6,1,9_404_2 ,9_403_1 ,         ,6,6,1,4862
+9,caoyuan     ,right,23,female,40,704785,1,4,4_176_2 ,4_175_1 ,multisoft,5,5,1,1254
+9,caoyuan     ,right,23,female,41,709202,3,4,4_190_2 ,4_189_1 ,multisoft,5,5,1,3173
+9,caoyuan     ,right,23,female,42,715902,2,2,1_16_2  ,1_15_1  ,onesoft1 ,5,5,1,4673
+9,caoyuan     ,right,23,female,43,723735,3,5,5_230_2 ,5_229_1 ,multiloud,5,5,1,3191
+9,caoyuan     ,right,23,female,44,730201,2,4,5_196_2 ,5_195_1 ,multisoft,5,5,1,1493
+9,caoyuan     ,right,23,female,45,734868,4,2,5_226_2 ,5_225_1 ,onesoft  ,6,5,0,4938
+9,caoyuan     ,right,23,female,46,743484,2,4,5_206_2 ,5_205_1 ,multisoft,5,5,1,2130
+9,caoyuan     ,right,23,female,47,748818,3,3,3_118_2 ,3_117_1 ,oneloud1 ,5,5,1,4588
+9,caoyuan     ,right,23,female,48,756584,5,1,9_386_2 ,9_385_1 ,         ,6,6,1,1606
+9,caoyuan     ,right,23,female,49,761351,3,4,5_230_2 ,5_229_1 ,multisoft,5,5,1,1319
+9,caoyuan     ,right,23,female,50,766084,5,1,8_370_2 ,8_369_1 ,         ,6,6,1,3618
+9,caoyuan     ,right,23,female,51,772934,6,4,2_66_2  ,2_65_1  ,multisoft,6,6,1,1967
+9,caoyuan     ,right,23,female,52,778317,6,2,5_222_2 ,5_221_1 ,onesoft  ,6,5,0,1872
+9,caoyuan     ,right,23,female,53,783234,6,3,3_114_2 ,3_113_1 ,oneloud  ,6,6,1,915
+9,caoyuan     ,right,23,female,54,787584,2,3,3_120_2 ,3_119_1 ,oneloud  ,5,5,1,893
+9,caoyuan     ,right,23,female,55,791784,4,1,6_252_2 ,6_251_1 ,         ,6,5,0,1741
+9,caoyuan     ,right,23,female,56,796784,2,1,8_350_2 ,8_349_1 ,         ,5,5,1,1109
+9,caoyuan     ,right,23,female,57,801017,2,3,2_78_2  ,2_77_1  ,oneloud  ,5,5,1,972
+9,caoyuan     ,right,23,female,58,805467,4,2,1_46_2  ,1_45_1  ,onesoft1 ,6,5,0,4306
+9,caoyuan     ,right,23,female,59,872132,3,2,4_190_2 ,4_189_1 ,onesoft  ,5,5,1,1087
+9,caoyuan     ,right,23,female,60,876599,6,4,1_48_2  ,1_47_1  ,multisoft,6,6,1,1012
+9,caoyuan     ,right,23,female,61,880799,1,3,2_52_2  ,2_51_1  ,oneloud  ,5,5,1,1100
+9,caoyuan     ,right,23,female,62,885232,2,4,1_16_2  ,1_15_1  ,multisoft,5,5,1,907
+9,caoyuan     ,right,23,female,63,889365,3,2,1_26_2  ,1_25_1  ,onesoft1 ,5,6,0,646
+9,caoyuan     ,right,23,female,64,893099,4,1,10_444_2,10_443_1,         ,6,5,0,2048
+9,caoyuan     ,right,23,female,65,898582,3,5,2_62_2  ,2_61_1  ,multiloud,5,5,1,877
+9,caoyuan     ,right,23,female,66,902632,3,4,4_182_2 ,4_181_1 ,multisoft,5,5,1,1243
+9,caoyuan     ,right,23,female,67,907015,1,4,5_200_2 ,5_199_1 ,multisoft,5,5,1,924
+9,caoyuan     ,right,23,female,68,911448,3,3,3_106_2 ,3_105_1 ,oneloud1 ,5,5,1,1674
+9,caoyuan     ,right,23,female,69,916548,5,1,9_396_2 ,9_395_1 ,         ,6,5,0,2902
+9,caoyuan     ,right,23,female,70,922748,5,5,2_80_2  ,2_79_1  ,multiloud,6,6,1,1942
+9,caoyuan     ,right,23,female,71,927715,1,5,1_24_2  ,1_23_1  ,multiloud,5,5,1,1239
+9,caoyuan     ,right,23,female,72,932165,3,3,4_190_2 ,4_189_1 ,oneloud1 ,5,6,0,1365
+9,caoyuan     ,right,23,female,73,936948,1,4,2_52_2  ,2_51_1  ,multisoft,5,5,1,1558
+9,caoyuan     ,right,23,female,74,941864,1,5,4_186_2 ,4_185_1 ,multiloud,5,5,1,1170
+9,caoyuan     ,right,23,female,75,946248,4,5,3_124_2 ,3_123_1 ,multiloud,6,6,1,1290
+9,caoyuan     ,right,23,female,76,950614,4,1,7_292_2 ,7_291_1 ,         ,6,6,1,908
+9,caoyuan     ,right,23,female,77,954881,4,1,6_244_2 ,6_243_1 ,         ,6,6,1,2272
+9,caoyuan     ,right,23,female,78,960647,3,3,1_22_2  ,1_21_1  ,oneloud  ,5,5,1,818
+9,caoyuan     ,right,23,female,79,964631,4,3,4_174_2 ,4_173_1 ,oneloud1 ,6,6,1,1642
+9,caoyuan     ,right,23,female,80,969397,3,2,4_168_2 ,4_167_1 ,onesoft  ,5,5,1,940
+9,caoyuan     ,right,23,female,81,973531,2,5,2_78_2  ,2_77_1  ,multiloud,5,5,1,1030
+9,caoyuan     ,right,23,female,82,977747,1,2,2_64_2  ,2_63_1  ,onesoft1 ,5,5,1,1118
+9,caoyuan     ,right,23,female,83,982064,4,4,2_54_2  ,2_53_1  ,multisoft,6,5,0,1609
+9,caoyuan     ,right,23,female,84,987147,4,5,1_34_2  ,1_33_1  ,multiloud,6,6,1,1094
+9,caoyuan     ,right,23,female,85,991464,4,5,2_70_2  ,2_69_1  ,multiloud,6,6,1,809
+9,caoyuan     ,right,23,female,86,995614,4,4,4_162_2 ,4_161_1 ,multisoft,6,5,0,1923
+9,caoyuan     ,right,23,female,87,1000747,1,1,7_296_2 ,7_295_1 ,         ,5,5,1,1925
+9,caoyuan     ,right,23,female,88,1005780,3,2,3_118_2 ,3_117_1 ,onesoft  ,5,6,0,1892
+9,caoyuan     ,right,23,female,89,1011197,6,3,5_220_2 ,5_219_1 ,oneloud1 ,6,5,0,3003
+9,caoyuan     ,right,23,female,90,1017596,5,5,1_20_2  ,1_19_1  ,multiloud,6,5,0,2716
+9,caoyuan     ,right,23,female,91,1023430,1,5,5_204_2 ,5_203_1 ,multiloud,5,5,1,754
+9,caoyuan     ,right,23,female,92,1027446,6,5,2_88_2  ,2_87_1  ,multiloud,6,6,1,394
+9,caoyuan     ,right,23,female,93,1031346,3,5,5_236_2 ,5_235_1 ,multiloud,5,6,0,1590
+9,caoyuan     ,right,23,female,94,1036146,1,2,3_142_2 ,3_141_1 ,onesoft  ,5,5,1,702
+9,caoyuan     ,right,23,female,95,1039929,2,2,1_44_2  ,1_43_1  ,onesoft1 ,5,5,1,775
+9,caoyuan     ,right,23,female,96,1044129,6,3,5_212_2 ,5_211_1 ,oneloud1 ,6,6,1,727
+9,caoyuan     ,right,23,female,97,1048146,4,2,3_126_2 ,3_125_1 ,onesoft  ,6,6,1,493
+9,caoyuan     ,right,23,female,98,1051813,3,5,2_94_2  ,2_93_1  ,multiloud,5,5,1,1178
+9,caoyuan     ,right,23,female,99,1056396,2,1,8_358_2 ,8_357_1 ,         ,5,5,1,819
+9,caoyuan     ,right,23,female,100,1060246,2,4,1_44_2  ,1_43_1  ,multisoft,5,5,1,729
+9,caoyuan     ,right,23,female,101,1064396,4,3,1_2_2   ,1_1_1   ,oneloud  ,6,5,0,1323
+9,caoyuan     ,right,23,female,102,1068762,4,2,3_124_2 ,3_123_1 ,onesoft1 ,6,5,0,2309
+9,caoyuan     ,right,23,female,103,1074479,2,3,4_152_2 ,4_151_1 ,oneloud1 ,5,5,1,488
+9,caoyuan     ,right,23,female,104,1078495,4,3,2_58_2  ,2_57_1  ,oneloud  ,6,5,0,736
+9,caoyuan     ,right,23,female,105,1082545,4,3,5_226_2 ,5_225_1 ,oneloud1 ,6,6,1,822
+9,caoyuan     ,right,23,female,106,1086645,4,1,8_346_2 ,8_345_1 ,         ,6,6,1,1026
+9,caoyuan     ,right,23,female,107,1090762,4,4,3_124_2 ,3_123_1 ,multisoft,6,5,0,805
+9,caoyuan     ,right,23,female,108,1094895,4,3,2_70_2  ,2_69_1  ,oneloud  ,6,6,1,503
+9,caoyuan     ,right,23,female,109,1235743,4,1,7_294_2 ,7_293_1 ,         ,6,5,0,1228
+9,caoyuan     ,right,23,female,110,1240326,6,2,1_38_2  ,1_37_1  ,onesoft1 ,6,6,1,581
+9,caoyuan     ,right,23,female,111,1243893,6,3,4_146_2 ,4_145_1 ,oneloud1 ,6,6,1,406
+9,caoyuan     ,right,23,female,112,1247659,5,4,1_14_2  ,1_13_1  ,multisoft,6,6,1,976
+9,caoyuan     ,right,23,female,113,1252092,5,1,10_474_2,10_473_1,         ,6,6,1,1199
+9,caoyuan     ,right,23,female,114,1256759,6,5,4_170_2 ,4_169_1 ,multiloud,6,6,1,420
+9,caoyuan     ,right,23,female,115,1260409,6,2,2_82_2  ,2_81_1  ,onesoft1 ,6,6,1,578
+9,caoyuan     ,right,23,female,116,1264092,2,4,5_224_2 ,5_223_1 ,multisoft,5,6,0,1383
+9,caoyuan     ,right,23,female,117,1268709,3,1,9_388_2 ,9_387_1 ,         ,5,5,1,878
+9,caoyuan     ,right,23,female,118,1272959,3,5,4_192_2 ,4_191_1 ,multiloud,5,6,0,1132
+9,caoyuan     ,right,23,female,119,1277475,5,4,4_148_2 ,4_147_1 ,multisoft,6,6,1,440
+9,caoyuan     ,right,23,female,120,1281025,3,1,8_338_2 ,8_337_1 ,         ,5,6,0,1137
+9,caoyuan     ,right,23,female,121,1285309,2,3,1_18_2  ,1_17_1  ,oneloud  ,5,6,0,525
+9,caoyuan     ,right,23,female,122,1289075,5,2,1_10_2  ,1_9_1   ,onesoft1 ,6,5,0,1023
+9,caoyuan     ,right,23,female,123,1293325,2,3,2_96_2  ,2_95_1  ,oneloud  ,5,5,1,717
+9,caoyuan     ,right,23,female,124,1297408,6,4,3_136_2 ,3_135_1 ,multisoft,6,5,0,810
+9,caoyuan     ,right,23,female,125,1301658,6,5,4_154_2 ,4_153_1 ,multiloud,6,5,0,1344
+9,caoyuan     ,right,23,female,126,1306192,4,4,4_158_2 ,4_157_1 ,multisoft,6,5,0,1250
+9,caoyuan     ,right,23,female,127,1310475,5,1,9_392_2 ,9_391_1 ,         ,6,6,1,879
+9,caoyuan     ,right,23,female,128,1314791,1,3,5_204_2 ,5_203_1 ,oneloud1 ,5,5,1,571
+9,caoyuan     ,right,23,female,129,1318525,6,4,3_114_2 ,3_113_1 ,multisoft,6,5,0,821
+9,caoyuan     ,right,23,female,130,1322691,3,4,1_22_2  ,1_21_1  ,multisoft,5,5,1,743
+9,caoyuan     ,right,23,female,131,1326808,4,4,1_34_2  ,1_33_1  ,multisoft,6,6,1,889
+9,caoyuan     ,right,23,female,132,1330974,6,2,2_66_2  ,2_65_1  ,onesoft1 ,6,6,1,683
+9,caoyuan     ,right,23,female,133,1335074,3,5,4_168_2 ,4_167_1 ,multiloud,5,5,1,735
+9,caoyuan     ,right,23,female,134,1338974,3,1,10_470_2,10_469_1,         ,5,5,1,555
+9,caoyuan     ,right,23,female,135,1342824,1,1,9_408_2 ,9_407_1 ,         ,5,5,1,561
+9,caoyuan     ,right,23,female,136,1346591,6,3,4_160_2 ,4_159_1 ,oneloud1 ,6,6,1,818
+9,caoyuan     ,right,23,female,137,1350557,1,2,4_176_2 ,4_175_1 ,onesoft  ,5,5,1,532
+9,caoyuan     ,right,23,female,138,1354357,6,4,5_220_2 ,5_219_1 ,multisoft,6,6,1,1164
+9,caoyuan     ,right,23,female,139,1358624,6,5,5_212_2 ,5_211_1 ,multiloud,6,6,1,473
+9,caoyuan     ,right,23,female,140,1362557,2,1,8_384_2 ,8_383_1 ,         ,5,5,1,412
+9,caoyuan     ,right,23,female,141,1366524,2,3,3_144_2 ,3_143_1 ,oneloud1 ,5,5,1,469
+9,caoyuan     ,right,23,female,142,1370274,3,4,5_216_2 ,5_215_1 ,multisoft,5,5,1,1047
+9,caoyuan     ,right,23,female,143,1374340,6,1,6_282_2 ,6_281_1 ,         ,6,5,0,812
+9,caoyuan     ,right,23,female,144,1378640,4,4,5_214_2 ,5_213_1 ,multisoft,6,5,0,792
+9,caoyuan     ,right,23,female,145,1382707,6,3,4_170_2 ,4_169_1 ,oneloud1 ,6,6,1,517
+9,caoyuan     ,right,23,female,146,1386273,6,5,5_222_2 ,5_221_1 ,multiloud,6,5,0,1039
+9,caoyuan     ,right,23,female,147,1390690,3,3,2_62_2  ,2_61_1  ,oneloud  ,5,5,1,998
+9,caoyuan     ,right,23,female,148,1395040,5,2,1_14_2  ,1_13_1  ,onesoft1 ,6,6,1,1152
+9,caoyuan     ,right,23,female,149,1399507,4,4,3_122_2 ,3_121_1 ,multisoft,6,6,1,1013
+9,caoyuan     ,right,23,female,150,1404040,4,2,4_178_2 ,4_177_1 ,onesoft  ,6,6,1,720
+9,caoyuan     ,right,23,female,151,1408223,2,2,3_134_2 ,3_133_1 ,onesoft  ,5,5,1,545
+9,caoyuan     ,right,23,female,152,1412073,2,5,4_150_2 ,4_149_1 ,multiloud,5,5,1,607
+9,caoyuan     ,right,23,female,153,1415823,3,5,2_50_2  ,2_49_1  ,multiloud,5,5,1,577
+9,caoyuan     ,right,23,female,154,1419790,2,5,1_18_2  ,1_17_1  ,multiloud,5,5,1,857
+9,caoyuan     ,right,23,female,155,1423906,2,1,6_248_2 ,6_247_1 ,         ,5,5,1,741
+9,caoyuan     ,right,23,female,156,1428023,6,5,2_56_2  ,2_55_1  ,multiloud,6,5,0,952
+9,caoyuan     ,right,23,female,157,1432139,5,2,5_218_2 ,5_217_1 ,onesoft  ,6,6,1,668
+9,caoyuan     ,right,23,female,158,1436206,6,1,8_360_2 ,8_359_1 ,         ,6,5,0,841
+9,caoyuan     ,right,23,female,159,1474972,4,4,5_240_2 ,5_239_1 ,multisoft,6,5,0,914
+9,caoyuan     ,right,23,female,160,1478972,2,5,3_144_2 ,3_143_1 ,multiloud,5,5,1,682
+9,caoyuan     ,right,23,female,161,1482688,2,5,5_196_2 ,5_195_1 ,multiloud,5,5,1,398
+9,caoyuan     ,right,23,female,162,1486205,4,1,10_434_2,10_433_1,         ,6,6,1,865
+9,caoyuan     ,right,23,female,163,1490555,5,5,2_84_2  ,2_83_1  ,multiloud,6,6,1,499
+9,caoyuan     ,right,23,female,164,1494605,6,3,1_38_2  ,1_37_1  ,oneloud  ,6,6,1,425
+9,caoyuan     ,right,23,female,165,1498188,6,2,2_56_2  ,2_55_1  ,onesoft1 ,6,5,0,1002
+9,caoyuan     ,right,23,female,166,1502488,5,4,4_180_2 ,4_179_1 ,multisoft,6,6,1,1142
+9,caoyuan     ,right,23,female,167,1507021,1,3,3_142_2 ,3_141_1 ,oneloud1 ,5,5,1,545
+9,caoyuan     ,right,23,female,168,1510738,4,5,1_8_2   ,1_7_1   ,multiloud,6,6,1,1459
+9,caoyuan     ,right,23,female,169,1515221,1,5,2_92_2  ,2_91_1  ,multiloud,5,5,1,848
+9,caoyuan     ,right,23,female,170,1519521,4,2,3_128_2 ,3_127_1 ,onesoft  ,6,5,0,836
+9,caoyuan     ,right,23,female,171,1523421,4,1,7_326_2 ,7_325_1 ,         ,6,5,0,1008
+9,caoyuan     ,right,23,female,172,1527771,6,3,2_66_2  ,2_65_1  ,oneloud  ,6,6,1,1010
+9,caoyuan     ,right,23,female,173,1532254,3,4,3_118_2 ,3_117_1 ,multisoft,5,5,1,743
+9,caoyuan     ,right,23,female,174,1536338,2,5,1_16_2  ,1_15_1  ,multiloud,5,5,1,907
+9,caoyuan     ,right,23,female,175,1540237,3,1,6_264_2 ,6_263_1 ,         ,5,6,0,856
+9,caoyuan     ,right,23,female,176,1544271,4,4,2_58_2  ,2_57_1  ,multisoft,6,5,0,1782
+9,caoyuan     ,right,23,female,177,1549321,6,2,3_114_2 ,3_113_1 ,onesoft1 ,6,6,1,540
+9,caoyuan     ,right,23,female,178,1553021,6,3,2_88_2  ,2_87_1  ,oneloud  ,6,6,1,624
+9,caoyuan     ,right,23,female,179,1556937,1,2,1_28_2  ,1_27_1  ,onesoft1 ,5,5,1,868
+9,caoyuan     ,right,23,female,180,1561287,2,3,5_224_2 ,5_223_1 ,oneloud1 ,5,5,1,565
+9,caoyuan     ,right,23,female,181,1564954,4,2,2_90_2  ,2_89_1  ,onesoft1 ,6,6,1,706
+9,caoyuan     ,right,23,female,182,1569037,4,1,6_284_2 ,6_283_1 ,         ,6,6,1,447
+9,caoyuan     ,right,23,female,183,1572654,2,1,7_312_2 ,7_311_1 ,         ,5,5,1,598
+9,caoyuan     ,right,23,female,184,1576370,1,3,1_24_2  ,1_23_1  ,oneloud  ,5,5,1,754
+9,caoyuan     ,right,23,female,185,1580537,4,2,3_122_2 ,3_121_1 ,onesoft1 ,6,5,0,875
+9,caoyuan     ,right,23,female,186,1584437,6,5,3_108_2 ,3_107_1 ,multiloud,6,5,0,871
+9,caoyuan     ,right,23,female,187,1588870,5,3,2_86_2  ,2_85_1  ,oneloud  ,6,6,1,502
+9,caoyuan     ,right,23,female,188,1592787,5,1,7_302_2 ,7_301_1 ,         ,6,5,0,769
+9,caoyuan     ,right,23,female,189,1596753,4,3,4_178_2 ,4_177_1 ,oneloud1 ,6,6,1,627
+9,caoyuan     ,right,23,female,190,1600470,5,1,10_436_2,10_435_1,         ,6,5,0,870
+9,caoyuan     ,right,23,female,191,1604586,1,5,2_68_2  ,2_67_1  ,multiloud,5,5,1,673
+9,caoyuan     ,right,23,female,192,1608320,5,1,10_462_2,10_461_1,         ,6,6,1,683
+9,caoyuan     ,right,23,female,193,1612520,5,2,3_100_2 ,3_99_1  ,onesoft1 ,6,6,1,395
+9,caoyuan     ,right,23,female,194,1615936,3,1,8_368_2 ,8_367_1 ,         ,5,5,1,747
+9,caoyuan     ,right,23,female,195,1620136,2,3,2_76_2  ,2_75_1  ,oneloud  ,5,5,1,611
+9,caoyuan     ,right,23,female,196,1624036,5,1,8_356_2 ,8_355_1 ,         ,6,6,1,455
+9,caoyuan     ,right,23,female,197,1627753,6,1,8_380_2 ,8_379_1 ,         ,6,6,1,394
+9,caoyuan     ,right,23,female,198,1631503,3,3,1_6_2   ,1_5_1   ,oneloud  ,5,5,1,644
+9,caoyuan     ,right,23,female,199,1635319,3,5,4_190_2 ,4_189_1 ,multiloud,5,5,1,860
+9,caoyuan     ,right,23,female,200,1639686,2,4,4_150_2 ,4_149_1 ,multisoft,5,5,1,845
+9,caoyuan     ,right,23,female,201,1643902,2,1,7_328_2 ,7_327_1 ,         ,5,5,1,845
+9,caoyuan     ,right,23,female,202,1648019,6,5,1_38_2  ,1_37_1  ,multiloud,6,6,1,384
+9,caoyuan     ,right,23,female,203,1651635,2,4,3_130_2 ,3_129_1 ,multisoft,5,5,1,487
+9,caoyuan     ,right,23,female,204,1655469,3,4,1_42_2  ,1_41_1  ,multisoft,5,5,1,509
+9,caoyuan     ,right,23,female,205,1659152,5,2,2_80_2  ,2_79_1  ,onesoft1 ,6,5,0,474
+9,caoyuan     ,right,23,female,206,1662702,2,1,6_262_2 ,6_261_1 ,         ,5,5,1,956
+9,caoyuan     ,right,23,female,207,1667069,1,5,3_102_2 ,3_101_1 ,multiloud,5,5,1,477
+9,caoyuan     ,right,23,female,208,1670819,1,5,1_28_2  ,1_27_1  ,multiloud,5,5,1,383
+9,caoyuan     ,right,23,female,209,1888581,6,4,4_154_2 ,4_153_1 ,multisoft,6,5,0,640
+9,caoyuan     ,right,23,female,210,1892515,2,3,2_74_2  ,2_73_1  ,oneloud  ,5,5,1,642
+9,caoyuan     ,right,23,female,211,1896598,4,4,4_174_2 ,4_173_1 ,multisoft,6,6,1,431
+9,caoyuan     ,right,23,female,212,1900198,5,4,5_218_2 ,5_217_1 ,multisoft,6,6,1,447
+9,caoyuan     ,right,23,female,213,1904014,1,5,5_198_2 ,5_197_1 ,multiloud,5,5,1,655
+9,caoyuan     ,right,23,female,214,1907698,3,5,1_6_2   ,1_5_1   ,multiloud,5,5,1,1083
+9,caoyuan     ,right,23,female,215,1912048,1,4,3_138_2 ,3_137_1 ,multisoft,5,5,1,717
+9,caoyuan     ,right,23,female,216,1915898,4,3,3_126_2 ,3_125_1 ,oneloud1 ,6,6,1,523
+9,caoyuan     ,right,23,female,217,1919364,1,1,6_274_2 ,6_273_1 ,         ,5,5,1,473
+9,caoyuan     ,right,23,female,218,1923064,1,4,1_40_2  ,1_39_1  ,multisoft,5,5,1,469
+9,caoyuan     ,right,23,female,219,1926931,6,1,8_372_2 ,8_371_1 ,         ,6,6,1,450
+9,caoyuan     ,right,23,female,220,1930631,1,5,3_138_2 ,3_137_1 ,multiloud,5,5,1,557
+9,caoyuan     ,right,23,female,221,1934397,3,2,3_98_2  ,3_97_1  ,onesoft1 ,5,5,1,559
+9,caoyuan     ,right,23,female,222,1938564,1,4,1_28_2  ,1_27_1  ,multisoft,5,5,1,456
+9,caoyuan     ,right,23,female,223,1942497,6,2,2_88_2  ,2_87_1  ,onesoft1 ,6,6,1,331
+9,caoyuan     ,right,23,female,224,1946214,3,3,2_94_2  ,2_93_1  ,oneloud  ,5,5,1,558
+9,caoyuan     ,right,23,female,225,1949847,2,3,1_16_2  ,1_15_1  ,oneloud  ,5,6,0,1053
+9,caoyuan     ,right,23,female,226,1954380,3,4,5_236_2 ,5_235_1 ,multisoft,5,5,1,528
+9,caoyuan     ,right,23,female,227,1958063,2,2,4_164_2 ,4_163_1 ,onesoft  ,5,5,1,605
+9,caoyuan     ,right,23,female,228,1962047,6,2,1_48_2  ,1_47_1  ,onesoft1 ,6,5,0,1061
+9,caoyuan     ,right,23,female,229,1966397,5,5,2_86_2  ,2_85_1  ,multiloud,6,6,1,495
+9,caoyuan     ,right,23,female,230,1970030,4,2,1_2_2   ,1_1_1   ,onesoft1 ,6,5,0,758
+9,caoyuan     ,right,23,female,231,1974197,3,5,5_232_2 ,5_231_1 ,multiloud,5,5,1,615
+9,caoyuan     ,right,23,female,232,1978247,5,5,5_208_2 ,5_207_1 ,multiloud,6,5,0,548
+9,caoyuan     ,right,23,female,233,1981980,6,4,5_238_2 ,5_237_1 ,multisoft,6,6,1,495
+9,caoyuan     ,right,23,female,234,1985496,6,1,10_466_2,10_465_1,         ,6,6,1,571
+9,caoyuan     ,right,23,female,235,1989130,2,5,2_96_2  ,2_95_1  ,multiloud,5,5,1,521
+9,caoyuan     ,right,23,female,236,1993013,4,2,2_54_2  ,2_53_1  ,onesoft1 ,6,5,0,686
+9,caoyuan     ,right,23,female,237,1996979,2,4,4_152_2 ,4_151_1 ,multisoft,5,5,1,768
+9,caoyuan     ,right,23,female,238,2001246,5,3,3_112_2 ,3_111_1 ,oneloud  ,6,5,0,701
+9,caoyuan     ,right,23,female,239,2005363,5,2,5_234_2 ,5_233_1 ,onesoft  ,6,6,1,784
+9,caoyuan     ,right,23,female,240,2009296,2,3,4_150_2 ,4_149_1 ,oneloud1 ,5,5,1,595
+9,caoyuan     ,right,23,female,241,2013179,1,5,2_64_2  ,2_63_1  ,multiloud,5,5,1,624
+9,caoyuan     ,right,23,female,242,2017196,1,1,8_348_2 ,8_347_1 ,         ,5,5,1,743
+9,caoyuan     ,right,23,female,243,2021112,2,5,5_206_2 ,5_205_1 ,multiloud,5,5,1,483
+9,caoyuan     ,right,23,female,244,2024962,4,3,5_228_2 ,5_227_1 ,oneloud1 ,6,6,1,440
+9,caoyuan     ,right,23,female,245,2028612,5,5,3_100_2 ,3_99_1  ,multiloud,6,6,1,446
+9,caoyuan     ,right,23,female,246,2032379,5,5,3_132_2 ,3_131_1 ,multiloud,6,5,0,639
+9,caoyuan     ,right,23,female,247,2036095,1,4,5_204_2 ,5_203_1 ,multisoft,5,5,1,667
+9,caoyuan     ,right,23,female,248,2040029,5,3,4_172_2 ,4_171_1 ,oneloud1 ,6,6,1,325
+9,caoyuan     ,right,23,female,249,2043512,6,2,3_108_2 ,3_107_1 ,onesoft1 ,6,5,0,498
+9,caoyuan     ,right,23,female,250,2047545,2,3,3_134_2 ,3_133_1 ,oneloud1 ,5,5,1,505
+9,caoyuan     ,right,23,female,251,2051379,6,1,9_426_2 ,9_425_1 ,         ,6,6,1,439
+9,caoyuan     ,right,23,female,252,2055312,1,3,2_64_2  ,2_63_1  ,oneloud  ,5,5,1,418
+9,caoyuan     ,right,23,female,253,2058912,5,5,2_72_2  ,2_71_1  ,multiloud,6,6,1,522
+9,caoyuan     ,right,23,female,254,2062545,2,1,7_332_2 ,7_331_1 ,         ,5,5,1,497
+9,caoyuan     ,right,23,female,255,2066362,6,5,1_4_2   ,1_3_1   ,multiloud,6,6,1,360
+9,caoyuan     ,right,23,female,256,2070145,5,1,8_376_2 ,8_375_1 ,         ,6,6,1,408
+9,caoyuan     ,right,23,female,257,2073745,5,1,8_354_2 ,8_353_1 ,         ,6,6,1,504
+9,caoyuan     ,right,23,female,258,2077728,2,3,5_196_2 ,5_195_1 ,oneloud1 ,5,5,1,393
+9,caoyuan     ,right,23,female,259,2438738,1,1,8_366_2 ,8_365_1 ,         ,5,5,1,503
+9,caoyuan     ,right,23,female,260,2442372,2,3,4_164_2 ,4_163_1 ,oneloud1 ,5,5,1,829
+9,caoyuan     ,right,23,female,261,2446655,2,2,4_150_2 ,4_149_1 ,onesoft  ,5,5,1,402
+9,caoyuan     ,right,23,female,262,2450488,4,2,4_174_2 ,4_173_1 ,onesoft  ,6,6,1,617
+9,caoyuan     ,right,23,female,263,2454122,1,2,1_40_2  ,1_39_1  ,onesoft1 ,5,5,1,423
+9,caoyuan     ,right,23,female,264,2457555,5,1,10_480_2,10_479_1,         ,6,6,1,446
+9,caoyuan     ,right,23,female,265,2461138,6,5,5_220_2 ,5_219_1 ,multiloud,6,6,1,519
+9,caoyuan     ,right,23,female,266,2464988,1,5,3_142_2 ,3_141_1 ,multiloud,5,5,1,413
+9,caoyuan     ,right,23,female,267,2468638,5,3,1_20_2  ,1_19_1  ,oneloud  ,6,6,1,459
+9,caoyuan     ,right,23,female,268,2472554,3,1,7_336_2 ,7_335_1 ,         ,5,5,1,439
+9,caoyuan     ,right,23,female,269,2476338,5,1,6_256_2 ,6_255_1 ,         ,6,6,1,439
+9,caoyuan     ,right,23,female,270,2480038,3,2,4_192_2 ,4_191_1 ,onesoft  ,5,5,1,395
+9,caoyuan     ,right,23,female,271,2483954,4,3,5_240_2 ,5_239_1 ,oneloud1 ,6,5,0,703
+9,caoyuan     ,right,23,female,272,2487921,2,1,6_286_2 ,6_285_1 ,         ,5,5,1,543
+9,caoyuan     ,right,23,female,273,2491637,1,5,2_52_2  ,2_51_1  ,multiloud,5,5,1,699
+9,caoyuan     ,right,23,female,274,2495587,4,5,3_128_2 ,3_127_1 ,multiloud,6,5,0,493
+9,caoyuan     ,right,23,female,275,2499504,3,4,4_192_2 ,4_191_1 ,multisoft,5,5,1,512
+9,caoyuan     ,right,23,female,276,2503304,3,3,2_50_2  ,2_49_1  ,oneloud  ,5,5,1,568
+9,caoyuan     ,right,23,female,277,2506787,3,1,10_448_2,10_447_1,         ,5,5,1,429
+9,caoyuan     ,right,23,female,278,2510487,1,2,4_186_2 ,4_185_1 ,onesoft  ,5,5,1,409
+9,caoyuan     ,right,23,female,279,2514254,3,4,3_98_2  ,3_97_1  ,multisoft,5,5,1,450
+9,caoyuan     ,right,23,female,280,2517904,1,4,2_64_2  ,2_63_1  ,multisoft,5,5,1,368
+9,caoyuan     ,right,23,female,281,2521704,5,5,1_30_2  ,1_29_1  ,multiloud,6,6,1,576
+9,caoyuan     ,right,23,female,282,2525254,5,1,7_310_2 ,7_309_1 ,         ,6,6,1,810
+9,caoyuan     ,right,23,female,283,2529487,1,4,3_110_2 ,3_109_1 ,multisoft,5,5,1,601
+9,caoyuan     ,right,23,female,284,2533453,5,5,4_156_2 ,4_155_1 ,multiloud,6,5,0,770
+9,caoyuan     ,right,23,female,285,2537520,1,1,6_242_2 ,6_241_1 ,         ,5,5,1,575
+9,caoyuan     ,right,23,female,286,2541203,2,2,1_32_2  ,1_31_1  ,onesoft1 ,5,5,1,812
+9,caoyuan     ,right,23,female,287,2545453,6,4,2_56_2  ,2_55_1  ,multisoft,6,6,1,586
+9,caoyuan     ,right,23,female,288,2549270,2,3,5_206_2 ,5_205_1 ,oneloud1 ,5,5,1,529
+9,caoyuan     ,right,23,female,289,2552786,6,1,9_402_2 ,9_401_1 ,         ,6,6,1,541
+9,caoyuan     ,right,23,female,290,2556703,3,5,1_42_2  ,1_41_1  ,multiloud,5,5,1,472
+9,caoyuan     ,right,23,female,291,2560720,2,5,5_210_2 ,5_209_1 ,multiloud,5,5,1,591
+9,caoyuan     ,right,23,female,292,2564486,1,3,1_12_2  ,1_11_1  ,oneloud  ,5,5,1,913
+9,caoyuan     ,right,23,female,293,2568919,6,4,5_212_2 ,5_211_1 ,multisoft,6,6,1,512
+9,caoyuan     ,right,23,female,294,2572503,4,4,2_90_2  ,2_89_1  ,multisoft,6,6,1,512
+9,caoyuan     ,right,23,female,295,2576253,3,3,1_26_2  ,1_25_1  ,oneloud  ,5,5,1,442
+9,caoyuan     ,right,23,female,296,2580086,6,1,6_276_2 ,6_275_1 ,         ,6,6,1,480
+9,caoyuan     ,right,23,female,297,2583619,2,1,6_288_2 ,6_287_1 ,         ,5,5,1,563
+9,caoyuan     ,right,23,female,298,2587202,1,1,9_410_2 ,9_409_1 ,         ,5,5,1,564
+9,caoyuan     ,right,23,female,299,2591036,3,1,9_394_2 ,9_393_1 ,         ,5,6,0,474
+9,caoyuan     ,right,23,female,300,2595019,3,1,6_254_2 ,6_253_1 ,         ,5,5,1,475
+9,caoyuan     ,right,23,female,301,2598752,1,1,6_270_2 ,6_269_1 ,         ,5,5,1,638
+9,caoyuan     ,right,23,female,302,2602552,3,1,7_322_2 ,7_321_1 ,         ,5,5,1,862
+9,caoyuan     ,right,23,female,303,2606769,2,4,3_144_2 ,3_143_1 ,multisoft,5,5,1,429
+9,caoyuan     ,right,23,female,304,2610419,4,3,1_46_2  ,1_45_1  ,oneloud  ,6,5,0,723
+9,caoyuan     ,right,23,female,305,2614452,1,4,4_188_2 ,4_187_1 ,multisoft,5,5,1,650
+9,caoyuan     ,right,23,female,306,2618269,6,4,1_38_2  ,1_37_1  ,multisoft,6,6,1,417
+9,caoyuan     ,right,23,female,307,2621835,1,4,2_68_2  ,2_67_1  ,multisoft,5,5,1,379
+9,caoyuan     ,right,23,female,308,2625585,3,5,4_182_2 ,4_181_1 ,multiloud,5,5,1,588
+9,caoyuan     ,right,23,female,309,2663351,3,5,3_98_2  ,3_97_1  ,multiloud,5,5,1,574
+9,caoyuan     ,right,23,female,310,2667301,5,3,1_30_2  ,1_29_1  ,oneloud  ,6,6,1,480
+9,caoyuan     ,right,23,female,311,2671318,6,4,3_108_2 ,3_107_1 ,multisoft,6,6,1,574
+9,caoyuan     ,right,23,female,312,2675318,6,4,4_146_2 ,4_145_1 ,multisoft,6,6,1,422
+9,caoyuan     ,right,23,female,313,2678868,2,5,2_76_2  ,2_75_1  ,multiloud,5,5,1,568
+9,caoyuan     ,right,23,female,314,2682651,1,3,5_200_2 ,5_199_1 ,oneloud1 ,5,5,1,513
+9,caoyuan     ,right,23,female,315,2686334,6,1,7_320_2 ,7_319_1 ,         ,6,6,1,374
+9,caoyuan     ,right,23,female,316,2689901,5,5,3_112_2 ,3_111_1 ,multiloud,6,5,0,551
+9,caoyuan     ,right,23,female,317,2693734,3,3,3_98_2  ,3_97_1  ,oneloud  ,5,5,1,630
+9,caoyuan     ,right,23,female,318,2697484,1,1,6_268_2 ,6_267_1 ,         ,5,5,1,496
+9,caoyuan     ,right,23,female,319,2701267,1,4,3_102_2 ,3_101_1 ,multisoft,5,5,1,393
+9,caoyuan     ,right,23,female,320,2704867,3,1,8_340_2 ,8_339_1 ,         ,5,5,1,817
+9,caoyuan     ,right,23,female,321,2708934,4,4,5_228_2 ,5_227_1 ,multisoft,6,6,1,470
+9,caoyuan     ,right,23,female,322,2712600,1,1,7_316_2 ,7_315_1 ,         ,5,5,1,460
+9,caoyuan     ,right,23,female,323,2716434,3,1,9_390_2 ,9_389_1 ,         ,5,5,1,585
+9,caoyuan     ,right,23,female,324,2720467,4,1,8_382_2 ,8_381_1 ,         ,6,5,0,616
+9,caoyuan     ,right,23,female,325,2724500,1,4,4_186_2 ,4_185_1 ,multisoft,5,5,1,527
+9,caoyuan     ,right,23,female,326,2728067,2,2,4_166_2 ,4_165_1 ,onesoft  ,5,5,1,416
+9,caoyuan     ,right,23,female,327,2731733,4,3,2_54_2  ,2_53_1  ,oneloud  ,6,5,0,406
+9,caoyuan     ,right,23,female,328,2735300,5,4,1_30_2  ,1_29_1  ,multisoft,6,6,1,407
+9,caoyuan     ,right,23,female,329,2738950,6,4,2_82_2  ,2_81_1  ,multisoft,6,6,1,389
+9,caoyuan     ,right,23,female,330,2742400,6,4,5_222_2 ,5_221_1 ,multisoft,6,5,0,579
+9,caoyuan     ,right,23,female,331,2746366,2,1,9_432_2 ,9_431_1 ,         ,5,6,0,1221
+9,caoyuan     ,right,23,female,332,2751033,5,3,3_100_2 ,3_99_1  ,oneloud  ,6,6,1,602
+9,caoyuan     ,right,23,female,333,2755233,6,5,3_140_2 ,3_139_1 ,multiloud,6,6,1,498
+9,caoyuan     ,right,23,female,334,2758999,3,2,5_230_2 ,5_229_1 ,onesoft  ,5,5,1,516
+9,caoyuan     ,right,23,female,335,2762749,5,1,7_304_2 ,7_303_1 ,         ,6,6,1,637
+9,caoyuan     ,right,23,female,336,2766616,1,2,4_188_2 ,4_187_1 ,onesoft  ,5,5,1,402
+9,caoyuan     ,right,23,female,337,2770216,3,3,5_216_2 ,5_215_1 ,oneloud1 ,5,6,0,1202
+9,caoyuan     ,right,23,female,338,2774783,3,5,1_22_2  ,1_21_1  ,multiloud,5,5,1,683
+9,caoyuan     ,right,23,female,339,2778916,3,5,2_60_2  ,2_59_1  ,multiloud,5,5,1,526
+9,caoyuan     ,right,23,female,340,2782649,6,3,2_56_2  ,2_55_1  ,oneloud  ,6,6,1,537
+9,caoyuan     ,right,23,female,341,2786299,3,2,3_106_2 ,3_105_1 ,onesoft  ,5,5,1,351
+9,caoyuan     ,right,23,female,342,2790232,3,5,3_118_2 ,3_117_1 ,multiloud,5,5,1,1266
+9,caoyuan     ,right,23,female,343,2794782,2,5,1_44_2  ,1_43_1  ,multiloud,5,5,1,436
+9,caoyuan     ,right,23,female,344,2798382,3,3,2_60_2  ,2_59_1  ,oneloud  ,5,6,0,884
+9,caoyuan     ,right,23,female,345,2802599,6,5,1_48_2  ,1_47_1  ,multiloud,6,6,1,499
+9,caoyuan     ,right,23,female,346,2806399,3,2,4_182_2 ,4_181_1 ,onesoft  ,5,5,1,459
+9,caoyuan     ,right,23,female,347,2809999,4,5,5_214_2 ,5_213_1 ,multiloud,6,6,1,1146
+9,caoyuan     ,right,23,female,348,2814482,5,3,2_84_2  ,2_83_1  ,oneloud  ,6,6,1,407
+9,caoyuan     ,right,23,female,349,2818298,5,2,2_86_2  ,2_85_1  ,onesoft1 ,6,6,1,679
+9,caoyuan     ,right,23,female,350,2822165,4,5,2_58_2  ,2_57_1  ,multiloud,6,5,0,732
+9,caoyuan     ,right,23,female,351,2826365,5,3,3_132_2 ,3_131_1 ,oneloud1 ,6,6,1,1100
+9,caoyuan     ,right,23,female,352,2830782,1,5,4_184_2 ,4_183_1 ,multiloud,5,5,1,579
+9,caoyuan     ,right,23,female,353,2834815,5,4,2_84_2  ,2_83_1  ,multisoft,6,6,1,530
+9,caoyuan     ,right,23,female,354,2838498,2,5,4_164_2 ,4_163_1 ,multiloud,5,5,1,367
+9,caoyuan     ,right,23,female,355,2841931,4,1,8_342_2 ,8_341_1 ,         ,6,6,1,502
+9,caoyuan     ,right,23,female,356,2845598,1,5,3_110_2 ,3_109_1 ,multiloud,5,5,1,427
+9,caoyuan     ,right,23,female,357,2849515,2,2,3_120_2 ,3_119_1 ,onesoft1 ,5,5,1,406
+9,caoyuan     ,right,23,female,358,2853098,6,5,4_146_2 ,4_145_1 ,multiloud,6,6,1,367
+9,caoyuan     ,right,23,female,359,3025828,6,1,6_278_2 ,6_277_1 ,         ,6,6,1,665
+9,caoyuan     ,right,23,female,360,3029995,6,1,10_460_2,10_459_1,         ,6,6,1,546
+9,caoyuan     ,right,23,female,361,3033595,3,2,2_62_2  ,2_61_1  ,onesoft1 ,5,5,1,386
+9,caoyuan     ,right,23,female,362,3037345,4,5,2_54_2  ,2_53_1  ,multiloud,6,5,0,708
+9,caoyuan     ,right,23,female,363,3041428,5,5,3_116_2 ,3_115_1 ,multiloud,6,6,1,560
+9,caoyuan     ,right,23,female,364,3045211,5,4,2_80_2  ,2_79_1  ,multisoft,6,5,0,697
+9,caoyuan     ,right,23,female,365,3049144,4,5,4_178_2 ,4_177_1 ,multiloud,6,6,1,500
+9,caoyuan     ,right,23,female,366,3052944,2,2,5_206_2 ,5_205_1 ,onesoft  ,5,5,1,356
+9,caoyuan     ,right,23,female,367,3056594,1,2,2_52_2  ,2_51_1  ,onesoft1 ,5,5,1,842
+9,caoyuan     ,right,23,female,368,3060544,1,1,7_298_2 ,7_297_1 ,         ,5,5,1,596
+9,caoyuan     ,right,23,female,369,3064677,2,4,4_164_2 ,4_163_1 ,multisoft,5,5,1,439
+9,caoyuan     ,right,23,female,370,3068377,2,1,10_464_2,10_463_1,         ,5,5,1,547
+9,caoyuan     ,right,23,female,371,3072327,6,3,2_82_2  ,2_81_1  ,oneloud  ,6,6,1,405
+9,caoyuan     ,right,23,female,372,3075711,2,4,2_74_2  ,2_73_1  ,multisoft,5,5,1,509
+9,caoyuan     ,right,23,female,373,3079444,4,2,2_58_2  ,2_57_1  ,onesoft1 ,6,6,1,384
+9,caoyuan     ,right,23,female,374,3083194,2,3,3_130_2 ,3_129_1 ,oneloud  ,5,5,1,354
+9,caoyuan     ,right,23,female,375,3086760,5,4,5_234_2 ,5_233_1 ,multisoft,6,6,1,356
+9,caoyuan     ,right,23,female,376,3090560,6,4,4_160_2 ,4_159_1 ,multisoft,6,6,1,275
+9,caoyuan     ,right,23,female,377,3094227,1,3,1_28_2  ,1_27_1  ,oneloud  ,5,5,1,464
+9,caoyuan     ,right,23,female,378,3097844,6,1,7_306_2 ,7_305_1 ,         ,6,6,1,367
+9,caoyuan     ,right,23,female,379,3101277,4,1,8_364_2 ,8_363_1 ,         ,6,5,0,422
+9,caoyuan     ,right,23,female,380,3105060,3,3,4_182_2 ,4_181_1 ,oneloud1 ,5,5,1,487
+9,caoyuan     ,right,23,female,381,3108860,6,1,6_258_2 ,6_257_1 ,         ,6,6,1,279
+9,caoyuan     ,right,23,female,382,3112610,2,4,1_18_2  ,1_17_1  ,multisoft,5,5,1,361
+9,caoyuan     ,right,23,female,383,3116310,1,5,4_176_2 ,4_175_1 ,multiloud,5,5,1,397
+9,caoyuan     ,right,23,female,384,3120126,3,1,6_280_2 ,6_279_1 ,         ,5,5,1,373
+9,caoyuan     ,right,23,female,385,3123560,1,4,1_24_2  ,1_23_1  ,multisoft,5,5,1,371
+9,caoyuan     ,right,23,female,386,3127010,5,2,2_84_2  ,2_83_1  ,onesoft1 ,6,6,1,777
+9,caoyuan     ,right,23,female,387,3131160,5,2,4_156_2 ,4_155_1 ,onesoft  ,6,5,0,387
+9,caoyuan     ,right,23,female,388,3134643,3,2,2_94_2  ,2_93_1  ,onesoft1 ,5,5,1,391
+9,caoyuan     ,right,23,female,389,3138109,5,4,5_202_2 ,5_201_1 ,multisoft,6,6,1,341
+9,caoyuan     ,right,23,female,390,3141859,6,3,3_140_2 ,3_139_1 ,oneloud1 ,6,6,1,351
+9,caoyuan     ,right,23,female,391,3145443,2,2,3_130_2 ,3_129_1 ,onesoft1 ,5,5,1,399
+9,caoyuan     ,right,23,female,392,3149293,6,2,3_140_2 ,3_139_1 ,onesoft  ,6,6,1,357
+9,caoyuan     ,right,23,female,393,3152776,4,4,1_2_2   ,1_1_1   ,multisoft,6,5,0,490
+9,caoyuan     ,right,23,female,394,3156676,4,5,1_2_2   ,1_1_1   ,multiloud,6,6,1,702
+9,caoyuan     ,right,23,female,395,3160759,3,4,1_6_2   ,1_5_1   ,multisoft,5,5,1,539
+9,caoyuan     ,right,23,female,396,3164542,5,4,1_20_2  ,1_19_1  ,multisoft,6,5,0,580
+9,caoyuan     ,right,23,female,397,3168492,3,3,5_236_2 ,5_235_1 ,oneloud1 ,5,5,1,310
+9,caoyuan     ,right,23,female,398,3171809,2,1,8_374_2 ,8_373_1 ,         ,5,6,0,345
+9,caoyuan     ,right,23,female,399,3175742,6,3,3_108_2 ,3_107_1 ,oneloud  ,6,5,0,524
+9,caoyuan     ,right,23,female,400,3179425,1,2,5_204_2 ,5_203_1 ,onesoft  ,5,5,1,385
+9,caoyuan     ,right,23,female,401,3183042,4,5,3_122_2 ,3_121_1 ,multiloud,6,5,0,623
+9,caoyuan     ,right,23,female,402,3187192,2,2,2_96_2  ,2_95_1  ,onesoft1 ,5,5,1,345
+9,caoyuan     ,right,23,female,403,3190859,5,5,5_234_2 ,5_233_1 ,multiloud,6,6,1,398
+9,caoyuan     ,right,23,female,404,3194442,5,1,7_334_2 ,7_333_1 ,         ,6,5,0,495
+9,caoyuan     ,right,23,female,405,3198075,6,4,3_140_2 ,3_139_1 ,multisoft,6,6,1,318
+9,caoyuan     ,right,23,female,406,3201542,2,1,9_428_2 ,9_427_1 ,         ,5,5,1,355
+9,caoyuan     ,right,23,female,407,3205142,1,2,3_102_2 ,3_101_1 ,onesoft1 ,5,5,1,451
+9,caoyuan     ,right,23,female,408,3208808,1,1,9_420_2 ,9_419_1 ,         ,5,5,1,401
+9,caoyuan     ,right,23,female,409,3287624,2,5,2_74_2  ,2_73_1  ,multiloud,5,5,1,639
+9,caoyuan     ,right,23,female,410,3291640,3,2,1_42_2  ,1_41_1  ,onesoft1 ,5,5,1,583
+9,caoyuan     ,right,23,female,411,3295573,1,2,1_24_2  ,1_23_1  ,onesoft1 ,5,5,1,434
+9,caoyuan     ,right,23,female,412,3299240,2,3,1_32_2  ,1_31_1  ,oneloud  ,5,5,1,599
+9,caoyuan     ,right,23,female,413,3303407,5,2,4_180_2 ,4_179_1 ,onesoft  ,6,6,1,432
+9,caoyuan     ,right,23,female,414,3306840,4,1,9_412_2 ,9_411_1 ,         ,6,6,1,527
+9,caoyuan     ,right,23,female,415,3310473,3,1,7_324_2 ,7_323_1 ,         ,5,6,0,894
+9,caoyuan     ,right,23,female,416,3314756,3,2,5_236_2 ,5_235_1 ,onesoft  ,5,6,0,571
+9,caoyuan     ,right,23,female,417,3318723,1,3,2_68_2  ,2_67_1  ,oneloud  ,5,5,1,476
+9,caoyuan     ,right,23,female,418,3322456,3,5,3_106_2 ,3_105_1 ,multiloud,5,5,1,622
+9,caoyuan     ,right,23,female,419,3326406,6,3,1_36_2  ,1_35_1  ,oneloud  ,6,6,1,480
+9,caoyuan     ,right,23,female,420,3330423,5,3,5_218_2 ,5_217_1 ,oneloud1 ,6,6,1,351
+9,caoyuan     ,right,23,female,421,3333906,5,2,3_132_2 ,3_131_1 ,onesoft  ,6,6,1,436
+9,caoyuan     ,right,23,female,422,3337623,4,5,5_226_2 ,5_225_1 ,multiloud,6,6,1,487
+9,caoyuan     ,right,23,female,423,3341123,6,3,5_222_2 ,5_221_1 ,oneloud1 ,6,5,0,467
+9,caoyuan     ,right,23,female,424,3344856,2,4,4_166_2 ,4_165_1 ,multisoft,5,5,1,414
+9,caoyuan     ,right,23,female,425,3348656,4,4,3_126_2 ,3_125_1 ,multisoft,6,6,1,334
+9,caoyuan     ,right,23,female,426,3352089,2,4,2_96_2  ,2_95_1  ,multisoft,5,5,1,317
+9,caoyuan     ,right,23,female,427,3355672,2,4,2_76_2  ,2_75_1  ,multisoft,5,5,1,350
+9,caoyuan     ,right,23,female,428,3359239,4,5,1_46_2  ,1_45_1  ,multiloud,6,5,0,455
+9,caoyuan     ,right,23,female,429,3363106,5,5,1_14_2  ,1_13_1  ,multiloud,6,6,1,332
+9,caoyuan     ,right,23,female,430,3366555,6,2,4_154_2 ,4_153_1 ,onesoft  ,6,5,0,451
+9,caoyuan     ,right,23,female,431,3370439,4,5,5_240_2 ,5_239_1 ,multiloud,6,5,0,422
+9,caoyuan     ,right,23,female,432,3374272,3,3,4_168_2 ,4_167_1 ,oneloud1 ,5,5,1,501
+9,caoyuan     ,right,23,female,433,3378189,2,4,3_120_2 ,3_119_1 ,multisoft,5,5,1,392
+9,caoyuan     ,right,23,female,434,3381939,5,3,5_208_2 ,5_207_1 ,oneloud1 ,6,5,0,322
+9,caoyuan     ,right,23,female,435,3385372,3,2,1_6_2   ,1_5_1   ,onesoft1 ,5,5,1,761
+9,caoyuan     ,right,23,female,436,3389738,3,2,3_104_2 ,3_103_1 ,onesoft1 ,5,5,1,571
+9,caoyuan     ,right,23,female,437,3393588,5,2,3_112_2 ,3_111_1 ,onesoft1 ,6,5,0,377
+9,caoyuan     ,right,23,female,438,3397172,3,4,2_62_2  ,2_61_1  ,multisoft,5,5,1,321
+9,caoyuan     ,right,23,female,439,3400638,2,1,9_406_2 ,9_405_1 ,         ,5,5,1,399
+9,caoyuan     ,right,23,female,440,3404021,2,1,10_450_2,10_449_1,         ,5,6,0,648
+9,caoyuan     ,right,23,female,441,3408121,2,4,3_134_2 ,3_133_1 ,multisoft,5,5,1,380
+9,caoyuan     ,right,23,female,442,3411521,1,2,5_198_2 ,5_197_1 ,onesoft  ,5,5,1,372
+9,caoyuan     ,right,23,female,443,3415021,6,1,9_424_2 ,9_423_1 ,         ,6,6,1,399
+9,caoyuan     ,right,23,female,444,3418705,5,3,4_156_2 ,4_155_1 ,oneloud1 ,6,6,1,483
+9,caoyuan     ,right,23,female,445,3422554,5,5,1_10_2  ,1_9_1   ,multiloud,6,5,0,922
+9,caoyuan     ,right,23,female,446,3426754,5,4,3_100_2 ,3_99_1  ,multisoft,6,6,1,394
+9,caoyuan     ,right,23,female,447,3430488,2,3,1_44_2  ,1_43_1  ,oneloud  ,5,5,1,316
+9,caoyuan     ,right,23,female,448,3433888,4,1,9_400_2 ,9_399_1 ,         ,6,5,0,380
+9,caoyuan     ,right,23,female,449,3437754,4,3,1_8_2   ,1_7_1   ,oneloud  ,6,6,1,274
+9,caoyuan     ,right,23,female,450,3441487,2,1,10_440_2,10_439_1,         ,5,5,1,325
+9,caoyuan     ,right,23,female,451,3445237,3,2,2_50_2  ,2_49_1  ,onesoft1 ,5,5,1,455
+9,caoyuan     ,right,23,female,452,3448987,6,2,3_136_2 ,3_135_1 ,onesoft  ,6,6,1,289
+9,caoyuan     ,right,23,female,453,3452437,1,2,2_92_2  ,2_91_1  ,onesoft1 ,5,5,1,327
+9,caoyuan     ,right,23,female,454,3456104,6,1,10_442_2,10_441_1,         ,6,6,1,316
+9,caoyuan     ,right,23,female,455,3459654,2,5,3_120_2 ,3_119_1 ,multiloud,5,5,1,374
+9,caoyuan     ,right,23,female,456,3463304,2,2,5_196_2 ,5_195_1 ,onesoft  ,5,5,1,379
+9,caoyuan     ,right,23,female,457,3466820,3,3,1_42_2  ,1_41_1  ,oneloud  ,5,5,1,367
+9,caoyuan     ,right,23,female,458,3470320,4,3,2_90_2  ,2_89_1  ,oneloud  ,6,6,1,307
+9,caoyuan     ,right,23,female,459,3513603,5,5,4_180_2 ,4_179_1 ,multiloud,6,5,0,559
+9,caoyuan     ,right,23,female,460,3517353,1,2,3_138_2 ,3_137_1 ,onesoft  ,5,5,1,273
+9,caoyuan     ,right,23,female,461,3520936,4,1,10_456_2,10_455_1,         ,6,6,1,298
+9,caoyuan     ,right,23,female,462,3524569,6,2,1_36_2  ,1_35_1  ,onesoft1 ,6,6,1,217
+9,caoyuan     ,right,23,female,463,3528186,1,3,5_198_2 ,5_197_1 ,oneloud1 ,5,5,1,208
+9,caoyuan     ,right,23,female,464,3531569,2,5,1_32_2  ,1_31_1  ,multiloud,5,5,1,505
+9,caoyuan     ,right,23,female,465,3535436,4,3,3_122_2 ,3_121_1 ,oneloud  ,6,5,0,486
+9,caoyuan     ,right,23,female,466,3539352,4,5,4_158_2 ,4_157_1 ,multiloud,6,5,0,818
+9,caoyuan     ,right,23,female,467,3543336,1,1,10_438_2,10_437_1,         ,5,5,1,354
+9,caoyuan     ,right,23,female,468,3546836,2,2,1_18_2  ,1_17_1  ,onesoft1 ,5,5,1,342
+9,caoyuan     ,right,23,female,469,3550536,2,1,10_458_2,10_457_1,         ,5,5,1,378
+9,caoyuan     ,right,23,female,470,3554436,6,4,1_36_2  ,1_35_1  ,multisoft,6,6,1,245
+9,caoyuan     ,right,23,female,471,3557852,4,2,4_158_2 ,4_157_1 ,onesoft  ,6,5,0,357
+9,caoyuan     ,right,23,female,472,3561652,5,4,2_72_2  ,2_71_1  ,multisoft,6,6,1,429
+9,caoyuan     ,right,23,female,473,3565402,2,5,4_152_2 ,4_151_1 ,multiloud,5,5,1,335
+9,caoyuan     ,right,23,female,474,3569185,2,2,3_144_2 ,3_143_1 ,onesoft  ,5,5,1,224
+9,caoyuan     ,right,23,female,475,3572585,1,4,1_12_2  ,1_11_1  ,multisoft,5,5,1,288
+9,caoyuan     ,right,23,female,476,3576002,1,5,4_188_2 ,4_187_1 ,multiloud,5,5,1,327
+9,caoyuan     ,right,23,female,477,3579568,6,3,4_154_2 ,4_153_1 ,oneloud1 ,6,5,0,489
+9,caoyuan     ,right,23,female,478,3583118,2,2,2_78_2  ,2_77_1  ,onesoft1 ,5,5,1,283
+9,caoyuan     ,right,23,female,479,3586718,3,2,5_216_2 ,5_215_1 ,onesoft  ,5,5,1,171
+9,caoyuan     ,right,23,female,480,3590385,3,2,5_232_2 ,5_231_1 ,onesoft  ,5,5,1,136
+9,caoyuan     ,right,23,female,481,3593701,5,1,6_272_2 ,6_271_1 ,         ,6,6,1,260
+9,caoyuan     ,right,23,female,482,3597101,2,2,5_210_2 ,5_209_1 ,onesoft  ,5,5,1,340
+9,caoyuan     ,right,23,female,483,3600985,3,4,5_232_2 ,5_231_1 ,multisoft,5,5,1,327
+9,caoyuan     ,right,23,female,484,3604618,1,2,4_184_2 ,4_183_1 ,onesoft  ,5,5,1,350
+9,caoyuan     ,right,23,female,485,3608135,6,1,7_330_2 ,7_329_1 ,         ,6,5,0,465
+9,caoyuan     ,right,23,female,486,3611685,1,1,7_290_2 ,7_289_1 ,         ,5,5,1,395
+9,caoyuan     ,right,23,female,487,3615334,3,4,3_106_2 ,3_105_1 ,multisoft,5,5,1,362
+9,caoyuan     ,right,23,female,488,3618851,1,4,5_198_2 ,5_197_1 ,multisoft,5,5,1,349
+9,caoyuan     ,right,23,female,489,3622618,2,5,4_166_2 ,4_165_1 ,multiloud,5,5,1,342
+9,caoyuan     ,right,23,female,490,3626518,2,4,1_32_2  ,1_31_1  ,multisoft,5,5,1,338
+9,caoyuan     ,right,23,female,491,3629951,5,2,4_172_2 ,4_171_1 ,onesoft  ,6,6,1,385
+9,caoyuan     ,right,23,female,492,3633401,5,2,2_72_2  ,2_71_1  ,onesoft1 ,6,5,0,439
+9,caoyuan     ,right,23,female,493,3637234,4,2,1_8_2   ,1_7_1   ,onesoft1 ,6,6,1,374
+9,caoyuan     ,right,23,female,494,3641017,6,5,5_238_2 ,5_237_1 ,multiloud,6,6,1,287
+9,caoyuan     ,right,23,female,495,3644567,3,1,10_472_2,10_471_1,         ,5,5,1,304
+9,caoyuan     ,right,23,female,496,3648251,1,3,2_92_2  ,2_91_1  ,oneloud  ,5,5,1,300
+9,caoyuan     ,right,23,female,497,3652017,5,4,4_156_2 ,4_155_1 ,multisoft,6,5,0,406
+9,caoyuan     ,right,23,female,498,3655417,5,2,1_20_2  ,1_19_1  ,onesoft1 ,6,6,1,334
+9,caoyuan     ,right,23,female,499,3659117,4,4,4_178_2 ,4_177_1 ,multisoft,6,6,1,314
+9,caoyuan     ,right,23,female,500,3662684,4,3,4_162_2 ,4_161_1 ,oneloud1 ,6,5,0,339
+9,caoyuan     ,right,23,female,501,3666334,1,1,10_478_2,10_477_1,         ,5,5,1,369
+9,caoyuan     ,right,23,female,502,3670000,2,3,5_210_2 ,5_209_1 ,oneloud1 ,5,5,1,399
+9,caoyuan     ,right,23,female,503,3673550,3,2,2_60_2  ,2_59_1  ,onesoft1 ,5,5,1,393
+9,caoyuan     ,right,23,female,504,3677150,4,1,6_260_2 ,6_259_1 ,         ,6,5,0,385
+9,caoyuan     ,right,23,female,505,3680950,5,3,5_202_2 ,5_201_1 ,oneloud1 ,6,6,1,369
+9,caoyuan     ,right,23,female,506,3684300,3,5,1_26_2  ,1_25_1  ,multiloud,5,5,1,347
+9,caoyuan     ,right,23,female,507,3687817,2,4,2_78_2  ,2_77_1  ,multisoft,5,5,1,334
+9,caoyuan     ,right,23,female,508,3691733,5,3,2_72_2  ,2_71_1  ,oneloud  ,6,5,0,361
+9,caoyuan     ,right,23,female,509,3742349,1,3,4_188_2 ,4_187_1 ,oneloud1 ,5,5,1,400
+9,caoyuan     ,right,23,female,510,3746015,5,5,5_202_2 ,5_201_1 ,multiloud,6,5,0,454
+9,caoyuan     ,right,23,female,511,3749699,6,5,1_36_2  ,1_35_1  ,multiloud,6,6,1,314
+9,caoyuan     ,right,23,female,512,3753465,5,5,4_148_2 ,4_147_1 ,multiloud,6,6,1,404
+9,caoyuan     ,right,23,female,513,3757349,1,1,10_446_2,10_445_1,         ,5,5,1,264
+9,caoyuan     ,right,23,female,514,3760799,4,2,5_228_2 ,5_227_1 ,onesoft  ,6,6,1,294
+9,caoyuan     ,right,23,female,515,3764565,2,2,4_152_2 ,4_151_1 ,onesoft  ,5,5,1,336
+9,caoyuan     ,right,23,female,516,3768382,4,2,1_34_2  ,1_33_1  ,onesoft1 ,6,6,1,367
+9,caoyuan     ,right,23,female,517,3772198,6,5,3_136_2 ,3_135_1 ,multiloud,6,6,1,359
+9,caoyuan     ,right,23,female,518,3775715,5,2,4_148_2 ,4_147_1 ,onesoft  ,6,6,1,474
+9,caoyuan     ,right,23,female,519,3779365,6,3,3_136_2 ,3_135_1 ,oneloud1 ,6,6,1,328
+9,caoyuan     ,right,23,female,520,3782732,6,2,5_212_2 ,5_211_1 ,onesoft  ,6,6,1,273
+9,caoyuan     ,right,23,female,521,3786448,4,3,3_128_2 ,3_127_1 ,oneloud1 ,6,5,0,300
+9,caoyuan     ,right,23,female,522,3789981,2,3,4_166_2 ,4_165_1 ,oneloud1 ,5,5,1,591
+9,caoyuan     ,right,23,female,523,3793931,2,2,5_224_2 ,5_223_1 ,onesoft  ,5,5,1,689
+9,caoyuan     ,right,23,female,524,3798181,5,4,1_10_2  ,1_9_1   ,multisoft,6,5,0,423
+9,caoyuan     ,right,23,female,525,3801764,1,3,5_194_2 ,5_193_1 ,oneloud1 ,5,5,1,432
+9,caoyuan     ,right,23,female,526,3805581,6,5,2_82_2  ,2_81_1  ,multiloud,6,6,1,271
+9,caoyuan     ,right,23,female,527,3809164,6,4,4_170_2 ,4_169_1 ,multisoft,6,6,1,320
+9,caoyuan     ,right,23,female,528,3812598,1,1,8_362_2 ,8_361_1 ,         ,5,5,1,278
+9,caoyuan     ,right,23,female,529,3816048,6,2,5_238_2 ,5_237_1 ,onesoft  ,6,6,1,332
+9,caoyuan     ,right,23,female,530,3819664,2,2,2_74_2  ,2_73_1  ,onesoft1 ,5,5,1,244
+9,caoyuan     ,right,23,female,531,3823031,5,5,5_218_2 ,5_217_1 ,multiloud,6,6,1,357
+9,caoyuan     ,right,23,female,532,3826697,1,4,2_92_2  ,2_91_1  ,multisoft,5,5,1,243
+9,caoyuan     ,right,23,female,533,3830114,5,3,4_180_2 ,4_179_1 ,oneloud1 ,6,5,0,473
+9,caoyuan     ,right,23,female,534,3834097,5,3,1_14_2  ,1_13_1  ,oneloud  ,6,6,1,586
+9,caoyuan     ,right,23,female,535,3837964,5,4,5_208_2 ,5_207_1 ,multisoft,6,5,0,311
+9,caoyuan     ,right,23,female,536,3841414,2,5,5_224_2 ,5_223_1 ,multiloud,5,5,1,341
+9,caoyuan     ,right,23,female,537,3844897,5,1,9_398_2 ,9_397_1 ,         ,6,6,1,210
+9,caoyuan     ,right,23,female,538,3848280,4,1,10_468_2,10_467_1,         ,6,5,0,259
+9,caoyuan     ,right,23,female,539,3851914,6,4,2_88_2  ,2_87_1  ,multisoft,6,6,1,241
+9,caoyuan     ,right,23,female,540,3855614,6,2,4_160_2 ,4_159_1 ,onesoft  ,6,6,1,349
+9,caoyuan     ,right,23,female,541,3859247,2,2,2_76_2  ,2_75_1  ,onesoft1 ,5,5,1,308
+9,caoyuan     ,right,23,female,542,3862863,5,4,3_132_2 ,3_131_1 ,multisoft,6,6,1,300
+9,caoyuan     ,right,23,female,543,3866363,4,2,5_214_2 ,5_213_1 ,onesoft  ,6,5,0,328
+9,caoyuan     ,right,23,female,544,3870147,4,5,3_126_2 ,3_125_1 ,multiloud,6,6,1,312
+9,caoyuan     ,right,23,female,545,3873430,3,1,7_308_2 ,7_307_1 ,         ,5,5,1,373
+9,caoyuan     ,right,23,female,546,3877147,3,3,5_232_2 ,5_231_1 ,oneloud1 ,5,5,1,311
+9,caoyuan     ,right,23,female,547,3880946,6,3,5_238_2 ,5_237_1 ,oneloud1 ,6,6,1,544
+9,caoyuan     ,right,23,female,548,3884563,3,4,4_168_2 ,4_167_1 ,multisoft,5,5,1,359
+9,caoyuan     ,right,23,female,549,3888196,5,4,2_86_2  ,2_85_1  ,multisoft,6,6,1,230
+9,caoyuan     ,right,23,female,550,3891596,1,2,5_194_2 ,5_193_1 ,onesoft  ,5,5,1,182
+9,caoyuan     ,right,23,female,551,3895080,1,3,3_110_2 ,3_109_1 ,oneloud  ,5,5,1,242
+9,caoyuan     ,right,23,female,552,3898713,1,2,3_110_2 ,3_109_1 ,onesoft1 ,5,5,1,353
+9,caoyuan     ,right,23,female,553,3902129,6,5,2_66_2  ,2_65_1  ,multiloud,6,6,1,337
+9,caoyuan     ,right,23,female,554,3905696,3,3,3_104_2 ,3_103_1 ,oneloud  ,5,5,1,378
+9,caoyuan     ,right,23,female,555,3909429,5,3,3_116_2 ,3_115_1 ,oneloud1 ,6,6,1,453
+9,caoyuan     ,right,23,female,556,3913146,6,2,4_146_2 ,4_145_1 ,onesoft  ,6,6,1,264
+9,caoyuan     ,right,23,female,557,3916879,6,1,7_314_2 ,7_313_1 ,         ,6,6,1,251
+9,caoyuan     ,right,23,female,558,3920346,1,5,1_40_2  ,1_39_1  ,multiloud,5,5,1,288
+9,caoyuan     ,right,23,female,559,4318539,4,4,3_128_2 ,3_127_1 ,multisoft,6,5,0,422
+9,caoyuan     ,right,23,female,560,4322039,6,5,3_114_2 ,3_113_1 ,multiloud,6,6,1,362
+9,caoyuan     ,right,23,female,561,4325672,5,3,1_10_2  ,1_9_1   ,oneloud1 ,6,5,0,449
+9,caoyuan     ,right,23,female,562,4329405,5,2,5_208_2 ,5_207_1 ,onesoft  ,6,5,0,396
+9,caoyuan     ,right,23,female,563,4333039,4,2,5_240_2 ,5_239_1 ,onesoft  ,6,5,0,546
+9,caoyuan     ,right,23,female,564,4337055,1,4,3_142_2 ,3_141_1 ,multisoft,5,5,1,426
+9,caoyuan     ,right,23,female,565,4340622,1,5,5_194_2 ,5_193_1 ,multiloud,5,5,1,490
+9,caoyuan     ,right,23,female,566,4344655,6,5,4_160_2 ,4_159_1 ,multiloud,6,6,1,377
+9,caoyuan     ,right,23,female,567,4348372,4,3,3_124_2 ,3_123_1 ,oneloud  ,6,5,0,532
+9,caoyuan     ,right,23,female,568,4351922,3,3,5_230_2 ,5_229_1 ,oneloud1 ,5,5,1,382
+9,caoyuan     ,right,23,female,569,4355588,3,1,6_246_2 ,6_245_1 ,         ,5,5,1,348
+9,caoyuan     ,right,23,female,570,4359405,6,4,1_4_2   ,1_3_1   ,multisoft,6,6,1,403
+9,caoyuan     ,right,23,female,571,4363071,1,3,3_138_2 ,3_137_1 ,oneloud1 ,5,5,1,305
+9,caoyuan     ,right,23,female,572,4366721,3,3,4_192_2 ,4_191_1 ,oneloud1 ,5,5,1,399
+9,caoyuan     ,right,23,female,573,4370455,3,4,2_50_2  ,2_49_1  ,multisoft,5,5,1,345
+9,caoyuan     ,right,23,female,574,4374121,5,2,1_30_2  ,1_29_1  ,onesoft1 ,6,6,1,463
+9,caoyuan     ,right,23,female,575,4377971,6,2,1_4_2   ,1_3_1   ,onesoft1 ,6,6,1,333
+9,caoyuan     ,right,23,female,576,4381371,1,5,1_12_2  ,1_11_1  ,multiloud,5,5,1,285
+9,caoyuan     ,right,23,female,577,4384954,6,2,4_170_2 ,4_169_1 ,onesoft  ,6,6,1,294
+9,caoyuan     ,right,23,female,578,4388421,3,1,8_352_2 ,8_351_1 ,         ,5,5,1,242
+9,caoyuan     ,right,23,female,579,4391854,4,4,1_8_2   ,1_7_1   ,multisoft,6,6,1,289
+9,caoyuan     ,right,23,female,580,4395637,3,4,2_94_2  ,2_93_1  ,multisoft,5,5,1,162
+9,caoyuan     ,right,23,female,581,4398921,4,4,5_226_2 ,5_225_1 ,multisoft,6,6,1,294
+9,caoyuan     ,right,23,female,582,4402754,3,4,3_104_2 ,3_103_1 ,multisoft,5,5,1,293
+9,caoyuan     ,right,23,female,583,4406437,3,1,10_452_2,10_451_1,         ,5,5,1,330
+9,caoyuan     ,right,23,female,584,4409954,6,3,1_48_2  ,1_47_1  ,oneloud  ,6,6,1,317
+9,caoyuan     ,right,23,female,585,4413337,2,5,3_130_2 ,3_129_1 ,multiloud,5,5,1,302
+9,caoyuan     ,right,23,female,586,4417104,5,2,3_116_2 ,3_115_1 ,onesoft  ,6,5,0,327
+9,caoyuan     ,right,23,female,587,4420970,4,4,1_46_2  ,1_45_1  ,multisoft,6,5,0,333
+9,caoyuan     ,right,23,female,588,4424420,3,5,3_104_2 ,3_103_1 ,multiloud,5,5,1,475
+9,caoyuan     ,right,23,female,589,4428087,1,3,1_40_2  ,1_39_1  ,oneloud  ,5,5,1,352
+9,caoyuan     ,right,23,female,590,4431520,1,3,4_176_2 ,4_175_1 ,oneloud1 ,5,5,1,375
+9,caoyuan     ,right,23,female,591,4435137,6,1,10_454_2,10_453_1,         ,6,6,1,333
+9,caoyuan     ,right,23,female,592,4438637,4,3,5_214_2 ,5_213_1 ,oneloud1 ,6,5,0,489
+9,caoyuan     ,right,23,female,593,4442553,5,3,2_80_2  ,2_79_1  ,oneloud  ,6,5,0,309
+9,caoyuan     ,right,23,female,594,4446220,4,2,4_162_2 ,4_161_1 ,onesoft  ,6,6,1,674
+9,caoyuan     ,right,23,female,595,4449953,5,4,3_116_2 ,3_115_1 ,multisoft,6,5,0,485
+9,caoyuan     ,right,23,female,596,4453653,4,5,4_162_2 ,4_161_1 ,multiloud,6,6,1,529
+9,caoyuan     ,right,23,female,597,4457503,4,5,2_90_2  ,2_89_1  ,multiloud,6,6,1,439
+9,caoyuan     ,right,23,female,598,4461470,2,4,5_210_2 ,5_209_1 ,multisoft,5,5,1,392
+9,caoyuan     ,right,23,female,599,4464920,4,4,2_70_2  ,2_69_1  ,multisoft,6,6,1,470
+9,caoyuan     ,right,23,female,600,4468803,1,4,5_194_2 ,5_193_1 ,multisoft,5,5,1,523
+9,caoyuan     ,right,23,female,601,4472619,1,2,5_200_2 ,5_199_1 ,onesoft  ,5,5,1,299
+9,caoyuan     ,right,23,female,602,4476336,1,1,9_416_2 ,9_415_1 ,         ,5,5,1,254
+9,caoyuan     ,right,23,female,603,4479703,4,2,2_70_2  ,2_69_1  ,onesoft1 ,6,6,1,262
+9,caoyuan     ,right,23,female,604,4483453,4,3,4_158_2 ,4_157_1 ,oneloud1 ,6,5,0,280
+9,caoyuan     ,right,23,female,605,4487103,1,1,8_344_2 ,8_343_1 ,         ,5,5,1,262
+9,caoyuan     ,right,23,female,606,4490536,5,1,6_250_2 ,6_249_1 ,         ,6,6,1,245
+9,caoyuan     ,right,23,female,607,4494202,4,1,9_422_2 ,9_421_1 ,         ,6,6,1,347
+9,caoyuan     ,right,23,female,608,4497902,5,2,5_202_2 ,5_201_1 ,onesoft  ,6,6,1,279
