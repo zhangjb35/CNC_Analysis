@@ -2,7 +2,14 @@ function fieldtripLayout = convert2layout(eeglabLayoutExport, refData)
 % load and prep
 cfg = [];
 cfg.elecfile=eeglabLayoutExport;
-lay = ft_prepare_layout(cfg,refData);
+
+% omit eog
+cfg_omit=[];
+cfg_omit.channel={'all', '-HEO', '-VEO'};
+refDataUsed = ft_selectdata(cfg_omit,refData);
+
+% prep layout
+lay = ft_prepare_layout(cfg,refDataUsed);
 
 %% refine the layout
 
@@ -11,7 +18,7 @@ lay = ft_prepare_layout(cfg,refData);
 %     lay.outline{1, i}= lay.outline{1, i}*1.12;
 % end
 
-% bigger range to show (go out the head)
+% refine it, bigger range to show (go out the head)
 for i =1:1:size(lay.mask, 2)
     lay.mask{1, i}= lay.mask{1, i}*1.12;
 end
