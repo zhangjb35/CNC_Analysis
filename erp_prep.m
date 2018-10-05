@@ -1,19 +1,22 @@
 % SET PATHS
 clear variables
 restoredefaultpath; %% set a clean path
-home_dir = pwd;
 
-matlab_dir = fullfile(home_dir, 'matlab'); % change according to your path
+home_dir = pwd;
+matlab_dir = fullfile(home_dir, 'toolbox'); % change according to your path
+fuction_dir = fullfile(home_dir, 'functions');
 data_dir = fullfile(home_dir, '/data/rawEEG');
+
 erp_setup_path = fullfile(home_dir,'/setup');
 
 % ADD PATHS
 
 % add your toolbox
 % addpath('/home/jinbo/.matlab/R2012b'); % for linux only
-addpath(fullfile(matlab_dir, 'fieldtrip-20180922'));ft_defaults %% initialize FieldTrip defaults
+addpath(fullfile(matlab_dir, 'fieldtrip-20180922')); ft_defaults %% initialize FieldTrip defaults
 addpath(genpath(fullfile(matlab_dir, 'eeglab14_1_2b')));
 eeglabpath = fileparts(which('eeglab')); % eeglab path
+addpath(genpath(fuction_dir));
 
 bdfFile = fullfile(erp_setup_path,'bdf.txt');
 %% ERP
@@ -21,10 +24,10 @@ bdfFile = fullfile(erp_setup_path,'bdf.txt');
 for i=1:length(subjList)
     %% --- 01# prepare path
     % setup store path
-    storePath=fullfile(home_dir,['sub-' sprintf('%02d',i)],'eeg','erp_70uv_threshodl');
+    storePath=fullfile(home_dir,'data','rawEEG',['sub-' sprintf('%02d',i)],'eeg','erp_70uv_threshodl');
     mkdir(storePath);
     %% --- 02# load to EEGLAB
-    EEG = pop_loadset('filename','coreog_ica_lfilt_hfilt_ref_data.set','filepath',fullfile([filesep namePattern,sprintf('%02d',i)],'eeg','preprocess'));
+    EEG = pop_loadset('filename','coreog_ica_lfilt_hfilt_ref_data.set','filepath',fullfile(home_dir,'data','rawEEG',['sub-' sprintf('%02d',i)],'eeg','preprocess'));
     
     %% --- 03# low pass filter 40 Hz
     [warg, dev] = pop_kaiserbeta(0.0015);
@@ -44,7 +47,7 @@ for i=1:length(subjList)
     pop_saveset(EEG, 'filename', EEG.setname, 'filepath', storePath);
     
     %% --- 06# extract epoch [ERPLAB]
-    EEG = pop_epochbin( EEG , [-200 800], 'pre');
+    EEG = pop_epochbin( EEG , [-800 800], [-200 0]);
     EEG.setname='epoch_ass_event_eeg';
     pop_saveset(EEG, 'filename', EEG.setname, 'filepath', storePath);
     
@@ -72,9 +75,11 @@ movefile('grandAVG_list.txt',[home_dir, filesep, 'ERP']);
 % grand average and save grand erp
 ERP_weight = pop_gaverager(fullfile(home_dir, 'ERP', 'grandAVG_list.txt') , 'Criterion',  30, 'ExcludeNullBin', 'on', 'SEM', 'on', 'Weighted', 'on');
 pop_savemyerp(ERP_weight, 'erpname',...
-       'grand_avg_weight', 'filename', 'grand_avg_weight.erp', 'filepath',fullfile(home_dir, 'erp') , 'Warning', 'off');
+       'grand_avg_weight', 'filename', 'grand_avg_weight.erp', 'filepath',fullfile(home_dir, 'ERP') , 'Warning', 'off');
    
 ERP_noweigth = pop_gaverager(fullfile(home_dir, 'ERP', 'grandAVG_list.txt') , 'Criterion',  30, 'ExcludeNullBin', 'on', 'SEM', 'on', 'Weighted', 'off' );
 pop_savemyerp(ERP_noweigth, 'erpname',...
-       'grand_avg_noweight', 'filename', 'grand_avg_noweight.erp', 'filepath',fullfile(home_dir, 'erp') , 'Warning', 'off');
+       'grand_avg_noweight', 'filename', 'grand_avg_noweight.erp', 'filepath',fullfile(home_dir, 'ERP') , 'Warning', 'off');
 %% --- 11# warning 30% limit, rm redo
+%% zero the world
+restoredefaultpath

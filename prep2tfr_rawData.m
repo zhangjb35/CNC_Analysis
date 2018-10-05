@@ -50,7 +50,7 @@ for i=1:length(subjList)
     for j=1:numel(bdfFile)
         %% --- 05# extract epoch [ERPLAB]
         EEG_epoch{j} = pop_epochbin( EEG_epoch{j} , [-2000 2000], [-200 0]);
-        EEG_sync_epoch{j} = pop_epochbin( EEG_sync_epoch{j} , [-200 800], [-200 0]);
+        EEG_sync_epoch{j} = pop_epochbin( EEG_sync_epoch{j} , [-800 800], [-200 0]);
         
         %% --- 06# artifacts reject [ERPLAB]
         EEG_sync_epoch{j}   = pop_artextval( EEG_sync_epoch{j}  , 'Channel',  1:62, 'Flag', [ 1 2], 'Threshold', [ -70 70], 'Twindow', [-200 798] );
@@ -65,3 +65,4 @@ for i=1:length(subjList)
     % clear up
     clear EEG
 end
+%% zero the world
