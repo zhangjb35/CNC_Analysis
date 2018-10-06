@@ -42,6 +42,10 @@ temp = MS_ML_avg;
 temp.powspctrm =  temp.powspctrm - OS_OL_avg.powspctrm;
 diff_map = temp;
 clear temp
+%% parameter setup
+fronto_central_sites = {'AF7', 'AF3', 'AF4', 'AF8', 'FZ', 'F1', 'F2', 'F3', 'F4', 'F5', 'F6', 'F7', 'F8', 'FCZ', 'FC1', 'FC2', 'FC3', 'FC4', 'FC5', 'FC6', 'FT7', 'FT8', 'CZ', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'};
+posterior_central_sites = {'CPZ', 'CP1', 'CP2', 'CP3', 'CP4', 'CP5', 'CP6', 'PZ', 'P1', 'P2', 'P3', 'P4', 'P5', 'P6', 'P7', 'P8', 'POZ', 'PO3', 'PO4', 'PO7', 'PO8', 'OZ', 'O1', 'O2','PO9','PO10'};
+eeg_sites = {'all', '-HEO', '-VEO'};
 %%
 %--------------------------------------------------------%
 %
@@ -51,7 +55,7 @@ clear temp
 %
 %--------------------------------------------------------%
 %% diff map across frontal sites
-roi = {'Fz', 'F1', 'F2', 'F3', 'F4', 'F5', 'F6', 'FCz', 'FC1', 'FC2', 'FC3', 'FC4', 'FC5', 'FC6', 'Cz', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'};
+roi = fronto_central_sites;
 diff_map_oi = diff_map;
 trange = [-0.8, 0.8]; % in seconds
 frange = [4, 30]; % in Hz
