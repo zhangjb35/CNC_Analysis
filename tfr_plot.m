@@ -13,7 +13,60 @@ addpath(genpath(fullfile(toolbox_dir, 'eeglab14_1_2b')));
 % function
 addpath(genpath(fuction_dir));
 
-% get raw effect data
+%% parameter setup
+fronto_central_sites = {'AF7', 'AF3', 'AF4', 'AF8', 'FZ', 'F1', 'F2', 'F3', 'F4', 'F5', 'F6', 'F7', 'F8', 'FCZ', 'FC1', 'FC2', 'FC3', 'FC4', 'FC5', 'FC6', 'FT7', 'FT8', 'CZ', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'};
+posterior_central_sites = {'CPZ', 'CP1', 'CP2', 'CP3', 'CP4', 'CP5', 'CP6', 'PZ', 'P1', 'P2', 'P3', 'P4', 'P5', 'P6', 'P7', 'P8', 'POZ', 'PO3', 'PO4', 'PO7', 'PO8', 'OZ', 'O1', 'O2','PO9','PO10'};
+eeg_sites = {'all', '-HEO', '-VEO'};
+
+%%
+%%%%%%%%%%%%%%%%%%%%
+%
+%             Cell Condition Plot
+%
+%%%%%%%%%%%%%%%%%%%%
+%% load data
+conditionRaw = kb_ls(fullfile(home_dir, 'data', 'conditionRawAVG','*.mat'));
+cellfun(@load, conditionRaw)
+%% diff map across frontal sites
+%%
+roi = fronto_central_sites;
+diff_map_oi = nosoundAVG;
+trange = [-0.8, 0.8]; % in seconds
+frange = [2, 30]; % in Hz
+fig_title = 'No Sound (Fronto-Centrol Sites)';
+outputfile = './figure/no_sound';
+maskfile = '';
+outputfile_after_mask='';
+crange =[-6 6];
+baseline=[-0.8 -0.6];
+kb_plot_tfr(roi,diff_map_oi,trange,frange,fig_title,outputfile,maskfile,outputfile_after_mask,crange,baseline);
+%%
+roi = eeg_sites;
+diff_map_oi = nosoundAVG;
+trange = [-0.8, 0.8]; % in seconds
+frange = [2, 30]; % in Hz
+fig_title = 'No Sound (Fronto-Centrol Sites)';
+outputfile = './figure/no_sound';
+maskfile = '';
+outputfile_after_mask='';
+crange =[-10 10];
+baseline=[-0.8 -0.6];
+kb_plot_tfr(roi,diff_map_oi,trange,frange,fig_title,outputfile,maskfile,outputfile_after_mask,crange,baseline);
+%%
+cfg = [];
+cfg.baseline = [-0.8 -0.6]; 
+cfg.baselinetype = 'absolute'; 
+cfg.channel=fronto_central_sites;
+cfg.xlim = [-0.8 0.8];
+cfg.ylim = [2 30];
+cfg.zlim = [-5 5];
+cfg.colormap='jet';
+figure; ft_singleplotTFR(cfg, ProbeOneLoudAVG);
+% colormap(brewermap(256, '*RdYlBu')); % refine the colorbar
+% colormap(bluewhitered(1024))
+% colormap('jet');
+%%
+%% get raw effect data
 effectRaw = kb_ls(fullfile(home_dir, 'data', 'effectRaw','*.mat'));
 for i=1:length(effectRaw)
     tempData = load(effectRaw{i},'-mat');
@@ -42,10 +95,7 @@ temp = MS_ML_avg;
 temp.powspctrm =  temp.powspctrm - OS_OL_avg.powspctrm;
 diff_map = temp;
 clear temp
-%% parameter setup
-fronto_central_sites = {'AF7', 'AF3', 'AF4', 'AF8', 'FZ', 'F1', 'F2', 'F3', 'F4', 'F5', 'F6', 'F7', 'F8', 'FCZ', 'FC1', 'FC2', 'FC3', 'FC4', 'FC5', 'FC6', 'FT7', 'FT8', 'CZ', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'};
-posterior_central_sites = {'CPZ', 'CP1', 'CP2', 'CP3', 'CP4', 'CP5', 'CP6', 'PZ', 'P1', 'P2', 'P3', 'P4', 'P5', 'P6', 'P7', 'P8', 'POZ', 'PO3', 'PO4', 'PO7', 'PO8', 'OZ', 'O1', 'O2','PO9','PO10'};
-eeg_sites = {'all', '-HEO', '-VEO'};
+
 %%
 %--------------------------------------------------------%
 %

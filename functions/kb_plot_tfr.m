@@ -1,4 +1,4 @@
-function kb_plot_tfr(roi,diff_map_oi,trange,frange,fig_titile,outputfile,maskfile,outputfile_after_mask)
+function kb_plot_tfr(roi,diff_map_oi,trange,frange,fig_titile,outputfile,maskfile,outputfile_after_mask,crange,bsl)
 %% diff time-freq map for perticular sites of electrodes
 % get target information
 if ~isempty(roi)
@@ -11,6 +11,11 @@ else
     cfg.channel          = diff_map_oi.label(1:end-2); % exclude EOG
     freq_avg_frontal = ft_freqdescriptives(cfg,diff_map_oi); % select data from frontal sites
     meanpow = squeeze(mean(freq_avg_frontal.powspctrm, 1)); % average across frontal sites
+end
+if ~isempty(bsl)
+    baselineFactor = mean(meanpow(:,[find(freq_avg_frontal.time==bsl(1)):find(freq_avg_frontal.time==bsl(2))]),2);
+    % meanpow = (meanpow - repmat(baselineFactor,1,size(meanpow,2)))./repmat(baselineFactor,1,size(meanpow,2));
+    meanpow = (meanpow - repmat(baselineFactor,1,size(meanpow,2)));
 end
 % refine the data for more beatuful plot
 % finer time and frequency axes:
@@ -35,7 +40,7 @@ ylim(frange);
 axis xy;
 xlabel('Time (ms)');
 ylabel('Frequency (Hz)');
-caxis([-0.25 0.25]);
+caxis(crange);
 colormap(brewermap(256, '*RdYlBu')); % refine the colorbar
 %colormap(bluewhitered(1024))
 colormap(jet) % set classical colmap
@@ -47,8 +52,8 @@ title(fig_titile,'FontWeight','bold');
 set(findall(gcf,'-property','FontSize'),'FontSize',18)
 set(gca,'XTick',[-0.8 -0.6 -0.4 -0.2 0 0.2 0.4 0.6 0.8])
 set(gca,'xticklabel',({'-800' '' '-400' '' '0' '' '400' '' '800'}))
-set(h, 'YTick', [-1 -0.25 0 0.25 1]);
-set(h, 'yticklabel', {-100 -25 0 25 100});
+% set(h, 'YTick', [-1 -0.25 0 0.25 1]);
+% set(h, 'yticklabel', {-100 -25 0 25 100});
 % ylabel(h, 'Power Change Based on No Sound Condition (%)');
 
 % draw stim onset marker
