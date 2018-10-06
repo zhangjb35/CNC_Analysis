@@ -4,7 +4,7 @@
 clear, clc
 restoredefaultpath; %% set a clean path
 % addpath('/home/jinbo/.matlab/R2012b'); % for linux only
-project_dir = pwd;
+project_dir = '/Volumes/Workspace/Projects/CNC_analysis/code/CNC_Analysis';
 home_dir = fullfile(project_dir, 'data', 'TFPrep');
 matlab_dir = fullfile(project_dir, 'toolbox');
 fuction_dir = fullfile(project_dir, 'functions');
@@ -14,8 +14,8 @@ addpath(genpath([matlab_dir, filesep, 'eeglab14_1_2b']));
 addpath(genpath(fuction_dir));
 
 % setup common information
-fronto_central_sites = {'Fz', 'F1', 'F2', 'F3', 'F4', 'F5', 'F6', 'FCz', 'FC1', 'FC2', 'FC3', 'FC4', 'FC5', 'FC6', 'Cz', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'};
-posterior_central_sites = {'CPz', 'CP1', 'CP2', 'CP3', 'CP4', 'CP5', 'CP6', 'Pz', 'P1', 'P2', 'P3', 'P4', 'P5', 'P6', 'P7', 'P8', 'POz', 'PO3', 'PO4', 'PO7', 'PO8', 'Oz', 'O1', 'O2'};
+fronto_central_sites = {'AF7', 'AF3', 'AF4', 'AF8', 'FZ', 'F1', 'F2', 'F3', 'F4', 'F5', 'F6', 'F7', 'F8', 'FCZ', 'FC1', 'FC2', 'FC3', 'FC4', 'FC5', 'FC6', 'FT7', 'FT8', 'CZ', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6'};
+posterior_central_sites = {'CPZ', 'CP1', 'CP2', 'CP3', 'CP4', 'CP5', 'CP6', 'PZ', 'P1', 'P2', 'P3', 'P4', 'P5', 'P6', 'P7', 'P8', 'POZ', 'PO3', 'PO4', 'PO7', 'PO8', 'OZ', 'O1', 'O2','PO9','PO10'};
 eeg_sites = {'all', '-HEO', '-VEO'};
 
 %% --- #01 load interaction effect part
@@ -26,8 +26,8 @@ eeg_sites = {'all', '-HEO', '-VEO'};
 % MS_ML, OS_OL level = M minus O
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%
-load MS_ML
-load OS_OL
+load('./data/MS_ML.mat','-mat')
+load('./data/OS_OL.mat','-mat')
 % load ML_OL % same resutls, the diff of those two is same as first two.
 % load MS_OS
 
@@ -48,11 +48,11 @@ load OS_OL
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 cfg = [];
-% do need explore at sites level, skip it
-%cfg_neighb.method    = 'distance';
-%cfg_neighb.layout    = 'cnc_eeg.mat';
-%cfg.neighbours       = ft_prepare_neighbours(cfg_neighb, MS_ML{1});
-%cfg.neighbourdist    = 8;
+%do need explore at sites level, skip it
+cfg_neighb.method    = 'distance';
+cfg_neighb.layout    = 'cnc_eeg.mat';
+cfg.neighbours       = ft_prepare_neighbours(cfg_neighb, MS_ML{1});
+%cfg.neighbourdist    = 2;
 %cfg.neighbours = [];
 %setup stat parameter
 
@@ -69,12 +69,12 @@ cfg.alpha            = 0.05;
 cfg.numrandomization = 10000;
 
 cfg.channel          = fronto_central_sites;
-
+%cfg.channel = eeg_sites;
 cfg.latency          = [-0.5 -0.2];
 cfg.frequency        = [4 8];
 %cfg.avgoverfreq = 'no';
 %cfg.avgovertime = 'no';
-cfg.avgoverchan = 'yes';
+%cfg.avgoverchan = 'yes';
 
 cfg.correctm         = 'cluster';
 
@@ -97,12 +97,13 @@ save SP_Theta SP_Theta -v7.3
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 cfg = [];
-
-%cfg_neighb.method    = 'distance';
-%cfg_neighb.layout    = 'cnc_eeg.mat';
-%cfg.neighbours       = ft_prepare_neighbours(cfg_neighb, MS_ML{1});
-%cfg.neighbourdist    = 8;
+%do need explore at sites level, skip it
+cfg_neighb.method    = 'distance';
+cfg_neighb.layout    = 'cnc_eeg.mat';
+cfg.neighbours       = ft_prepare_neighbours(cfg_neighb, MS_ML{1});
+%cfg.neighbourdist    = 2;
 %cfg.neighbours = [];
+%setup stat parameter
 
 cfg.method           = 'montecarlo';
 cfg.statistic        = 'depsamplesT';
@@ -122,7 +123,7 @@ cfg.latency          = [-0.4 0];
 cfg.frequency        = [12 18];
 %cfg.avgoverfreq = 'no';
 %cfg.avgovertime = 'no';
-cfg.avgoverchan = 'yes';
+%cfg.avgoverchan = 'yes';
 
 cfg.correctm         = 'cluster';
 
@@ -191,12 +192,13 @@ save SP_Beta SP_Beta -v7.3
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 cfg = [];
-
-%cfg_neighb.method    = 'distance';
-%cfg_neighb.layout    = 'cnc_eeg.mat';
-%cfg.neighbours       = ft_prepare_neighbours(cfg_neighb, MS_ML{1});
-%cfg.neighbourdist    = 8;
+%do need explore at sites level, skip it
+cfg_neighb.method    = 'distance';
+cfg_neighb.layout    = 'cnc_eeg.mat';
+cfg.neighbours       = ft_prepare_neighbours(cfg_neighb, MS_ML{1});
+%cfg.neighbourdist    = 2;
 %cfg.neighbours = [];
+%setup stat parameter
 
 cfg.method           = 'montecarlo';
 cfg.statistic        = 'depsamplesT';
@@ -216,7 +218,7 @@ cfg.latency          = [0 0.35];
 cfg.frequency        = [7.5 10.5];
 %cfg.avgoverfreq = 'no';
 %cfg.avgovertime = 'no';
-cfg.avgoverchan = 'yes';
+%cfg.avgoverchan = 'yes';
 
 cfg.correctm         = 'cluster';
 
@@ -236,12 +238,13 @@ save VP_Alpha VP_Alpha -v7.3
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 cfg = [];
-
-%cfg_neighb.method    = 'distance';
-%cfg_neighb.layout    = 'cnc_eeg.mat';
-%cfg.neighbours       = ft_prepare_neighbours(cfg_neighb, MS_ML{1});
-%cfg.neighbourdist    = 8;
+%do need explore at sites level, skip it
+cfg_neighb.method    = 'distance';
+cfg_neighb.layout    = 'cnc_eeg.mat';
+cfg.neighbours       = ft_prepare_neighbours(cfg_neighb, MS_ML{1});
+%cfg.neighbourdist    = 2;
 %cfg.neighbours = [];
+%setup stat parameter
 
 cfg.method           = 'montecarlo';
 cfg.statistic        = 'depsamplesT';
@@ -261,7 +264,7 @@ cfg.latency          = [0.05 0.20];
 cfg.frequency        = [12 25];
 %cfg.avgoverfreq = 'no';
 %cfg.avgovertime = 'no';
-cfg.avgoverchan = 'yes';
+%cfg.avgoverchan = 'yes';
 
 cfg.correctm         = 'cluster';
 
