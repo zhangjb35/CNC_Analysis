@@ -24,6 +24,17 @@ for i=1:length(effectRaw)
 end
 clear *_avg
 
+% get raw interaction effect data
+intRaw = kb_ls(fullfile(home_dir, 'data', 'interactionRaw','*.mat'));
+for i=1:length(intRaw)
+    tempData = load(intRaw{i},'-mat');
+    dataName = cell2mat(fieldnames(tempData));
+    cfg = [];
+    eval([ dataName '_avg = ft_freqgrandaverage(cfg,tempData.' dataName '{1:end})']);
+    save([home_dir '/data/interactionAVG/' dataName '_avg'],[dataName '_avg'])
+end
+clear *_avg
+
 % load and prep data
 load('./data/effectAVG/MS_ML_avg.mat','-mat');
 load('./data/effectAVG/OS_OL_avg.mat','-mat'); 
