@@ -100,12 +100,29 @@ save ProbeMultiLoud_refBaseline ProbeMultiLoud_refBaseline
 save ProbeOneSoft_refBaseline ProbeOneSoft_refBaseline
 save ProbeOneLoud_refBaseline ProbeOneLoud_refBaseline
 %% --- 07 # average TFR across subject for plot TFR prep for stat and after stat resutls visualization)
-% as baseline, skip it
+% no baseline correct
 
 cfg = [];
 nosoundAVG = ft_freqgrandaverage(cfg, tfr_utl_fData{1}{1:end}); 
 save nosoundAVG nosoundAVG
 
+cfg = [];
+ProbeMultiSoftAVG = ft_freqgrandaverage(cfg,ProbeMultiSoft{1:end});
+save ProbeMultiSoftAVG ProbeMultiSoftAVG
+
+cfg = [];
+ProbeMultiLoudAVG = ft_freqgrandaverage(cfg, ProbeMultiLoud{1:end});
+save ProbeMultiLoudAVG ProbeMultiLoudAVG
+
+cfg = [];
+ProbeOneSoftAVG = ft_freqgrandaverage(cfg, ProbeOneSoft{1:end});
+save ProbeOneSoftAVG ProbeOneSoftAVG
+
+cfg = [];
+ProbeOneLoudAVG = ft_freqgrandaverage(cfg, ProbeOneLoud{1:end});
+save ProbeOneLoudAVG ProbeOneLoudAVG
+
+% after baseline correct
 cfg = [];
 multisoftAVG = ft_freqgrandaverage(cfg,ProbeMultiSoft_refBaseline{1:end});
 save multisoftAVG multisoftAVG
@@ -134,5 +151,16 @@ MS_OS = loop_ana(ProbeMultiSoft_refBaseline,procAction,cfg,ProbeOneSoft_refBasel
 ML_OL = loop_ana(ProbeMultiLoud_refBaseline,procAction,cfg,ProbeOneLoud_refBaseline); % ML - OL
 save MS_OS MS_OS
 save ML_OL ML_OL
-
+%% --- 08' # highest interaction
+% SL in MO
+% cfg=[];
+% cfg.operation='x1-x2';
+% sl_in_mo = ft_math(cfg,MS_ML,OS_OL);
+procAction = 'diff_tf';
+cfg = [];
+sl_in_mo = loop_ana(MS_ML,procAction,cfg,OS_OL);
+mo_in_ls = loop_ana(ML_OL,procAction,cfg,MS_OS); % A-B
+save sl_in_mo sl_in_mo
+save mo_in_ls mo_in_ls
+% MO in LS
 % --- 09 # main effect, check interaction first, if sign, skip it. If interaction, it is no reason to see main effect (depend on another variable)
