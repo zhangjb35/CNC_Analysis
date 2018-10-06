@@ -61,4 +61,130 @@ cfg.uvar = 1;                                   % "subject" is unit of observati
 cfg.ivar = 2;                                   % "condition" is the dependent variable
 
 ML_Control_stat = ft_freqstatistics(cfg, ProbeMultiLoud{1:end}, noSound_baseline{1:end});
-save ML_Control_stat ML_Control -v7.3
+save ML_Control_stat ML_Control_stat -v7.3
+
+%% multi soft vs no sound
+cfg = [];
+%do need explore at sites level, skip it
+cfg_neighb.method    = 'distance';
+cfg_neighb.layout    = './setup/cnc_eeg.mat';
+cfg.neighbours       = ft_prepare_neighbours(cfg_neighb, noSound_baseline{1});
+%cfg.neighbourdist    = 2;
+%cfg.neighbours = [];
+%setup stat parameter
+
+cfg.method           = 'montecarlo';
+cfg.statistic        = 'depsamplesT';
+cfg.clusteralpha     = 0.05;
+cfg.clusterstatistic = 'maxsum';
+%cfg.minnbchan        = 0; % across chnnel so skip it
+
+cfg.tail             = 0;
+cfg.clustertail      = 0;
+cfg.alpha            = 0.025;
+
+cfg.numrandomization = 10000;
+
+cfg.channel          = eeg_sites;
+%cfg.channel = eeg_sites;
+cfg.latency          = [-0.5 0.8];
+cfg.frequency        = [2 30];
+%cfg.avgoverfreq = 'no';
+%cfg.avgovertime = 'no';
+%cfg.avgoverchan = 'yes';
+
+cfg.correctm         = 'cluster';
+
+cfg.design = [
+repmat(1:1:size(noSound_baseline,2), 1, 2) % subject number (how many subject use to observe the effect)
+ones(1,size(noSound_baseline,2)), 2*ones(1,size(ProbeMultiSoft,2))];  % condition number
+
+cfg.uvar = 1;                                   % "subject" is unit of observation
+cfg.ivar = 2;                                   % "condition" is the dependent variable
+
+MS_Control_stat = ft_freqstatistics(cfg, ProbeMultiSoft{1:end}, noSound_baseline{1:end});
+save MS_Control_stat MS_Control_stat -v7.3
+
+%% one loud vs no sound
+cfg = [];
+%do need explore at sites level, skip it
+cfg_neighb.method    = 'distance';
+cfg_neighb.layout    = './setup/cnc_eeg.mat';
+cfg.neighbours       = ft_prepare_neighbours(cfg_neighb, noSound_baseline{1});
+%cfg.neighbourdist    = 2;
+%cfg.neighbours = [];
+%setup stat parameter
+
+cfg.method           = 'montecarlo';
+cfg.statistic        = 'depsamplesT';
+cfg.clusteralpha     = 0.05;
+cfg.clusterstatistic = 'maxsum';
+%cfg.minnbchan        = 0; % across chnnel so skip it
+
+cfg.tail             = 0;
+cfg.clustertail      = 0;
+cfg.alpha            = 0.025;
+
+cfg.numrandomization = 10000;
+
+cfg.channel          = eeg_sites;
+%cfg.channel = eeg_sites;
+cfg.latency          = [-0.5 0.8];
+cfg.frequency        = [2 30];
+%cfg.avgoverfreq = 'no';
+%cfg.avgovertime = 'no';
+%cfg.avgoverchan = 'yes';
+
+cfg.correctm         = 'cluster';
+
+cfg.design = [
+repmat(1:1:size(noSound_baseline,2), 1, 2) % subject number (how many subject use to observe the effect)
+ones(1,size(noSound_baseline,2)), 2*ones(1,size(ProbeOneLoud,2))];  % condition number
+
+cfg.uvar = 1;                                   % "subject" is unit of observation
+cfg.ivar = 2;                                   % "condition" is the dependent variable
+
+OL_Control_stat = ft_freqstatistics(cfg, ProbeMultiSoft{1:end}, noSound_baseline{1:end});
+save OL_Control_stat OL_Control_stat -v7.3
+
+%% one soft vs no sound
+cfg = [];
+%do need explore at sites level, skip it
+cfg_neighb.method    = 'distance';
+cfg_neighb.layout    = './setup/cnc_eeg.mat';
+cfg.neighbours       = ft_prepare_neighbours(cfg_neighb, noSound_baseline{1});
+%cfg.neighbourdist    = 2;
+%cfg.neighbours = [];
+%setup stat parameter
+
+cfg.method           = 'montecarlo';
+cfg.statistic        = 'depsamplesT';
+cfg.clusteralpha     = 0.05;
+cfg.clusterstatistic = 'maxsum';
+%cfg.minnbchan        = 0; % across chnnel so skip it
+
+cfg.tail             = 0;
+cfg.clustertail      = 0;
+cfg.alpha            = 0.025;
+
+cfg.numrandomization = 10000;
+
+cfg.channel          = eeg_sites;
+%cfg.channel = eeg_sites;
+cfg.latency          = [-0.5 0.8];
+cfg.frequency        = [2 30];
+%cfg.avgoverfreq = 'no';
+%cfg.avgovertime = 'no';
+%cfg.avgoverchan = 'yes';
+
+cfg.correctm         = 'cluster';
+
+cfg.design = [
+repmat(1:1:size(noSound_baseline,2), 1, 2) % subject number (how many subject use to observe the effect)
+ones(1,size(noSound_baseline,2)), 2*ones(1,size(ProbeOneSoft,2))];  % condition number
+
+cfg.uvar = 1;                                   % "subject" is unit of observation
+cfg.ivar = 2;                                   % "condition" is the dependent variable
+
+OS_Control_stat = ft_freqstatistics(cfg, ProbeOneSoft{1:end}, noSound_baseline{1:end});
+save OS_Control_stat OS_Control_stat -v7.3
