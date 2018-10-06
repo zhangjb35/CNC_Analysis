@@ -27,31 +27,79 @@ eeg_sites = {'all', '-HEO', '-VEO'};
 %% load data
 conditionRaw = kb_ls(fullfile(home_dir, 'data', 'conditionRawAVG','*.mat'));
 cellfun(@load, conditionRaw)
-%% diff map across frontal sites
-%%
-roi = fronto_central_sites;
-diff_map_oi = nosoundAVG;
-trange = [-0.8, 0.8]; % in seconds
-frange = [2, 30]; % in Hz
-fig_title = 'No Sound (Fronto-Centrol Sites)';
-outputfile = './figure/no_sound';
-maskfile = '';
-outputfile_after_mask='';
-crange =[-6 6];
-baseline=[-0.8 -0.6];
-kb_plot_tfr(roi,diff_map_oi,trange,frange,fig_title,outputfile,maskfile,outputfile_after_mask,crange,baseline);
-%%
+%% no sound
 roi = eeg_sites;
 diff_map_oi = nosoundAVG;
 trange = [-0.8, 0.8]; % in seconds
 frange = [2, 30]; % in Hz
-fig_title = 'No Sound (Fronto-Centrol Sites)';
+fig_title = 'No Sound (All EEG Sites)';
 outputfile = './figure/no_sound';
 maskfile = '';
 outputfile_after_mask='';
-crange =[-10 10];
+crange =[-7 7];
 baseline=[-0.8 -0.6];
 kb_plot_tfr(roi,diff_map_oi,trange,frange,fig_title,outputfile,maskfile,outputfile_after_mask,crange,baseline);
+%%
+roi = eeg_sites;
+diff_map_oi = ProbeMultiLoudAVG;
+trange = [-0.8, 0.8]; % in seconds
+frange = [2, 30]; % in Hz
+fig_title = 'Multi Loud (All EEG Sites)';
+outputfile = './figure/multi_loud';
+maskfile = '';
+outputfile_after_mask='';
+crange =[-7 7];
+baseline=[-0.8 -0.6];
+kb_plot_tfr(roi,diff_map_oi,trange,frange,fig_title,outputfile,maskfile,outputfile_after_mask,crange,baseline);
+%%
+roi = eeg_sites;
+diff_map_oi = ProbeMultiSoftAVG;
+trange = [-0.8, 0.8]; % in seconds
+frange = [2, 30]; % in Hz
+fig_title = 'Multi Soft (All EEG Sites)';
+outputfile = './figure/multi_soft';
+maskfile = '';
+outputfile_after_mask='';
+crange =[-7 7];
+baseline=[-0.8 -0.6];
+kb_plot_tfr(roi,diff_map_oi,trange,frange,fig_title,outputfile,maskfile,outputfile_after_mask,crange,baseline);
+%%
+roi = eeg_sites;
+diff_map_oi = ProbeOneLoudAVG;
+trange = [-0.8, 0.8]; % in seconds
+frange = [2, 30]; % in Hz
+fig_title = 'One Loud (All EEG Sites)';
+outputfile = './figure/one_loud';
+maskfile = '';
+outputfile_after_mask='';
+crange =[-7 7];
+baseline=[-0.8 -0.6];
+kb_plot_tfr(roi,diff_map_oi,trange,frange,fig_title,outputfile,maskfile,outputfile_after_mask,crange,baseline);
+%%
+roi = eeg_sites;
+diff_map_oi = ProbeOneSoftAVG;
+trange = [-0.8, 0.8]; % in seconds
+frange = [2, 30]; % in Hz
+fig_title = 'One Soft (All EEG Sites)';
+outputfile = './figure/one_soft';
+maskfile = '';
+outputfile_after_mask='';
+crange =[-7 7];
+baseline=[-0.8 -0.6];
+kb_plot_tfr(roi,diff_map_oi,trange,frange,fig_title,outputfile,maskfile,outputfile_after_mask,crange,baseline);
+
+
+
+
+
+
+
+
+
+
+
+
+%%
 %%
 cfg = [];
 cfg.baseline = [-0.8 -0.6]; 
