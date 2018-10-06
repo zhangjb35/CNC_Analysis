@@ -65,7 +65,7 @@ cfg.taper        = 'hanning';
 cfg.pad          = 'nextpow2';
 cfg.foi          = 2:0.5:30; % in Hz
 cfg.t_ftimwin    = 4./cfg.foi;  % 4 cycles per time window
-cfg.toi          = -1.5:0.01:1.5; % in second
+cfg.toi          = -2:0.01:2; % in second
 
 parfor i=1:length(eeglabData_cond)
     tfr_utl_fData{i} = loop_ana(utl_fData{i},procAction,cfg,{});
@@ -81,18 +81,30 @@ ProbeMultiSoft =  tfr_utl_fData{2};
 ProbeMultiLoud =  tfr_utl_fData{3};
 ProbeOneSoft =  tfr_utl_fData{4};
 ProbeOneLoud =  tfr_utl_fData{5};% this correspondence checked with bdf file, see setup folder
+%% save for first level analysis
+save noSound_baseline noSound_baseline
+save ProbeMultiSoft ProbeMultiSoft
+save ProbeMultiLoud ProbeMultiLoud
+save ProbeOneSoft ProbeOneSoft
+save ProbeOneLoud ProbeOneLoud
+%%
 cfg = [];
 procAction = 'cond_baseline_ref';
 ProbeMultiSoft_refBaseline = loop_ana(ProbeMultiSoft,procAction,cfg,noSound_baseline);
 ProbeMultiLoud_refBaseline = loop_ana(ProbeMultiLoud,procAction,cfg,noSound_baseline);
 ProbeOneSoft_refBaseline = loop_ana(ProbeOneSoft,procAction,cfg,noSound_baseline);
 ProbeOneLoud_refBaseline = loop_ana(ProbeOneLoud,procAction,cfg,noSound_baseline);
+%% save for second level analysis
+save ProbeMultiSoft_refBaseline ProbeMultiSoft_refBaseline
+save ProbeMultiLoud_refBaseline ProbeMultiLoud_refBaseline
+save ProbeOneSoft_refBaseline ProbeOneSoft_refBaseline
+save ProbeOneLoud_refBaseline ProbeOneLoud_refBaseline
 %% --- 07 # average TFR across subject for plot TFR prep for stat and after stat resutls visualization)
 % as baseline, skip it
 
-% cfg = [];
-% nosoundAVG = ft_freqgrandaverage(cfg, tfr_utl_fData{1}{1:end}); 
-% save nosoundAVG nosoundAVG
+cfg = [];
+nosoundAVG = ft_freqgrandaverage(cfg, tfr_utl_fData{1}{1:end}); 
+save nosoundAVG nosoundAVG
 
 cfg = [];
 multisoftAVG = ft_freqgrandaverage(cfg,ProbeMultiSoft_refBaseline{1:end});
