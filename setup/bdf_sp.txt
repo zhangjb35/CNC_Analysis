@@ -1,0 +1,19 @@
+bin1
+No Sound
+.{1}
+
+bin2
+One Soft
+.{2}
+
+bin3
+One Loud
+.{3}
+
+bin4
+Multi Soft
+.{4}
+
+bin5
+Multi Loud
+.{5}

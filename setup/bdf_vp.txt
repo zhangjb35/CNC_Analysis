@@ -1,0 +1,19 @@
+bin1
+Probe after No Sound
+.{10}
+
+bin2
+Probe after Multi Soft
+.{40}
+
+bin3
+Probe after Multi Loud
+.{50}
+
+bin4
+Probe after One Soft
+.{20}
+
+bin5
+Probe after One Loud
+.{30}

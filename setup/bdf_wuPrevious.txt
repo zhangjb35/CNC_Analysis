@@ -57,3 +57,23 @@ Small Test Stim after One Soft Sound
 bin15
 Small Test Stim after One Loud Sound
 .{31;32;33}
+
+bin16
+No Sound
+.{1}
+
+bin17
+One Soft
+.{2}
+
+bin18
+One Loud
+.{3}
+
+bin19
+Multi Soft
+.{4}
+
+bin20
+Multi Loud
+.{5}
