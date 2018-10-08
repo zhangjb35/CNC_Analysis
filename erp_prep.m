@@ -22,7 +22,7 @@ bdfFile_sp = fullfile(erp_setup_path,'bdf_sp.txt');
 bdfFile_vp = fullfile(erp_setup_path,'bdf_vp.txt');
 %% ERP
 [subjList,namePattern] = kb_ls(fullfile(data_dir, 'sub-*', 'eeg', 'preprocess', 'coreog_ica_lfilt_hfilt_ref_data.set'));
-for i=8:length(subjList)
+for i=1:length(subjList)
     %% --- 01# prepare path
     % setup store path
     storePath=fullfile(home_dir,'data','rawEEG',['sub-' sprintf('%02d',i)],'eeg','erp_70uv_threshodl');
