@@ -4,7 +4,7 @@
 clear, clc
 restoredefaultpath; %% set a clean path
 % addpath('/home/jinbo/.matlab/R2012b'); % for linux only
-project_dir = '/Volumes/Workspace/Projects/CNC_analysis/code/CNC_Analysis';
+project_dir = pwd;
 home_dir = fullfile(project_dir, 'data', 'TFPrep');
 matlab_dir = fullfile(project_dir, 'toolbox');
 fuction_dir = fullfile(project_dir, 'functions');
@@ -26,8 +26,8 @@ eeg_sites = {'all', '-HEO', '-VEO'};
 % MS_ML, OS_OL level = M minus O
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%
-load('./data/MS_ML.mat','-mat')
-load('./data/OS_OL.mat','-mat')
+load MS_ML
+load OS_OL
 % load ML_OL % same resutls, the diff of those two is same as first two.
 % load MS_OS
 
@@ -48,11 +48,11 @@ load('./data/OS_OL.mat','-mat')
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 cfg = [];
-%do need explore at sites level, skip it
-cfg_neighb.method    = 'distance';
-cfg_neighb.layout    = 'cnc_eeg.mat';
-cfg.neighbours       = ft_prepare_neighbours(cfg_neighb, MS_ML{1});
-%cfg.neighbourdist    = 2;
+% do need explore at sites level, skip it
+%cfg_neighb.method    = 'distance';
+%cfg_neighb.layout    = 'cnc_eeg.mat';
+%cfg.neighbours       = ft_prepare_neighbours(cfg_neighb, MS_ML{1});
+%cfg.neighbourdist    = 8;
 %cfg.neighbours = [];
 %setup stat parameter
 
@@ -69,12 +69,12 @@ cfg.alpha            = 0.05;
 cfg.numrandomization = 10000;
 
 cfg.channel          = fronto_central_sites;
-%cfg.channel = eeg_sites;
+
 cfg.latency          = [-0.5 -0.2];
 cfg.frequency        = [4 8];
 %cfg.avgoverfreq = 'no';
 %cfg.avgovertime = 'no';
-%cfg.avgoverchan = 'yes';
+cfg.avgoverchan = 'yes';
 
 cfg.correctm         = 'cluster';
 
@@ -97,13 +97,12 @@ save SP_Theta SP_Theta -v7.3
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 cfg = [];
-%do need explore at sites level, skip it
-cfg_neighb.method    = 'distance';
-cfg_neighb.layout    = 'cnc_eeg.mat';
-cfg.neighbours       = ft_prepare_neighbours(cfg_neighb, MS_ML{1});
-%cfg.neighbourdist    = 2;
+
+%cfg_neighb.method    = 'distance';
+%cfg_neighb.layout    = 'cnc_eeg.mat';
+%cfg.neighbours       = ft_prepare_neighbours(cfg_neighb, MS_ML{1});
+%cfg.neighbourdist    = 8;
 %cfg.neighbours = [];
-%setup stat parameter
 
 cfg.method           = 'montecarlo';
 cfg.statistic        = 'depsamplesT';
@@ -123,7 +122,7 @@ cfg.latency          = [-0.4 0];
 cfg.frequency        = [12 18];
 %cfg.avgoverfreq = 'no';
 %cfg.avgovertime = 'no';
-%cfg.avgoverchan = 'yes';
+cfg.avgoverchan = 'yes';
 
 cfg.correctm         = 'cluster';
 
@@ -192,13 +191,12 @@ save SP_Beta SP_Beta -v7.3
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 cfg = [];
-%do need explore at sites level, skip it
-cfg_neighb.method    = 'distance';
-cfg_neighb.layout    = 'cnc_eeg.mat';
-cfg.neighbours       = ft_prepare_neighbours(cfg_neighb, MS_ML{1});
-%cfg.neighbourdist    = 2;
+
+%cfg_neighb.method    = 'distance';
+%cfg_neighb.layout    = 'cnc_eeg.mat';
+%cfg.neighbours       = ft_prepare_neighbours(cfg_neighb, MS_ML{1});
+%cfg.neighbourdist    = 8;
 %cfg.neighbours = [];
-%setup stat parameter
 
 cfg.method           = 'montecarlo';
 cfg.statistic        = 'depsamplesT';
@@ -218,7 +216,7 @@ cfg.latency          = [0 0.35];
 cfg.frequency        = [7.5 10.5];
 %cfg.avgoverfreq = 'no';
 %cfg.avgovertime = 'no';
-%cfg.avgoverchan = 'yes';
+cfg.avgoverchan = 'yes';
 
 cfg.correctm         = 'cluster';
 
@@ -238,13 +236,12 @@ save VP_Alpha VP_Alpha -v7.3
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 cfg = [];
-%do need explore at sites level, skip it
-cfg_neighb.method    = 'distance';
-cfg_neighb.layout    = 'cnc_eeg.mat';
-cfg.neighbours       = ft_prepare_neighbours(cfg_neighb, MS_ML{1});
-%cfg.neighbourdist    = 2;
+
+%cfg_neighb.method    = 'distance';
+%cfg_neighb.layout    = 'cnc_eeg.mat';
+%cfg.neighbours       = ft_prepare_neighbours(cfg_neighb, MS_ML{1});
+%cfg.neighbourdist    = 8;
 %cfg.neighbours = [];
-%setup stat parameter
 
 cfg.method           = 'montecarlo';
 cfg.statistic        = 'depsamplesT';
@@ -264,7 +261,7 @@ cfg.latency          = [0.05 0.20];
 cfg.frequency        = [12 25];
 %cfg.avgoverfreq = 'no';
 %cfg.avgovertime = 'no';
-%cfg.avgoverchan = 'yes';
+cfg.avgoverchan = 'yes';
 
 cfg.correctm         = 'cluster';
 
@@ -277,3 +274,39 @@ cfg.ivar = 2;                                   % "condition" is the dependent v
 
 VP_Beta = ft_freqstatistics(cfg, MS_ML{1:end}, OS_OL{1:end});
 save VP_Beta VP_Beta -v7.3
+%% time baseline method
+load('./data/ProbeOneSoft.mat','-mat')
+load('./data/ProbeOneLoud.mat','-mat')
+load('./data/ProbeMultiSoft.mat','-mat')
+load('./data/ProbeMultiLoud.mat','-mat')
+% remove baseline
+procAction = 'baseline_it';
+cfg = [];
+cfg.baseline = [-0.8,-0.6];
+cfg.baselinetype = 'relchange';
+ProbeOneSoft_rm = loop_ana(ProbeOneSoft,procAction,cfg,[]);
+
+procAction = 'baseline_it';
+cfg = [];
+cfg.baseline = [-0.8,-0.6];
+cfg.baselinetype = 'relchange';
+ProbeOneLoud_rm = loop_ana(ProbeOneLoud,procAction,cfg,[]);
+
+procAction = 'baseline_it';
+cfg = [];
+cfg.baseline = [-0.8,-0.6];
+cfg.baselinetype = 'relchange';
+ProbeMultiSoft_rm = loop_ana(ProbeMultiSoft,procAction,cfg,[]);
+
+procAction = 'baseline_it';
+cfg = [];
+cfg.baseline = [-0.8,-0.6];
+cfg.baselinetype = 'relchange';
+ProbeMultiLoud_rm = loop_ana(ProbeMultiLoud,procAction,cfg,[]);
+
+save ProbeOneSoft_rm ProbeOneSoft_rm -v7.3
+save ProbeOneLoud_rm ProbeOneLoud -v7.3
+save ProbeMultiSoft_rm ProbeMultiSoft -v7.3
+save ProbeMultiLoud_rm ProbeMultiLoud -v7.3
+
+%% compare Soft with Loud under One Sound condition

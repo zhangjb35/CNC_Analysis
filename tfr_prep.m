@@ -33,7 +33,7 @@ additoininfo = {};
 parfor i=1:length(eeglabData_cond)
     tl_fData{i} = loop_ana(fData{i},procAction,cfg,additoininfo);
 end
-
+% save tl_fData tl_fData
 %% --- 04 # remove ERP from each trial for extracting pure induced part of EEG activity
 procAction = 'untimelocked_analysis';
 cfg = [];
