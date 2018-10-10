@@ -7,6 +7,9 @@ for i=1:numel(input)
         case 'timelocked_analysis'
             temp = input{i};
             output{i} = timelocked_analysis(cfg,temp);
+%         case 'timelocked_analysis_ERP'
+%             temp = input{i};
+%             output{i} = timelocked_analysis(cfg,temp);
         case 'untimelocked_analysis'
             temp = input{i};
             temp_add = additoininfo{i};
@@ -37,6 +40,9 @@ for i=1:numel(input)
             temp_base = additoininfo{i};
             output{i} = input{i};
             output{i}.powspctrm = temp.powspctrm - temp_base.powspctrm;
+        case 'baseline_it'
+            temp = input{i};
+            output{i} = ft_freqbaseline(cfg,temp);
         case 'average_tf'
             temp = input{i};
             temp_base = additoininfo{i};

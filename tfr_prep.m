@@ -88,17 +88,29 @@ save ProbeMultiLoud ProbeMultiLoud
 save ProbeOneSoft ProbeOneSoft
 save ProbeOneLoud ProbeOneLoud
 %%
+% cfg = [];
+% procAction = 'cond_baseline_ref';
+% ProbeMultiSoft_refBaseline = loop_ana(ProbeMultiSoft,procAction,cfg,noSound_baseline);
+% ProbeMultiLoud_refBaseline = loop_ana(ProbeMultiLoud,procAction,cfg,noSound_baseline);
+% ProbeOneSoft_refBaseline = loop_ana(ProbeOneSoft,procAction,cfg,noSound_baseline);
+% ProbeOneLoud_refBaseline = loop_ana(ProbeOneLoud,procAction,cfg,noSound_baseline);
+%% trans to baseline on relative
 cfg = [];
-procAction = 'cond_baseline_ref';
-ProbeMultiSoft_refBaseline = loop_ana(ProbeMultiSoft,procAction,cfg,noSound_baseline);
-ProbeMultiLoud_refBaseline = loop_ana(ProbeMultiLoud,procAction,cfg,noSound_baseline);
-ProbeOneSoft_refBaseline = loop_ana(ProbeOneSoft,procAction,cfg,noSound_baseline);
-ProbeOneLoud_refBaseline = loop_ana(ProbeOneLoud,procAction,cfg,noSound_baseline);
+cfg.baseline = [-0.8 -0.6];
+cfg.baselinetype = 'relative';
+procAction = 'baseline_it';
+noSound_baseline_rm = loop_ana(noSound_baseline,procAction,cfg,[]);
+ProbeMultiSoft_rm = loop_ana(ProbeMultiSoft,procAction,cfg,[]);
+ProbeMultiLoud_rm = loop_ana(ProbeMultiLoud,procAction,cfg,[]);
+ProbeOneSoft_rm = loop_ana(ProbeOneSoft,procAction,cfg,[]);
+ProbeOneLoud_rm = loop_ana(ProbeOneLoud,procAction,cfg,[]);
+
 %% save for second level analysis
-save ProbeMultiSoft_refBaseline ProbeMultiSoft_refBaseline
-save ProbeMultiLoud_refBaseline ProbeMultiLoud_refBaseline
-save ProbeOneSoft_refBaseline ProbeOneSoft_refBaseline
-save ProbeOneLoud_refBaseline ProbeOneLoud_refBaseline
+save noSound_baseline_rm noSound_baseline_rm
+save ProbeMultiSoft_rm ProbeMultiSoft_rm
+save ProbeMultiLoud_rm ProbeMultiLoud_rm
+save ProbeOneSoft_rm ProbeOneSoft_rm
+save ProbeOneLoud_rm ProbeOneLoud_rm
 %% --- 07 # average TFR across subject for plot TFR prep for stat and after stat resutls visualization)
 % no baseline correct
 

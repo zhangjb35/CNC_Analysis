@@ -68,7 +68,7 @@ end
 % response info
 [rightSet,numerlSet,groupName] = grpstats(rawData.ButtonPush,{rawData.participant_id,rawData.SoundCondition,rawData.NumCondition},{'sum','numel','gname'});
 for i=1:length(unique(rawData.participant_id))
-    xSets(:,i) = [15;16;18;22;24;27];% stimulus levels
+    xSets(:,i) = [2.7,2.8,2.9,3.1,3.2,3.3];% stimulus levels
     mSets(:,i) = repmat(20,size(xSets(:,i))); %
 end
 rSets = reshape(rightSet,[6,5,22]);
@@ -91,8 +91,8 @@ for i=1:22
         x = xSets(:,i);
         m = mSets(:,i);
         r = rSets(:,j,i);
-        semilogx( x, r ./ m, 'Marker',markShapeUse{j},'MarkerFaceColor', 'none','MarkerEdgeColor',ColorUse{j}, 'LineStyle' ,'none','MarkerSize',5,'DisplayName', conditionNameMarker{j});
-        axis([14.5 27.5 0 1]);
+        plot( x, r ./ m, 'Marker',markShapeUse{j},'MarkerFaceColor', 'none','MarkerEdgeColor',ColorUse{j}, 'LineStyle' ,'none','MarkerSize',5,'DisplayName', conditionNameMarker{j});
+        axis([log([14.5 27.5]),0,1]);
         axis square;
         %% For the Gaussian cumulative distribution function (black curve):
         degpol = 1; % Degree of the polynomial
@@ -110,7 +110,7 @@ for i=1:22
         [ X_50_ind(i,j), ~ ] = threshold_slope( pfit, xfit, prob);
         prob = 0.75; % probability where to estimate the JND
         [ X_75_ind(i,j), ~ ] = threshold_slope( pfit, xfit, prob );
-        hold on, semilogx( xfit, pfit, 'LineStyle' ,lineUse{j},'Color',ColorUse{j},'LineWidth',2,'DisplayName',conditionName{j});
+        hold on, plot( xfit, pfit, 'LineStyle' ,lineUse{j},'Color',ColorUse{j},'LineWidth',2,'DisplayName',conditionName{j});
 %     %% For the Weibull function (red curve):
 %     [ b, K ] = binom_weib( r, m, x, 1, 5 );
 %     guessing = 0; % guessing rate
@@ -124,8 +124,8 @@ for i=1:22
 %     hold on, semilogx( xfit, pfit, 'LineStyle' ,lineUse{j},'Color',ColorUse{j},'LineWidth',2,'DisplayName',conditionName{j});
     legend('Location','southeast')
     end
-    xticks([15;16;18;20;22;24;27])
-    %xticklabels({'-3\pi','-2\pi','-\pi','0','\pi','2\pi','3\pi'})
+    xticks([2.7,2.8,2.9,3.0,3.1,3.2,3.3])
+    xticklabels({'15','16','18','20','22','24','27'})
     yticks([0 0.25 0.50 0.75 1])
     title(['Psychometric Curves of Subj ' sprintf('%02d',i)],'FontSize', 18);
     xlabel('Test numerosity (dots)','FontSize', 18) % x-axis label
@@ -158,7 +158,7 @@ end
 %% Grand Average
 [GrightSet,GnumerlSet,GgroupName] = grpstats(rawData.ButtonPush,{rawData.SoundCondition,rawData.NumCondition},{'sum','numel','gname'});
 GrSets = reshape(GrightSet,[6,5]);
-Gx =  [15;16;18;22;24;27];
+Gx =  [2.7;2.8;2.9;3.1;3.2;3.3];
 Gm =  [440;440;440;440;440;440];
 % plot
 close all
@@ -167,8 +167,8 @@ for j=1:5
     x = Gx;
     m = Gm;
     r = GrSets(:,j);
-    semilogx( x, r ./ m, 'Marker',markShapeUse{j},'MarkerFaceColor', 'none','MarkerEdgeColor',ColorUse{j}, 'LineStyle' ,'none','MarkerSize',5,'DisplayName', conditionNameMarker{j});
-    axis([14.5 27.5 0 1]);
+    plot( x, r ./ m, 'Marker',markShapeUse{j},'MarkerFaceColor', 'none','MarkerEdgeColor',ColorUse{j}, 'LineStyle' ,'none','MarkerSize',5,'DisplayName', conditionNameMarker{j});
+    axis([log([14.5 27.5]),0,1]);
     axis square;
             %% For the Gaussian cumulative distribution function (black curve):
             degpol = 1; % Degree of the polynomial
@@ -185,7 +185,7 @@ for j=1:5
             [ Point_75(j), ~ ] = threshold_slope( pfit, xfit, prob );
             prob = 0.25; % probability where to estimate the JND
             [ Point_25(j), ~ ] = threshold_slope( pfit, xfit, prob );
-            hold on, semilogx( xfit, pfit, 'LineStyle' ,lineUse{j},'Color',ColorUse{j},'LineWidth',1,'DisplayName',conditionName{j});
+            hold on, plot( xfit, pfit, 'LineStyle' ,lineUse{j},'Color',ColorUse{j},'LineWidth',1,'DisplayName',conditionName{j});
 
 %     
 %         bwd_min = min( diff( x ) );
@@ -209,8 +209,8 @@ for j=1:5
     
     legend('Location','southeast')
 end
-xticks([15;16;18;20;22;24;27])
-%xticklabels({'-3\pi','-2\pi','-\pi','0','\pi','2\pi','3\pi'})
+xticks([2.7,2.8,2.9,3.0,3.1,3.2,3.3])
+xticklabels({'15','16','18','20','22','24','27'})
 yticks([0 0.25 0.50 0.75 1])
 title('Grand Psychometric Curves', 'FontSize', 18);
 xlabel('Test numerosity (dots)','FontSize', 18) % x-axis label
@@ -226,7 +226,7 @@ writetable(pse_data,'pse_results.csv','WriteVariableNames',true)
 jnd_data_25_75 = array2table((X_75_ind-X_25_ind)/2);
 jnd_data_25_75.Properties.VariableNames={'No_Sound','One_Soft','One_Loud','Multi_Soft','Multi_Loud'};
 writetable(jnd_data_25_75,'jnd_results_25_75.csv','WriteVariableNames',true)
-jnd_data_75_50 = array2table(X_75_ind-X_50_ind);
+jnd_data_75_50 = array2table((X_75_ind-X_50_ind));
 jnd_data_75_50.Properties.VariableNames={'No_Sound','One_Soft','One_Loud','Multi_Soft','Multi_Loud'};
 writetable(jnd_data_75_50,'jnd_results_75_50.csv','WriteVariableNames',true)
 % mat
@@ -235,33 +235,34 @@ save X_50_ind X_50_ind
 save X_75_ind X_75_ind
 %% screen
 % pse
-limitUP = mean(table2array(pse_data))+2.5*(std(table2array(pse_data)));
-limitDown = mean(table2array(pse_data))-2.5*(std(table2array(pse_data)));
+limitUP = (mean(X_50_ind)+2.5*(std(X_50_ind)));
+limitDown = (mean(X_50_ind)-2.5*(std(X_50_ind)));
 temp=table2array(pse_data);
 for i=1:size(temp,2)
     checkData = temp(:,i);
     checkData(find(checkData<limitDown(i)))=nan;
     checkData(find(checkData>limitUP(i)))=nan;
-    checkEd(:,i)=checkData;
+    checkEd_raw(:,i)=checkData;
 end
-checkEd = array2table(checkEd);
+checkEd = array2table(checkEd_raw);
 checkEd.Properties.VariableNames={'No_Sound','One_Soft','One_Loud','Multi_Soft','Multi_Loud'};
 writetable(checkEd,'pse_results_checked.csv','WriteVariableNames',true)
 clear limitUP
 clear limitDown
 clear checkData
 clear checkEd
+clear temp
 % jnd
-limitUP = mean(table2array(jnd_data_75_50))+2.5*(std(table2array(jnd_data_75_50)));
-limitDown = mean(table2array(jnd_data_75_50))-2.5*(std(table2array(jnd_data_75_50)));
+limitUP = (mean(X_75_ind-X_50_ind)+2.5*(std(X_75_ind-X_50_ind)));
+limitDown =  (mean(X_75_ind-X_50_ind)-2.5*(std(X_75_ind-X_50_ind)));
 temp=table2array(jnd_data_75_50);
 for i=1:size(temp,2)
     checkData = temp(:,i);
     checkData(find(checkData<limitDown(i)))=nan;
     checkData(find(checkData>limitUP(i)))=nan;
-    checkEd(:,i)=checkData;
+    checkEd_raw(:,i)=checkData;
 end
-checkEd = array2table(checkEd);
+checkEd = array2table(checkEd_raw);
 checkEd.Properties.VariableNames={'No_Sound','One_Soft','One_Loud','Multi_Soft','Multi_Loud'};
 writetable(checkEd,'jnd_results_checked.csv','WriteVariableNames',true)
 %%

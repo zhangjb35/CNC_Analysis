@@ -43,7 +43,7 @@ ylabel('Frequency (Hz)');
 caxis(crange);
 colormap(brewermap(256, '*RdYlBu')); % refine the colorbar
 %colormap(bluewhitered(1024))
-colormap(jet) % set classical colmap
+%colormap(jet) % set classical colmap
 
 % refine the detail of display
 h = colorbar();
@@ -78,10 +78,10 @@ if ~isempty(maskfile)
     axis xy;
     xlabel('Time (ms)');
     ylabel('Frequency (Hz)');
-    caxis([-0.25 0.25]);
+    caxis(crange);
     colormap(brewermap(256, '*RdYlBu')); % refine the colorbar
     %colormap(bluewhitered(1024))
-    colormap(jet) % set classical colmap
+    %colormap(jet) % set classical colmap
     
     % refine the detail of display
     h = colorbar();

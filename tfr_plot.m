@@ -270,3 +270,6 @@ kb_plot_tfr(roi,diff_map_oi,trange,frange,fig_title,outputfile,maskfile,outputfi
 
 %% end tf_plot
 close all % close this file
+
+%%
+load *.mat
