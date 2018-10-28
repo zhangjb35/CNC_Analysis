@@ -11,35 +11,6 @@ fuction_dir = fullfile(project_dir, 'functions');
 addpath(genpath(fullfile(matlab_dir, 'psignifit')));  %% initialize modelfree package
 addpath(genpath(fuction_dir));
 
-%% make some data
-data =    [...
-    0.0010,   0.5000,   90.0000;...
-    0.0015,   0.5556,   90.0000;...
-    0.0020,   0.4889,   90.0000;...
-    0.0025,   0.4889,   90.0000;...
-    0.0030,   0.5778,   90.0000;...
-    0.0035,   0.5889,   90.0000;...
-    0.0040,   0.6889,   90.0000;...
-    0.0045,   0.7111,   90.0000;...
-    0.0050,   0.8444,   90.0000;...
-    0.0060,   0.8778,   90.0000;...
-    0.0070,   0.9778,   90.0000;...
-    0.0080,   1.0000,   90.0000;...
-    0.0100,   1.0000,   90.0000];
-%% convert data to lagency format for psignfit
-data(:,2) = round(data(:,2).*data(:,3));
-
-%% Convert the options and call psignifit 4:
-options = PsignifitLegacyOptionsConverter('shape', 'Weibull', 'n_intervals', 2, 'conf', [0.023 0.977], 'runs', 1999);
-result = psignifit(data, options);
-
-plotOptions = struct;
-plotOptions.CIthresh = 'true';
-plotOptions.aspectRatio = 'true';
-
-plotPsych(result, plotOptions);
-
-
 %% prep data
 % data file list
 data_file_behv = cell2mat(kb_ls(fullfile(pwd,'data','behv','raw','sub*.csv')));
@@ -62,8 +33,9 @@ end
 % response info
 [rightSet,numerlSet,groupName] = grpstats(rawData.ButtonPush,{rawData.participant_id,rawData.SoundCondition,rawData.NumCondition},{'sum','numel','gname'});
 for i=1:length(unique(rawData.participant_id))
-    % log([15,16,18,22,24,27])
-    xSets(:,i) = [2.7,2.8,2.9,3.1,3.2,3.3];% stimulus levels
+    xSets(:,i) = [2.7 2.8 2.9 3.1 3.2 3.3];
+    %xSets(:,i) = log([15,16,18,22,24,27]);
+    %xSets(:,i) = [15,16,18,22,24,27];% stimulus levels
     mSets(:,i) = repmat(20,size(xSets(:,i))); %
 end
 rSets = reshape(rightSet,[6,5,22]);
@@ -78,10 +50,11 @@ C3 = rgb('OrangeRed');
 C4 = rgb('MediumAquamarine');
 C5 = rgb('MediumAquamarine');
 %ColorUse = {C1,C2,C3,C4,C5};
-ColorUse = {'k','r','r','b','b'};
+ColorUse = {'k','r','g','b','m'};
 
 %%
-for i=1:1
+for i=1:22
+    fig=figure;
     for j=1:5
         x = xSets(:,i);
         m = mSets(:,i);
@@ -89,23 +62,76 @@ for i=1:1
         
         data = [x,r,m];
         options = struct;
-        options.sigmoidName = 'weibull';   % choose a cumulative Gaussian as the sigmoid
+        options.sigmoidName = 'logistic';   % choose a cumulative Gaussian as the sigmoid
         options.expType     = 'YesNo';
-        options.logspace = 1;
+        %options.logspace = 1;
         options.fixedPars = NaN(5,1);
-        %options.fixedPars(3) = [0:0.05];
-        %options.fixedPars(4) = [0:0.05];
+        options.fixedPars(3) = 0;
+        options.fixedPars(4) = 0;
         %options.expType = 'equalAsymptote';
-        result = psignifit(data,options);
+        result{i,j} = psignifit(data,options);
         
         plotOptions = struct;
-        plotOptions.CIthresh = 'true';
-        plotOptions.aspectRatio = 'true';
-        
-        plotPsych(result, plotOptions);
+        plotOptions.CIthresh = false;
+        plotOptions.aspectRatio = true;
+        plotOptions.plotPar = true;
+        plotOptions.lineColor = ColorUse{j};
+        plotPsych(result{i,j}, plotOptions);
         hold on
+        
+        disp([i,j]);
+        
+    end
+    print(fig,sprintf('Subj_%02d',i),'-dpng','-r300')
+    close all
+end
+save fit_results_fixLapse result -v7.3
+% usedIndex = ones(size(result));
+% for i=1:22
+%     for j=1:5
+% %         X25(i,j) = getThreshold(result{i,j},0.25,0);
+% %         X50(i,j) = getThreshold(result{i,j},0.5,0);
+% %         X75(i,j) = getThreshold(result{i,j},0.75,0);
+%         temp = getStandardParameters(result{i,j});
+%         for k=1:5
+%             if temp(3) >= 0.25 || temp(4) >= 0.25
+%                 usedIndex(i,j)=nan;
+%             end
+%         end
+%     end
+% end
+%%
+for i=1:22
+    for j=1:5
+        X25(i,j) = getThreshold(result{i,j},0.25,1);
+        X50(i,j) = getThreshold(result{i,j},0.5,1);
+        X75(i,j) = getThreshold(result{i,j},0.75,1);
+%         temp = getStandardParameters(result{i,j});
+%         for k=1:5
+%             if temp(3) >= 0.25 || temp(4) >= 0.25
+%                 usedIndex(i,j)=nan;
+%             end
+%         end
     end
 end
+
+save X25 X25
+save X50 X50
+save X75 X75
+
+%% output
+pse=exp(X50);
+upl = mean(pse)+3*std(pse);
+dwl = mean(pse)-3*std(pse);
+mask = (pse<upl).*(pse>dwl);
+pse = pse.*mask;
+csvwrite('pse.csv',pse);
+jnd=(exp(X75)-exp(X50));
+upl = mean(jnd)+3*std(jnd);
+dwl = mean(jnd)-3*std(jnd);
+mask = (jnd<upl).*(jnd>dwl);
+jnd = jnd.*mask;
+csvwrite('jnd.csv',jnd);
 %% Grand Average
 [GrightSet,GnumerlSet,GgroupName] = grpstats(rawData.ButtonPush,{rawData.SoundCondition,rawData.NumCondition},{'sum','numel','gname'});
 GrSets = reshape(GrightSet,[6,5]);
