@@ -1,0 +1,783 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>psymetricesAnalses</title><meta name="generator" content="MATLAB 9.4"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2018-10-31"><meta name="DC.source" content="psymetricesAnalses.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#1">&#24515;&#29702;&#29289;&#29702;&#26354;&#32447;&#25311;&#21512;</a></li><li><a href="#2">&#20934;&#22791;&#24037;&#20316;&#29615;&#22659;</a></li><li><a href="#3">&#25968;&#25454;&#23548;&#20837;</a></li><li><a href="#4">&#28155;&#21152;&#25353;&#38190;&#35782;&#21035;&#21464;&#37327;&#65292;&#35774;&#32622;&#21021;&#22987;&#20540;&#20026;0</a></li><li><a href="#5">&#28165;&#29702;&#25968;&#25454;</a></li><li><a href="#6">&#25552;&#21462;&#38656;&#35201;&#30340;&#25968;&#25454;</a></li><li><a href="#7">&#35782;&#21035; 15&#65292;16&#65292;24&#65292;27&#23384;&#22312;&#27010;&#29575;&#27700;&#24179;&#65288;50%&#65289;&#21453;&#24212;&#34920;&#29616;&#30340;&#34987;&#35797;</a></li><li><a href="#8">&#35774;&#23450;&#21464;&#37327;&#21517;&#31216;&#21450;&#21487;&#33021;&#29992;&#21040;&#30340;&#39068;&#33394;&#32534;&#30721;</a></li><li><a href="#9">&#38024;&#23545;&#20010;&#20307;&#36827;&#34892;&#26354;&#32447;&#25311;&#21512;</a></li><li><a href="#11">&#32472;&#22270;&#26816;&#26597;</a></li><li><a href="#12">&#26631;&#35760;&#36827;&#24230;</a></li><li><a href="#14">&#29305;&#24449;&#20540;&#25277;&#21462;</a></li><li><a href="#15">&#35745;&#31639;&#25351;&#26631;</a></li><li><a href="#16">record remove info</a></li><li><a href="#17">&#22791;&#20221;&#25311;&#21512;&#32467;&#26524;</a></li></ul></div><h2 id="1">&#24515;&#29702;&#29289;&#29702;&#26354;&#32447;&#25311;&#21512;</h2><pre class="codeinput">tic
+</pre><h2 id="2">&#20934;&#22791;&#24037;&#20316;&#29615;&#22659;</h2><p>&#28165;&#29702;</p><pre class="codeinput">clear, clc
+restoredefaultpath; <span class="comment">%% set a clean path</span>
+<span class="comment">% addpath('/home/jinbo/.matlab/R2012b'); % for linux server only</span>
+<span class="comment">% &#35774;&#32622;&#36335;&#32463;</span>
+project_dir = [<span class="string">'/Volumes/Data/Project/CNC_Analysis'</span>];<span class="comment">% change to tfr_prep dir firsts</span>
+home_dir = fullfile(project_dir, <span class="string">'data'</span>, <span class="string">'behv'</span>);
+matlab_dir = fullfile(project_dir, <span class="string">'toolbox'</span>);
+fuction_dir = fullfile(project_dir, <span class="string">'functions'</span>);
+<span class="comment">% &#21152;&#36733;&#38656;&#35201;&#24037;&#20855;</span>
+addpath(genpath(fullfile(matlab_dir, <span class="string">'psignifit'</span>)));  <span class="comment">%% initialize modelfree package</span>
+addpath(genpath(fuction_dir));
+</pre><h2 id="3">&#25968;&#25454;&#23548;&#20837;</h2><p>&#35774;&#23450;&#30446;&#26631;&#25968;&#25454;</p><pre class="codeinput">data_file_behv = cell2mat(kb_ls(fullfile(pwd,<span class="string">'raw_data'</span>,<span class="string">'sub*.csv'</span>)));
+rawData = readtable(data_file_behv);
+</pre><h2 id="4">&#28155;&#21152;&#25353;&#38190;&#35782;&#21035;&#21464;&#37327;&#65292;&#35774;&#32622;&#21021;&#22987;&#20540;&#20026;0</h2><pre class="codeinput">rawData.ButtonPush = zeros(length(rawData.participant_id),1); <span class="comment">% 0 = less;1=more</span>
+<span class="comment">% &#25353;&#38190;&#35835;&#21462;</span>
+<span class="keyword">for</span> i=1:length(rawData.participant_id)
+    <span class="keyword">if</span> rawData.NumCondition(i)&lt;=3 &amp;&amp; rawData.ACC(i)==1 <span class="comment">% small num with right resp = less button; acc = 1 mean right response</span>
+        rawData.ButtonPush(i)=0;
+    <span class="keyword">elseif</span> rawData.NumCondition(i)&lt;=3 &amp;&amp; rawData.ACC(i)==0 <span class="comment">% small num with wrong resp = more button</span>
+        rawData.ButtonPush(i)=1;
+    <span class="keyword">elseif</span> rawData.NumCondition(i)&gt;3 &amp;&amp;rawData.ACC(i)==1 <span class="comment">% bigger num with right resp = more button</span>
+        rawData.ButtonPush(i)=1;
+    <span class="keyword">elseif</span> rawData.NumCondition(i)&gt;3 &amp;&amp; rawData.ACC(i)==0 <span class="comment">% bigger num with wrong resp = less button</span>
+        rawData.ButtonPush(i)=0;
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+</pre><h2 id="5">&#28165;&#29702;&#25968;&#25454;</h2><p>RT must bigger than 100 ms</p><pre class="codeinput">targetData = rawData(rawData.RT&gt;=100,:);
+<span class="comment">% [fout01,xout1,~,~] = ksdensity(targetData.RT,'function','pdf','NumPoints',10000);</span>
+<span class="comment">% [fout0,xout,~,~] = ksdensity(targetData.RT,'function','cdf','NumPoints',10000);</span>
+<span class="comment">% [c index] = min(abs(fout0-0.95));</span>
+<span class="comment">% subplot(2,1,1)</span>
+<span class="comment">% H1 = area(xout(1:index),fout01(1:index));</span>
+<span class="comment">% set(H1(1),'FaceColor',[250,128,114]./255);</span>
+<span class="comment">% H1.EdgeColor='r';</span>
+<span class="comment">% hold on</span>
+<span class="comment">% plot(xout1,fout01,'Color','r');</span>
+<span class="comment">% xlim([0,7000])</span>
+<span class="comment">% xlabel('RT(ms)');</span>
+<span class="comment">% ylabel('Density');</span>
+<span class="comment">% grid on</span>
+<span class="comment">% hold off</span>
+<span class="comment">%</span>
+<span class="comment">% subplot(2,1,2)</span>
+<span class="comment">% H2=area(xout(1:index),fout0(1:index));</span>
+<span class="comment">% set(H2(1),'FaceColor',[250,128,114]./255);</span>
+<span class="comment">% H2.EdgeColor='r';</span>
+<span class="comment">% grid on</span>
+<span class="comment">% hold on</span>
+<span class="comment">% plot(xout,fout0,'Color','r');</span>
+<span class="comment">% xlim([0,7000]);</span>
+<span class="comment">% xlabel('RT(ms)');</span>
+<span class="comment">% ylabel('Cumulative Density');</span>
+<span class="comment">% hold off</span>
+<span class="comment">% % uplimit</span>
+<span class="comment">% uplimit = xout(index);</span>
+<span class="comment">% title(['Uplimit(95%) = ' sprintf('%04.1f',uplimit) ' ms']);</span>
+<span class="comment">% print('uplimitDecide','-dpng','-r300');</span>
+<span class="comment">% close all</span>
+<span class="comment">% % screen data</span>
+<span class="comment">% targetData = targetData(targetData.RT &lt; uplimit,:);</span>
+<span class="comment">%targetData = rawData;</span>
+<span class="comment">% response info</span>
+</pre><h2 id="6">&#25552;&#21462;&#38656;&#35201;&#30340;&#25968;&#25454;</h2><pre class="codeinput">[rightSet,numerlSet,groupName] = grpstats(targetData.ButtonPush,{targetData.participant_id,targetData.SoundCondition,targetData.NumCondition},{<span class="string">'sum'</span>,<span class="string">'numel'</span>,<span class="string">'gname'</span>});
+<span class="keyword">for</span> i=1:length(unique(targetData.participant_id))
+    <span class="comment">%xSets(:,i) = [2.7 2.8 2.9 3.1 3.2 3.3]; % &#23545;&#25968;&#31561;&#36317;&#65292;log([15,16,18,22,24,27] &#36817;&#20284;&#20540;</span>
+    xSets(:,i) = log([15,16,18,22,24,27]);
+    <span class="comment">%xSets(:,i) = [15,16,18,22,24,27];% stimulus levels</span>
+<span class="keyword">end</span>
+rSets = reshape(rightSet,[6,5,22]);
+mSets = reshape(numerlSet,[6,5,22]);
+</pre><h2 id="7">&#35782;&#21035; 15&#65292;16&#65292;24&#65292;27&#23384;&#22312;&#27010;&#29575;&#27700;&#24179;&#65288;50%&#65289;&#21453;&#24212;&#34920;&#29616;&#30340;&#34987;&#35797;</h2><pre class="codeinput">checkSets = rSets./mSets;
+focusSets_12 = checkSets([1,2],:,:);
+focusSets_56 = checkSets([5,6],:,:);
+checkResult = find(squeeze(sum(sum(focusSets_12 &gt;= 0.5))+sum(sum(focusSets_56 &lt;= 0.5)))==1);
+</pre><h2 id="8">&#35774;&#23450;&#21464;&#37327;&#21517;&#31216;&#21450;&#21487;&#33021;&#29992;&#21040;&#30340;&#39068;&#33394;&#32534;&#30721;</h2><p>"1=&gt;nosound","2=&gt;one-soft-sound","3=&gt;one-loud-sound","4=&gt;multi-soft-sound","5=&gt;multi-loud-sound"</p><pre class="codeinput">conditionName = {<span class="string">'No Sound'</span>,<span class="string">'One Soft'</span>,<span class="string">'One Loud'</span>,<span class="string">'Multi Soft'</span>,<span class="string">'Multi Loud'</span>};
+conditionNameMarker =  {<span class="string">'Resonse Data No Sound'</span>,<span class="string">'Resonse Data One Soft'</span>,<span class="string">'Resonse Data One Loud'</span>,<span class="string">'Resonse Data Multi Soft'</span>,<span class="string">'Resonse Data Multi Loud'</span>};
+lineUse = {<span class="string">'-.'</span>,<span class="string">'--'</span>,<span class="string">'-'</span>,<span class="string">'--'</span>,<span class="string">'-'</span>};
+markShapeUse = {<span class="string">'+'</span>,<span class="string">'o'</span>,<span class="string">'*'</span>,<span class="string">'o'</span>,<span class="string">'*'</span>};
+C1 = rgb(<span class="string">'DarkSlateBlue'</span>);
+C2 = rgb(<span class="string">'OrangeRed'</span>);
+C3 = rgb(<span class="string">'OrangeRed'</span>);
+C4 = rgb(<span class="string">'MediumAquamarine'</span>);
+C5 = rgb(<span class="string">'MediumAquamarine'</span>);
+<span class="comment">%ColorUse = {C1,C2,C3,C4,C5};</span>
+ColorUse = {<span class="string">'k'</span>,<span class="string">'r'</span>,<span class="string">'g'</span>,<span class="string">'b'</span>,<span class="string">'m'</span>};
+</pre><h2 id="9">&#38024;&#23545;&#20010;&#20307;&#36827;&#34892;&#26354;&#32447;&#25311;&#21512;</h2><pre class="codeinput"><span class="keyword">for</span> i=1:22
+    fig=figure;
+    <span class="keyword">for</span> j=1:5
+</pre><pre class="codeinput">        x = xSets(:,i);
+        m = mSets(:,i);
+        r = rSets(:,j,i);
+
+        data = [x,r,m];
+        options = struct;
+        options.sigmoidName = <span class="string">'norm'</span>;  <span class="comment">% Gaussian</span>
+        options.expType     = <span class="string">'YesNo'</span>;
+        <span class="comment">%options.logspace = 1; % &#25968;&#25454;&#24050;&#32463;&#36716;&#25442;</span>
+        options.fixedPars = NaN(5,1);
+        options.fixedPars(3) = 0; <span class="comment">% &#19978;&#28418;&#31227;&#35774;&#32622;&#20026; 0</span>
+        options.fixedPars(4) = 0; <span class="comment">% &#19979;&#28418;&#31227;&#35774;&#32622;&#20026; 0</span>
+        options.expType = <span class="string">'equalAsymptote'</span>; <span class="comment">% &#26399;&#26395;&#27010;&#29575;&#20998;&#24067;&#23545;&#31216;</span>
+        options.estimateType   = <span class="string">'MAP'</span>;
+<span class="comment">%         options.borders = nan(5,2);</span>
+<span class="comment">%         options.borders(3,:)=[0,.05];</span>
+<span class="comment">%         options.borders(4,:)=[0,.05];</span>
+        result{i,j} = psignifit(data,options); <span class="comment">% &#25311;&#21512;</span>
+<span class="comment">%         plotPrior(result{i,j} )</span>
+<span class="comment">%         plotMarginal( result{i,j},4);</span>
+</pre><h2 id="11">&#32472;&#22270;&#26816;&#26597;</h2><pre class="codeinput">        plotOptions = struct;
+        plotOptions.CIthresh = false;
+        plotOptions.aspectRatio = true;
+        plotOptions.plotPar = true;
+        plotOptions.lineColor = ColorUse{j};
+        [hline{j},hdataP{j}] = plotPsych(result{i,j}, plotOptions);
+        hold <span class="string">on</span>
+</pre><img vspace="5" hspace="5" src="psymetricesAnalses_01.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_02.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_03.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_04.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_05.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_06.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_07.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_08.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_09.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_10.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_11.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_12.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_13.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_14.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_15.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_16.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_17.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_18.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_19.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_20.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_21.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_22.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_23.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_24.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_25.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_26.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_27.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_28.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_29.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_30.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_31.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_32.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_33.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_34.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_35.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_36.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_37.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_38.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_39.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_40.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_41.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_42.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_43.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_44.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_45.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_46.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_47.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_48.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_49.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_50.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_51.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_52.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_53.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_54.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_55.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_56.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_57.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_58.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_59.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_60.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_61.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_62.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_63.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_64.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_65.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_66.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_67.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_68.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_69.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_70.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_71.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_72.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_73.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_74.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_75.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_76.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_77.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_78.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_79.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_80.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_81.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_82.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_83.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_84.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_85.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_86.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_87.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_88.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_89.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_90.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_91.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_92.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_93.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_94.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_95.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_96.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_97.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_98.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_99.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_100.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_101.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_102.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_103.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_104.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_105.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_106.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_107.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_108.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_109.png" alt=""> <img vspace="5" hspace="5" src="psymetricesAnalses_110.png" alt=""> <h2 id="12">&#26631;&#35760;&#36827;&#24230;</h2><pre class="codeinput">        disp([i,j]);
+</pre><pre class="codeoutput">     1     1
+
+</pre><pre class="codeoutput">     1     2
+
+</pre><pre class="codeoutput">     1     3
+
+</pre><pre class="codeoutput">     1     4
+
+</pre><pre class="codeoutput">     1     5
+
+</pre><pre class="codeoutput">     2     1
+
+</pre><pre class="codeoutput">     2     2
+
+</pre><pre class="codeoutput">     2     3
+
+</pre><pre class="codeoutput">     2     4
+
+</pre><pre class="codeoutput">     2     5
+
+</pre><pre class="codeoutput">     3     1
+
+</pre><pre class="codeoutput">     3     2
+
+</pre><pre class="codeoutput">     3     3
+
+</pre><pre class="codeoutput">     3     4
+
+</pre><pre class="codeoutput">     3     5
+
+</pre><pre class="codeoutput">     4     1
+
+</pre><pre class="codeoutput">     4     2
+
+</pre><pre class="codeoutput">     4     3
+
+</pre><pre class="codeoutput">     4     4
+
+</pre><pre class="codeoutput">     4     5
+
+</pre><pre class="codeoutput">     5     1
+
+</pre><pre class="codeoutput">     5     2
+
+</pre><pre class="codeoutput">     5     3
+
+</pre><pre class="codeoutput">     5     4
+
+</pre><pre class="codeoutput">     5     5
+
+</pre><pre class="codeoutput">     6     1
+
+</pre><pre class="codeoutput">     6     2
+
+</pre><pre class="codeoutput">     6     3
+
+</pre><pre class="codeoutput">     6     4
+
+</pre><pre class="codeoutput">     6     5
+
+</pre><pre class="codeoutput">     7     1
+
+</pre><pre class="codeoutput">     7     2
+
+</pre><pre class="codeoutput">     7     3
+
+</pre><pre class="codeoutput">     7     4
+
+</pre><pre class="codeoutput">     7     5
+
+</pre><pre class="codeoutput">     8     1
+
+</pre><pre class="codeoutput">     8     2
+
+</pre><pre class="codeoutput">     8     3
+
+</pre><pre class="codeoutput">     8     4
+
+</pre><pre class="codeoutput">     8     5
+
+</pre><pre class="codeoutput">     9     1
+
+</pre><pre class="codeoutput">     9     2
+
+</pre><pre class="codeoutput">     9     3
+
+</pre><pre class="codeoutput">     9     4
+
+</pre><pre class="codeoutput">     9     5
+
+</pre><pre class="codeoutput">    10     1
+
+</pre><pre class="codeoutput">    10     2
+
+</pre><pre class="codeoutput">    10     3
+
+</pre><pre class="codeoutput">    10     4
+
+</pre><pre class="codeoutput">    10     5
+
+</pre><pre class="codeoutput">    11     1
+
+</pre><pre class="codeoutput">    11     2
+
+</pre><pre class="codeoutput">    11     3
+
+</pre><pre class="codeoutput">    11     4
+
+</pre><pre class="codeoutput">    11     5
+
+</pre><pre class="codeoutput">    12     1
+
+</pre><pre class="codeoutput">    12     2
+
+</pre><pre class="codeoutput">    12     3
+
+</pre><pre class="codeoutput">    12     4
+
+</pre><pre class="codeoutput">    12     5
+
+</pre><pre class="codeoutput">    13     1
+
+</pre><pre class="codeoutput">    13     2
+
+</pre><pre class="codeoutput">    13     3
+
+</pre><pre class="codeoutput">    13     4
+
+</pre><pre class="codeoutput">    13     5
+
+</pre><pre class="codeoutput">    14     1
+
+</pre><pre class="codeoutput">    14     2
+
+</pre><pre class="codeoutput">    14     3
+
+</pre><pre class="codeoutput">    14     4
+
+</pre><pre class="codeoutput">    14     5
+
+</pre><pre class="codeoutput">    15     1
+
+</pre><pre class="codeoutput">    15     2
+
+</pre><pre class="codeoutput">    15     3
+
+</pre><pre class="codeoutput">    15     4
+
+</pre><pre class="codeoutput">    15     5
+
+</pre><pre class="codeoutput">    16     1
+
+</pre><pre class="codeoutput">    16     2
+
+</pre><pre class="codeoutput">    16     3
+
+</pre><pre class="codeoutput">    16     4
+
+</pre><pre class="codeoutput">    16     5
+
+</pre><pre class="codeoutput">    17     1
+
+</pre><pre class="codeoutput">    17     2
+
+</pre><pre class="codeoutput">    17     3
+
+</pre><pre class="codeoutput">    17     4
+
+</pre><pre class="codeoutput">    17     5
+
+</pre><pre class="codeoutput">    18     1
+
+</pre><pre class="codeoutput">    18     2
+
+</pre><pre class="codeoutput">    18     3
+
+</pre><pre class="codeoutput">    18     4
+
+</pre><pre class="codeoutput">    18     5
+
+</pre><pre class="codeoutput">    19     1
+
+</pre><pre class="codeoutput">    19     2
+
+</pre><pre class="codeoutput">    19     3
+
+</pre><pre class="codeoutput">    19     4
+
+</pre><pre class="codeoutput">    19     5
+
+</pre><pre class="codeoutput">    20     1
+
+</pre><pre class="codeoutput">    20     2
+
+</pre><pre class="codeoutput">    20     3
+
+</pre><pre class="codeoutput">    20     4
+
+</pre><pre class="codeoutput">    20     5
+
+</pre><pre class="codeoutput">    21     1
+
+</pre><pre class="codeoutput">    21     2
+
+</pre><pre class="codeoutput">    21     3
+
+</pre><pre class="codeoutput">    21     4
+
+</pre><pre class="codeoutput">    21     5
+
+</pre><pre class="codeoutput">    22     1
+
+</pre><pre class="codeoutput">    22     2
+
+</pre><pre class="codeoutput">    22     3
+
+</pre><pre class="codeoutput">    22     4
+
+</pre><pre class="codeoutput">    22     5
+
+</pre><pre class="codeinput">    <span class="keyword">end</span>
+    <span class="comment">% &#22270;&#24418;&#20462;&#39280;</span>
+    legend([hline{1} hline{2} hline{3} hline{4} hline{5}],conditionName{1},conditionName{2},conditionName{3},conditionName{4},conditionName{5},<span class="string">'location'</span>,<span class="string">'northwest'</span>)
+    grid <span class="string">on</span>
+    pbaspect([6 9 1]);
+    <span class="comment">%xticks(log([15,16,18,20,22,24,27]));</span>
+    xticks(log([15,16,18,20,22,24,27]));
+    xticklabels({<span class="string">'15'</span>,<span class="string">'16'</span>,<span class="string">'18'</span>,<span class="string">'20'</span>,<span class="string">'22'</span>,<span class="string">'24'</span>,<span class="string">'27'</span>});
+    yticks([0 0.25 0.5 0.75 1]);
+    yticklabels({<span class="string">'0'</span>,<span class="string">'25'</span>,<span class="string">'50'</span>,<span class="string">'75'</span>,<span class="string">'100'</span>});
+    xlim([2.7,3.3]);
+    ylim([0,1]);
+    title(sprintf(<span class="string">'Subj %02d'</span>,i));
+    set(gca,<span class="string">'box'</span>,<span class="string">'on'</span>);
+    print(fig,sprintf(<span class="string">'Subj_%02d'</span>,i),<span class="string">'-dpng'</span>,<span class="string">'-r300'</span>)
+    close <span class="string">all</span>
+<span class="keyword">end</span>
+
+<span class="comment">% usedIndex = ones(size(result));</span>
+<span class="comment">% for i=1:22</span>
+<span class="comment">%     for j=1:5</span>
+<span class="comment">% %         X25(i,j) = getThreshold(result{i,j},0.25,0);</span>
+<span class="comment">% %         X50(i,j) = getThreshold(result{i,j},0.5,0);</span>
+<span class="comment">% %         X75(i,j) = getThreshold(result{i,j},0.75,0);</span>
+<span class="comment">%         temp = getStandardParameters(result{i,j});</span>
+<span class="comment">%         for k=1:5</span>
+<span class="comment">%             if temp(3) &gt;= 0.25 || temp(4) &gt;= 0.25</span>
+<span class="comment">%                 usedIndex(i,j)=nan;</span>
+<span class="comment">%             end</span>
+<span class="comment">%         end</span>
+<span class="comment">%     end</span>
+<span class="comment">% end</span>
+</pre><h2 id="14">&#29305;&#24449;&#20540;&#25277;&#21462;</h2><pre class="codeinput"><span class="keyword">for</span> i=1:22
+    <span class="keyword">for</span> j=1:5
+        X25(i,j) = getThreshold(result{i,j},0.25,1);
+        X50(i,j) = getThreshold(result{i,j},0.5,1);
+        X75(i,j) = getThreshold(result{i,j},0.75,1);
+<span class="comment">%         temp = getStandardParameters(result{i,j});</span>
+<span class="comment">%         for k=1:5</span>
+<span class="comment">%             if temp(3) &gt;= 0.25 || temp(4) &gt;= 0.25</span>
+<span class="comment">%                 usedIndex(i,j)=nan;</span>
+<span class="comment">%             end</span>
+<span class="comment">%         end</span>
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+<span class="comment">% &#22791;&#20221;&#25968;&#25454;</span>
+save <span class="string">X25</span> <span class="string">X25</span>
+save <span class="string">X50</span> <span class="string">X50</span>
+save <span class="string">X75</span> <span class="string">X75</span>
+</pre><h2 id="15">&#35745;&#31639;&#25351;&#26631;</h2><p>PSE</p><pre class="codeinput">pse=exp(X50);
+pse(checkResult,:)=[];
+<span class="comment">% upl = mean(pse)+2.5*std(pse);</span>
+<span class="comment">% dwl = mean(pse)-2.5*std(pse);</span>
+<span class="comment">% mask = (pse&lt;upl).*(pse&gt;dwl);</span>
+<span class="comment">% pse = pse.*mask;</span>
+csvwrite_with_headers(<span class="string">'pse.csv'</span>,pse, conditionName);
+<span class="comment">% JND</span>
+jnd=(exp(X75)-exp(X25))/2;
+jnd(checkResult,:)=[];
+<span class="comment">% upl = mean(jnd)+2.5*std(jnd);</span>
+<span class="comment">% dwl = mean(jnd)-2.5*std(jnd);</span>
+<span class="comment">% mask = (jnd&lt;upl).*(jnd&gt;dwl);</span>
+<span class="comment">% jnd = jnd.*mask;</span>
+csvwrite_with_headers(<span class="string">'jnd.csv'</span>,jnd, conditionName);
+<span class="comment">% WeberFraction</span>
+WeberFraction = (exp(X75)-exp(X25))/2*0.5./exp(X50);
+<span class="comment">% upl = mean(WeberFraction)+2.5*std(WeberFraction);</span>
+<span class="comment">% dwl = mean(WeberFraction)-2.5*std(WeberFraction);</span>
+<span class="comment">% mask = (WeberFraction&lt;upl).*(WeberFraction&gt;dwl);</span>
+<span class="comment">% WeberFraction = WeberFraction.*mask;</span>
+csvwrite_with_headers(<span class="string">'wb.csv'</span>,WeberFraction, conditionName);
+</pre><h2 id="16">record remove info</h2><pre class="codeinput">save <span class="string">removeSubj.txt</span> <span class="string">checkResult</span> <span class="string">-ascii</span>
+</pre><h2 id="17">&#22791;&#20221;&#25311;&#21512;&#32467;&#26524;</h2><pre class="codeinput">save <span class="string">fit_results</span> <span class="string">result</span> <span class="string">-v7.3</span>
+toc
+<span class="comment">%{
+</span><span class="comment">%% Grand Average
+</span><span class="comment">[GrightSet,GnumerlSet,GgroupName] = grpstats(rawData.ButtonPush,{rawData.SoundCondition,rawData.NumCondition},{'sum','numel','gname'});
+</span><span class="comment">GrSets = reshape(GrightSet,[6,5]);
+</span><span class="comment">Gx =  [15;16;18;22;24;27];
+</span><span class="comment">Gm =  [440;440;440;440;440;440];
+</span><span class="comment">% plot
+</span><span class="comment">close all
+</span><span class="comment">fig=figure;
+</span><span class="comment">for j=1:5
+</span><span class="comment">    x = Gx;
+</span><span class="comment">    m = Gm;
+</span><span class="comment">    r = GrSets(:,j);
+</span><span class="comment">    data = [x,r,m];
+</span><span class="comment">    options = struct;
+</span><span class="comment">    options.sigmoidName = 'weibull';   % choose a cumulative Gaussian as the sigmoid
+</span><span class="comment">    options.expType     = 'YesNo';
+</span><span class="comment">    options.logspace = 1;
+</span><span class="comment">    options.fixedPars = NaN(5,1);
+</span><span class="comment">    %options.fixedPars(3) = [0:0.05];
+</span><span class="comment">    %options.fixedPars(4) = [0:0.05];
+</span><span class="comment">    %options.expType = 'equalAsymptote';
+</span><span class="comment">    result{j} = psignifit(data,options);
+</span><span class="comment">
+</span><span class="comment">%     plotOptions = struct;
+</span><span class="comment">%     plotOptions.CIthresh = 'true';
+</span><span class="comment">%     plotOptions.aspectRatio = 'true';
+</span><span class="comment">%     plotOptions.lineColor = ColorUse{j};
+</span><span class="comment">%     plotOptions
+</span><span class="comment">%     [hline{j},hdata{j}] = plotPsych(result{j}, plotOptions);
+</span><span class="comment">%     hold on
+</span><span class="comment">    X25(j) = getThreshold(result{j},0.25,1);
+</span><span class="comment">    X50(j) = getThreshold(result{j},0.5,1);
+</span><span class="comment">    X75(j) = getThreshold(result{j},0.75,1);
+</span><span class="comment">end
+</span><span class="comment">%}
+</span><span class="comment">% message = 'Parametric Bootstrap (1) or Non-Parametric Bootstrap? (2): ';</span>
+<span class="comment">% ParOrNonPar = input(message);</span>
+</pre><pre class="codeoutput">Elapsed time is 106.321645 seconds.
+</pre><p class="footer"><br><a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2018a</a><br></p></div><!--
+##### SOURCE BEGIN #####
+%% 心理物理曲线拟合
+tic
+%% 准备工作环境
+% 清理
+clear, clc
+restoredefaultpath; %% set a clean path
+% addpath('/home/jinbo/.matlab/R2012b'); % for linux server only
+% 设置路经
+project_dir = ['/Volumes/Data/Project/CNC_Analysis'];% change to tfr_prep dir firsts
+home_dir = fullfile(project_dir, 'data', 'behv');
+matlab_dir = fullfile(project_dir, 'toolbox');
+fuction_dir = fullfile(project_dir, 'functions');
+% 加载需要工具
+addpath(genpath(fullfile(matlab_dir, 'psignifit')));  %% initialize modelfree package
+addpath(genpath(fuction_dir));
+
+%% 数据导入
+% 设定目标数据
+data_file_behv = cell2mat(kb_ls(fullfile(pwd,'raw_data','sub*.csv')));
+rawData = readtable(data_file_behv);
+
+%% 添加按键识别变量，设置初始值为0
+rawData.ButtonPush = zeros(length(rawData.participant_id),1); % 0 = less;1=more
+% 按键读取
+for i=1:length(rawData.participant_id)
+    if rawData.NumCondition(i)<=3 && rawData.ACC(i)==1 % small num with right resp = less button; acc = 1 mean right response
+        rawData.ButtonPush(i)=0;
+    elseif rawData.NumCondition(i)<=3 && rawData.ACC(i)==0 % small num with wrong resp = more button
+        rawData.ButtonPush(i)=1;
+    elseif rawData.NumCondition(i)>3 &&rawData.ACC(i)==1 % bigger num with right resp = more button
+        rawData.ButtonPush(i)=1;
+    elseif rawData.NumCondition(i)>3 && rawData.ACC(i)==0 % bigger num with wrong resp = less button
+        rawData.ButtonPush(i)=0;
+    end
+end
+
+%% 清理数据
+% RT must bigger than 100 ms
+targetData = rawData(rawData.RT>=100,:);
+% [fout01,xout1,~,~] = ksdensity(targetData.RT,'function','pdf','NumPoints',10000);
+% [fout0,xout,~,~] = ksdensity(targetData.RT,'function','cdf','NumPoints',10000);
+% [c index] = min(abs(fout0-0.95));
+% subplot(2,1,1)
+% H1 = area(xout(1:index),fout01(1:index));
+% set(H1(1),'FaceColor',[250,128,114]./255);
+% H1.EdgeColor='r';
+% hold on
+% plot(xout1,fout01,'Color','r');
+% xlim([0,7000])
+% xlabel('RT(ms)');
+% ylabel('Density');
+% grid on
+% hold off
+% 
+% subplot(2,1,2)
+% H2=area(xout(1:index),fout0(1:index));
+% set(H2(1),'FaceColor',[250,128,114]./255);
+% H2.EdgeColor='r';
+% grid on
+% hold on
+% plot(xout,fout0,'Color','r');
+% xlim([0,7000]);
+% xlabel('RT(ms)');
+% ylabel('Cumulative Density');
+% hold off
+% % uplimit
+% uplimit = xout(index);
+% title(['Uplimit(95%) = ' sprintf('%04.1f',uplimit) ' ms']);
+% print('uplimitDecide','-dpng','-r300');
+% close all
+% % screen data
+% targetData = targetData(targetData.RT < uplimit,:);
+%targetData = rawData;
+% response info
+
+%% 提取需要的数据
+[rightSet,numerlSet,groupName] = grpstats(targetData.ButtonPush,{targetData.participant_id,targetData.SoundCondition,targetData.NumCondition},{'sum','numel','gname'});
+for i=1:length(unique(targetData.participant_id))
+    %xSets(:,i) = [2.7 2.8 2.9 3.1 3.2 3.3]; % 对数等距，log([15,16,18,22,24,27] 近似值
+    xSets(:,i) = log([15,16,18,22,24,27]);
+    %xSets(:,i) = [15,16,18,22,24,27];% stimulus levels
+end
+rSets = reshape(rightSet,[6,5,22]);
+mSets = reshape(numerlSet,[6,5,22]); 
+
+%% 识别 15，16，24，27存在概率水平（50%）反应表现的被试
+checkSets = rSets./mSets;
+focusSets_12 = checkSets([1,2],:,:);
+focusSets_56 = checkSets([5,6],:,:);
+checkResult = find(squeeze(sum(sum(focusSets_12 >= 0.5))+sum(sum(focusSets_56 <= 0.5)))==1);
+
+%% 设定变量名称及可能用到的颜色编码
+% "1=>nosound","2=>one-soft-sound","3=>one-loud-sound","4=>multi-soft-sound","5=>multi-loud-sound"
+conditionName = {'No Sound','One Soft','One Loud','Multi Soft','Multi Loud'};
+conditionNameMarker =  {'Resonse Data No Sound','Resonse Data One Soft','Resonse Data One Loud','Resonse Data Multi Soft','Resonse Data Multi Loud'};
+lineUse = {'-.','REPLACE_WITH_DASH_DASH','-','REPLACE_WITH_DASH_DASH','-'}; 
+markShapeUse = {'+','o','*','o','*'};
+C1 = rgb('DarkSlateBlue');
+C2 = rgb('OrangeRed');
+C3 = rgb('OrangeRed');
+C4 = rgb('MediumAquamarine');
+C5 = rgb('MediumAquamarine');
+%ColorUse = {C1,C2,C3,C4,C5};
+ColorUse = {'k','r','g','b','m'};
+
+%% 针对个体进行曲线拟合
+for i=1:22
+    fig=figure;
+    for j=1:5
+        x = xSets(:,i);
+        m = mSets(:,i);
+        r = rSets(:,j,i);
+        
+        data = [x,r,m];
+        options = struct;
+        options.sigmoidName = 'norm';  % Gaussian
+        options.expType     = 'YesNo';
+        %options.logspace = 1; % 数据已经转换
+        options.fixedPars = NaN(5,1);
+        options.fixedPars(3) = 0; % 上漂移设置为 0
+        options.fixedPars(4) = 0; % 下漂移设置为 0
+        options.expType = 'equalAsymptote'; % 期望概率分布对称
+        options.estimateType   = 'MAP';
+%         options.borders = nan(5,2);
+%         options.borders(3,:)=[0,.05];
+%         options.borders(4,:)=[0,.05];
+        result{i,j} = psignifit(data,options); % 拟合
+%         plotPrior(result{i,j} )
+%         plotMarginal( result{i,j},4);
+        %% 绘图检查
+        plotOptions = struct;
+        plotOptions.CIthresh = false;
+        plotOptions.aspectRatio = true;
+        plotOptions.plotPar = true;
+        plotOptions.lineColor = ColorUse{j};
+        [hline{j},hdataP{j}] = plotPsych(result{i,j}, plotOptions);
+        hold on
+        %% 标记进度
+        disp([i,j]);
+        
+    end
+    % 图形修饰
+    legend([hline{1} hline{2} hline{3} hline{4} hline{5}],conditionName{1},conditionName{2},conditionName{3},conditionName{4},conditionName{5},'location','northwest')
+    grid on
+    pbaspect([6 9 1]);
+    %xticks(log([15,16,18,20,22,24,27]));
+    xticks(log([15,16,18,20,22,24,27]));
+    xticklabels({'15','16','18','20','22','24','27'});
+    yticks([0 0.25 0.5 0.75 1]);
+    yticklabels({'0','25','50','75','100'});
+    xlim([2.7,3.3]);
+    ylim([0,1]);
+    title(sprintf('Subj %02d',i));
+    set(gca,'box','on');
+    print(fig,sprintf('Subj_%02d',i),'-dpng','-r300')
+    close all
+end
+
+% usedIndex = ones(size(result));
+% for i=1:22
+%     for j=1:5
+% %         X25(i,j) = getThreshold(result{i,j},0.25,0);
+% %         X50(i,j) = getThreshold(result{i,j},0.5,0);
+% %         X75(i,j) = getThreshold(result{i,j},0.75,0);
+%         temp = getStandardParameters(result{i,j});
+%         for k=1:5
+%             if temp(3) >= 0.25 || temp(4) >= 0.25
+%                 usedIndex(i,j)=nan;
+%             end
+%         end
+%     end
+% end
+
+%% 特征值抽取
+for i=1:22
+    for j=1:5
+        X25(i,j) = getThreshold(result{i,j},0.25,1);
+        X50(i,j) = getThreshold(result{i,j},0.5,1);
+        X75(i,j) = getThreshold(result{i,j},0.75,1);
+%         temp = getStandardParameters(result{i,j});
+%         for k=1:5
+%             if temp(3) >= 0.25 || temp(4) >= 0.25
+%                 usedIndex(i,j)=nan;
+%             end
+%         end
+    end
+end
+% 备份数据
+save X25 X25
+save X50 X50
+save X75 X75
+
+%% 计算指标
+% PSE
+pse=exp(X50);
+pse(checkResult,:)=[];
+% upl = mean(pse)+2.5*std(pse);
+% dwl = mean(pse)-2.5*std(pse);
+% mask = (pse<upl).*(pse>dwl);
+% pse = pse.*mask;
+csvwrite_with_headers('pse.csv',pse, conditionName);
+% JND
+jnd=(exp(X75)-exp(X25))/2;
+jnd(checkResult,:)=[];
+% upl = mean(jnd)+2.5*std(jnd);
+% dwl = mean(jnd)-2.5*std(jnd);
+% mask = (jnd<upl).*(jnd>dwl);
+% jnd = jnd.*mask;
+csvwrite_with_headers('jnd.csv',jnd, conditionName);
+% WeberFraction
+WeberFraction = (exp(X75)-exp(X25))/2*0.5./exp(X50);
+% upl = mean(WeberFraction)+2.5*std(WeberFraction);
+% dwl = mean(WeberFraction)-2.5*std(WeberFraction);
+% mask = (WeberFraction<upl).*(WeberFraction>dwl);
+% WeberFraction = WeberFraction.*mask;
+csvwrite_with_headers('wb.csv',WeberFraction, conditionName);
+%% record remove info
+save removeSubj.txt checkResult -ascii
+%% 备份拟合结果
+save fit_results result -v7.3
+toc
+%{
+%% Grand Average
+[GrightSet,GnumerlSet,GgroupName] = grpstats(rawData.ButtonPush,{rawData.SoundCondition,rawData.NumCondition},{'sum','numel','gname'});
+GrSets = reshape(GrightSet,[6,5]);
+Gx =  [15;16;18;22;24;27];
+Gm =  [440;440;440;440;440;440];
+% plot
+close all
+fig=figure;
+for j=1:5
+    x = Gx;
+    m = Gm;
+    r = GrSets(:,j);
+    data = [x,r,m];
+    options = struct;
+    options.sigmoidName = 'weibull';   % choose a cumulative Gaussian as the sigmoid
+    options.expType     = 'YesNo';
+    options.logspace = 1;
+    options.fixedPars = NaN(5,1);
+    %options.fixedPars(3) = [0:0.05];
+    %options.fixedPars(4) = [0:0.05];
+    %options.expType = 'equalAsymptote';
+    result{j} = psignifit(data,options);
+    
+%     plotOptions = struct;
+%     plotOptions.CIthresh = 'true';
+%     plotOptions.aspectRatio = 'true';
+%     plotOptions.lineColor = ColorUse{j};
+%     plotOptions
+%     [hline{j},hdata{j}] = plotPsych(result{j}, plotOptions);
+%     hold on
+    X25(j) = getThreshold(result{j},0.25,1);
+    X50(j) = getThreshold(result{j},0.5,1);
+    X75(j) = getThreshold(result{j},0.75,1);
+end
+%}
+% message = 'Parametric Bootstrap (1) or Non-Parametric Bootstrap? (2): ';
+% ParOrNonPar = input(message);
+
+
+##### SOURCE END #####
+--></body></html>
