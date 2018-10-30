@@ -1,4 +1,4 @@
-%%  Curve Fit of the behv data
+%%  JND and PSE Analyses
 % zero the world
 clear, clc
 restoredefaultpath; %% set a clean path
@@ -11,43 +11,8 @@ fuction_dir = fullfile(project_dir, 'functions');
 addpath(genpath(fullfile(matlab_dir, 'psignifit')));  %% initialize modelfree package
 addpath(genpath(fuction_dir));
 
-%% tutorial
-% load(fullfile(matlab_dir,'modelfree1.1','examplesMatlab','example_06.mat'),'-mat');
-% figure; plot( x, r ./ m, 'k.'); axis([0.9 8.1 0.45 1.05]); axis square;
-% 
-% %% For the Gaussian cumulative distribution function (black curve)
-% degpol = 1; % Degree of the polynomial
-% guessing = 1/2; % guessing rate
-% lapsing = 0; % lapsing rate
-% b = binomfit_lims( r, m, x, degpol, 'probit', guessing, lapsing );
-% numxfit = 199; % Number of new points to be generated minus 1
-% xfit = [min(x):(max(x)-min(x))/numxfit:max( x ) ]';
-% % Plot the fitted curve
-% pfit = binomval_lims( b, xfit, 'probit', guessing, lapsing );
-% hold on, plot( xfit, pfit, 'k' );
-% %% For the Weibull function (red curve)
-% initK = 2; % Initial power parameter in Weibull/reverse Weibull model
-% [ b, K ] = binom_weib( r, m, x, degpol, initK, guessing, lapsing);
-% % Plot the fitted curve
-% pfit = binomval_lims( b, xfit, 'weibull', guessing, lapsing, K );
-% hold on, plot( xfit, pfit, 'r' );
-% %% For the reverse Weibull function (green curve):
-% [ b, K ] = binom_revweib( r, m, x, degpol, initK, guessing, lapsing);
-% % Plot the fitted curve
-% pfit = binomval_lims( b, xfit, 'revweibull', guessing, lapsing, K );
-% hold on, plot( xfit, pfit, 'g' );
-% %% For the local linear fit (blue curve):
-% bwd_min = -min( diff( x ) ); % data is decreasing
-% bwd_max = max( x ) - min( x );
-% bwd = bandwidth_cross_validation( r, m, x, [ bwd_min, bwd_max ] );
-% % Plot the fitted curve
-% bwd = bwd(3); % choose the third estimate, which is based on cross-validated deviance
-% pfit = locglmfit( xfit, r, m, x, bwd );
-% hold on, plot( xfit, pfit, 'b' );
-
-%% application
 %% prep data
-%
+
 data_file_behv = cell2mat(kb_ls(fullfile(pwd,'data','behv','raw','sub*.csv')));
 rawData = readtable(data_file_behv);
 %% prep data for each subject
