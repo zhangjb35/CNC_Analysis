@@ -8,7 +8,7 @@ home_dir = fullfile(project_dir, 'data', 'behv');
 matlab_dir = fullfile(project_dir, 'toolbox');
 fuction_dir = fullfile(project_dir, 'functions');
 
-addpath(genpath(fullfile(matlab_dir, 'palamedes1_9_0')));  %% initialize modelfree package
+addpath(genpath(fullfile(matlab_dir, 'psignifit')));  %% initialize modelfree package
 addpath(genpath(fuction_dir));
 
 %% prep data
@@ -30,15 +30,13 @@ for i=1:length(rawData.participant_id)
     end
 end
 %% screen valid response
-% RT must bigger than 200 ms
-targetData = rawData(rawData.RT>200,:);
-%targetData = targetData(targetData.RT<5000,:);
-%targetData = rawData;
+% RT must bigger than 100 ms
+targetData = rawData(rawData.RT>100,:);
 % response info
 [rightSet,numerlSet,groupName] = grpstats(targetData.ButtonPush,{targetData.participant_id,targetData.SoundCondition,targetData.NumCondition},{'sum','numel','gname'});
 for i=1:length(unique(targetData.participant_id))
-    %xSets(:,i) = [2.7 2.8 2.9 3.1 3.2 3.3]-3.0;
-    xSets(:,i) = log([15,16,18,22,24,27])-log(20);
+    xSets(:,i) = [2.7 2.8 2.9 3.1 3.2 3.3];
+    %xSets(:,i) = log([15,16,18,22,24,27]);
     %xSets(:,i) = [15,16,18,22,24,27];% stimulus levels
 end
 rSets = reshape(rightSet,[6,5,22]);
@@ -66,7 +64,7 @@ for i=1:22
         
         data = [x,r,m];
         options = struct;
-        options.sigmoidName = 'logistic';  % log
+        options.sigmoidName = 'logistic';  % norm % choose a cumulative Gaussian as the sigmoid
         options.expType     = 'YesNo';
         %options.logspace = 1;
         options.fixedPars = NaN(5,1);
@@ -89,11 +87,11 @@ for i=1:22
     legend([hline{1} hline{2} hline{3} hline{4} hline{5}],conditionName{1},conditionName{2},conditionName{3},conditionName{4},conditionName{5},'location','northwest')
     grid on
     pbaspect([6 9 1]);
-    xticks(log([15,16,18,22,24,27])-log(20));
+    xticks([2.7 2.8 2.9 3.0 3.1 3.2 3.3]);
     xticklabels({'15','16','18','20','22','24','27'});
     yticks([0 0.25 0.5 0.75 1]);
     yticklabels({'0','25','50','75','100'});
-    xlim([2.7,3.3]-log(20));
+    xlim([2.7,3.3]);
     ylim([0,1]);
     title(sprintf('Subj %02d',i));
     set(gca,'box','on');
@@ -135,18 +133,18 @@ save X50 X50
 save X75 X75
 
 %% output
-pse=exp(X50+log(20));
-upl = mean(pse)+2.5*std(pse);
-dwl = mean(pse)-2.5*std(pse);
+pse=exp(X50);
+upl = mean(pse)+3*std(pse);
+dwl = mean(pse)-3*std(pse);
 mask = (pse<upl).*(pse>dwl);
 pse = pse.*mask;
-csvwrite_with_headers('pse.csv',pse, conditionName);
-jnd=(exp(X75+log(20))-exp(X50+log(20)));
-upl = mean(jnd)+2.5*std(jnd);
-dwl = mean(jnd)-2.5*std(jnd);
+csvwrite('pse.csv',pse);
+jnd=(exp(X75)-exp(X50));
+upl = mean(jnd)+3*std(jnd);
+dwl = mean(jnd)-3*std(jnd);
 mask = (jnd<upl).*(jnd>dwl);
 jnd = jnd.*mask;
-csvwrite_with_headers('jnd.csv',jnd, conditionName);
+csvwrite_with_headers('jnd.csv',jnd);
 %% Grand Average
 [GrightSet,GnumerlSet,GgroupName] = grpstats(rawData.ButtonPush,{rawData.SoundCondition,rawData.NumCondition},{'sum','numel','gname'});
 GrSets = reshape(GrightSet,[6,5]);
