@@ -51,7 +51,7 @@ targetData = rawData(rawData.RT>=100,:);
 % ylabel('Density');
 % grid on
 % hold off
-% 
+%
 % subplot(2,1,2)
 % H2=area(xout(1:index),fout0(1:index));
 % set(H2(1),'FaceColor',[250,128,114]./255);
@@ -81,7 +81,7 @@ for i=1:length(unique(targetData.participant_id))
     %xSets(:,i) = [15,16,18,22,24,27];% stimulus levels
 end
 rSets = reshape(rightSet,[6,5,22]);
-mSets = reshape(numerlSet,[6,5,22]); 
+mSets = reshape(numerlSet,[6,5,22]);
 
 %% 识别 15，16，24，27存在概率水平（50%）反应表现的被试
 checkSets = rSets./mSets;
@@ -93,7 +93,7 @@ checkResult = find(squeeze(sum(sum(focusSets_12 >= 0.5))+sum(sum(focusSets_56 <=
 % "1=>nosound","2=>one-soft-sound","3=>one-loud-sound","4=>multi-soft-sound","5=>multi-loud-sound"
 conditionName = {'No Sound','One Soft','One Loud','Multi Soft','Multi Loud'};
 conditionNameMarker =  {'Resonse Data No Sound','Resonse Data One Soft','Resonse Data One Loud','Resonse Data Multi Soft','Resonse Data Multi Loud'};
-lineUse = {'-.','--','-','--','-'}; 
+lineUse = {'-.','--','-','--','-'};
 markShapeUse = {'+','o','*','o','*'};
 C1 = rgb('DarkSlateBlue');
 C2 = rgb('OrangeRed');
@@ -110,7 +110,7 @@ for i=1:22
         x = xSets(:,i);
         m = mSets(:,i);
         r = rSets(:,j,i);
-        
+
         data = [x,r,m];
         options = struct;
         options.sigmoidName = 'norm';  % Gaussian
@@ -133,11 +133,12 @@ for i=1:22
         plotOptions.aspectRatio = true;
         plotOptions.plotPar = true;
         plotOptions.lineColor = ColorUse{j};
+        
         [hline{j},hdataP{j}] = plotPsych(result{i,j}, plotOptions);
         hold on
         %% 标记进度
         disp([i,j]);
-        
+
     end
     % 图形修饰
     legend([hline{1} hline{2} hline{3} hline{4} hline{5}],conditionName{1},conditionName{2},conditionName{3},conditionName{4},conditionName{5},'location','northwest')
@@ -215,47 +216,11 @@ WeberFraction(checkResult,:)=[];
 % mask = (WeberFraction<upl).*(WeberFraction>dwl);
 % WeberFraction = WeberFraction.*mask;
 csvwrite_with_headers('wb.csv',WeberFraction, conditionName);
+%% backup data
+% target data
+writetable(targetData,'targetData.csv','WriteVariableNames',true);
 %% record remove info
 save removeSubj.txt checkResult -ascii
 %% 备份拟合结果
 save fit_results result -v7.3
 toc
-%{
-%% Grand Average
-[GrightSet,GnumerlSet,GgroupName] = grpstats(rawData.ButtonPush,{rawData.SoundCondition,rawData.NumCondition},{'sum','numel','gname'});
-GrSets = reshape(GrightSet,[6,5]);
-Gx =  [15;16;18;22;24;27];
-Gm =  [440;440;440;440;440;440];
-% plot
-close all
-fig=figure;
-for j=1:5
-    x = Gx;
-    m = Gm;
-    r = GrSets(:,j);
-    data = [x,r,m];
-    options = struct;
-    options.sigmoidName = 'weibull';   % choose a cumulative Gaussian as the sigmoid
-    options.expType     = 'YesNo';
-    options.logspace = 1;
-    options.fixedPars = NaN(5,1);
-    %options.fixedPars(3) = [0:0.05];
-    %options.fixedPars(4) = [0:0.05];
-    %options.expType = 'equalAsymptote';
-    result{j} = psignifit(data,options);
-    
-%     plotOptions = struct;
-%     plotOptions.CIthresh = 'true';
-%     plotOptions.aspectRatio = 'true';
-%     plotOptions.lineColor = ColorUse{j};
-%     plotOptions
-%     [hline{j},hdata{j}] = plotPsych(result{j}, plotOptions);
-%     hold on
-    X25(j) = getThreshold(result{j},0.25,1);
-    X50(j) = getThreshold(result{j},0.5,1);
-    X75(j) = getThreshold(result{j},0.75,1);
-end
-%}
-% message = 'Parametric Bootstrap (1) or Non-Parametric Bootstrap? (2): ';
-% ParOrNonPar = input(message);
-
