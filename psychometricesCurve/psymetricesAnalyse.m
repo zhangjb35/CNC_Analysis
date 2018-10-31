@@ -99,16 +99,10 @@ checkResult = find(squeeze(sum(sum(focusSets_12 >= 0.5))+sum(sum(focusSets_56 <=
 %% 设定变量名称及可能用到的颜色编码
 % "1=>nosound","2=>one-soft-sound","3=>one-loud-sound","4=>multi-soft-sound","5=>multi-loud-sound"
 conditionName = {'No Sound','One Soft','One Loud','Multi Soft','Multi Loud'};
-conditionNameMarker =  {'Resonse Data No Sound','Resonse Data One Soft','Resonse Data One Loud','Resonse Data Multi Soft','Resonse Data Multi Loud'};
-lineUse = {'-.','--','-','--','-'};
-markShapeUse = {'+','o','*','o','*'};
-C1 = rgb('DarkSlateBlue');
-C2 = rgb('OrangeRed');
-C3 = rgb('OrangeRed');
-C4 = rgb('MediumAquamarine');
-C5 = rgb('MediumAquamarine');
-%ColorUse = {C1,C2,C3,C4,C5};
-ColorUse = {'k','r','g','b','m'};
+%conditionNameMarker =  {'Resonse Data No Sound','Resonse Data One Soft','Resonse Data One Loud','Resonse Data Multi Soft','Resonse Data Multi Loud'};
+ColorUse = {'g','b','b','r','r'};
+LineStyle = {'-',':','-',':','-'};
+markerType = {'x','o','s','o','s'};
 
 %% 针对个体进行曲线拟合
 for i=1:22
@@ -117,7 +111,7 @@ for i=1:22
         x = xSets(:,i);
         m = mSets(:,i);
         r = rSets(:,j,i);
-
+        
         data = [x,r,m];
         options = struct;
         options.sigmoidName = 'norm';  % Gaussian
@@ -128,24 +122,28 @@ for i=1:22
         options.fixedPars(4) = 0; % 下漂移设置为 0
         options.expType = 'equalAsymptote'; % 期望概率分布对称
         options.estimateType   = 'MAP';
-%         options.borders = nan(5,2);
-%         options.borders(3,:)=[0,.05];
-%         options.borders(4,:)=[0,.05];
+        %         options.borders = nan(5,2);
+        %         options.borders(3,:)=[0,.05];
+        %         options.borders(4,:)=[0,.05];
         result{i,j} = psignifit(data,options); % 拟合
-%         plotPrior(result{i,j} )
-%         plotMarginal( result{i,j},4);
+        %         plotPrior(result{i,j} )
+        %         plotMarginal( result{i,j},4);
         %% 绘图检查
         plotOptions = struct;
         plotOptions.CIthresh = false;
-        plotOptions.aspectRatio = true;
+        plotOptions.aspectRatio = false;
         plotOptions.plotPar = true;
         plotOptions.lineColor = ColorUse{j};
-
+        plotOptions.dataColor = ColorUse{j};
+        plotOptions.linestyle = LineStyle{j};
+        plotOptions.marker = markerType{j};
+        plotOptions.fontSize = 18;
+        
         [hline{j},hdataP{j}] = plotPsych(result{i,j}, plotOptions);
         hold on
         %% 标记进度
         disp([i,j]);
-
+        
     end
     % 图形修饰
     legend([hline{1} hline{2} hline{3} hline{4} hline{5}],conditionName{1},conditionName{2},conditionName{3},conditionName{4},conditionName{5},'location','northwest')
@@ -185,12 +183,12 @@ for i=1:22
         X25(i,j) = getThreshold(result{i,j},0.25,1);
         X50(i,j) = getThreshold(result{i,j},0.5,1);
         X75(i,j) = getThreshold(result{i,j},0.75,1);
-%         temp = getStandardParameters(result{i,j});
-%         for k=1:5
-%             if temp(3) >= 0.25 || temp(4) >= 0.25
-%                 usedIndex(i,j)=nan;
-%             end
-%         end
+        %         temp = getStandardParameters(result{i,j});
+        %         for k=1:5
+        %             if temp(3) >= 0.25 || temp(4) >= 0.25
+        %                 usedIndex(i,j)=nan;
+        %             end
+        %         end
     end
 end
 % 备份数据
@@ -208,7 +206,7 @@ pse(checkResult,:)=[];
 % pse = pse.*mask;
 csvwrite_with_headers('pse.csv',pse, conditionName);
 %% JND
-jnd=(exp(X75)-exp(X25))/2;
+jnd=(X75-X25)/2;
 jnd(checkResult,:)=[];
 % upl = mean(jnd)+2.5*std(jnd);
 % dwl = mean(jnd)-2.5*std(jnd);
@@ -216,7 +214,7 @@ jnd(checkResult,:)=[];
 % jnd = jnd.*mask;
 csvwrite_with_headers('jnd.csv',jnd, conditionName);
 %% WeberFraction
-WeberFraction = (exp(X75)-exp(X25))/2*0.5./exp(X50);
+WeberFraction = ((X75-X25)/2)./X50;
 WeberFraction(checkResult,:)=[];
 % upl = mean(WeberFraction)+2.5*std(WeberFraction);
 % dwl = mean(WeberFraction)-2.5*std(WeberFraction);
@@ -231,3 +229,5 @@ save removeSubj.txt checkResult -ascii
 %% 备份拟合结果
 save fit_results result -v7.3
 toc
+%% weber 分数检查
+%range (3.2958-2.7081)/2/log(20)
