@@ -1,3 +1,10 @@
+% @Author: kb
+% @Date:   2018-10-30T14:57:53+08:00
+% @Last modified by:   kb
+% @Last modified time: 2018-10-31T14:58:39+08:00
+
+
+
 %% 心理物理曲线拟合
 tic
 %% 准备工作环境
@@ -133,7 +140,7 @@ for i=1:22
         plotOptions.aspectRatio = true;
         plotOptions.plotPar = true;
         plotOptions.lineColor = ColorUse{j};
-        
+
         [hline{j},hdataP{j}] = plotPsych(result{i,j}, plotOptions);
         hold on
         %% 标记进度
@@ -192,7 +199,7 @@ save X50 X50
 save X75 X75
 
 %% 计算指标
-% PSE
+%% PSE
 pse=exp(X50);
 pse(checkResult,:)=[];
 % upl = mean(pse)+2.5*std(pse);
@@ -200,7 +207,7 @@ pse(checkResult,:)=[];
 % mask = (pse<upl).*(pse>dwl);
 % pse = pse.*mask;
 csvwrite_with_headers('pse.csv',pse, conditionName);
-% JND
+%% JND
 jnd=(exp(X75)-exp(X25))/2;
 jnd(checkResult,:)=[];
 % upl = mean(jnd)+2.5*std(jnd);
@@ -208,7 +215,7 @@ jnd(checkResult,:)=[];
 % mask = (jnd<upl).*(jnd>dwl);
 % jnd = jnd.*mask;
 csvwrite_with_headers('jnd.csv',jnd, conditionName);
-% WeberFraction
+%% WeberFraction
 WeberFraction = (exp(X75)-exp(X25))/2*0.5./exp(X50);
 WeberFraction(checkResult,:)=[];
 % upl = mean(WeberFraction)+2.5*std(WeberFraction);
