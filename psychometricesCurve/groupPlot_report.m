@@ -54,7 +54,7 @@ for j=1:5
     options.fixedPars = NaN(5,1);
     options.fixedPars(3) = 0; % 上漂移设置为 0
     options.fixedPars(4) = 0; % 下漂移设置为 0
-    options.expType = 'equalAsymptote'; % 期望概率分布对称
+    % options.expType = 'equalAsymptote'; % 期望概率分布对称
     options.estimateType   = 'MAP';
     %         options.borders = nan(5,2);
     %         options.borders(3,:)=[0,.05];
@@ -80,7 +80,7 @@ end
 % 图形修饰
 legend([hline{1} hline{2} hline{3} hline{4} hline{5}],conditionName{1},conditionName{2},conditionName{3},conditionName{4},conditionName{5},'location','northwest')
 grid on
-pbaspect([4 4 1]);
+pbaspect([16 9 1]);
 %xticks(log([15,16,18,20,22,24,27]));
 xticks(log([15,16,18,20,22,24,27]));
 xticklabels({'log(15)','log(16)','log(18)','log(20)','log(22)','log(24)','log(27)'});

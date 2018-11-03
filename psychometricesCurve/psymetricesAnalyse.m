@@ -120,7 +120,7 @@ for i=1:22
         options.fixedPars = NaN(5,1);
         options.fixedPars(3) = 0; % 上漂移设置为 0
         options.fixedPars(4) = 0; % 下漂移设置为 0
-        options.expType = 'equalAsymptote'; % 期望概率分布对称
+        %options.expType = 'equalAsymptote'; % 期望概率分布对称
         options.estimateType   = 'MAP';
         %         options.borders = nan(5,2);
         %         options.borders(3,:)=[0,.05];
@@ -198,7 +198,7 @@ save X75 X75
 
 %% 计算指标
 %% PSE
-pse=exp(X50);
+pse=X50;
 pse(checkResult,:)=[];
 % upl = mean(pse)+2.5*std(pse);
 % dwl = mean(pse)-2.5*std(pse);
